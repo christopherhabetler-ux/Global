@@ -91,3 +91,14 @@ Keep the whole output under 1,200 words, excluding the source list.
 3. **Synthesis (Claude):** merge internal and external findings. Split VERIFIED from inference, and write the "what to anticipate" section and the questions to ask.
 4. **Landing page (Notion):** one page per interview round, linking the meeting notes, debrief, and research, so the next round starts from it.
 5. **Debrief after the call:** write it the same day and feed it into the next round's prep.
+
+## External research: reconciled (092826)
+
+The full reconciled findings are in Notion: https://app.notion.com/p/3e905467120c817ea6a6ec85585db808
+
+Top-line changes:
+- Lead with principals and academic outcomes with BOTH interviewers. Frame systems work as "how I make excellence repeatable for principals," not as operations.
+- Kruti started on Zeta's ops-strategy team (2019-21). She likely knows why you were moved to the schooling side.
+- Paola's career is principal development: Success MD of Schools, then KIPP NJ Director of Leader Development.
+- The Vision of a Zeta Grad has FOUR pillars. Gemini's "Beautiful Tomorrow" pillar is wrong.
+- Check every resume number that GPT or Gemini cited against your 092426 resume before you say it.
