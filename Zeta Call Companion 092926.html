@@ -1,0 +1,439 @@
+<title>Zeta Call Companion 092926</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans+Condensed:wght@500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap">
+<style>
+/* Layout: sticky control bar (timer, mode, stop, tics) over a section rail and stacked answer cards; one column on phones, cards two-up on wide screens. */
+:root{
+  --bg:#f3f4f1; --surface:#ffffff; --ink:#1b2430; --muted:#5b6573; --line:#d9ddd6;
+  --accent:#1f4e79; --accent-ink:#ffffff;
+  --warn:#b66a00; --hot:#b3261e; --ok:#2e6b3f;
+  --g-open:#1f4e79; --g-prin:#6b3fa0; --g-hs:#9a5b00; --g-scale:#2e6b3f; --g-hard:#8a2f2f; --g-ask:#0f6f78;
+  --chip:#e8ebe5;
+  --f-display:"IBM Plex Sans Condensed", "Arial Narrow", system-ui, sans-serif;
+  --f-read:"Newsreader", Georgia, "Times New Roman", serif;
+  --f-mono:"IBM Plex Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#12161b; --surface:#1a2027; --ink:#e7eaee; --muted:#9aa4b1; --line:#2b333d;
+  --accent:#7fb2e5; --accent-ink:#0d1319;
+  --warn:#f0a53a; --hot:#ff6b5e; --ok:#6cc488;
+  --g-open:#7fb2e5; --g-prin:#b793e6; --g-hs:#e6ad55; --g-scale:#6cc488; --g-hard:#ef8a8a; --g-ask:#5cc6cf;
+  --chip:#232a33; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#12161b; --surface:#1a2027; --ink:#e7eaee; --muted:#9aa4b1; --line:#2b333d;
+  --accent:#7fb2e5; --accent-ink:#0d1319;
+  --warn:#f0a53a; --hot:#ff6b5e; --ok:#6cc488;
+  --g-open:#7fb2e5; --g-prin:#b793e6; --g-hs:#e6ad55; --g-scale:#6cc488; --g-hard:#ef8a8a; --g-ask:#5cc6cf;
+  --chip:#232a33; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-read);font-size:17px;line-height:1.5;margin:0}
+.wrap{max-width:1180px;margin:0 auto;padding-inline:16px;padding-block:0 64px}
+h1,h2,h3,.lbl,.chip,button{font-family:var(--f-display)}
+h1{font-size:1.25rem;margin:0;letter-spacing:.01em}
+h2{font-size:1.35rem;margin:0 0 12px;text-wrap:balance}
+h3{font-size:1.08rem;margin:0;line-height:1.25;text-wrap:balance}
+.lbl{font-size:.72rem;text-transform:uppercase;letter-spacing:.09em;color:var(--muted);font-weight:600}
+p{margin:0}
+/* control bar */
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--surface);border-bottom:1px solid var(--line)}
+.bar-in{max-width:1180px;margin:0 auto;padding:10px 16px;display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center}
+.timer{font-family:var(--f-mono);font-size:1.6rem;font-weight:600;font-variant-numeric:tabular-nums;min-width:5.2ch;color:var(--ink)}
+.timer.warn{color:var(--warn)} .timer.hot{color:var(--hot)}
+button{font-size:.92rem;font-weight:600;border:1px solid var(--line);background:var(--chip);color:var(--ink);border-radius:6px;padding:8px 12px;cursor:pointer;min-height:40px}
+button:focus-visible,input:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+button.primary{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+button.stop{background:var(--hot);color:#fff;border-color:var(--hot)}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.seg button{border:0;border-radius:0;min-height:38px}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.tics{display:flex;gap:6px;align-items:center}
+.tics button{padding:6px 10px;min-height:36px;font-variant-numeric:tabular-nums}
+.search{flex:1 1 180px;min-width:0}
+.search input{width:100%;font:inherit;font-size:.95rem;padding:8px 10px;border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--ink)}
+.coach{max-width:1180px;margin:0 auto;padding:0 16px 10px;font-family:var(--f-display);font-size:1rem;font-weight:600;color:var(--accent);display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
+.coach .must{margin-left:auto;color:var(--muted);font-weight:500;font-variant-numeric:tabular-nums}
+/* rail */
+.rail{display:flex;gap:6px;overflow-x:auto;padding-block:12px;scrollbar-width:thin}
+.rail a{flex:0 0 auto;font-family:var(--f-display);font-size:.85rem;font-weight:600;color:var(--ink);text-decoration:none;background:var(--chip);border-radius:999px;padding:6px 12px}
+section{padding-block:18px;border-top:1px solid var(--line)}
+section:first-of-type{border-top:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,500px),1fr));gap:12px}
+/* cards */
+.card{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:14px 16px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.card-top{display:flex;gap:8px;align-items:flex-start;justify-content:space-between}
+.chip{font-size:.7rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;padding:3px 8px;border-radius:4px;white-space:nowrap;color:var(--bg)}
+.claim{font-size:1.12rem;font-weight:600;line-height:1.35}
+.proof{font-size:1rem}
+.proof b{font-weight:600}
+.land{font-family:var(--f-display);font-size:.95rem;font-weight:600;color:var(--ok)}
+.land::before{content:"Land on  ";color:var(--muted);font-weight:500;text-transform:uppercase;font-size:.72rem;letter-spacing:.08em}
+.script{border-left:2px solid var(--line);padding-left:12px;display:flex;flex-direction:column;gap:8px;color:var(--ink)}
+.script p{font-size:.98rem}
+.note{font-size:.88rem;color:var(--muted)}
+.tape{font-family:var(--f-display);font-size:.72rem;font-weight:700;letter-spacing:.07em;color:var(--warn);text-transform:uppercase}
+body.live .script,body.live .prep-only{display:none}
+.hidden-by-search{display:none!important}
+ul.tight{margin:0;padding-left:1.1em;display:flex;flex-direction:column;gap:6px}
+.checks{display:flex;flex-direction:column;gap:8px}
+.checks label{display:flex;gap:10px;align-items:flex-start;font-size:1rem;cursor:pointer}
+.checks input{width:20px;height:20px;margin-top:3px;flex:0 0 auto;accent-color:var(--accent)}
+table{border-collapse:collapse;width:100%;font-size:.95rem}
+td,th{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}
+th{font-family:var(--f-display);font-size:.78rem;text-transform:uppercase;letter-spacing:.07em;color:var(--muted)}
+td.num{font-family:var(--f-mono);font-variant-numeric:tabular-nums;white-space:nowrap}
+.tbl{overflow-x:auto}
+/* stop overlay */
+#stopper{position:fixed;inset:0;background:var(--hot);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;z-index:20;text-align:center;padding:24px}
+#stopper b{font-family:var(--f-display);font-size:clamp(3rem,14vw,7rem);line-height:1}
+#stopper span{font-family:var(--f-display);font-size:1.3rem}
+.head{display:flex;flex-wrap:wrap;gap:6px 16px;align-items:baseline;padding-block:14px 0}
+.head p{color:var(--muted);font-size:.95rem}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+
+<div class="bar" role="region" aria-label="Call controls">
+  <div class="bar-in">
+    <span class="timer" id="timer" aria-live="off">00:00</span>
+    <button class="primary" id="startBtn" type="button">Start call</button>
+    <button id="resetBtn" type="button">Reset</button>
+    <div class="seg" role="group" aria-label="Mode">
+      <button type="button" id="modePrep" aria-pressed="true">Prep</button>
+      <button type="button" id="modeLive" aria-pressed="false">Live</button>
+    </div>
+    <button class="stop" id="stopBtn" type="button" title="Hold for 3 seconds">STOP</button>
+    <div class="tics" aria-label="Tic counter">
+      <button type="button" data-tic="kindof">"kind of" <span>0</span></button>
+      <button type="button" data-tic="like">"like" <span>0</span></button>
+    </div>
+    <div class="search"><input id="q" type="search" placeholder="Search cards: carver, pay, high school" aria-label="Search cards"></div>
+  </div>
+  <div class="coach"><span id="coachMsg">Open in 90 seconds. Claim first, one proof, stop.</span><span class="must" id="mustCount">Must-say 0 of 6</span></div>
+</div>
+
+<div class="wrap">
+  <div class="head">
+    <h1>Zeta, Tue 09/29, 3:00 to 3:30pm ET</h1>
+    <p>Paola Zalkind, Chief Schooling Officer · Kruti Mehta, MD Scaling School Excellence</p>
+  </div>
+
+  <nav class="rail" aria-label="Sections">
+    <a href="#now">Now</a><a href="#room">The Room</a><a href="#open">Opener</a><a href="#prin">Principals</a><a href="#hs">High School</a><a href="#scale">Scaling</a><a href="#hard">Hard Ones</a><a href="#asks">Your Asks</a><a href="#bench">Bench</a><a href="#numbers">Numbers</a><a href="#traps">Traps</a><a href="#intel">New Intel</a><a href="#close">Close</a>
+  </nav>
+
+  <section id="now">
+    <h2>Now</h2>
+    <div class="grid">
+      <div class="card">
+        <span class="lbl">Four rules, from the Rojas debrief</span>
+        <ul class="tight">
+          <li><b>Two minutes, then stop.</b> You ran 3 to 6 minute answers at 175 words a minute. Slower and shorter.</li>
+          <li><b>End every principal answer on a person or a number.</b> 1 of 5 did with Dan.</li>
+          <li><b>First sentence is the claim.</b> Never "I wish I had the answer."</li>
+          <li><b>Ask the role question by minute 10.</b> With Dan you asked nothing until time was up.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <span class="lbl">Must-say, tick as you land them</span>
+        <div class="checks" id="musts">
+          <label><input type="checkbox" id="m1"> Asked which role, by minute 10</label>
+          <label><input type="checkbox" id="m2"> Carver: principal became Louisiana Principal of the Year</label>
+          <label><input type="checkbox" id="m3"> 46% of ninth graders at 3.0 or better, up six points</label>
+          <label><input type="checkbox" id="m4"> Brooklyn Lab: managed three principals, interim HS principal</label>
+          <label><input type="checkbox" id="m5"> "Earn it" said with how you invest in people</label>
+          <label><input type="checkbox" id="m6"> Asked what's next and who else you'll talk to</label>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="room">
+    <h2>The Room</h2>
+    <div class="grid">
+      <div class="card" data-k="paola zalkind cso success kipp new jersey principals">
+        <div class="card-top"><h3>Paola Zalkind, Chief Schooling Officer</h3><span class="chip" style="background:var(--g-prin)">Principals</span></div>
+        <p class="proof">Manages Zeta's school leaders. TFA corps member. Success Academy teacher, then AP, then founding principal of SA Union Square (2013), then Managing Director of Schools. Then <b>Director of Leader Development at KIPP New Jersey</b>, then Zeta.</p>
+        <p class="note">She has done this job from the inside at two networks. She'll probe for proof. Curriculum sits with the CAO, Jessica Sie, so her lane is principals and school execution (likely).</p>
+      </div>
+      <div class="card" data-k="kruti mehta scaling bcg booth consultant launch">
+        <div class="card-top"><h3>Kruti Mehta, MD Scaling School Excellence</h3><span class="chip" style="background:var(--g-scale)">Scaling</span></div>
+        <p class="proof">BCG and Accenture, then Zeta in its second year (about 2019): network operations, policy and advancement, a Booth MBA (2024), now scaling schooling. No school-leader history found.</p>
+        <p class="note">Consultant's lens: codify what works, launch with fidelity. She likely sits across from Felipe (ex-McKinsey). She probably needs school-leader credibility beside her. Public title reads "Scaling Schooling"; use whatever she says.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="open">
+    <h2>The Opener</h2>
+    <div class="grid">
+      <div class="card" data-k="tell me about yourself background walk opener">
+        <div class="card-top"><h3>Tell me about yourself</h3><span class="chip" style="background:var(--g-open)">Opener</span></div>
+        <p class="claim">About 90 seconds. Your block 1, cut down; nothing added.</p>
+        <div class="script">
+          <p>I started as a teacher in DC, then went to Excel Academy in Boston. We were doing a turnaround. I was on the leadership team running culture and operations, and we took the school from 270th in the state to number one and got National Charter School of the Year. While I was there I built a tool we needed and turned it into DeansList, zero to 275 schools.</p>
+          <p>Then I launched a consulting practice, working with the big charters, KIPP, Uncommon, Achievement First, and a lot of the regional operators.</p>
+          <p>At Collegiate Academies in New Orleans, I was brought down to Carver to work with a principal who was unclear whether or not he could do the job. He went on to be Louisiana Principal of the Year, and now he runs the organization. I stayed on as Chief Culture Officer for five years.</p>
+          <p>Then superintendent at Brooklyn Lab for a transitional period. We led through COVID and took both charters through renewal at the same time, and both were reauthorized.</p>
+          <p>Then two years at the KIPP Foundation, building a national high school strategy across 28 regions and 48 high schools. And now I build custom tools for school leaders.</p>
+        </div>
+        <p class="land">That's what my research says you all are.</p>
+      </div>
+      <div class="card" data-k="why zeta why this role">
+        <div class="card-top"><h3>Why Zeta</h3><span class="chip" style="background:var(--g-open)">Opener</span></div>
+        <p class="claim">"The happiest I've ever been is in a mid-sized, growing charter network with outsized ambition."</p>
+        <p class="proof">New campuses in Queens and the Bronx, the high school's first class, Z Combinator. Name one; don't recite.</p>
+        <p class="land">That's what my research says you all are.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="prin">
+    <h2>Principals · Paola</h2>
+    <div class="grid">
+      <div class="card" data-k="develop a principal struggling underwater carver coach">
+        <div class="card-top"><h3>How do you develop a principal? One who wasn't working?</h3><span class="chip" style="background:var(--g-prin)">Principals</span></div>
+        <p class="claim">"Assess first, then coach, and be in it with them."</p>
+        <p class="proof"><b>Carver:</b> brought in when it was unclear whether the principal could do the job. Three years later the school had doubled, and he was Louisiana Principal of the Year. He runs the network now.</p>
+        <div class="script">
+          <p>Pair the standard with the investment. Dan said Zeta moves people between teams instead of letting them go, and "you have to love people." Say: "I hold a high bar, and my side of the street has to be totally clean. My success is entirely a function of theirs."</p>
+          <p class="tape">Not on tape: the underwater version. Coaching first, then redeploy, and name the standard you held.</p>
+        </div>
+        <p class="land">He runs the organization now.</p>
+      </div>
+      <div class="card" data-k="good to great principal feedback clothes skin">
+        <div class="card-top"><h3>The good principal who needs to get to great</h3><span class="chip" style="background:var(--g-prin)">Principals</span></div>
+        <p class="claim">"Your identity as a principal is the clothes you wear, not the skin you're in."</p>
+        <p class="proof">Then: support hat 99% of the time, no surprises at evaluation. My side of the street clean. Mandate authority is almost worthless.</p>
+        <p class="proof"><b>End on a person:</b> Brooklyn Lab, where you managed three principals and served as interim high school principal while you were superintendent.</p>
+        <p class="land">Brooklyn Lab, three principals.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="hs">
+    <h2>The High School</h2>
+    <div class="grid">
+      <div class="card" data-k="high school ninth grade gpa admissions college 46 gradual release">
+        <div class="card-top"><h3>The high school</h3><span class="chip" style="background:var(--g-hs)">High School</span></div>
+        <p class="claim">"High school can't be middle school with a couple of dials turned."</p>
+        <p class="proof">Dan's worry is admissions, and the C in ninth grade that follows a kid forever. At KIPP you ran academic health across 48 high schools, aimed at exactly that. <b>46% of ninth graders finished the quarter at 3.0 or better, up six points.</b></p>
+        <div class="script">
+          <p>Tie it to their design: Z pods and portfolios are the right structure. A ninth-grade grade system is what protects it.</p>
+          <p>Gradual release if there's time: in 7th and 8th grade, keep 50%, cut 25%, release 25%. Dan said "I love that idea."</p>
+        </div>
+        <p class="land">Best quarter KIPP had ever had on that number.</p>
+      </div>
+      <div class="card" data-k="year one own role what would you want">
+        <div class="card-top"><h3>What would you want to own in year one?</h3><span class="chip" style="background:var(--g-hs)">High School</span></div>
+        <p class="claim">"Principals, and especially the high school side."</p>
+        <p class="proof">Managing a set of principals the way Dan described, and owning the ninth-grade academic health system for the high school, so the kids in that first class never get the C that follows them.</p>
+        <p class="note">Draft. The position is yours. If they name a different seat first, answer that one.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="scale">
+    <h2>Scaling · Kruti</h2>
+    <div class="grid">
+      <div class="card" data-k="ready to scale playbook autonomy run the play earn it six days">
+        <div class="card-top"><h3>When is a practice ready to scale? Playbooks or autonomy?</h3><span class="chip" style="background:var(--g-scale)">Scaling</span></div>
+        <p class="claim">"Run the play because the play works."</p>
+        <p class="proof">"The play is not perfect. It's going to evolve, and you're going to be part of that evolution. Earn that: get to stable, get to functional, then let's talk innovation."</p>
+        <p class="proof"><b>Excel:</b> six days writing the culture and operations manuals. Your boss thought it was a crazy use of time. It became one of the most important things you did.</p>
+        <p class="land">One of the most important things we did.</p>
+      </div>
+      <div class="card" data-k="new school launch first year principal onboarding remote phases">
+        <div class="card-top"><h3>Launching a new school, onboarding a first-year principal</h3><span class="chip" style="background:var(--g-scale)">Scaling</span></div>
+        <p class="claim">"Three phases: stability, then the adults, then student ownership."</p>
+        <p class="proof"><b>Brooklyn Lab:</b> opened a fully remote school while keeping the in-person school running. That's her fall: Flushing, Tremont Park and the high school, all in year one.</p>
+        <p class="land">Opened a remote school and kept the building running.</p>
+      </div>
+      <div class="card" data-k="adoption without authority kipp 28 regions influence">
+        <div class="card-top"><h3>Adoption across schools that don't have to say yes</h3><span class="chip" style="background:var(--g-scale)">Scaling</span></div>
+        <p class="claim">"Make the change theirs."</p>
+        <p class="proof">Listening tours and working groups; shrink the change and let strong regions win first; watch the micro signals.</p>
+        <p class="land">All 28 regions and all 48 high schools adopted it. They're running it now.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="hard">
+    <h2>The Hard Ones</h2>
+    <div class="grid">
+      <div class="card" data-k="academic side never led instruction systems culture">
+        <div class="card-top"><h3>You come from systems and culture. Why the academic side?</h3><span class="chip" style="background:var(--g-hard)">Hard</span></div>
+        <p class="claim">"Yes and no."</p>
+        <p class="proof">Operations is the first line of defense so teachers and kids can shine. Then: interim high school principal at Brooklyn Lab, and academic health across 48 KIPP high schools.</p>
+        <p class="land">Best quarter KIPP had ever had on that number.</p>
+      </div>
+      <div class="card" data-k="leaving kipp why did you leave">
+        <div class="card-top"><h3>Why did you leave KIPP?</h3><span class="chip" style="background:var(--g-hard)">Hard</span></div>
+        <p class="claim">"The project ends when the cycle runs without me."</p>
+        <p class="proof">Designed, launched and handed back the national high school strategy. You want to be in a small group solving problems within arm's reach.</p>
+        <p class="land">Twenty-eight regions, forty-eight high schools. They're running it now.</p>
+      </div>
+      <div class="card" data-k="growth area weakness">
+        <div class="card-top"><h3>Your growth area</h3><span class="chip" style="background:var(--g-hard)">Hard</span></div>
+        <p class="claim">"Narrowing focus."</p>
+        <p class="proof">Because it's all one package, you can spread a team too thin. The fix: build slow to go fast, operate in phases, let some things be "not yet."</p>
+        <p class="land">The strategy is first downs.</p>
+      </div>
+      <div class="card" data-k="consultant to operator why operate again">
+        <div class="card-top"><h3>Why operate again after consulting?</h3><span class="chip" style="background:var(--g-hard)">Hard</span></div>
+        <p class="claim">"There's no substitute for running a school."</p>
+        <p class="proof">Consulting gave you the at-bats. If you consult too long, you start believing only your own ways.</p>
+        <p class="land">A school can't break a promise to kids. I can't break a promise to principals.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="asks">
+    <h2>Your Asks</h2>
+    <div class="grid">
+      <div class="card" data-k="ask role which role twelve months success">
+        <div class="card-top"><h3>By minute 10</h3><span class="chip" style="background:var(--g-ask)">Ask</span></div>
+        <p class="claim">"Before I go further, it'd help me to know which role you're considering me for, and what success would look like at twelve months."</p>
+      </div>
+      <div class="card" data-k="ask kruti consistent campus">
+        <div class="card-top"><h3>To Kruti</h3><span class="chip" style="background:var(--g-ask)">Ask</span></div>
+        <p class="claim">"With Flushing, Tremont Park and the high school all opening this fall, what's been hardest to keep consistent from campus to campus?"</p>
+      </div>
+      <div class="card" data-k="ask paola ninth graders first year june">
+        <div class="card-top"><h3>To Paola</h3><span class="chip" style="background:var(--g-ask)">Ask</span></div>
+        <p class="claim">"For the 119 ninth graders in that first class, what does a great first year look like by June?"</p>
+      </div>
+      <div class="card" data-k="ask next step who else pipeline z combinator">
+        <div class="card-top"><h3>Close</h3><span class="chip" style="background:var(--g-ask)">Ask</span></div>
+        <p class="claim">"What's the next step, and who else will I talk to?"</p>
+        <p class="note prep-only">Backup: "Is Z Combinator feeding your own leaders, or mostly founders elsewhere?"</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="bench">
+    <h2>Bench <span class="lbl">only if asked</span></h2>
+    <div class="grid">
+      <div class="card" data-k="money pay salary compensation level band">
+        <div class="card-top"><h3>Pay and level</h3><span class="chip" style="background:var(--g-hard)">Bench</span></div>
+        <p class="claim">"I'd want the title and pay to match the scope. If it's the role we've been describing, the top of the band is where I'd expect to be, and I'm open on how it's structured."</p>
+        <p class="note">Draft; set your own position. The debrief put the band at $125K to $175K. Never raise it first.</p>
+      </div>
+      <div class="card" data-k="commute in person bronx every day">
+        <div class="card-top"><h3>In person every day in the Bronx</h3><span class="chip" style="background:var(--g-hard)">Bench</span></div>
+        <p class="claim">"Yes. Every job I've loved has been in a building with kids. That's the point."</p>
+        <p class="note">Draft. Say only what's true for you. Never raise it first.</p>
+      </div>
+      <div class="card" data-k="ai tools data deanslist what do you do now">
+        <div class="card-top"><h3>Data, tools, AI</h3><span class="chip" style="background:var(--g-open)">Bench</span></div>
+        <p class="proof">DeansList, zero to 275. A push-button report that took 8,000 rows and gave every teacher, student and school an individualized report. Now you build tools for school leaders.</p>
+        <p class="note">One sentence each. Don't pitch the practice.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="numbers">
+    <h2>Numbers, with sources</h2>
+    <div class="tbl">
+      <table>
+        <thead><tr><th>Say</th><th>Number</th><th>Source</th></tr></thead>
+        <tbody>
+          <tr><td>Excel Academy turnaround</td><td class="num">270th → #1 in MA</td><td>verified-facts; National Charter School of the Year</td></tr>
+          <tr><td>DeansList</td><td class="num">0 → 275 schools</td><td>verified-facts; now 1,000+, not affiliated</td></tr>
+          <tr><td>KIPP ninth-grade quarter</td><td class="num">46%, up 6 pts</td><td>Answer bank blocks 2 and 10; 48 high schools</td></tr>
+          <tr><td>KIPP strategy adoption</td><td class="num">28 regions, 48 HS</td><td>Answer bank block 2</td></tr>
+          <tr><td>Carver principal</td><td class="num">LA Principal of the Year</td><td>Debrief fact check; school doubled; now CEO</td></tr>
+          <tr><td>Brooklyn Lab renewals</td><td class="num">2 of 2</td><td>Both reauthorized, 2021-22</td></tr>
+          <tr><td>Excel staff reporting to you</td><td class="num">40%</td><td>Answer bank block 3</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note" style="margin-top:8px">The 75% suspension drop is Collegiate network-wide, never Carver alone. Don't quote Zeta's test scores.</p>
+  </section>
+
+  <section id="traps">
+    <h2>Traps</h2>
+    <div class="grid">
+      <div class="card">
+        <ul class="tight">
+          <li>Don't grade KIPP or AF. Describe how KIPP works, never its results.</li>
+          <li>Don't say "the rest of the mess." Both of them are ex-Success.</li>
+          <li>Leaving Excel: you knew you'd be leaving at the end of the year. Nothing about health.</li>
+          <li>Don't quote Zeta's test scores. 2026 ELA reportedly came in below their published 90%+.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <span class="lbl">Don't raise</span>
+        <ul class="tight">
+          <li>The NYPD comments about the high school</li>
+          <li>Community board fights over the 181st St site</li>
+          <li>The 2025 rally attendance flap</li>
+          <li>Mamdani on charters</li>
+          <li>Success comparisons</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="intel">
+    <h2>New Intel</h2>
+    <div class="grid">
+      <div class="card">
+        <ul class="tight">
+          <li><b>14 schools</b> after Tremont Park opened Sept 17 (600 seats, grades 3 to 8). Queens Jamaica and Elmhurst opened 2025; Flushing, August 2026.</li>
+          <li><b>High school</b> opened August 2026 in Washington Heights: 119 ninth graders from Zeta's first class. Z pods of about 12, four Z houses, portfolios, AP required, SAT prep in school, a 2,000 sq ft ZLab.</li>
+          <li><b>Z Combinator:</b> a $2.49M federal grant (2025 to 2030) for a charter-founder fellowship.</li>
+          <li><b>Connection points:</b> Paola was at KIPP New Jersey. She's a TFA alum, and the Summit is this Friday. The high school has a taekwondo team.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="close">
+    <h2>Close and after</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="claim">End on the ask, not a trail-off. With Dan: "talk to anyone, blah, blah, blah" at the exact moment you were asking to be considered.</p>
+        <p class="proof">"Are you heading to Vegas for the TFA summit this week?" is an easy, real last line with Paola.</p>
+      </div>
+      <div class="card prep-only">
+        <span class="lbl">Thank-you notes, same day (addresses likely first.last@zetaschools.org)</span>
+        <p class="proof">Hi Paola, Thanks for the time today. I really enjoyed the conversation about [one thing she said], and hearing where you want the high school to be. Have a great week! Chris Habetler, 617-913-8366</p>
+        <p class="proof">Hi Kruti, Thanks for the time today. I really enjoyed hearing how you're thinking about [one thing she said] with three new schools opening at once. Have a great week! Chris Habetler, 617-913-8366</p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div id="stopper" hidden><b>STOP</b><span>Land it. One proof. Then a question.</span></div>
+
+<script>
+(function(){
+  var store={get:function(k,d){try{var v=localStorage.getItem('zeta0929:'+k);return v===null?d:JSON.parse(v)}catch(e){return d}},set:function(k,v){try{localStorage.setItem('zeta0929:'+k,JSON.stringify(v))}catch(e){}}};
+  var timerEl=document.getElementById('timer'),startBtn=document.getElementById('startBtn'),coach=document.getElementById('coachMsg');
+  var startAt=store.get('startAt',null),running=!!startAt,iv=null;
+  var cues=[[0,'Open in 90 seconds. Claim first, one proof, stop.'],[480,'Ask the role question now.'],[600,'Past minute 10. Did you ask which role?'],[1200,'Minute 20. Get your two questions in.'],[1560,'Minute 26. Ask the next step, then close.'],[1800,'Time. Thank them and stop.']];
+  function fmt(s){var m=Math.floor(s/60),x=s%60;return (m<10?'0':'')+m+':'+(x<10?'0':'')+x}
+  function tick(){var s=running?Math.max(0,Math.floor((Date.now()-startAt)/1000)):0;timerEl.textContent=fmt(s);timerEl.className='timer'+(s>=1560?' hot':s>=1200?' warn':'');var msg=cues[0][1];for(var i=0;i<cues.length;i++){if(s>=cues[i][0])msg=cues[i][1]}coach.textContent=msg}
+  function start(){if(!running){startAt=Date.now();running=true;store.set('startAt',startAt)}startBtn.textContent='Running';if(!iv)iv=setInterval(tick,500);tick()}
+  startBtn.addEventListener('click',start);
+  document.getElementById('resetBtn').addEventListener('click',function(){running=false;startAt=null;store.set('startAt',null);clearInterval(iv);iv=null;startBtn.textContent='Start call';tick()});
+  if(running){start()}else{tick()}
+  // mode
+  var mp=document.getElementById('modePrep'),ml=document.getElementById('modeLive');
+  function setMode(live){document.body.classList.toggle('live',live);mp.setAttribute('aria-pressed',String(!live));ml.setAttribute('aria-pressed',String(live));store.set('live',live)}
+  mp.addEventListener('click',function(){setMode(false)});ml.addEventListener('click',function(){setMode(true)});setMode(store.get('live',false));
+  // stop hold 3s
+  var stopBtn=document.getElementById('stopBtn'),stopper=document.getElementById('stopper'),st=null;
+  function showStop(){stopper.hidden=false;clearTimeout(st);st=setTimeout(function(){stopper.hidden=true},3000)}
+  stopBtn.addEventListener('click',showStop);stopper.addEventListener('click',function(){stopper.hidden=true});
+  // tics
+  document.querySelectorAll('[data-tic]').forEach(function(b){var k=b.getAttribute('data-tic'),span=b.querySelector('span'),n=store.get('tic-'+k,0);span.textContent=n;b.addEventListener('click',function(){n++;span.textContent=n;store.set('tic-'+k,n)})});
+  // musts
+  var mc=document.getElementById('mustCount'),boxes=document.querySelectorAll('#musts input');
+  function count(){var c=0;boxes.forEach(function(b){if(b.checked)c++});mc.textContent='Must-say '+c+' of '+boxes.length}
+  boxes.forEach(function(b){b.checked=store.get(b.id,false);b.addEventListener('change',function(){store.set(b.id,b.checked);count()})});count();
+  // search
+  var q=document.getElementById('q'),cards=document.querySelectorAll('.card'),secs=document.querySelectorAll('section');
+  q.addEventListener('input',function(){var t=q.value.trim().toLowerCase();cards.forEach(function(c){var hay=((c.getAttribute('data-k')||'')+' '+c.textContent).toLowerCase();c.classList.toggle('hidden-by-search',!!t&&hay.indexOf(t)<0)});secs.forEach(function(s){var any=s.querySelector('.card:not(.hidden-by-search)')||!s.querySelector('.card');s.classList.toggle('hidden-by-search',!!t&&!s.querySelector('.card:not(.hidden-by-search)'))})});
+})();
+</script>
