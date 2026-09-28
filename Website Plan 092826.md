@@ -193,3 +193,25 @@ Do the P0 list only (plan section 4, items 1 to 9). Use the draft lines in plan 
 
 Gates: website-qa at 390 and 1440 widths plus qa-safari, zero em dashes, none of the barred words. Show me the phone render before giving me the deploy command. Write a SHIP RECORD (MMDDYY) to Notion when it's live.
 ```
+
+---
+
+## 9. Grep targets for the Mac session (added 092826 evening)
+
+These are exact live strings, as quoted by GPT's 092726 read of the site. Grep the staged build for each one before editing. If a string isn't found, it may already be fixed; say so rather than guessing.
+
+| Find | Plan item | Action |
+|---|---|---|
+| `Never student records` | P0-2 | Replace with the section 5 line, after the data-flow check |
+| `so you and your kids don't fall behind` | P0-3 | Delete the sentence |
+| `stressed that you're already behind` | P0-3 | Delete the sentence |
+| `three hours back a week, every week` | P0-5 | Replace with the diagnosis version |
+| `you don't owe me anything` / `keep the tool either way` | P0-4 | Replace per your guarantee answer |
+| `I fix it for you that day` | P0-4 | Delete |
+| `hand them off so they run without me` | P0-7 | Rewrite in the present tense, built not running |
+| `Built, installed, and running in schools right now` | P0-7 | Remove (your 092426 ruling) |
+| `human in the loop` | P0-7 | Replace with the observable version (P1 beat 4) |
+| `The last two years have all been AI` | P1 | Cut (GPT: it makes the AI experience sound short) |
+| `If you had it, you'd be home by now` | P1 | Cut |
+| `That's where the magic happens` | P2 | Cut (About) |
+| `four adults` / `six adults` near lunch on tools/02-coverage | P0-6 | Make them match what the demo actually does |
