@@ -17,29 +17,34 @@ Also from that thread: "Just keep the same format as the most recent draft. You 
 
 That changes three things in the prompts:
 
-1. **Matt's theory is now something to test, not a premise.** The research prompt checks both halves: whether the three largest publishers already ship something like ClassE, and where Benchmark actually sits. Prompt 3 tests it again against Benchmark's own plans.
+1. **Matt's theory is now something to test, not a premise.** Prompt 2 checks both halves: whether the three largest publishers already ship something like ClassE, and where Benchmark actually sits. Prompt 1 checks whether Benchmark is building its own, and Prompt 3 weighs all of it.
 2. **Benchmark is a publisher, so rights look different.** Ingestion rights are an OPEN QUESTION in the ClassE brief. When the partner owns the content, that question changes shape, but the claim doesn't get promoted. Prompt 3 now tests this directly.
 3. **The seat is a second look, not a first.** The objections list is weighted toward what someone who has already seen a ClassE pitch would press on. The seat is described by role only, and no name goes to an outside model.
 
 Carried forward from the 95 Percent Group build: an upload-receipt check in the framing line (the Grok file came back empty last time), an archive fallback in the quote chase (the job-posting quote was never confirmed), and a search perimeter on every "search results only" claim (the TouchMath closing had none).
 
-## Two prompts, three runs, one sitting tonight
+## The process: three prompts, five runs, two rounds tonight
 
-Revised 092826 at 9pm ET, cut from four prompts to two. The research prompt goes into Perplexity and Gemini unchanged, in separate chats, the same way the Zeta prompt went into ChatGPT and Gemini. Where the two answers disagree, that's the cross-check. Prompt 3 is the red team.
+Revised 092826 at 10pm ET, and this is the version to run. Each piece does one job:
 
-| Step | Where | Uploads | Save as |
-|---|---|---|---|
-| 1 | Research prompt in Perplexity (deep research) | none | `01 Perplexity.md` |
-| 1 | Same prompt in Gemini (deep research), at the same time | none | `02 Gemini.md` |
-| - | Your read, while those two run (questions at the bottom) | none | `00 My read.md` |
-| 2 | Prompt 3 in GPT-5 Pro, web on, after both land | 01, 02, and both files in `_upload-these/` (four files) | `03 GPT-5 Pro.md` |
-| - | Grok, only if Claude asks; never sees 03 | same four | `04 Grok.md` |
+- **One Benchmark research prompt, two engines.** Perplexity and Gemini get the same prompt, and where they disagree, that's the cross-check. It worked on Zeta: running the same prompt through two models is how Gemini's wrong claims got caught.
+- **A separate market prompt, one engine.** Matt's theory is about McGraw Hill, HMH and Savvas, a different research target. Folding it into the Benchmark prompt would thin out the part that matters most: where Benchmark's grades 4 to 6 workflow stops. It's narrower, so one run is enough; the red team re-checks it.
+- **Two red-team seats, blind to each other.** GPT-5 Pro and Grok run the same prompt without seeing each other's answer. Where two independently trained models disagree about inference, that disagreement is the finding; the receipt is Canvas, where Gemini graded the Twin Question gap High, Claude graded it Low-medium, and Matt took the Claude read. The empty Grok upload that broke this on 95 Percent Group is now caught by the receipt check in the framing line.
 
-- Gemini shows a research plan first. Click Start research without editing it.
-- If Prompt 3 starts after 11pm, let it run and save the answer in the morning.
-- Tue after the 3:30 Zeta call, Claude does the quote chase, claim register, draft and blind review. Wed morning you read the PDF and send it to Matt.
+| Round | Paste | Into | Uploads | Save as |
+|---|---|---|---|---|
+| 1 | Prompt 1, research | Perplexity, deep research | none | `01 Perplexity.md` |
+| 1 | Prompt 1, research (same text) | Gemini, deep research | none | `02 Gemini.md` |
+| 1 | Prompt 2, market | Perplexity, second tab, deep research | none | `03 Market.md` |
+| 1 | Your read (three questions at the bottom) | a text file | none | `00 My read.md` |
+| 2 | Framing line + Prompt 3 | GPT-5 Pro, web on | 01, 02, 03, and both files in `_upload-these/` (five files) | `04 GPT-5 Pro.md` |
+| 2 | Same framing line + Prompt 3 | Grok, separate conversation | same five | `05 Grok.md` |
 
-**If Prompt 3 slips past Tue noon,** send Matt this line and take Thu 10/01. That still gives him four days before his meeting:
+- Round 1: all four go in at once. Gemini shows a research plan first; click Start research without editing it.
+- Round 2 starts when round 1 has landed. Start both seats together. If it's past 11pm, let them run and save both answers in the morning.
+- Tue after the 3:30 Zeta call: Claude reconciles the two seats against the sources, runs the quote chase and claim register, drafts, and runs the blind review. Wed morning you read the PDF and send it to Matt.
+
+**If the round 2 answers aren't in by Tue noon,** send Matt this line and take Thu 10/01. That still gives him four days before his meeting:
 
 ```
 Matt, quick heads up: Benchmark will land Thursday 10/1 instead of Wednesday. I want one more verification pass on the digital-product claims before it reaches you. Still four days ahead of your 10/5 meeting.
@@ -59,10 +64,10 @@ Matt, quick heads up: Benchmark will land Thursday 10/1 instead of Wednesday. I 
 
 ---
 
-## Prompt 1: research (paste into Perplexity and Gemini, separate chats)
+## Prompt 1: Benchmark research (paste into Perplexity AND Gemini, separate chats)
 
 ```
-You are the lead researcher for a high-stakes competitive-intelligence brief on Benchmark Education Company, the K-8 literacy curriculum publisher. Build an auditable, sourced picture of the company. Accuracy matters more than volume, and "not found" is an acceptable answer. Do not recommend a partnership, and do not compare Benchmark to other companies except in Part 3.
+You are the lead researcher for a high-stakes competitive-intelligence brief on Benchmark Education Company, the K-8 literacy curriculum publisher. Build an auditable, sourced picture of the company. Accuracy matters more than volume, and "not found" is an acceptable answer. Do not recommend a partnership, and do not compare Benchmark to any other company.
 
 PART 1, BENCHMARK
 1. Portfolio. Every current product and named component: exact name, current edition, grade span, subject and language, buyer, user, print or digital, and how the products relate. Names to check, not facts to assume: Benchmark Advance, Benchmark Adelante, Benchmark Workshop, Benchmark Universe, and any phonics, intervention, assessment, or English-learner products. Confirm each name is current and add any that are missing.
@@ -84,14 +89,6 @@ For each, say SUPPORTED, CONTRADICTED, or UNVERIFIED, with the quote that decide
 6. Benchmark licenses content to, or integrates with, third-party practice or assessment platforms.
 7. Benchmark has announced, or is visibly building (roadmap, job postings, acquisitions), AI-generated or adaptive student practice of its own.
 
-PART 3, TEST A MARKET HYPOTHESIS
-Hypothesis: "The largest K-8 ELA publishers (McGraw Hill, HMH, Savvas) already offer something similar to AI-generated, curriculum-connected student practice with feedback. Medium and smaller publishers generally do not, and may look for a technology partner to catch up." Test it; don't prove it.
-- "Something similar" means a capability live today (not a pilot or an announcement) that does at least two of these on the publisher's own grades 3 to 8 ELA content: generates or adapts practice items; responds to a wrong answer with feedback and a follow-up item on the same skill; reports item-level skill gaps to the teacher. Math-only or writing-feedback-only features don't count.
-- For each of the three: the named capability, live, pilot, or announced, and whether it was built, bought, or partnered.
-- Where Benchmark sits relative to them, using published indicators only.
-- Any publisher and AI-partner pairings announced in the last 24 months.
-- A verdict in 150 words or fewer: which half of the hypothesis holds, which fails, and what public research can't settle.
-
 METHOD
 - Source priority: product manuals, support documentation and release notes first; then efficacy reports and EdReports; then state and district records; then press releases, interviews and job postings; then trade press; marketing pages only when nothing better exists.
 - "Benchmark" is a common word. Keep only sources about Benchmark Education Company. Exclude generic "benchmark assessment" results and other companies with Benchmark in the name, and flag any source where it's unclear which company is meant.
@@ -106,21 +103,56 @@ OUTPUT
 2. Portfolio table
 3. Evidence register, one row per study
 4. The Part 2 proposition results
-5. The Part 3 market table and verdict
-6. Claims safe to use, claims needing a hedge, claims to exclude
-7. Blocked sources, and the ten questions public research could not settle
+5. Claims safe to use, claims needing a hedge, claims to exclude
+6. Blocked sources, and the ten questions public research could not settle
 
 Do not draft a comparison with any other product. Do not cite yourself or another AI as a source.
 ```
 
-## Prompt 3: GPT-5 Pro (after both research answers land)
+## Prompt 2: market check (Perplexity, second tab, alongside Prompt 1)
 
-New conversation, web research on. **Upload four files:** `01 Perplexity.md`, `02 Gemini.md`, and the two files in `_upload-these/`. Paste the framing line, then the prompt. Save as `03 GPT-5 Pro.md`.
+```
+You are a market researcher testing a working hypothesis about the US K-8 English language arts curriculum market. Test it; do not prove it. Either answer is useful.
+
+THE HYPOTHESIS TO TEST
+"The largest K-8 ELA curriculum publishers (McGraw Hill, HMH, Savvas) already offer something similar to AI-generated, curriculum-connected student practice with feedback. Medium and smaller publishers generally do not, and may look for a technology partner to catch up."
+
+WHAT "SOMETHING SIMILAR" MEANS HERE
+A capability live today for students or teachers (not a pilot, beta, or announcement) that does at least two of these on the publisher's own grades 3 to 8 ELA content: generates or adapts practice or assessment items; responds to a wrong answer with feedback or a hint and then a follow-up item on the same skill; reports item-level skill gaps to the teacher. Math-only or writing-feedback-only features don't count. Record pilots and announcements separately.
+
+RESEARCH QUESTIONS
+1. For each of McGraw Hill, HMH, and Savvas: which named products or features, if any, meet the definition for grades 3 to 8 ELA? Give the name, what it does, live, pilot, or announced, the date, and whether it uses generative AI.
+2. For each of the three: was the capability built in-house, acquired, or delivered through a named technology partner?
+3. Where does Benchmark Education Company (the K-8 literacy curriculum publisher) sit relative to those three? Report only published indicators: state adoptions, districts or students served, revenue or employee figures from a stated source, and how trade press or analysts categorize it. Do not estimate, and do not rank without a source.
+4. Among other K-8 ELA core-curriculum publishers of Benchmark's size or smaller, which have publicly announced AI-generated or adaptive practice, and was it built, bought, or partnered? Enumerate with dates.
+5. Which publisher and AI-company partnerships were announced in the last 24 months (press releases, conference sessions, trade press)? Name the pairs.
+
+METHOD
+- Primary sources first: product pages, support and release notes, press releases, investor or annual reports, state adoption lists, EdReports. Then trade press (EdWeek Market Brief, EdSurge, The 74, District Administration).
+- "Benchmark" is a common word. Keep only sources about Benchmark Education Company, and flag any source where it's unclear which company is meant.
+- For each publisher, list what you checked, so a "not found" has a search perimeter.
+- Label each finding SUPPORTS, UNDERCUTS, or MIXED, and say which half of the hypothesis it bears on: the large-publisher half or the smaller-publisher half.
+- If a page is blocked or gone, try the Internet Archive and record the archived URL and capture date.
+- If a claim rests only on a search snippet or an aggregator, label it SEARCH RESULT ONLY and record the query.
+
+OUTPUT
+1. Table: publisher | named capability | meets the definition? (yes / partly / no) | live, pilot, or announced | built, bought, or partnered | URL | date | exact quote
+2. Benchmark's position, every figure sourced
+3. Smaller-publisher findings, enumerated
+4. Publisher and AI-partner pairings
+5. Verdict, 200 words or fewer: which half of the hypothesis the evidence supports, which it undercuts, and what public research can't settle
+
+Do not recommend a partnership or name any AI vendor as a candidate. Do not cite yourself or another AI as a source.
+```
+
+## Prompt 3: red team (GPT-5 Pro AND Grok, separate conversations, after round 1 lands)
+
+New conversation, web research on. **Upload five files:** `01 Perplexity.md`, `02 Gemini.md`, `03 Market.md`, and the two files in `_upload-these/`. Paste the framing line, then the prompt. Do the same in Grok. Save as `04 GPT-5 Pro.md` and `05 Grok.md`. Neither seat ever sees the other's answer.
 
 Framing line, paste first:
 
 ```
-Before anything else, list each uploaded file by name with its first heading and roughly how long it is. If any file is empty, unreadable, or missing, stop and tell me which one; do not continue. Then read all four files before answering. The Perplexity and Gemini files answer the same research prompt; treat their disagreements as findings to settle against the source. Both are finding aids, not evidence. The ClassE research brief controls every ClassE claim. Reopen disputed sources on the web.
+Before anything else, list each uploaded file by name with its first heading and roughly how long it is. If any file is empty, unreadable, or missing, stop and tell me which one; do not continue. Then read all five files before answering. The Perplexity and Gemini files answer the same research prompt; treat their disagreements as findings to settle against the source. Both are finding aids, not evidence. The ClassE research brief controls every ClassE claim. Reopen disputed sources on the web.
 ```
 
 Prompt 3:
@@ -164,7 +196,7 @@ Answer in order before judging any gap:
 9. What is the smallest realistic partnership step that creates evidence for a deeper one?
 
 STEP 2C, THE MARKET HYPOTHESIS
-Using Part 3 of both research files and your own reopened sources, test this working hypothesis: "The largest K-8 ELA publishers (McGraw Hill, HMH, Savvas) already offer something similar; medium and smaller publishers generally do not, and may look for a partner to catch up." Answer separately:
+Using the market file (03 Market) and your own reopened sources, test this working hypothesis: "The largest K-8 ELA publishers (McGraw Hill, HMH, Savvas) already offer something similar; medium and smaller publishers generally do not, and may look for a partner to catch up." Answer separately:
 1. Does the evidence show the three largest publishers have a live capability similar to ClassE's loop in grades 3 to 8 ELA? Name it, or say what was checked.
 2. Does the evidence place Benchmark among the medium or smaller publishers the hypothesis describes? Cite the indicator.
 3. Does Benchmark already have, or publicly plan, its own version? If so, the partner half of the hypothesis fails for Benchmark specifically, whatever holds for the market.
@@ -192,10 +224,6 @@ OUTPUT
 Do not write sales advice. Do not reward novelty. A conclusion of no material fit is acceptable. Give source, URL, date, and exact quote for every substantive claim.
 ```
 
-## Grok tiebreak (only if Claude asks)
-
-Separate conversation. Same four uploads, same framing line, same Prompt 3. It must never see `03 GPT-5 Pro.md`. Save as `04 Grok.md`. Claude asks for this only when the GPT-5 Pro verdict is close or thin.
-
 ## Prompt 3B: quote chase (Claude runs this with web tools; paste only if Claude hands it to you)
 
 Run after Step 3, only on the claims that survived.
@@ -217,7 +245,7 @@ CLAIM IDS AND THEIR CITED SOURCES:
 [paste the surviving claim IDs with the source each one points to]
 ```
 
-## Your read (tonight, while the research runs)
+## Your read (tonight, in round 1)
 
 Three to five sentences, or a voice memo. Save it as `00 My read.md` in the drop folder. Last time your Intersection line was the best sentence in the 95 Percent Group document, and it arrived last. This time it comes first. Answer these three:
 
