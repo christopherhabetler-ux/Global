@@ -1,7 +1,7 @@
 import json,re,html
 Q=json.load(open('Q.json')); by={x['id']:x for x in Q}
 def say(h):
-    h=re.sub(r'<p class="small[^"]*">.*?</p>','',h,flags=re.S)
+    h=re.sub(r'<div class="bullets">.*?</div>','',h,flags=re.S); h=re.sub(r'<p class="small[^"]*">.*?</p>','',h,flags=re.S)
     h=re.sub(r'<span class="dcue[^>]*>.*?</span>','',h)
     h=h.replace('</p>','\n')
     t=html.unescape(re.sub(r'<[^>]+>','',h)).replace(' … ','... ').replace('…','...')
