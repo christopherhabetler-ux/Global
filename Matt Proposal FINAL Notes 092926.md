@@ -66,3 +66,12 @@ The reviewer's pick for Matt: option 3 on cash, then a counter near $1,500-2,000
 - Run write-like-us SHIP on your Mac. The checkers are scripts on disk and don't run from here.
 - Update item 1 after the 3:00 Zeta call if anything changes.
 - Send the language guide first.
+
+## FINAL v2 Changes (CH thought dump, 092926)
+
+- Opens with purpose (four bullets in your words) and "Why It Pays for Itself," before any scope or price.
+- One pay rule instead of three options: $2,500, up $1,250 per new retainer client, to $5,000 after two. $1,250 is about 15% of a ClassE-size client, so the share logic is unchanged, but Matt doesn't have to disclose client fees.
+- One percentage, not three. The 20% network share stays because it's Matt's own 9/16 ask ("grows as the sales these individuals bring in grows"). The 25% step and option 3's 30% are gone.
+- Time: "about a day a week to start," named as an expectation, not a limit. No FTE and no hourly rate. That matches the 35 hours a month in the thinking doc.
+- October through December, then a January reset. The base step-down on client loss is gone; January covers it.
+- If $2,500 is too much for October, Matt names the start and the steps stay the same.
