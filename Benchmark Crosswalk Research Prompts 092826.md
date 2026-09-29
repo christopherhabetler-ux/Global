@@ -31,13 +31,11 @@ Carried forward from the 95 Percent Group build: an upload-receipt check in the 
 3. Prompt 2 into a second Perplexity tab, deep research. Save as `03 Market.md`.
 4. Your read, the three questions at the bottom. Save as `00 My read.md`.
 
-Claude is running Prompt 2 on its own at the same time, as a second engine on Matt's theory.
+Claude ran Prompt 2 independently tonight. The network blocked most sources, so the result is a lead list, not evidence: `Benchmark Market Leads UNVERIFIED 092826.md`. Its leads are now named checks in Prompt 3, Step 0. Don't upload the file to GPT-5 Pro or Grok; it's for the Mac session's reconciliation only.
 
 **Round 2, when round 1 lands, both at once:** in GPT-5 Pro and in Grok, separate conversations, upload the same five files (01, 02, 03, and both files in `_upload-these/`), then paste the framing line and Prompt 3. Save as `04 GPT-5 Pro.md` and `05 Grok.md`. If it's late, let them run overnight.
 
-**The handoff:** attach all six files to this Claude conversation the moment you have them. Tonight is fine; the Tuesday morning coffee is fine too. **Do not put them in the ClassE Crosswalks Drive folder.** It's shared with Matt, so anything placed there reaches him.
-
-**Tuesday:** Claude starts the moment the files arrive, not after your 3:30 Zeta call. That covers seat reconciliation, the quote chase, the claim register, the draft, the blind review, and the PDF, HTML and .md. The PDF is ready for you Tuesday evening.
+**Tuesday, on your Mac, not in this cloud session.** This cloud environment's network policy blocks benchmarkeducation.com, EdReports, the publisher sites, trade press and the Internet Archive, so it can't reopen sources. The PDF template (`_template/build_crosswalk.py`) is also on your Mac. A Mac session can read the drop folder, reach the web, and build in Matt's format. When round 2 lands, open Claude Code or Cowork on the Mac and paste the kickoff prompt at the bottom of this file. It runs the rest without you: reconciliation, quote chase, claim register, draft, blind review, and the PDF, HTML and .md. The PDF is ready Tuesday evening. **Nothing goes in the ClassE Crosswalks Drive folder until you say send; that folder reaches Matt.**
 
 **Wednesday:** you read the PDF, and it goes to Matt.
 
@@ -47,13 +45,14 @@ I attacked my own plan the way Prompt 3 attacks a gap. Here's what failed and wh
 
 | # | Weak point | Severity | Fix |
 |---|---|---|---|
-| 1 | "Claude does everything after that," but this Claude runs in the cloud and can't read `~/Downloads` on your Mac. The handoff didn't exist. | Fatal | You attach the files to this conversation. There's also an explicit warning against the ClassE Crosswalks Drive folder, which reaches Matt. |
+| 1 | "Claude does everything after that," but this Claude runs in the cloud and can't read `~/Downloads` on your Mac. The handoff didn't exist. | Fatal | Superseded by #8: the Tuesday work runs on the Mac, which reads the drop folder directly. The warning against the ClassE Crosswalks Drive folder (it reaches Matt) stands. |
 | 2 | The question the whole document turns on (what Benchmark's digital platform does after a wrong answer in grades 4 to 6) mostly sits behind a login. Public marketing won't answer it, and the models would have returned "not found." | High | Prompt 1 now sends the research to places that describe the platform publicly: state review reports, EdReports usability sections, district adoption packets, and Benchmark's own training videos, cited with timestamps. |
 | 3 | Claude sat idle until 3:30 Tuesday, which burned about 14 hours of a 40-hour window. | High | Claude starts the moment the files land. The Tue-noon trip-wire now has real slack. |
-| 4 | Matt's theory ran on one engine, and it's the part he'll carry into the room. | Medium | Claude runs the same Prompt 2 independently tonight, so the theory gets two engines at no extra paste. The two red-team seats also re-open its sources. |
+| 4 | Matt's theory ran on one engine, and it's the part he'll carry into the room. | Medium | Claude ran Prompt 2 independently; the network made it a lead list (see #8). Both red-team seats re-open the market sources, and Step 0 makes them check the strongest leads by name. |
 | 5 | "One row per claim" invites a 300-row ledger that crowds out analysis and gets cut off mid-answer. | Medium | The ledger is capped at the 60 most load-bearing claims. |
 | 6 | I overstated a receipt. The Canvas split was between two drafts (Gemini graded the Twin Question gap High, Claude graded it Low-medium), not between two red-team seats. | Low | Stated accurately here. The case for two seats stands without it: independent judgment on the step that decides what reaches Matt, for one extra paste. |
 | 7 | Both red-team seats read the same research files, so they aren't independent on facts. | Accepted | Intended. They're independent on judgment, and facts are settled by the quote chase against the source, never by the seats. |
+| 8 | The Tuesday half assumed this cloud session could reopen sources. The network policy blocks every publisher, EdReports and archive site, and the PDF template is on the Mac. The fix for #1 didn't work either. | Fatal | Tuesday runs in a Mac session from a paste-ready kickoff prompt (bottom of this file). The cloud market check became a lead list, and its three strongest leads (a Benchmark and Amira Learning partnership, Benchmark "AI grading" claims, HMH Waggle) are now Step 0 of Prompt 3. |
 
 What would still make this document weak: if Benchmark's platform behavior isn't described anywhere public, even after fix 2. In that case the document says so plainly, and it becomes the first question Matt can ask in the room. That's useful to him, not a failure.
 
@@ -180,6 +179,13 @@ INPUT AUTHORITY
 3. Independent corroboration
 4. Perplexity and Gemini outputs only as finding aids, never as evidence
 
+STEP 0, LEADS TO VERIFY FIRST
+An independent pass surfaced these as unverified leads. Open the source for each and report CONFIRMED, CONTRADICTED, or NOT FOUND, with the exact quote. Do not treat any of them as fact until you have opened it.
+1. A "Benchmark Advance + Amira Learning" partnership, described as connecting AI assessment with instruction (reported on benchmarkeducation.com's Advance/Adelante pages). What does Amira do inside Benchmark Advance, for which grades, and since when?
+2. Benchmark Universe "AI-powered feedback" and Benchmark Advance "AI grading tools." What exactly is scored, for whom, and does the student get a follow-up item?
+3. HMH Waggle: adaptive grades 3 to 8 ELA practice with hints and feedback, aligned to Into Reading. Live today?
+If lead 1 or 2 is confirmed, say what it does to Step 2C: does Benchmark already have a partner or capability in the slot ClassE would fill?
+
 STEP 1, BUILD THE AXIS
 Build the comparison axis from Benchmark's actual operating model as the uploaded files establish it. If Benchmark is primarily a core curriculum publisher, the axis runs: adopted core curriculum and texts; lesson sequence; assessment; what happens after an assessment flags a student; reteaching and practice materials; feedback after an error; progress monitoring; reporting; digital platform and integrations; content licensing and partners; evidence and EdReports ratings; professional learning. Do not import an intervention-company axis. Concentrate on grades 4 to 6 ELA, which is ClassE's live US scope, and say where Benchmark's grades 4 to 6 materials differ from its K to 3 materials.
 
@@ -266,3 +272,27 @@ Three to five sentences, or a voice memo. Save it as `00 My read.md` in the drop
 1. What's your gut read on Benchmark: what does it do best, and where do you think it stops?
 2. Given Matt's theory about big and smaller publishers, where do you think Benchmark falls, and why?
 3. What's the one question you'd want Matt to be able to answer after reading this?
+
+## Tuesday kickoff prompt (paste into Claude Code or Cowork on the Mac)
+
+```
+Benchmark × ClassE crosswalk for Matt Campbell. Due to Christopher tonight for his read; he sends it to Matt Wed 9/30. Matt's meeting is Mon 10/5 at 10:30.
+
+Load the company-crosswalk skill first. Then read, in this order:
+1. The Benchmark landing page in Notion: https://app.notion.com/p/3e505467120c81708348f1cc48180884
+2. "Benchmark Crosswalk Research Prompts 092826.md" and "Benchmark Market Leads UNVERIFIED 092826.md" from GitHub christopherhabetler-ux/global, branch claude/sharp-dijkstra-rnbepa.
+3. Everything in ~/Downloads/crosswalk-drops/Benchmark/: 00 My read, 01 Perplexity, 02 Gemini, 03 Market, 04 GPT-5 Pro, 05 Grok. Stop and tell me if any file is missing or empty.
+4. Matt's canonical ClassE KB, the CLASSE COLUMN file, and the shipped US language guide (092626).
+5. The latest Matt Campbell email thread. If anything in it postdates 092526, it overrides the Notion page.
+
+Then:
+A. Reconcile the two red-team seats. Where GPT-5 Pro and Grok disagree, settle it against the underlying source, never by majority, and log the disagreement as a finding.
+B. Quote chase. Reopen every claim that survives, record the exact sentence, and try the Internet Archive before marking a page blocked. Verify the Step 0 leads (Amira partnership, "AI grading," Waggle) directly, whatever the seats said.
+C. Claim register, with Matt's status labels on every ClassE claim. Check every ClassE sentence against the canonical KB and the language guide, not just the outside-model brief.
+D. Draft in the same format as the delivered 95 Percent Group crosswalk. Christopher's read opens the Intersection section. Include the market-hypothesis finding only as far as the evidence carries it. No advice on approaching the meeting, and nothing about the person Matt is meeting.
+E. Blind review with fresh agents, then fix every overstatement.
+F. Build the PDF, HTML and .md with _template/build_crosswalk.py, and look at every page.
+G. Put a Notion copy under Delivered outputs, update the hub status line, and log the session. Do NOT copy anything to the ClassE Crosswalks Drive folder; Christopher sends it Wednesday after his read.
+
+A finding of narrow or no fit is acceptable. Don't manufacture a gap.
+```
