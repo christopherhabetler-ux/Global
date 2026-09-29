@@ -7,6 +7,9 @@ REV={}
 for f in sorted(glob.glob('rev_out_*.json')):
     try: REV.update(json.load(open(f)))
     except Exception as e: print('bad',f,e)
+CAT={'aboutyou':('open','BACKGROUND'),'whyzeta':('open','WHY ZETA'),'g2g':('prin','PHILOSOPHY'),'carver':('prin','STRUGGLING PRINCIPAL'),'managed':('prin','MANAGED PRINCIPALS'),
+ 'hs':('hs','HIGH SCHOOL'),'ownership':('hs','CULTURE'),'scale':('scale','EARN IT / SCALE'),'netsys':('scale','NETWORK SYSTEMS'),'adopt':('scale','ADOPTION'),'initiative':('scale','DATA INITIATIVE'),'launch':('scale','LAUNCH A SCHOOL'),
+ 'instruction':('hard','ACADEMICS'),'lab':('hard','BROOKLYN LAB'),'leftkipp':('hard','LEFT KIPP'),'assocdean':('hard','FAILURE')}
 ORDER=['aboutyou','whyzeta','g2g','carver','managed','hs','ownership','scale','netsys','adopt','initiative','launch','instruction','lab','leftkipp','assocdean']
 def qtext(x): return re.sub(r'^\d+ &middot; ','',x['label'])
 def tokens(t):
@@ -35,13 +38,17 @@ for n,id in enumerate(ORDER,1):
         script='<p class="give">Give me bullets. There isn\'t a good script for this one yet; talk from the points on the left.</p>'; first=''; land=plain(x.get('land')); src[id]='bullets only'
     else:
         script=from_card(x['answer']); first=first_sentence(script); land=plain(x.get('land')); src[id]='card'
-    pts=''.join('<li>'+b+'</li>' for b in BL.get(id,[]))
-    rows.append(f'''<details class="q" id="q-{id}"><summary><span class="n">{n}</span><span class="qt">{qtext(x)}</span></summary>
+    pts=''.join('<li><label><input type="checkbox"> <span>'+b+'</span></label></li>' for b in BL.get(id,[]))
+    cat,kw=CAT[id]
+    script='<p class="startcue"><span class="cue">breathe</span> <span class="cue">slow start</span> Say the first line, then <b>pause two beats</b>.</p>'+script
+    rows.append(f'''<details class="q {cat}" id="q-{id}"><summary><span class="n">{n}</span><span class="kw">{kw}</span><span class="qt">{qtext(x)}</span></summary>
 <div class="body"><div class="remind">Breathe. Slow down. You've got this.</div>
 <div class="grid"><div class="left"><div class="h">Key points</div><ul>{pts}</ul></div>
 <div class="right">{('<div class="first"><div class="h">First line</div>'+html.escape(first,quote=False)+'</div>') if first else ''}
 <div class="h">Script</div><div class="script">{script}</div>
-{('<div class="landing"><div class="h">Land on</div>'+html.escape(land,quote=False)+'</div>') if land and not land.startswith('Frame') else ''}</div></div></div></details>''')
+{('<div class="landing"><div class="h">Land on</div>'+html.escape(land,quote=False)+'</div>') if land and not land.startswith('Frame') else ''}
+<div class="after"><span class="cue stop">stop</span> Then silence. Let them ask the next question.</div>
+<button class="back" onclick="closeAll()">&larr; Back to the 16</button></div></div></div></details>''')
 def askblock(id,title):
     x=by[id]; pts=''.join('<li>'+b+'</li>' for b in BL.get(id,[]))
     return f'<section class="card"><h2>{title}</h2><ul class="asks">{pts}</ul><div class="script">{from_card(x["answer"])}</div></section>'
@@ -90,16 +97,56 @@ summary::-webkit-details-marker{{display:none}}
 .card h2{{font-size:20px;margin-bottom:10px}}
 .asks{{padding-left:18px;margin-bottom:12px}}
 .small{{display:none}}
+.open{{--c:#1f4e8c;--cb:#e7effa}}.prin{{--c:#1f7a3f;--cb:#e6f3ea}}.hs{{--c:#9a6700;--cb:#fff1c9}}.scale{{--c:#5b2e9c;--cb:#efe8fb}}.hard{{--c:#b3261e;--cb:#fdecea}}
+details.q{{border-left:7px solid var(--c)}}
+details.q summary .n{{color:var(--c)}}
+.kw{{font:800 11.5px -apple-system,Segoe UI,Helvetica,Arial,sans-serif;letter-spacing:1px;color:var(--c);background:var(--cb);border-radius:6px;padding:3px 8px;white-space:nowrap;align-self:center}}
+.legend{{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0 4px}}
+.lg{{font:700 12.5px -apple-system,Segoe UI,Helvetica,Arial,sans-serif;color:var(--c);background:var(--cb);border-left:5px solid var(--c);border-radius:6px;padding:4px 10px}}
+.left li{{list-style:none;margin-left:-18px}}
+.left label{{display:flex;gap:9px;align-items:flex-start;cursor:pointer}}
+.left input{{margin-top:5px;width:18px;height:18px;accent-color:var(--c);flex:none}}
+.left input:checked+span{{opacity:.45;text-decoration:line-through}}
+.startcue{{font:15px -apple-system,Segoe UI,Helvetica,Arial,sans-serif;color:#7a5200}}
+.after{{margin-top:12px;font:15px -apple-system,Segoe UI,Helvetica,Arial,sans-serif;color:var(--dim)}}
+.back{{margin-top:14px;font:600 15px -apple-system,Segoe UI,Helvetica,Arial,sans-serif;padding:9px 16px;border-radius:10px;border:1px solid var(--line);background:#fff;cursor:pointer}}
+#topback{{position:fixed;right:18px;bottom:18px;z-index:9;font:700 15px -apple-system,Segoe UI,Helvetica,Arial,sans-serif;padding:12px 18px;border-radius:999px;border:0;background:var(--tx);color:#fff;box-shadow:0 6px 18px rgba(0,0,0,.2);cursor:pointer;display:none}}
+.steps{{padding-left:22px}}.steps li{{margin:8px 0}}
+.anchor{{border-left:6px solid var(--c);background:var(--cb);border-radius:0 10px 10px 0;padding:10px 14px;margin:8px 0}}
+.cb{{padding-left:20px}}.cb li{{margin:8px 0}}
+.small2{{color:var(--dim);font-size:14px;margin-top:8px}}
+
 </style></head><body>
-<header><span class="brand">Zeta &middot; 3:00</span><button class="tab on" data-p="p16">The 16</button><button class="tab" data-p="pask">Your asks &amp; close</button><input id="f" placeholder="filter: principal, high school, KIPP, Brooklyn Lab..."></header>
-<div class="page on" id="p16">{''.join(rows)}</div>
-<div class="page" id="pask">{ASKS}</div>
+<header><span class="brand">Zeta &middot; 3:00</span><button class="tab on" data-p="p16">The 16</button><button class="tab" data-p="pask">Your asks &amp; close</button><button class="tab" data-p="pcb">Curveballs</button><input id="f" placeholder="filter: principal, high school, KIPP, Brooklyn Lab..."></header>
+<div class="page on" id="p16"><div class="legend"><span class="lg open">Opener</span><span class="lg prin">Principals &middot; Paola</span><span class="lg hs">High school</span><span class="lg scale">Scaling &middot; Kruti</span><span class="lg hard">The hard ones</span></div>{''.join(rows)}</div>
+<div class="page" id="pcb"><section class="card"><h2>If it's not one of the 16</h2><ol class="steps">
+<li><b>Buy two seconds.</b> Breathe. &ldquo;Good question.&rdquo; Restate it in five words.</li>
+<li><b>Pick the closest story</b> from the four below. Every question is one of these four in disguise.</li>
+<li><b>Say the claim in one sentence</b>, then the story, then <b>one number</b>, then stop.</li>
+<li>If you're lost: &ldquo;Let me give you the example I think about most,&rdquo; and go to Carver.</li></ol></section>
+<section class="card"><h2>Your four stories, and what they answer</h2>
+<div class="anchor prin"><b>Carver / Jerel</b> &middot; people, coaching, a hard conversation, a leader who's struggling, feedback, trust &rarr; <i>LA Principal of the Year, now CEO</i></div>
+<div class="anchor scale"><b>KIPP</b> &middot; influence without authority, scaling, data, getting buy-in, a project you led &rarr; <i>28 regions, 48 high schools, no one took the alternate path; 46% at 3.0+, up six</i></div>
+<div class="anchor hs"><b>Excel</b> &middot; launching, turnaround, culture, systems, the playbook, students &rarr; <i>270th to #1, National Charter School of the Year</i></div>
+<div class="anchor hard"><b>Brooklyn Lab</b> &middot; crisis, a hard call, ambiguity, running a school yourself, COVID &rarr; <i>two renewals at once, both reauthorized</i></div></section>
+<section class="card"><h2>Common curveballs</h2><ul class="cb">
+<li><b>&ldquo;A time you disagreed with your boss&rdquo;</b> &rarr; best idea wins, disagree and commit; Kate at KIPP led, you pushed on the one thing</li>
+<li><b>&ldquo;How do you handle a principal who won't do it?&rdquo;</b> &rarr; clarity first, then support; no relationship without accountability; Carver</li>
+<li><b>&ldquo;What would your team say about you?&rdquo;</b> &rarr; they always know where they stand; I show up prepared; Jerel</li>
+<li><b>&ldquo;How do you use data?&rdquo;</b> &rarr; present but obscured to right in front of them; card 11</li>
+<li><b>&ldquo;What questions do you have?&rdquo;</b> &rarr; Your asks tab</li>
+<li><b>&ldquo;Anything else we should know?&rdquo;</b> &rarr; &ldquo;I want to find the right group of people doing the right work more than anything.&rdquo;</li></ul>
+<p class="small2">These are frames, not scripts. Say them your way.</p></section></div>
+<button id="topback">&larr; Back to the 16</button><div class="page" id="pask">{ASKS}</div>
 <script>
 document.querySelectorAll('.tab').forEach(function(b){{b.onclick=function(){{document.querySelectorAll('.tab').forEach(function(x){{x.classList.toggle('on',x===b)}});
  document.querySelectorAll('.page').forEach(function(p){{p.classList.toggle('on',p.id===b.dataset.p)}});window.scrollTo(0,0)}}}});
 var f=document.getElementById('f');f.oninput=function(){{var t=f.value.toLowerCase().trim();
  document.querySelectorAll('details.q').forEach(function(d){{d.style.display=(!t||d.textContent.toLowerCase().indexOf(t)>-1)?'':'none'}})}};
 document.querySelectorAll('details.q').forEach(function(d){{d.addEventListener('toggle',function(){{if(d.open)setTimeout(function(){{d.scrollIntoView({{behavior:'smooth',block:'start'}})}},30)}})}});
+function closeAll(){{document.querySelectorAll('details.q[open]').forEach(function(d){{d.open=false}});window.scrollTo({{top:0,behavior:'smooth'}})}}
+var tb=document.getElementById('topback');tb.onclick=closeAll;
+document.addEventListener('toggle',function(){{tb.style.display=document.querySelector('details.q[open]')?'block':'none'}},true);
 </script></body></html>'''
 open('/home/user/Global/Zeta Live 092926.html','w').write(page)
 print(json.dumps(src))
