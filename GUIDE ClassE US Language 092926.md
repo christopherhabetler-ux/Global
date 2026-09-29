@@ -4,6 +4,16 @@ Prepared by Christopher Habetler with EdTech Expertz, for Matt Campbell, Joe Gel
 
 **This is the current working draft as of September 29, 2026.** We plan to keep updating it. Anything in it should be reviewed before we use it.
 
+## Open questions
+
+These are the questions this draft still needs answered by Matt, Joe and the team.
+
+1. **The words we lead with.** The guide proposes leading with what ClassE does rather than "diagnostic" or "intervention," and treats intervention as a two-part answer. Does that work for you?
+2. **Mastery on the report.** The report says "mastery" off one question. What should the product call a correct answer, and a skill shown over time?
+3. **Albert and text to speech.** Which Albert features work in the US product today, and does text to speech?
+4. **TEKS alignment.** Which grades and subjects are aligned to the TEKS, so we can say "TEKS" in Texas?
+5. **Curriculum setup.** What does it take to set ClassE up on a new district's curriculum, so we know what to promise?
+
 ## Why this matters
 
 Purpose: The main purpose of this guide is not to give exact language, but to guide us in making language choices that accurately reflect our product and our beliefs, and that position us with US educators as aligned on what we all want: supporting students, helping teachers, improving outcomes and helping every student reach their full potential.

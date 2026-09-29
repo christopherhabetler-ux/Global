@@ -70,6 +70,9 @@ def split_lead(t):
 # ---------- content from the Markdown ----------
 draft_note = re.search(r"^\*\*(This is the current working draft.*?)\*\*\s*(.*)$", md, re.M)
 byline = re.search(r"^Prepared by.*$", md, re.M).group(0)
+oq_sec = section("Open questions")
+oq_intro = paras(oq_sec)[0]
+oq = bullets(oq_sec)
 why = section("Why this matters")
 why_p = paras(why)
 purpose = why_p[0].replace("Purpose: ", "", 1)
@@ -110,13 +113,14 @@ B.append('<header class="cover"><div class="hero"><div class="cover-art" aria-hi
          f'<div class="pp-row"><p class="pp-k lbl">Goal</p><p class="pp-v">{il(goal)}</p></div>'
          f'<div class="pp-row"><p class="pp-k lbl">Status</p><p class="pp-v" style="font-size:11pt;font-weight:500">{il(draft_note.group(1) + " " + draft_note.group(2))}</p></div>'
          '</section>')
-toc = [("why", "01", "Why this matters", []),
-       ("onepage", "02", "The short version", [("believe", "Our core beliefs"), ("remember", "Three things to remember"),
+toc = [("questions", "01", "Open questions", []),
+       ("why", "02", "Why this matters", []),
+       ("onepage", "03", "The short version", [("believe", "Our core beliefs"), ("remember", "Three things to remember"),
                                                 ("words", "Words we use"), ("kinds", "Seven kinds of words that land wrong"),
                                                 ("before", "Before the call"), ("recover", "If a word goes wrong"), ("asks", "If a buyer asks")]),
-       ("texas-ny", "03", "Texas and New York, side by side", []),
-       ("reference", "04", "Word list, A to Z", []),
-       ("appendix", "05", "Appendix", [("product", "For the product team"), ("terms", "US terms"), ("sources", "Sources")])]
+       ("texas-ny", "04", "Texas and New York, side by side", []),
+       ("reference", "05", "Word list, A to Z", []),
+       ("appendix", "06", "Appendix", [("product", "For the product team"), ("terms", "US terms"), ("sources", "Sources")])]
 B.append('<nav class="cover-toc" aria-label="Contents"><p class="toc-head lbl">Contents</p><ol class="toc-main">')
 for aid, n, t, subs in toc:
     B.append(f'<li><a href="#{aid}"><span class="toc-n lbl">{n}</span><span>{il(t)}</span></a>')
@@ -131,8 +135,15 @@ for aid, n, t, subs in toc:
     B += [f'<li><a href="#{s}">{il(st)}</a></li>' for s, st in subs]
 B.append("</ul></nav><main>")
 
-# 01 Why
-B.append('<section id="why" class="band why"><div class="wrap"><p class="eyebrow lbl">01</p><h2>Why this matters</h2>'
+# 01 Open questions
+B.append(f'<section id="questions" class="band"><div class="wrap"><div class="oneline asks"><h3>Open questions</h3>'
+         f'<p class="rem-note" style="margin:0 0 6pt">{il(oq_intro)}</p><ol>')
+for i, a in enumerate(oq, 1):
+    lead, rest = split_lead(a)
+    B.append(f'<li><span class="rem-n lbl">{i}</span><p><strong>{il(lead)}</strong> {il(rest)}</p></li>')
+B.append("</ol></div></div></section>")
+# 02 Why
+B.append('<section id="why" class="band why"><div class="wrap"><p class="eyebrow lbl">02</p><h2>Why this matters</h2>'
          f'<p class="w-lead">{il(purpose)}</p>')
 B += [f'<p class="w-body">{il(p)}</p>' for p in why_body]
 uses = [u.strip() + "." for u in use_line.rstrip(".").split(". ")]
@@ -148,7 +159,7 @@ B.append(f'<li><span class="rem-n lbl">{len(desc_b) + 1}</span><p><strong>{il(fi
 B.append("</ol></div></div></section>")
 
 # 02 Short version
-B.append('<section id="onepage" class="band believe"><div class="wrap"><p class="eyebrow lbl">02</p>'
+B.append('<section id="onepage" class="band believe"><div class="wrap"><p class="eyebrow lbl">03</p>'
          '<h2 class="display">The short version</h2><div id="believe" class="spread"><h3 class="spread-h">Our core beliefs</h3><ol class="beliefs">')
 for i, b in enumerate(beliefs, 1):
     t, body = split_lead(b)
@@ -192,7 +203,7 @@ for i, a in enumerate(asks, 1):
 B.append("</ol></div></div></section>")
 
 # 03 Texas and New York
-B.append(f'<section id="texas-ny" class="band texas"><div class="wrap"><p class="eyebrow lbl">03</p><h2>Texas and New York, side by side</h2>'
+B.append(f'<section id="texas-ny" class="band texas"><div class="wrap"><p class="eyebrow lbl">04</p><h2>Texas and New York, side by side</h2>'
          f'<p class="tx-lead">{il(tx_lead)}</p><table class="cmp"><thead><tr><th class="lbl corner"></th>'
          '<th scope="col" class="lbl"><span class="state-chip s1">Texas</span></th>'
          '<th scope="col" class="lbl"><span class="state-chip s2">New York and the Northeast</span></th></tr></thead><tbody>')
@@ -202,7 +213,7 @@ for label, t, n in tx_rows:
 B.append("</tbody></table></div></section>")
 
 # 04 Word list
-B.append(f'<section id="reference" class="band reference"><div class="wrap"><p class="eyebrow lbl">04</p><h2 class="display">Word list, A to Z</h2>'
+B.append(f'<section id="reference" class="band reference"><div class="wrap"><p class="eyebrow lbl">05</p><h2 class="display">Word list, A to Z</h2>'
          f'<p class="ref-key">{il(wl_key)}</p><div class="rsec" id="word-list"><div class="sub sub-direct"><table class="sn"><thead><tr>'
          f'<th scope="col" class="lbl h-cpt">{NOT_IC}Word or phrase</th><th scope="col" class="lbl h-say">{SAY_IC}Try instead</th>'
          '<th scope="col" class="lbl h-nt">Why</th></tr></thead><tbody>')
@@ -212,7 +223,7 @@ for w, t, y in wl_rows:
 B.append("</tbody></table></div></div></div></section>")
 
 # 05 Appendix
-B.append('<section id="appendix" class="band appendix"><div class="wrap"><div class="app-head"><p class="eyebrow lbl">05</p><h2 class="display">Appendix</h2></div>')
+B.append('<section id="appendix" class="band appendix"><div class="wrap"><div class="app-head"><p class="eyebrow lbl">06</p><h2 class="display">Appendix</h2></div>')
 B.append(f'<div class="app-sec" id="product"><h3 class="rsec-h">For the product team</h3><p>{il(paras(prod)[0])}</p><ul>'
          + "".join(f"<li>{il(b)}</li>" for b in bullets(prod)) + "</ul></div>")
 B.append('<div class="app-sec" id="terms"><h3 class="rsec-h">US terms</h3><dl class="glossary">')
