@@ -11,7 +11,7 @@ def q(label): return re.sub(r'^(MUST-ASK \d|\d+) · ','',pl(label))
 def card(n,id,intro):
     x=by[id]; out=[f'Card {n}. {q(x["label"])}',intro,'Here it is, in your words.',say(x['answer'])]
     land=pl(x.get('land','')); 
-    if land and not land.startswith('Frame'): out.append('Land on this. '+land.strip('"'))
+    if land and not land.startswith('Frame'): out.append('Land on this. '+land.replace('"',''))
     out.append('Then stop. '+pl(x.get('stop','')).replace('Stop on','Your last words are').replace('Stop.','').strip())
     return '\n\n'.join(o for o in out if o.strip())
 P1=[]

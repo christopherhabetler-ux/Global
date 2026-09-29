@@ -5,7 +5,7 @@ exec(open('build_cards.py').read().split('exec(open("src_other.py")')[0])   # da
 exec(open('src_other.py').read())
 def c(t):
     t=clean(t)
-    for a,b in [('the principle could','the principal could'),('principle is the clothes','principal is the clothes'),('Kinect. And correct','Connect and correct'),('Jillian','Gillian')]:
+    for a,b in [('the principle could','the principal could'),('principle is the clothes','principal is the clothes'),('Kinect. And correct','Connect and correct'),('Jillian','Gillian'),('effort to Thank you. assess','effort to assess'),(' a a flexibility',' a flexibility'),('betweenDoing','between doing')]:
         t=t.replace(a,b)
     return re.sub(r'\s+',' ',t).strip()
 B={int(k):v for k,v in json.load(open('bank.json')).items()}          # uploaded concise pass (blocks 4,5,6,8,12 are unchanged there)

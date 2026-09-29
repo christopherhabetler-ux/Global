@@ -111,7 +111,7 @@ superintendent role at Brooklyn Lab and so that was overseeing three schools... 
 
 Two of my three schools did not see their superintendent in their building for a semester. They got their principal and my phone. What they needed from me was a decision maker who answered fast, not a superintendent who visited. I made that trade at the semester line, not in June.
 
-I was brought down to, as a consultant, I was brought down to Collegiate Academies. You know, spoiler alert, I went and worked there full time for Five years after this consulting arrangement. So this is a story of like most of my work as a consultant and then later as chief culture officer. But I was brought down as a last ditch effort to Thank you. assess whether or not the principal could be successful. They'd tried everything and things just weren't working.
+I was brought down to, as a consultant, I was brought down to Collegiate Academies. You know, spoiler alert, I went and worked there full time for Five years after this consulting arrangement. So this is a story of like most of my work as a consultant and then later as chief culture officer. But I was brought down as a last ditch effort to assess whether or not the principal could be successful. They'd tried everything and things just weren't working.
 
 Your note, 083026: "i was the princpal at bk lab for half a year bc i decided to remove the principal and take it over bc it needed to be done."
 
@@ -277,7 +277,7 @@ I did not spread myself evenly across three schools, because that is how you fai
 
 Two simultaneous renewals. A renewal in itself is already a big undertaking. Now do that twice at the same time. A charter renewal is not a project deadline. Missing it does not mean late. It means the schools do not exist next year. Both were reauthorized.
 
-Land on this. Two simultaneous renewals... Now do that twice at the same time." Both were reauthorized.
+Land on this. Two simultaneous renewals... Now do that twice at the same time. Both were reauthorized.
 
 Then stop. Your last words are "Both were reauthorized."
 
