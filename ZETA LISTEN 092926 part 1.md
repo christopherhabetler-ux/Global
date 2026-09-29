@@ -71,7 +71,7 @@ Paola's core question, most likely as your philosophy on managing people or lead
 
 Here it is, in your words.
 
-What you're saying, in one breathTrust is everything, and it's earned, not assumed. Clarity and transparency so nobody guesses. Support that makes people better: you show you can do the job, and every coaching meeting is prepared like your best lesson. Accountability as the thing that builds the relationship, not the thing the relationship permits.The answer · about 75 seconds
+The answer · about 75 seconds
 
 Trust is everything, and you earn it through three things: clarity, support and accountability.
 
@@ -90,30 +90,6 @@ I was brought in to Carver as a consultant with one question: do we keep this le
 What I saw was a high-potential leader getting a lot of feedback that things weren't good enough, and very little help. So I worked shoulder to shoulder with him, on the floor, with high doses of real-time feedback, mostly affirming. I named the relationship that needed to be reset. And we put what he was great at on stage.
 
 It worked. Jerel went on to be Louisiana Principal of the Year, and today he's CEO of Collegiate Academies.
-
-Long version · your dictation, cut only
-
-I'm going to talk about trust, clarity, support, and accountability. The point I want to make is that we kind of work in that order, but it's also not linear. These concepts also all feed into each other, right?
-
-Trust is everything because you get trust from clarity. You get trust from being valuable and reliable. That's the support. You get trust through this idea of people knowing what's expected of them and what they're going to expect from you. There's this idea of predictability, clarity, transparency, aligning on purpose and mindset, showing people you're there for the right reasons, and having a degree of legitimate human care, concern, understanding, and validation.
-
-A great meeting doesn't end with a list of principal next steps. A better meeting ends with things being done, skills being applied, and skills being built and applied. Better than that, meetings aren't regular, standard office meetings, right? They're on the floor doing the work.
-
-The best development meetings I've ever had have either been: Let's go to the problem, real-time coach.... Or: Let me show up to the meeting so prepared that, while we might be using guided discovery as part of it, there is a delivery. There's an exemplar that I'm ready to bring. There's a clear lesson, and it's not an "I do, we do, you do" lesson, but it's as intentional, as objective-driven, and requires as much preparation as your best lessons.
-
-Because if I want a principal to have a tough feedback conversation, they need to see an example of it. I can't just wing that. We can't show up and expect to talk our way into improved understanding, or we can't converse our way into transforming the school. We have to teach our way into it, into that side-by-side work, and that's incredibly intentional development.
-
-Nobody's time is more valuable in the school than the principal's. Therefore, my job is to model for the principal to be the example. It's an incredibly high-stakes role, and it means, effectively, that every minute I'm on stage, every minute I'm modeling, because every minute they're learning.
-
-The accountability, which is that no one's guessing where they stand. Adam Meinig's two questions: Are they doing the right work? Are they doing it incredibly well?
-
-95% of my time, I'm in my support role. We're in this together. My success is your success, but what that also means is I'm never not saying the thing. I'm never lowering the bar. I'm never rounding up. I'm never letting a thing slide. If I'm going to keep someone's trust, they have to know that I'm telling the truth.
-
-90% of the time, when they make a mistake, they know it's a mistake. They're looking to figure out whether or not I'm willing to acknowledge it, help them work through it, and learn from it and get better as a human being.
-
-The accountability feeds the trust.... Knowing that I'm your biggest cheerleader, but I'm also part of being your coach: watching the game tape and pointing out where the mistake was made because I totally believe in you. I, of course, care enough about you to say the thing and to show you the better version.
-
-Jerel received Louisiana state's Principal of the Year in our fourth year together and is now CEO of Collegiate Academies.
 
 Land on this. Jerel went on to be Louisiana Principal of the Year, and today he's CEO of Collegiate Academies.
 
