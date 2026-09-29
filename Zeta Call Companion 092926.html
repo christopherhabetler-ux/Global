@@ -1,147 +1,174 @@
 <title>Zeta Call Companion 092926</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans+Condensed:wght@500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&family=Source+Code+Pro:wght@500;600&display=swap">
 <style>
-/* Layout: sticky control bar (timer, mode, stop, tics) over a section rail and stacked answer cards; one column on phones, cards two-up on wide screens. */
+/* Layout: one type family throughout. Sticky control bar; PREP = read-out + every card in full; LIVE = question list plus one card in large type. Cards always run: question, frame, your words, quick reference, facts to say your way, source. */
 :root{
-  --bg:#f3f4f1; --surface:#ffffff; --ink:#1b2430; --muted:#5b6573; --line:#d9ddd6;
-  --accent:#1f4e79; --accent-ink:#ffffff;
-  --warn:#b66a00; --hot:#b3261e; --ok:#2e6b3f;
-  --g-open:#1f4e79; --g-prin:#6b3fa0; --g-hs:#9a5b00; --g-scale:#2e6b3f; --g-hard:#8a2f2f; --g-ask:#0f6f78;
-  --chip:#e8ebe5;
-  --f-display:"IBM Plex Sans Condensed", "Arial Narrow", system-ui, sans-serif;
-  --f-read:"Newsreader", Georgia, "Times New Roman", serif;
-  --f-mono:"IBM Plex Mono", ui-monospace, Menlo, monospace;
+  --bg:#f5f5f2; --surface:#ffffff; --ink:#1c232b; --muted:#5f6873; --line:#dcded8; --soft:#f0f1ec;
+  --accent:#1d4f7a; --accent-ink:#ffffff; --warn:#9a5a00; --hot:#b3261e; --ok:#2d6a3e;
+  --cue-bg:#e8eef5; --cue-ink:#1d4f7a; --say-bg:#fff4df; --say-line:#e9c98f;
+  --f:"Source Sans 3","Segoe UI",system-ui,-apple-system,sans-serif;
+  --f-mono:"Source Code Pro",ui-monospace,Menlo,monospace;
 }
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
-  --bg:#12161b; --surface:#1a2027; --ink:#e7eaee; --muted:#9aa4b1; --line:#2b333d;
-  --accent:#7fb2e5; --accent-ink:#0d1319;
-  --warn:#f0a53a; --hot:#ff6b5e; --ok:#6cc488;
-  --g-open:#7fb2e5; --g-prin:#b793e6; --g-hs:#e6ad55; --g-scale:#6cc488; --g-hard:#ef8a8a; --g-ask:#5cc6cf;
-  --chip:#232a33; color-scheme:dark}}
+  --bg:#13171c; --surface:#1b2128; --ink:#e8ebee; --muted:#9ba5b0; --line:#2d353e; --soft:#212830;
+  --accent:#8bbbe8; --accent-ink:#0d1319; --warn:#f0a53a; --hot:#ff6b5e; --ok:#72c78e;
+  --cue-bg:#223244; --cue-ink:#a9cdf0; --say-bg:#33291a; --say-line:#6b5327; color-scheme:dark}}
 :root[data-theme="dark"]{
-  --bg:#12161b; --surface:#1a2027; --ink:#e7eaee; --muted:#9aa4b1; --line:#2b333d;
-  --accent:#7fb2e5; --accent-ink:#0d1319;
-  --warn:#f0a53a; --hot:#ff6b5e; --ok:#6cc488;
-  --g-open:#7fb2e5; --g-prin:#b793e6; --g-hs:#e6ad55; --g-scale:#6cc488; --g-hard:#ef8a8a; --g-ask:#5cc6cf;
-  --chip:#232a33; color-scheme:dark}
+  --bg:#13171c; --surface:#1b2128; --ink:#e8ebee; --muted:#9ba5b0; --line:#2d353e; --soft:#212830;
+  --accent:#8bbbe8; --accent-ink:#0d1319; --warn:#f0a53a; --hot:#ff6b5e; --ok:#72c78e;
+  --cue-bg:#223244; --cue-ink:#a9cdf0; --say-bg:#33291a; --say-line:#6b5327; color-scheme:dark}
 *{box-sizing:border-box}
-body{background:var(--bg);color:var(--ink);font-family:var(--f-read);font-size:17px;line-height:1.5;margin:0}
-.wrap{max-width:1180px;margin:0 auto;padding-inline:16px;padding-block:0 64px}
-h1,h2,h3,.lbl,.chip,button{font-family:var(--f-display)}
-h1{font-size:1.25rem;margin:0;letter-spacing:.01em}
-h2{font-size:1.35rem;margin:0 0 12px;text-wrap:balance}
-h3{font-size:1.08rem;margin:0;line-height:1.25;text-wrap:balance}
-.lbl{font-size:.72rem;text-transform:uppercase;letter-spacing:.09em;color:var(--muted);font-weight:600}
+body{background:var(--bg);color:var(--ink);font-family:var(--f);font-size:17px;line-height:1.55;margin:0}
+.wrap{max-width:980px;margin:0 auto;padding-inline:16px;padding-block:0 80px}
+h1{font-size:1.35rem;font-weight:700;margin:0}
+h2{font-size:1.35rem;font-weight:700;margin:0 0 14px}
+h3{font-size:1.2rem;font-weight:700;margin:0;line-height:1.3;text-wrap:balance}
 p{margin:0}
-/* control bar */
-.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--surface);border-bottom:1px solid var(--line)}
-.bar-in{max-width:1180px;margin:0 auto;padding:10px 16px;display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center}
-.timer{font-family:var(--f-mono);font-size:1.6rem;font-weight:600;font-variant-numeric:tabular-nums;min-width:5.2ch;color:var(--ink)}
-.timer.warn{color:var(--warn)} .timer.hot{color:var(--hot)}
-button{font-size:.92rem;font-weight:600;border:1px solid var(--line);background:var(--chip);color:var(--ink);border-radius:6px;padding:8px 12px;cursor:pointer;min-height:40px}
-button:focus-visible,input:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.lbl{font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+button{font-family:var(--f);font-size:.95rem;font-weight:600;border:1px solid var(--line);background:var(--soft);color:var(--ink);border-radius:6px;padding:8px 12px;cursor:pointer;min-height:40px}
+button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
 button.primary{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
 button.stop{background:var(--hot);color:#fff;border-color:var(--hot)}
+/* bar */
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--surface);border-bottom:1px solid var(--line)}
+.bar-in{max-width:980px;margin:0 auto;padding:10px 16px;display:flex;flex-wrap:wrap;gap:8px 10px;align-items:center}
+.timer{font-family:var(--f-mono);font-size:1.5rem;font-weight:600;font-variant-numeric:tabular-nums;min-width:5.2ch}
+.timer.warn{color:var(--warn)} .timer.hot{color:var(--hot)}
 .seg{display:inline-flex;border:1px solid var(--line);border-radius:6px;overflow:hidden}
 .seg button{border:0;border-radius:0;min-height:38px}
 .seg button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
-.tics{display:flex;gap:6px;align-items:center}
-.tics button{padding:6px 10px;min-height:36px;font-variant-numeric:tabular-nums}
-.search{flex:1 1 180px;min-width:0}
+.tics{display:flex;gap:6px}
+.tics button{padding:6px 10px;min-height:36px;font-variant-numeric:tabular-nums;font-weight:500}
+.search{flex:1 1 160px;min-width:0}
 .search input{width:100%;font:inherit;font-size:.95rem;padding:8px 10px;border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--ink)}
-.coach{max-width:1180px;margin:0 auto;padding:0 16px 10px;font-family:var(--f-display);font-size:1rem;font-weight:600;color:var(--accent);display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
+.coach{max-width:980px;margin:0 auto;padding:0 16px 10px;font-weight:600;color:var(--accent);display:flex;gap:10px;flex-wrap:wrap;align-items:baseline}
 .coach .must{margin-left:auto;color:var(--muted);font-weight:500;font-variant-numeric:tabular-nums}
-/* rail */
-.rail{display:flex;gap:6px;overflow-x:auto;padding-block:12px;scrollbar-width:thin}
-.rail a{flex:0 0 auto;font-family:var(--f-display);font-size:.85rem;font-weight:600;color:var(--ink);text-decoration:none;background:var(--chip);border-radius:999px;padding:6px 12px}
-section{padding-block:18px;border-top:1px solid var(--line)}
-section:first-of-type{border-top:0}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,500px),1fr));gap:12px}
-/* cards */
-.card{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:14px 16px;display:flex;flex-direction:column;gap:10px;min-width:0}
-.card-top{display:flex;gap:8px;align-items:flex-start;justify-content:space-between}
-.chip{font-size:.7rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;padding:3px 8px;border-radius:4px;white-space:nowrap;color:var(--bg)}
-.claim{font-size:1.12rem;font-weight:600;line-height:1.35}
-.proof{font-size:1rem}
-.proof b{font-weight:600}
-.land{font-family:var(--f-display);font-size:.95rem;font-weight:600;color:var(--ok)}
-.land::before{content:"Land on  ";color:var(--muted);font-weight:500;text-transform:uppercase;font-size:.72rem;letter-spacing:.08em}
-.script{border-left:2px solid var(--line);padding-left:12px;display:flex;flex-direction:column;gap:8px;color:var(--ink)}
-.script p{font-size:.98rem}
-.note{font-size:.88rem;color:var(--muted)}
-.tape{font-family:var(--f-display);font-size:.72rem;font-weight:700;letter-spacing:.07em;color:var(--warn);text-transform:uppercase}
-body.live .script,body.live .prep-only{display:none}
-.hidden-by-search{display:none!important}
-ul.tight{margin:0;padding-left:1.1em;display:flex;flex-direction:column;gap:6px}
-.checks{display:flex;flex-direction:column;gap:8px}
-.checks label{display:flex;gap:10px;align-items:flex-start;font-size:1rem;cursor:pointer}
-.checks input{width:20px;height:20px;margin-top:3px;flex:0 0 auto;accent-color:var(--accent)}
+/* sections */
+section{padding-block:24px;border-top:1px solid var(--line)}
+.rail{display:flex;gap:6px;overflow-x:auto;padding-block:12px}
+.rail a{flex:0 0 auto;font-size:.9rem;font-weight:600;color:var(--ink);text-decoration:none;background:var(--soft);border:1px solid var(--line);border-radius:999px;padding:5px 12px}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:18px 20px;display:flex;flex-direction:column;gap:12px}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,400px),1fr));gap:14px}
+ul.tight{margin:0;padding-left:1.15em;display:flex;flex-direction:column;gap:6px}
+/* card */
+.card{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:20px;display:flex;flex-direction:column;gap:16px;min-width:0}
+.card+.card{margin-top:14px}
+.qhead{display:flex;flex-direction:column;gap:4px}
+.qmeta{font-size:.85rem;color:var(--muted);font-weight:600}
+.row{display:flex;flex-direction:column;gap:6px}
+.tag{display:inline-block;font-size:.7rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;border-radius:3px;padding:1px 6px;margin-left:6px;vertical-align:2px}
+.tag.yours{background:var(--cue-bg);color:var(--cue-ink)}
+.tag.prop{background:var(--say-bg);color:var(--warn)}
+.frame{font-size:1.15rem;font-weight:600;line-height:1.4}
+.script{border-left:3px solid var(--line);padding-left:14px;display:flex;flex-direction:column;gap:12px}
+.script p{font-size:1.05rem;line-height:1.7}
+.cue{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;background:var(--cue-bg);color:var(--cue-ink);border-radius:3px;padding:0 6px;margin:0 3px;vertical-align:2px;white-space:nowrap}
+.script .trim{color:var(--muted)}
+.none{font-size:.98rem;color:var(--muted);font-style:italic}
+.bul ul{margin:0;padding-left:1.15em;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:4px 24px}
+.say{background:var(--say-bg);border:1px solid var(--say-line);border-radius:6px;padding:10px 14px}
+.say ul{margin:4px 0 0;padding-left:1.15em;display:flex;flex-direction:column;gap:3px}
+.src{font-size:.85rem;color:var(--muted)}
+.src b{color:var(--ink);font-weight:600}
+/* live */
+.live-grid{display:grid;grid-template-columns:minmax(0,250px) minmax(0,1fr);gap:18px;padding-block:16px}
+.qlist{display:flex;flex-direction:column;gap:2px;max-height:calc(100vh - 170px);overflow:auto;position:sticky;top:120px}
+.qbtn{text-align:left;font-size:.93rem;font-weight:600;border:1px solid transparent;background:transparent;padding:7px 10px;border-radius:6px;min-height:0;line-height:1.3}
+.qbtn[aria-current="true"]{background:var(--surface);border-color:var(--line)}
+.qbtn small{display:block;font-weight:500;color:var(--muted);font-size:.72rem;letter-spacing:.05em;text-transform:uppercase}
+.qsel{display:none;width:100%;font:inherit;font-size:1rem;padding:10px;border-radius:6px;border:1px solid var(--line);background:var(--surface);color:var(--ink)}
+.live .card .frame{font-size:1.55rem;line-height:1.3}
+.live .card .bul ul{grid-template-columns:1fr}
+.live .card .bul li,.live .card .say li{font-size:1.2rem}
+.live .card h3{font-size:1.05rem;color:var(--muted)}
+details.full summary{cursor:pointer;font-weight:700;color:var(--accent)}
+details.full[open] summary{margin-bottom:10px}
+.livenav{display:flex;gap:8px;flex-wrap:wrap}
+@media (max-width:760px){.live-grid{grid-template-columns:1fr}.qlist{display:none}.qsel{display:block}.live .card .frame{font-size:1.3rem}}
 table{border-collapse:collapse;width:100%;font-size:.95rem}
 td,th{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}
-th{font-family:var(--f-display);font-size:.78rem;text-transform:uppercase;letter-spacing:.07em;color:var(--muted)}
-td.num{font-family:var(--f-mono);font-variant-numeric:tabular-nums;white-space:nowrap}
+th{font-size:.75rem;text-transform:uppercase;letter-spacing:.07em;color:var(--muted)}
+td.num{font-family:var(--f-mono);font-size:.88rem;white-space:nowrap}
 .tbl{overflow-x:auto}
-/* stop overlay */
+.checks{display:flex;flex-direction:column;gap:8px}
+.checks label{display:flex;gap:10px;align-items:flex-start;cursor:pointer}
+.checks input{width:20px;height:20px;margin-top:3px;flex:0 0 auto;accent-color:var(--accent)}
 #stopper{position:fixed;inset:0;background:var(--hot);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;z-index:20;text-align:center;padding:24px}
-#stopper b{font-family:var(--f-display);font-size:clamp(3rem,14vw,7rem);line-height:1}
-#stopper span{font-family:var(--f-display);font-size:1.3rem}
-.head{display:flex;flex-wrap:wrap;gap:6px 16px;align-items:baseline;padding-block:14px 0}
-.head p{color:var(--muted);font-size:.95rem}
+#stopper b{font-size:clamp(3rem,14vw,7rem);line-height:1}
+#stopper span{font-size:1.3rem;font-weight:600}
+.dt{font-family:var(--f-mono);font-size:2rem;font-variant-numeric:tabular-nums}
+.hide{display:none!important}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 </style>
 
 <div class="bar" role="region" aria-label="Call controls">
   <div class="bar-in">
-    <span class="timer" id="timer" aria-live="off">00:00</span>
+    <span class="timer" id="timer">00:00</span>
     <button class="primary" id="startBtn" type="button">Start call</button>
     <button id="resetBtn" type="button">Reset</button>
     <div class="seg" role="group" aria-label="Mode">
       <button type="button" id="modePrep" aria-pressed="true">Prep</button>
       <button type="button" id="modeLive" aria-pressed="false">Live</button>
     </div>
-    <button class="stop" id="stopBtn" type="button" title="Hold for 3 seconds">STOP</button>
+    <button class="stop" id="stopBtn" type="button">STOP</button>
     <div class="tics" aria-label="Tic counter">
       <button type="button" data-tic="kindof">"kind of" <span>0</span></button>
       <button type="button" data-tic="like">"like" <span>0</span></button>
     </div>
-    <div class="search"><input id="q" type="search" placeholder="Search cards: carver, pay, high school" aria-label="Search cards"></div>
+    <div class="search"><input id="q" type="search" placeholder="Search: carver, pay, high school" aria-label="Search answers"></div>
   </div>
-  <div class="coach"><span id="coachMsg">Open in 90 seconds. Claim first, one proof, stop.</span><span class="must" id="mustCount">Must-say 0 of 6</span></div>
+  <div class="coach"><span id="coachMsg">Frame, your words, one number, stop.</span><span class="must" id="mustCount">Must-say 0 of 6</span></div>
 </div>
 
 <div class="wrap">
-  <div class="head">
-    <h1>Zeta, Tue 09/29, 3:00 to 3:30pm ET</h1>
-    <p>Paola Zalkind, Chief Schooling Officer · Kruti Mehta, MD Scaling School Excellence</p>
+<div id="prepView">
+  <div style="padding-block:16px 0">
+    <h1>Zeta · Tue 09/29 · 3:00 to 3:30pm ET</h1>
+    <p class="src">Paola Zalkind, Chief Schooling Officer · Kruti Mehta, MD Scaling School Excellence · Zoom us06web.zoom.us/my/krutiatzeta</p>
   </div>
+  <nav class="rail" id="rail" aria-label="Sections"></nav>
 
-  <nav class="rail" aria-label="Sections">
-    <a href="#now">Now</a><a href="#room">The Room</a><a href="#open">Opener</a><a href="#prin">Principals</a><a href="#hs">High School</a><a href="#scale">Scaling</a><a href="#hard">Hard Ones</a><a href="#asks">Your Asks</a><a href="#bench">Bench</a><a href="#numbers">Numbers</a><a href="#traps">Traps</a><a href="#intel">New Intel</a><a href="#close">Close</a>
-  </nav>
+  <section id="read">
+    <h2>My read, and what it means for today</h2>
+    <div class="panel">
+      <p><b>Where you stand.</b> Strong candidate, moving fast. Dan replied to Jenny on Sunday, with Emily Kim copied: "We're going to move him to next convo. V helpful." Gillian asked for today the next morning. Four days from the Dan call to the person who manages every principal. My estimate: more likely than not this ends in an offer, about 60%.</p>
+      <p><b>What today is.</b> Paola is the principal-manager decision. Kruti was added to the invite ("potentially another leader," then "likely Kruti"). Having scaling in the room suggests they may be shaping a role around you, not only filling the principal-manager posting. That's my inference.</p>
+      <p><b>What that means for how you answer:</b></p>
+      <ul class="tight">
+        <li><b>Go all in on the schooling side.</b> The ops seat is closed. Your note to Jenny said you're "particularly excited about the Ops Transformation role." None of that should show today.</li>
+        <li><b>Proof, every time.</b> The pattern in every debrief since August: the thinking arrives, the proof doesn't. With Dan, Carver came out as "We were able to be successful in that." Each card below has a gold box: facts to say, in your own words.</li>
+        <li><b>Short.</b> With Dan: 61% of talk time, answers of 3 to 6 minutes, 175 words a minute. Two minutes, then stop.</li>
+        <li><b>"Earn it" with "love people."</b> Dan's "you have to love people" speech came right after your "earn that." Say the standard and the investment together.</li>
+        <li><b>Pay and in-person will come up.</b> The debrief put the Principal Manager band at $125K to $175K, and the job at 425 Westchester Ave in person daily. Never raise either first. The Bench cards below have frames only; the positions are yours.</li>
+        <li><b>Timing.</b> If Gillian proposes the next round, you're at TFA in Las Vegas Friday and Saturday.</li>
+      </ul>
+    </div>
+  </section>
 
-  <section id="now">
-    <h2>Now</h2>
-    <div class="grid">
-      <div class="card">
-        <span class="lbl">Four rules, from the Rojas debrief</span>
+  <section id="how">
+    <h2>How to read the cards</h2>
+    <div class="two">
+      <div class="panel">
         <ul class="tight">
-          <li><b>Two minutes, then stop.</b> You ran 3 to 6 minute answers at 175 words a minute. Slower and shorter.</li>
-          <li><b>End every principal answer on a person or a number.</b> 1 of 5 did with Dan.</li>
-          <li><b>First sentence is the claim.</b> Never "I wish I had the answer."</li>
-          <li><b>Ask the role question by minute 10.</b> With Dan you asked nothing until time was up.</li>
+          <li><b>Frame</b> is the first sentence. Tagged <span class="tag yours">your words</span> when it's yours, <span class="tag prop">proposed</span> when I wrote it.</li>
+          <li><b>Your answer</b> is only your recorded words: the Dan call transcript (T: line numbers) and the School in the Square onsite lines marked "kept verbatim." Fillers like "kind of" and "I think" are cut. Nothing is added.</li>
+          <li><b>Facts to say your way</b> (gold box): true facts from your record that you haven't said in those words on tape. Say them however you'd say them.</li>
+          <li>Where there's no recorded answer, the card says so and gives a frame and bullets only.</li>
         </ul>
       </div>
-      <div class="card">
-        <span class="lbl">Must-say, tick as you land them</span>
+      <div class="panel">
+        <span class="lbl">Delivery cues</span>
+        <p><span class="cue">slow</span> slow down · <span class="cue">pause</span> one beat · <span class="cue">proof</span> say the gold-box fact here · <span class="cue">land</span> last line, then stop · <span class="cue">cut</span> drop this part if time is short</p>
+        <span class="lbl">Must-say, tick as you go</span>
         <div class="checks" id="musts">
           <label><input type="checkbox" id="m1"> Asked which role, by minute 10</label>
-          <label><input type="checkbox" id="m2"> Carver: principal became Louisiana Principal of the Year</label>
-          <label><input type="checkbox" id="m3"> 46% of ninth graders at 3.0 or better, up six points</label>
-          <label><input type="checkbox" id="m4"> Brooklyn Lab: managed three principals, interim HS principal</label>
-          <label><input type="checkbox" id="m5"> "Earn it" said with how you invest in people</label>
-          <label><input type="checkbox" id="m6"> Asked what's next and who else you'll talk to</label>
+          <label><input type="checkbox" id="m2"> Carver result: doubled, Louisiana Principal of the Year</label>
+          <label><input type="checkbox" id="m3"> 46% of ninth graders at 3.0+, up six, 48 high schools</label>
+          <label><input type="checkbox" id="m4"> Principals managed: seven-school portfolio, three at Brooklyn Lab</label>
+          <label><input type="checkbox" id="m5"> Standard said together with investment in people</label>
+          <label><input type="checkbox" id="m6"> Asked the next step and who else</label>
         </div>
       </div>
     </div>
@@ -149,291 +176,405 @@ td.num{font-family:var(--f-mono);font-variant-numeric:tabular-nums;white-space:n
 
   <section id="room">
     <h2>The Room</h2>
-    <div class="grid">
-      <div class="card" data-k="paola zalkind cso success kipp new jersey principals">
-        <div class="card-top"><h3>Paola Zalkind, Chief Schooling Officer</h3><span class="chip" style="background:var(--g-prin)">Principals</span></div>
-        <p class="proof">Manages Zeta's school leaders. TFA corps member. Success Academy teacher, then AP, then founding principal of SA Union Square (2013), then Managing Director of Schools. Then <b>Director of Leader Development at KIPP New Jersey</b>, then Zeta.</p>
-        <p class="note">She has done this job from the inside at two networks. She'll probe for proof. Curriculum sits with the CAO, Jessica Sie, so her lane is principals and school execution (likely).</p>
+    <div class="two">
+      <div class="panel">
+        <h3>Paola Zalkind, Chief Schooling Officer</h3>
+        <ul class="tight">
+          <li>Zeta bio: "manages Zeta's school leaders."</li>
+          <li>TFA corps member, 5th grade. You're both TFA.</li>
+          <li>Success Academy: teacher, AP, founding principal of SA Union Square (2013), Managing Director of Schools.</li>
+          <li>Director of Leader Development, KIPP New Jersey. Then Zeta: Managing Director of Academics, now CSO.</li>
+          <li>Curriculum sits with the CAO, Jessica Sie, so Paola's lane is principals and school execution (likely).</li>
+          <li>She built principals for a living. Expect: the principal, the practice, the result.</li>
+        </ul>
       </div>
-      <div class="card" data-k="kruti mehta scaling bcg booth consultant launch">
-        <div class="card-top"><h3>Kruti Mehta, MD Scaling School Excellence</h3><span class="chip" style="background:var(--g-scale)">Scaling</span></div>
-        <p class="proof">BCG and Accenture, then Zeta in its second year (about 2019): network operations, policy and advancement, a Booth MBA (2024), now scaling schooling. No school-leader history found.</p>
-        <p class="note">Consultant's lens: codify what works, launch with fidelity. She likely sits across from Felipe (ex-McKinsey). She probably needs school-leader credibility beside her. Public title reads "Scaling Schooling"; use whatever she says.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="open">
-    <h2>The Opener</h2>
-    <div class="grid">
-      <div class="card" data-k="tell me about yourself background walk opener">
-        <div class="card-top"><h3>Tell me about yourself</h3><span class="chip" style="background:var(--g-open)">Opener</span></div>
-        <p class="claim">About 90 seconds. Your block 1, cut down; nothing added.</p>
-        <div class="script">
-          <p>I started as a teacher in DC, then went to Excel Academy in Boston. We were doing a turnaround. I was on the leadership team running culture and operations, and we took the school from 270th in the state to number one and got National Charter School of the Year. While I was there I built a tool we needed and turned it into DeansList, zero to 275 schools.</p>
-          <p>Then I launched a consulting practice, working with the big charters, KIPP, Uncommon, Achievement First, and a lot of the regional operators.</p>
-          <p>At Collegiate Academies in New Orleans, I was brought down to Carver to work with a principal who was unclear whether or not he could do the job. He went on to be Louisiana Principal of the Year, and now he runs the organization. I stayed on as Chief Culture Officer for five years.</p>
-          <p>Then superintendent at Brooklyn Lab for a transitional period. We led through COVID and took both charters through renewal at the same time, and both were reauthorized.</p>
-          <p>Then two years at the KIPP Foundation, building a national high school strategy across 28 regions and 48 high schools. And now I build custom tools for school leaders.</p>
-        </div>
-        <p class="land">That's what my research says you all are.</p>
-      </div>
-      <div class="card" data-k="why zeta why this role">
-        <div class="card-top"><h3>Why Zeta</h3><span class="chip" style="background:var(--g-open)">Opener</span></div>
-        <p class="claim">"The happiest I've ever been is in a mid-sized, growing charter network with outsized ambition."</p>
-        <p class="proof">New campuses in Queens and the Bronx, the high school's first class, Z Combinator. Name one; don't recite.</p>
-        <p class="land">That's what my research says you all are.</p>
+      <div class="panel">
+        <h3>Kruti Mehta, MD Scaling School Excellence</h3>
+        <ul class="tight">
+          <li>UT Austin business honors, Accenture, BCG, Chicago Booth MBA (2024).</li>
+          <li>Joined Zeta in its second year (about 2019): network operations, policy and advancement, now scaling schooling.</li>
+          <li>No teaching or school-leader history found.</li>
+          <li>Consultant's lens: codify what works, launch new schools with fidelity.</li>
+          <li>Likely counterpart to Felipe (ex-McKinsey), who sent you to this side.</li>
+          <li>She likely needs school-leader credibility beside her. Public title reads "Scaling Schooling"; use whatever she says.</li>
+        </ul>
       </div>
     </div>
   </section>
 
-  <section id="prin">
-    <h2>Principals · Paola</h2>
-    <div class="grid">
-      <div class="card" data-k="develop a principal struggling underwater carver coach">
-        <div class="card-top"><h3>How do you develop a principal? One who wasn't working?</h3><span class="chip" style="background:var(--g-prin)">Principals</span></div>
-        <p class="claim">"Assess first, then coach, and be in it with them."</p>
-        <p class="proof"><b>Carver:</b> brought in when it was unclear whether the principal could do the job. Three years later the school had doubled, and he was Louisiana Principal of the Year. He runs the network now.</p>
-        <div class="script">
-          <p>Pair the standard with the investment. Dan said Zeta moves people between teams instead of letting them go, and "you have to love people." Say: "I hold a high bar, and my side of the street has to be totally clean. My success is entirely a function of theirs."</p>
-          <p class="tape">Not on tape: the underwater version. Coaching first, then redeploy, and name the standard you held.</p>
-        </div>
-        <p class="land">He runs the organization now.</p>
-      </div>
-      <div class="card" data-k="good to great principal feedback clothes skin">
-        <div class="card-top"><h3>The good principal who needs to get to great</h3><span class="chip" style="background:var(--g-prin)">Principals</span></div>
-        <p class="claim">"Your identity as a principal is the clothes you wear, not the skin you're in."</p>
-        <p class="proof">Then: support hat 99% of the time, no surprises at evaluation. My side of the street clean. Mandate authority is almost worthless.</p>
-        <p class="proof"><b>End on a person:</b> Brooklyn Lab, where you managed three principals and served as interim high school principal while you were superintendent.</p>
-        <p class="land">Brooklyn Lab, three principals.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="hs">
-    <h2>The High School</h2>
-    <div class="grid">
-      <div class="card" data-k="high school ninth grade gpa admissions college 46 gradual release">
-        <div class="card-top"><h3>The high school</h3><span class="chip" style="background:var(--g-hs)">High School</span></div>
-        <p class="claim">"High school can't be middle school with a couple of dials turned."</p>
-        <p class="proof">Dan's worry is admissions, and the C in ninth grade that follows a kid forever. At KIPP you ran academic health across 48 high schools, aimed at exactly that. <b>46% of ninth graders finished the quarter at 3.0 or better, up six points.</b></p>
-        <div class="script">
-          <p>Tie it to their design: Z pods and portfolios are the right structure. A ninth-grade grade system is what protects it.</p>
-          <p>Gradual release if there's time: in 7th and 8th grade, keep 50%, cut 25%, release 25%. Dan said "I love that idea."</p>
-        </div>
-        <p class="land">Best quarter KIPP had ever had on that number.</p>
-      </div>
-      <div class="card" data-k="year one own role what would you want">
-        <div class="card-top"><h3>What would you want to own in year one?</h3><span class="chip" style="background:var(--g-hs)">High School</span></div>
-        <p class="claim">"Principals, and especially the high school side."</p>
-        <p class="proof">Managing a set of principals the way Dan described, and owning the ninth-grade academic health system for the high school, so the kids in that first class never get the C that follows them.</p>
-        <p class="note">Draft. The position is yours. If they name a different seat first, answer that one.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="scale">
-    <h2>Scaling · Kruti</h2>
-    <div class="grid">
-      <div class="card" data-k="ready to scale playbook autonomy run the play earn it six days">
-        <div class="card-top"><h3>When is a practice ready to scale? Playbooks or autonomy?</h3><span class="chip" style="background:var(--g-scale)">Scaling</span></div>
-        <p class="claim">"Run the play because the play works."</p>
-        <p class="proof">"The play is not perfect. It's going to evolve, and you're going to be part of that evolution. Earn that: get to stable, get to functional, then let's talk innovation."</p>
-        <p class="proof"><b>Excel:</b> six days writing the culture and operations manuals. Your boss thought it was a crazy use of time. It became one of the most important things you did.</p>
-        <p class="land">One of the most important things we did.</p>
-      </div>
-      <div class="card" data-k="new school launch first year principal onboarding remote phases">
-        <div class="card-top"><h3>Launching a new school, onboarding a first-year principal</h3><span class="chip" style="background:var(--g-scale)">Scaling</span></div>
-        <p class="claim">"Three phases: stability, then the adults, then student ownership."</p>
-        <p class="proof"><b>Brooklyn Lab:</b> opened a fully remote school while keeping the in-person school running. That's her fall: Flushing, Tremont Park and the high school, all in year one.</p>
-        <p class="land">Opened a remote school and kept the building running.</p>
-      </div>
-      <div class="card" data-k="adoption without authority kipp 28 regions influence">
-        <div class="card-top"><h3>Adoption across schools that don't have to say yes</h3><span class="chip" style="background:var(--g-scale)">Scaling</span></div>
-        <p class="claim">"Make the change theirs."</p>
-        <p class="proof">Listening tours and working groups; shrink the change and let strong regions win first; watch the micro signals.</p>
-        <p class="land">All 28 regions and all 48 high schools adopted it. They're running it now.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="hard">
-    <h2>The Hard Ones</h2>
-    <div class="grid">
-      <div class="card" data-k="academic side never led instruction systems culture">
-        <div class="card-top"><h3>You come from systems and culture. Why the academic side?</h3><span class="chip" style="background:var(--g-hard)">Hard</span></div>
-        <p class="claim">"Yes and no."</p>
-        <p class="proof">Operations is the first line of defense so teachers and kids can shine. Then: interim high school principal at Brooklyn Lab, and academic health across 48 KIPP high schools.</p>
-        <p class="land">Best quarter KIPP had ever had on that number.</p>
-      </div>
-      <div class="card" data-k="leaving kipp why did you leave">
-        <div class="card-top"><h3>Why did you leave KIPP?</h3><span class="chip" style="background:var(--g-hard)">Hard</span></div>
-        <p class="claim">"The project ends when the cycle runs without me."</p>
-        <p class="proof">Designed, launched and handed back the national high school strategy. You want to be in a small group solving problems within arm's reach.</p>
-        <p class="land">Twenty-eight regions, forty-eight high schools. They're running it now.</p>
-      </div>
-      <div class="card" data-k="growth area weakness">
-        <div class="card-top"><h3>Your growth area</h3><span class="chip" style="background:var(--g-hard)">Hard</span></div>
-        <p class="claim">"Narrowing focus."</p>
-        <p class="proof">Because it's all one package, you can spread a team too thin. The fix: build slow to go fast, operate in phases, let some things be "not yet."</p>
-        <p class="land">The strategy is first downs.</p>
-      </div>
-      <div class="card" data-k="consultant to operator why operate again">
-        <div class="card-top"><h3>Why operate again after consulting?</h3><span class="chip" style="background:var(--g-hard)">Hard</span></div>
-        <p class="claim">"There's no substitute for running a school."</p>
-        <p class="proof">Consulting gave you the at-bats. If you consult too long, you start believing only your own ways.</p>
-        <p class="land">A school can't break a promise to kids. I can't break a promise to principals.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="asks">
-    <h2>Your Asks</h2>
-    <div class="grid">
-      <div class="card" data-k="ask role which role twelve months success">
-        <div class="card-top"><h3>By minute 10</h3><span class="chip" style="background:var(--g-ask)">Ask</span></div>
-        <p class="claim">"Before I go further, it'd help me to know which role you're considering me for, and what success would look like at twelve months."</p>
-      </div>
-      <div class="card" data-k="ask kruti consistent campus">
-        <div class="card-top"><h3>To Kruti</h3><span class="chip" style="background:var(--g-ask)">Ask</span></div>
-        <p class="claim">"With Flushing, Tremont Park and the high school all opening this fall, what's been hardest to keep consistent from campus to campus?"</p>
-      </div>
-      <div class="card" data-k="ask paola ninth graders first year june">
-        <div class="card-top"><h3>To Paola</h3><span class="chip" style="background:var(--g-ask)">Ask</span></div>
-        <p class="claim">"For the 119 ninth graders in that first class, what does a great first year look like by June?"</p>
-      </div>
-      <div class="card" data-k="ask next step who else pipeline z combinator">
-        <div class="card-top"><h3>Close</h3><span class="chip" style="background:var(--g-ask)">Ask</span></div>
-        <p class="claim">"What's the next step, and who else will I talk to?"</p>
-        <p class="note prep-only">Backup: "Is Z Combinator feeding your own leaders, or mostly founders elsewhere?"</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="bench">
-    <h2>Bench <span class="lbl">only if asked</span></h2>
-    <div class="grid">
-      <div class="card" data-k="money pay salary compensation level band">
-        <div class="card-top"><h3>Pay and level</h3><span class="chip" style="background:var(--g-hard)">Bench</span></div>
-        <p class="claim">"I'd want the title and pay to match the scope. If it's the role we've been describing, the top of the band is where I'd expect to be, and I'm open on how it's structured."</p>
-        <p class="note">Draft; set your own position. The debrief put the band at $125K to $175K. Never raise it first.</p>
-      </div>
-      <div class="card" data-k="commute in person bronx every day">
-        <div class="card-top"><h3>In person every day in the Bronx</h3><span class="chip" style="background:var(--g-hard)">Bench</span></div>
-        <p class="claim">"Yes. Every job I've loved has been in a building with kids. That's the point."</p>
-        <p class="note">Draft. Say only what's true for you. Never raise it first.</p>
-      </div>
-      <div class="card" data-k="ai tools data deanslist what do you do now">
-        <div class="card-top"><h3>Data, tools, AI</h3><span class="chip" style="background:var(--g-open)">Bench</span></div>
-        <p class="proof">DeansList, zero to 275. A push-button report that took 8,000 rows and gave every teacher, student and school an individualized report. Now you build tools for school leaders.</p>
-        <p class="note">One sentence each. Don't pitch the practice.</p>
-      </div>
-    </div>
-  </section>
+  <div id="prepCards"></div>
 
   <section id="numbers">
     <h2>Numbers, with sources</h2>
-    <div class="tbl">
-      <table>
-        <thead><tr><th>Say</th><th>Number</th><th>Source</th></tr></thead>
-        <tbody>
-          <tr><td>Excel Academy turnaround</td><td class="num">270th → #1 in MA</td><td>verified-facts; National Charter School of the Year</td></tr>
-          <tr><td>DeansList</td><td class="num">0 → 275 schools</td><td>verified-facts; now 1,000+, not affiliated</td></tr>
-          <tr><td>KIPP ninth-grade quarter</td><td class="num">46%, up 6 pts</td><td>Answer bank blocks 2 and 10; 48 high schools</td></tr>
-          <tr><td>KIPP strategy adoption</td><td class="num">28 regions, 48 HS</td><td>Answer bank block 2</td></tr>
-          <tr><td>Carver principal</td><td class="num">LA Principal of the Year</td><td>Debrief fact check; school doubled; now CEO</td></tr>
-          <tr><td>Brooklyn Lab renewals</td><td class="num">2 of 2</td><td>Both reauthorized, 2021-22</td></tr>
-          <tr><td>Excel staff reporting to you</td><td class="num">40%</td><td>Answer bank block 3</td></tr>
-        </tbody>
-      </table>
-    </div>
-    <p class="note" style="margin-top:8px">The 75% suspension drop is Collegiate network-wide, never Carver alone. Don't quote Zeta's test scores.</p>
+    <div class="tbl"><table>
+      <thead><tr><th>Fact</th><th>Number</th><th>Source</th></tr></thead>
+      <tbody>
+        <tr><td>Excel turnaround</td><td class="num">270th → #1 in MA</td><td>vf L276; National Charter School of the Year vf L277</td></tr>
+        <tr><td>DeansList</td><td class="num">0 → 275 schools</td><td>vf L367</td></tr>
+        <tr><td>Consulting practice</td><td class="num">14 years · 100+ schools</td><td>vf L153, L1013; all referral</td></tr>
+        <tr><td>Carver</td><td class="num">3 yrs · doubled · +50% sat.</td><td>vf L237/L246; Louisiana Principal of the Year; now CEO</td></tr>
+        <tr><td>Principals managed</td><td class="num">7-school portfolio · 3 at Lab</td><td>vf L234, L242, L221</td></tr>
+        <tr><td>Collegiate summer PD</td><td class="num">8 principals delivering</td><td>your words, S2 onsite 090826</td></tr>
+        <tr><td>KIPP ninth-grade quarter</td><td class="num">46% at 3.0+ · up 6</td><td>vf L91; 48 high schools; best quarter on record</td></tr>
+        <tr><td>KIPP strategy</td><td class="num">28 regions · 48 HS</td><td>vf L85; no mandate authority</td></tr>
+        <tr><td>Academic health tool</td><td class="num">40 min → 1 click</td><td>vf L104-116</td></tr>
+        <tr><td>Brooklyn Lab</td><td class="num">2 authorizers · 2 renewals</td><td>vf L235. Only say it with the context: separate processes, no reliable records, turnaround, COVID, acquisition at once</td></tr>
+        <tr><td>Excel high school today</td><td class="num">top 3% nationally</td><td>vf L568</td></tr>
+      </tbody>
+    </table></div>
+    <p class="src" style="margin-top:8px">The 75% suspension drop is Collegiate network-wide, never Carver alone. Don't quote Zeta's test scores.</p>
   </section>
 
   <section id="traps">
     <h2>Traps</h2>
-    <div class="grid">
-      <div class="card">
-        <ul class="tight">
-          <li>Don't grade KIPP or AF. Describe how KIPP works, never its results.</li>
-          <li>Don't say "the rest of the mess." Both of them are ex-Success.</li>
-          <li>Leaving Excel: you knew you'd be leaving at the end of the year. Nothing about health.</li>
-          <li>Don't quote Zeta's test scores. 2026 ELA reportedly came in below their published 90%+.</li>
-        </ul>
-      </div>
-      <div class="card">
-        <span class="lbl">Don't raise</span>
-        <ul class="tight">
-          <li>The NYPD comments about the high school</li>
-          <li>Community board fights over the 181st St site</li>
-          <li>The 2025 rally attendance flap</li>
-          <li>Mamdani on charters</li>
-          <li>Success comparisons</li>
-        </ul>
-      </div>
+    <div class="two">
+      <div class="panel"><ul class="tight">
+        <li>Don't grade KIPP or AF. Describe KIPP by how it works.</li>
+        <li>Don't say "the rest of the mess." Both of them are ex-Success.</li>
+        <li>Leaving Excel: the approved form is that you knew you'd be leaving at the end of the year. Nothing about health.</li>
+        <li>Never "I led the HS Advancement team." You owned workstreams.</li>
+        <li>Don't open with what you don't know. Claim first.</li>
+        <li>Don't close with "blah, blah, blah. You know the story."</li>
+      </ul></div>
+      <div class="panel"><span class="lbl">Don't raise</span><ul class="tight">
+        <li>The NYPD comments about the high school</li>
+        <li>Community board fights over the 181st St site</li>
+        <li>The 2025 rally attendance flap</li>
+        <li>Mamdani on charters</li>
+        <li>Zeta's 2026 ELA dip; any Success comparison</li>
+      </ul></div>
     </div>
   </section>
 
   <section id="intel">
-    <h2>New Intel</h2>
-    <div class="grid">
-      <div class="card">
-        <ul class="tight">
-          <li><b>14 schools</b> after Tremont Park opened Sept 17 (600 seats, grades 3 to 8). Queens Jamaica and Elmhurst opened 2025; Flushing, August 2026.</li>
-          <li><b>High school</b> opened August 2026 in Washington Heights: 119 ninth graders from Zeta's first class. Z pods of about 12, four Z houses, portfolios, AP required, SAT prep in school, a 2,000 sq ft ZLab.</li>
-          <li><b>Z Combinator:</b> a $2.49M federal grant (2025 to 2030) for a charter-founder fellowship.</li>
-          <li><b>Connection points:</b> Paola was at KIPP New Jersey. She's a TFA alum, and the Summit is this Friday. The high school has a taekwondo team.</li>
-        </ul>
+    <h2>Zeta right now</h2>
+    <div class="panel"><ul class="tight">
+      <li>14 schools after Tremont Park opened Sept 17 (600 seats, grades 3 to 8). Queens Jamaica and Elmhurst opened 2025; Flushing, August 2026.</li>
+      <li>High school opened August 2026 in Washington Heights: 119 ninth graders from Zeta's own first class. Z pods of about 12, four Z houses, portfolios, AP required to graduate, SAT prep in school, a 2,000 sq ft ZLab. Dan: about 91% of HS students stay year to year.</li>
+      <li>Dan's worry, in his words: kids need "the right grades and the right classes and the right SAT," and a 1600 kid at Success missed every Ivy over "a C freshman year."</li>
+      <li>Dan's culture words: "you have to love people," "the requirement of the manager is a lot higher," they move people between teams. ZLab is "our fifth core."</li>
+      <li>Z Combinator: $2.49M federal grant (2025 to 2030) for a charter-founder fellowship.</li>
+      <li>Connections: both TFA; Paola at KIPP NJ; you've coached principals at PS 333 and JHS 123 in the Bronx; taekwondo team at the high school.</li>
+    </ul></div>
+  </section>
+
+  <section id="practice">
+    <h2>Practice drill</h2>
+    <div class="panel">
+      <p>Random question, answer out loud, stop at 2:00, score honestly.</p>
+      <div class="livenav"><button class="primary" type="button" id="drillGo">Random question</button><button type="button" id="drillStop">Stop timer</button></div>
+      <p id="drillQ" style="font-size:1.2rem;font-weight:700"></p>
+      <span class="dt" id="drillT">2:00</span>
+      <div class="checks" id="drillChecks">
+        <label><input type="checkbox" id="d1"> Opened with the frame</label>
+        <label><input type="checkbox" id="d2"> Said a fact from the gold box inside 30 seconds</label>
+        <label><input type="checkbox" id="d3"> Ended on a person or a number</label>
+        <label><input type="checkbox" id="d4"> Stopped under 2:00</label>
       </div>
+      <div class="livenav"><button type="button" id="drillSave">Save rep</button><span class="src" id="drillLog"></span></div>
     </div>
   </section>
 
-  <section id="close">
-    <h2>Close and after</h2>
-    <div class="grid">
-      <div class="card">
-        <p class="claim">End on the ask, not a trail-off. With Dan: "talk to anyone, blah, blah, blah" at the exact moment you were asking to be considered.</p>
-        <p class="proof">"Are you heading to Vegas for the TFA summit this week?" is an easy, real last line with Paola.</p>
-      </div>
-      <div class="card prep-only">
-        <span class="lbl">Thank-you notes, same day (addresses likely first.last@zetaschools.org)</span>
-        <p class="proof">Hi Paola, Thanks for the time today. I really enjoyed the conversation about [one thing she said], and hearing where you want the high school to be. Have a great week! Chris Habetler, 617-913-8366</p>
-        <p class="proof">Hi Kruti, Thanks for the time today. I really enjoyed hearing how you're thinking about [one thing she said] with three new schools opening at once. Have a great week! Chris Habetler, 617-913-8366</p>
-      </div>
+  <section id="after">
+    <h2>After the call</h2>
+    <div class="panel">
+      <p>Thank-you notes to Paola and Kruti the same day, in the style of your note to Dan: short, one specific thing each of them said, no pitch. Addresses are likely first.last@zetaschools.org. Write them from what they actually said.</p>
     </div>
   </section>
+</div>
+
+<div id="liveView" class="hide live">
+  <div class="live-grid">
+    <div><select class="qsel" id="qsel" aria-label="Pick a question"></select><div class="qlist" id="qlist"></div></div>
+    <div>
+      <div id="liveCard"></div>
+      <div class="livenav" style="margin-top:12px"><button type="button" id="prevQ">Previous</button><button type="button" id="nextQ">Next</button><button type="button" id="jumpAsk">Role question</button></div>
+    </div>
+  </div>
+</div>
 </div>
 
 <div id="stopper" hidden><b>STOP</b><span>Land it. One proof. Then a question.</span></div>
 
 <script>
-(function(){
-  var store={get:function(k,d){try{var v=localStorage.getItem('zeta0929:'+k);return v===null?d:JSON.parse(v)}catch(e){return d}},set:function(k,v){try{localStorage.setItem('zeta0929:'+k,JSON.stringify(v))}catch(e){}}};
-  var timerEl=document.getElementById('timer'),startBtn=document.getElementById('startBtn'),coach=document.getElementById('coachMsg');
-  var startAt=store.get('startAt',null),running=!!startAt,iv=null;
-  var cues=[[0,'Open in 90 seconds. Claim first, one proof, stop.'],[480,'Ask the role question now.'],[600,'Past minute 10. Did you ask which role?'],[1200,'Minute 20. Get your two questions in.'],[1560,'Minute 26. Ask the next step, then close.'],[1800,'Time. Thank them and stop.']];
-  function fmt(s){var m=Math.floor(s/60),x=s%60;return (m<10?'0':'')+m+':'+(x<10?'0':'')+x}
-  function tick(){var s=running?Math.max(0,Math.floor((Date.now()-startAt)/1000)):0;timerEl.textContent=fmt(s);timerEl.className='timer'+(s>=1560?' hot':s>=1200?' warn':'');var msg=cues[0][1];for(var i=0;i<cues.length;i++){if(s>=cues[i][0])msg=cues[i][1]}coach.textContent=msg}
-  function start(){if(!running){startAt=Date.now();running=true;store.set('startAt',startAt)}startBtn.textContent='Running';if(!iv)iv=setInterval(tick,500);tick()}
-  startBtn.addEventListener('click',start);
-  document.getElementById('resetBtn').addEventListener('click',function(){running=false;startAt=null;store.set('startAt',null);clearInterval(iv);iv=null;startBtn.textContent='Start call';tick()});
-  if(running){start()}else{tick()}
-  // mode
-  var mp=document.getElementById('modePrep'),ml=document.getElementById('modeLive');
-  function setMode(live){document.body.classList.toggle('live',live);mp.setAttribute('aria-pressed',String(!live));ml.setAttribute('aria-pressed',String(live));store.set('live',live)}
-  mp.addEventListener('click',function(){setMode(false)});ml.addEventListener('click',function(){setMode(true)});setMode(store.get('live',false));
-  // stop hold 3s
-  var stopBtn=document.getElementById('stopBtn'),stopper=document.getElementById('stopper'),st=null;
-  function showStop(){stopper.hidden=false;clearTimeout(st);st=setTimeout(function(){stopper.hidden=true},3000)}
-  stopBtn.addEventListener('click',showStop);stopper.addEventListener('click',function(){stopper.hidden=true});
-  // tics
-  document.querySelectorAll('[data-tic]').forEach(function(b){var k=b.getAttribute('data-tic'),span=b.querySelector('span'),n=store.get('tic-'+k,0);span.textContent=n;b.addEventListener('click',function(){n++;span.textContent=n;store.set('tic-'+k,n)})});
-  // musts
-  var mc=document.getElementById('mustCount'),boxes=document.querySelectorAll('#musts input');
-  function count(){var c=0;boxes.forEach(function(b){if(b.checked)c++});mc.textContent='Must-say '+c+' of '+boxes.length}
-  boxes.forEach(function(b){b.checked=store.get(b.id,false);b.addEventListener('change',function(){store.set(b.id,b.checked);count()})});count();
-  // search
-  var q=document.getElementById('q'),cards=document.querySelectorAll('.card'),secs=document.querySelectorAll('section');
-  q.addEventListener('input',function(){var t=q.value.trim().toLowerCase();cards.forEach(function(c){var hay=((c.getAttribute('data-k')||'')+' '+c.textContent).toLowerCase();c.classList.toggle('hidden-by-search',!!t&&hay.indexOf(t)<0)});secs.forEach(function(s){var any=s.querySelector('.card:not(.hidden-by-search)')||!s.querySelector('.card');s.classList.toggle('hidden-by-search',!!t&&!s.querySelector('.card:not(.hidden-by-search)'))})});
-})();
+/* Script text below is ONLY Christopher's recorded words. T:n = line in the Dan Rojas transcript (092526, speaker-labeled). S2 = School in the Square onsite 090826, lines listed there as "kept verbatim". Fillers cut; nothing added. */
+var CARDS=[
+{id:"intro",g:"Opener",q:"Tell me about yourself",who:"Either",
+frame:"I'll give you the quick arc, and I'll slow down on the principal part.",fy:false,
+script:[
+"I started as a teacher in DC, went to Excel Academy up in Boston, where we were starting a turnaround. I was part of the leadership team there that led culture, operations and student services. {slow} We had a great team, and we were able to take that school from 270th in the state to number one and actually earned National Charter School of the Year.",
+"{cut} When I was there at Excel, I needed a tool for behavior and attendance incentive and communication tracking. So I started an Excel spreadsheet, which I later grew into DeansList. {proof}",
+"We were the flagship for Building Excellent Schools. I was able to launch a consulting practice. That grew into a referral-only practice {proof} and I got to walk into 100 different schools, find and fix problems, help people improve systems, help each principal set their goals and figure out how to meet them. So I'd meet them where they are, chaotic to stable, stable to functional, functional to rigorous.",
+"{slow} I found a client I was really keen on called Collegiate down in New Orleans. They have a true all-means-all mission. My job as a consultant was to come down and assess whether or not the principal running their largest high school could do the job, a last-ditch effort. {pause} {proof}",
+"That led into a chief culture position. So went down to New Orleans, moved my life down there, went all in. The plan was always to move back to New York. So I was able to take a client called Brooklyn Lab that I had. They needed a transition superintendent to help them through renewal as well as being transferred over to a new ownership. I took that on, built a remote school, led through COVID, got the schools through both those renewals. And that wasn't super easy, because of some of the knots and tangles that existed there. {proof}",
+"After that, we went to the KIPP Foundation. We were working to get our 28 wonderful, but very independent regions into a degree of alignment on national high school strategy, and then hand it back to the regional teams, which is where it lives now.",
+"{pause} The happiest I've ever been is in a midsize, growing charter network that has wildly outsized ambition and is full of smart, aspirationally aligned folks. {land} And my read is that you all might be that kind of place. So that's why I'm here."],
+say:["DeansList: zero to 275 schools","Consulting: 14 years (you said \"the better part of a decade\"; it was 14)","Carver result, instead of \"we were able to be successful\": three years later the school had doubled, and he was Louisiana Principal of the Year. He runs the network now.","Brooklyn Lab, if they lean in: the renewal only matters in context. Two authorizers running separate processes, no reliable institutional records, achievement and culture well below where they needed to be, during COVID and while working to get acquired. Say that part your way, in one line.","Brooklyn Lab: you were also interim high school principal for half a year"],
+bul:["TFA DC → Excel turnaround, 270th → #1","DeansList (cut if short)","Referral-only practice, 100 schools, chaotic → rigorous","Carver: assess the principal, last-ditch → result","Brooklyn Lab: renewal, new ownership, remote school, COVID","KIPP: 28 regions, national HS strategy, handed back","Happiest in a midsize network with outsized ambition"],
+src:"T:30-31, 36-41, 43, 45-48, 50-51, 54-55. One fix: you said \"270th in the States\"; it reads \"the state.\" Health lines (T:34-35) removed per your fact file. About 2 minutes; 1:40 without the cut."},
+
+{id:"why",g:"Opener",q:"Why Zeta? Why the schooling side?",who:"Paola",
+frame:"Excellence first, but an excellence with exploration on what that means.",fy:true,
+script:[
+"{slow} I love that you used the word privileged, because it is really privileged to do this work. And I realized that when I sent my own daughter during COVID, handed her over to a complete stranger, and what tremendous responsibility it was.",
+"The happiest I've ever been is in a midsize, growing charter network that has wildly outsized ambition and is full of smart, aspirationally aligned folks. This role just really spoke to me as a perfect blend of what I've done, what I want to do, and where I might want to be.",
+"{pause} What seemed to be the mindsets, excellence first, but an excellence with exploration on what that means, seems really cool to me. I do have a lot of high school-specific experience in operations, culture, and academics. So there's something cool about the high school question.",
+"{land} I love being in environments where it's best idea wins, strong opinions, loosely held. Let's debate the heck out of things. Let's attack people's ideas without attacking people."],
+say:["If asked about the ops role: Felipe thought your strongest fit was the schooling side, and after the Dan call you see the logic (your T:220: \"I see the logic. And yeah, it makes sense.\")","Bronx: you've coached principals at PS 333 and JHS 123"],
+bul:["The COVID handoff: it's a privilege","Happiest in a midsize, growing network","Excellence with exploration","HS experience across operations, culture, academics","Best idea wins; attack ideas, not people"],
+src:"T:28 (adapted opener \"I love that you used the word privileged\" is from Dan's call; drop it if she didn't say it), T:54, T:225-227."},
+
+{id:"g2g",g:"Principals",q:"How do you manage principals? The good principal who needs to get to great?",who:"Paola",
+frame:"The playbook that I have developed over time, by doing it wrong, and then eventually doing it better, and then doing it well a few times, at least.",fy:true,
+script:[
+"{slow} The first thing is we have to separate someone's performance from their identity. Your identity as a principal is the clothes that you wear, not the skin that you're in. There are things that make you who you are that are irreplaceable, and nothing about those should change. There are, however, also ways in which we can build on those strengths.",
+"Number two is getting clear on support versus evaluation. {pause} 99% of the time, I'm wearing my support hat. My success is entirely a function of your success. And so when it comes time to evaluate, number one, nothing is a surprise. And number two, I've helped you along the way so that your review is wildly positive.",
+"The third thing is my side of the street needs to be totally clean, above reproach. I need to follow through. I need to be the model for reliability, for clarity and communication.",
+"And number four, doing the work alongside them. With most conversations with smart people, acknowledging that their perspective is entirely valid is both necessary and important. Also, there are ways in which you can dive in, do the work alongside them, and really go shoulder to shoulder with them.",
+"{slow} Mandate authority is almost worthless in these settings. For the people that we want to keep, the people who are innovative, who are strong, who bring their whole selves, we need to convince them through the quality of our ideas and our actions and through the data. {proof} {land}"],
+say:["End on Carver, not on \"let go of mandate authority\": I was brought in to assess whether the principal running their largest high school could do the job. Three years later the school had doubled and he was Louisiana Principal of the Year. He runs the network now.","Or: at Collegiate we got eight principals delivering our summer PD themselves"],
+bul:["1. Performance is not identity: clothes, not skin","2. Support vs. evaluation: support hat 99%, no surprises, review wildly positive","3. My side of the street clean, above reproach","4. Shoulder to shoulder; their perspective is valid","Mandate authority is almost worthless; convince through ideas, actions, data","End on Carver"],
+src:"T:60-72, fillers cut. With Dan this answer had no proof; the gold box is the fix. About 1:45."},
+
+{id:"carver",g:"Principals",q:"A principal who was struggling. What did you do?",who:"Paola",
+frame:"The one I'd point to is Carver, in New Orleans, because it's the whole arc: the assessment, the coaching, the result.",fy:false,
+script:[
+"{slow} My job as a consultant was to come down and assess whether or not the principal running their largest high school could do the job, a last-ditch effort.",
+"{pause} We're hiding our best person."],
+none:"That's all you've said about Carver on tape. The rest is the gold box: facts you've confirmed, to say your way.",
+say:["The stakes: close to a last look at whether the school stayed open","You were brought in to assess, not to coach; the coaching came after","Three years of coaching (eight-week data and coaching cycles, about 100 site visits a year)","Result: the school doubled in size, student satisfaction up 50%, he was Louisiana Principal of the Year","He runs the organization now"],
+bul:["Assess, last-ditch","\"We're hiding our best person\"","Three years, eight-week cycles","Doubled · +50% satisfaction · Louisiana Principal of the Year","Now CEO","Zeta culture: invest first, move people, don't drop them"],
+src:"T:43 and your Carver dictation (\"we're hiding our best person,\" via HARVEST 092526). Facts: vf L237/L246, confirmed by you 073126. Never attach the 75% suspension drop to Carver."},
+
+{id:"lead",g:"Principals",q:"What's your philosophy on leading and managing people?",who:"Paola",
+frame:"I've been incredibly lucky to have some really special people take an interest in me and support me along the way, and so I try and honor them by stealing the best of them.",fy:true,
+script:[
+"Everyone from the person I taught across the hall from to my dad.",
+"{slow} We build the relationship by having the hard conversation. Because I don't want people wondering where they stand, or feeling critiqued for something that's ultimately a clarity issue on my part.",
+"My side of the street has to be entirely clean. {pause} 98% of the time I'm wearing a support hat. 2% of the time I put on my evaluation hat. I say this in a management memo, as well as my first meeting of the year. My success can only come from your success.",
+"There can be multiple right ways to do things. Them coming to me is not an admission of weakness or a fault. It's an admission of something they need.",
+"{land} I used to hesitate a lot around accountability, because I was feeling like perhaps I hadn't done my part. {proof}"],
+say:["Close on proof: at Collegiate we got eight principals delivering our summer PD themselves","Pick one number for the support hat and use it every time. You've said 98 and 99; Dan heard 99."],
+bul:["Honor my mentors by stealing the best of them","Build the relationship by having the hard conversation","Nobody wondering where they stand","Side of the street clean; support hat / evaluation hat, said out loud and in writing","Coming to me isn't weakness","I used to hesitate on accountability; now I do my part first","Proof: eight principals delivering summer PD"],
+src:"S2 onsite 090826 [20:21], lines kept verbatim; \"Everyone from\" and \"Them coming to me\" are your exact phrasing. About 1:20."},
+
+{id:"portfolio",g:"Principals",q:"How would you manage a portfolio of principals? First 90 days?",who:"Paola",
+frame:"I'd meet each principal where they are, and sort before I fix.",fy:false,
+script:[
+"{slow} I'd meet them where they are: chaotic to stable, stable to functional, functional to rigorous.",
+"I get super clear on exactly what the outcome needs to be. Not what the step, the action is, but rather the outcome. {pause} Where did we go wrong last year? Where do we almost go wrong last year?",
+"{land} Finding the bright spots."],
+none:"You haven't answered this exact question on tape. The lines above are yours from other answers; the rest is bullets.",
+say:["You've managed principals: a portfolio across a seven-school network in New Orleans, and three principals plus the C-level team at Brooklyn Lab","At KIPP you sorted schools on baseline data plus how responsive the leader was: good to great, drifting, crisis","Collegiate: eight-week data and coaching cycles, about 100 site visits a year"],
+bul:["Meet them where they are: chaotic → stable → functional → rigorous","Outcome first, not the action","\"Where did we almost go wrong last year?\"","Sort: good to great / drifting / crisis","Bright spots first, then fill the gaps","Principals managed: 7-school portfolio, 3 at Brooklyn Lab"],
+src:"T:37-38; S2 onsite [17:02] kept verbatim. Sorting buckets are from your prep files, not your recorded words."},
+
+{id:"hs",g:"High School",q:"What should high school be? What would you rethink?",who:"Paola",
+frame:"High school can't be like middle school just with a couple of dials turned.",fy:true,
+script:[
+"{slow} We can't overcorrect and we can't undercorrect on our systems and our structures. When we try and go too far and we don't have any systems, students are looking left and looking right and being like, do you even have it together? At the same time, if we don't evolve them in strategic ways, you guys are treating me like I'm still in middle school.",
+"It would be about defining a wholly different identity, making sure that this was one that was resonant with students, and that we had a spine, a skeleton of the same values, but we dressed it entirely different. {pause} Our values are still our values. But how they show up and what the experience of a student is going to be does need to be fundamentally different.",
+"{cut} I would ideally have us start at the end of seventh grade and begin a transition towards independence. We're going to remove the seating chart. Before we do that, we're going to teach you why it existed, what are the choices people are making, what does it look like to choose the seat. We let kids choose their own seat. Some of them did well, some of them didn't. We reflected with them and gave them another opportunity to choose.",
+"{slow} I would take a look at my middle school plays. What are the 50 that are core we're going to keep? What are the 25% that don't make sense anymore? And what are the 25% that we are going to intentionally do pretty quick gradual release with, instruction and reflection as a primary starting point?",
+"{land} So then we have to focus on the lives of unlimited opportunity and what that means to a scholar in terms of what they need to do to advance. {proof}"],
+say:["The bridge to Dan's worry (the C in ninth grade): at KIPP you led academic health across 48 high schools, and that year 46% of ninth graders finished the quarter at a 3.0 or better, up six points, best quarter on record","Excel's high school is in the top 3% of public high schools in the country"],
+bul:["Claim first: not middle school with the dials turned","Don't over- or under-correct systems","Same spine of values, dressed entirely different","Seating-chart release (cut if short)","50 / 25 / 25 audit","Lives of unlimited opportunity → ninth-grade grades → 46%, up six"],
+src:"T:118-139, fillers and your self-correction cut. Opens on the claim this time (you opened with \"I wish I had the answer\" with Dan). About 2 minutes; 1:30 with the cut."},
+
+{id:"culture",g:"High School",q:"Beyond systems: culture and student ownership in a high school",who:"Paola",
+frame:"Two corners made all the difference at Excel.",fy:true,
+script:[
+"{slow} One was what was teacher doing bell to bell in terms of rigor and instruction. That gave us a sense of purpose and built an academic identity of cool to be smart, cool to work hard. It's not fun because it's fun. {pause} It's fun because it's challenging.",
+"Number two, we always talk about student ownership over culture and over the school. And oftentimes those end up being thin and surfacey. So what I would do, I believe, would be something we did at Excel, which is to develop a lot of genuine student groups that play a key role, not just in the planning of the dance or the student council, but that are actually operating within the school day to help the school operate.",
+"{cut} So we'd have an honor council. And that honor council would be entirely responsible, within limits, of course, for doing a bit of investigation, evaluation around honor code violations, making recommendations. Not only would the ninth-grade events committee be planning the dance, they'd be hyping the dance, they'd also attach a service commitment to it or a canned food drive to it.",
+"In a high school of 150 students per grade, you can get it so that more than a third of those students at any given time is in a meaningful group. That's how we get students to get that feeling of, not only is this high school and it's different, it's also my school.",
+"{land} We would, as adults, be saying a whole lot less and helping our students say a whole lot more."],
+say:["Excel today: 15% of the staff are alumni, and Jackie, your former student, has your old job"],
+bul:["Academic identity: cool to be smart; fun because it's challenging","Ownership usually ends up thin and surfacey","Groups that operate the school day","Honor council; events committee with a service tie (cut if short)","A third of a 150-student grade in a group","\"It's my school\"","Adults say less, students say more"],
+src:"T:146-159, fillers cut. About 1:45."},
+
+{id:"scale",g:"Scaling",q:"When is a practice ready to scale? Playbooks or autonomy?",who:"Kruti",
+frame:"Fundamentally, we were clear on who we were.",fy:true,
+script:[
+"Excel, where we had playbooks for everything. We were unapologetic about the adult culture values, the way in which we did things, and we replicated, not quite as cloning. The principal who started our second school and then our third school inherited 95% of the play was exactly the same.",
+"We wanted to maintain an opportunity for innovation, because we recognized that innovation, one, you don't get to keep the right talent if you don't allow for some of that. And two, that's the laboratory where all the other schools can get better.",
+"{slow} Growing meant starting from a proven starting point, and growing at a pace such that we could maintain the level of talent that we needed to do that incredibly well.",
+"{pause} Earn that, right? Get to the place of stable, get to the place of functional, then let's have a conversation about innovation. We need to run the play because the play works. The play is not perfect. The play is going to evolve. {slow} You're going to be part of that evolution.",
+"The way in which we grow with quality is starting from a solid foundation of what we know works. The two data points I love to share: number one, the high school is in the top 3% of all public high schools across the country. {land} And even better, Jackie now has my old job."],
+say:["Right after \"earn that,\" say how you invest in the person. Dan's \"you have to love people\" speech followed it last time.","The 95%: confirm it's accurate before you say it (your fact file flags it)"],
+bul:["Clear on who we were; playbooks for everything","Replicated, not cloned; 95% of the play (confirm)","Innovation keeps talent and is the lab","Grow from a proven start, at a pace talent allows","Earn it: stable → functional → innovate","Run the play; it evolves; you're part of it","Top 3%; Jackie has my old job"],
+src:"T:92-101, starting after your KIPP comparison (never grade KIPP). \"I don't care really if you...\" (T:96) removed. About 1:40."},
+
+{id:"build",g:"Scaling",q:"How would you launch something new across schools? A new school, a first-year principal?",who:"Kruti",
+frame:"First I get super clear on exactly what the outcome needs to be.",fy:true,
+script:[
+"{slow} Not what the step, the action is, but rather the outcome.",
+"I'm not wasting people's time with silly questions. It's not asking for their opinion for the sake of just asking for their opinion. I frankly need that expertise. {pause} Where did we go wrong last year? Where do we almost go wrong last year?",
+"Finding the bright spots. I've got a deep network of folks who have run operations.",
+"We map out the arc of what needs to happen: milestones, the exact next steps, the owners, the owners with a date a month before the actual due date. We establish a cadence of communication. There's a tracker.",
+"{slow} The project doesn't end when we run the first successful full cycle. I'm happy to manage it, and I will be managing it for as long as it takes. {land} Building the capacity of others, such that we're handing off systems rather than dragging people through processes."],
+say:["Excel launch in three phases: stability, the adults, student ownership. You spent six days writing the culture and operations manuals, and 40% of the staff reported to you.","Brooklyn Lab: opened a fully remote school while keeping the in-person school running, during COVID"],
+bul:["Outcome first, not the action","Learn first; I need their expertise","\"Where did we almost go wrong?\"","Bright spots; my network","Arc: milestones, owners, dates a month early, cadence, tracker","Done = runs without me; handing off systems"],
+src:"S2 onsite 090826 [17:02], lines kept verbatim. About 1:20."},
+
+{id:"adopt",g:"Scaling",q:"Getting adoption across schools that don't have to say yes",who:"Kruti",
+frame:"No one had to say yes to what we were doing, so we had to get them to want to say yes.",fy:true,
+script:[
+"{slow} 28 autonomous KIPP regions. I was brought on as part of the design team. A shared standard of excellence, a few key plays. Resources, protocols, tools, and on-the-ground support.",
+"You can't have accountability unless you have strong training, investment and clarity. We wrote the academic procedures manual. {pause} All the 8,000 rows of data. Individualized, actionable reports. A thousand pushes of a button, but at the end of it, it was a push button.",
+"{slow} Mandate authority is almost worthless in these settings. We need to be able to lead through influence and through modeling.",
+"{land} Naming a few small things, having an incredibly strong resource. {proof}"],
+say:["All 28 regions and all 48 high schools adopted the strategy; there was an alternate path and no school chose it","It was a two-year design and hand-back role, and the regions run it now"],
+bul:["No mandate: 28 regions","Shared standard, a few key plays, real support","Accountability needs training, investment, clarity","Procedures manual; 8,000 rows → a report per person","Lead through influence and modeling","All 28 / all 48 adopted; handed back"],
+src:"S2 onsite [13:12] kept verbatim; T:70-72. \"Franchise model\" and \"fiefdoms\" left out (never criticize KIPP). About 1:10."},
+
+{id:"lab",g:"The Hard Ones",q:"Brooklyn Lab: what was that job, and what was hard about it?",who:"Either",
+frame:"Renewal by itself isn't the accomplishment. It was everything that was happening at the same time.",fy:false,
+script:[
+"{slow} They needed a transition superintendent to help them through renewal as well as being transferred over to a new ownership. The executive director and founder was trying to exit.",
+"I took that on, did that for about a year and a half, built a remote school, led through COVID, got the schools through both those renewals. {pause} And that wasn't super easy, because of some of the knots and tangles that existed there. {proof} {land}"],
+say:["What made it hard, in one or two lines: two different authorizers running separate processes, no credible institutional record-keeping, achievement and culture well below where they needed to be, a turnaround, COVID, and working to get acquired, all at once","Then the result: both schools were reauthorized, and the transfer to new ownership went through","You were interim high school principal for half a year while superintendent"],
+bul:["Transition superintendent: renewal + new ownership, founder exiting","Two authorizers, separate processes","No reliable records to build from","Turnaround + COVID + acquisition at once","Remote school built; both renewed","Interim HS principal, half a year"],
+src:"T:47-49 (\"The executive director and founder was trying to exit\" is your line; drop it if it sounds like blame). Context from your message 092926. Don't say the numbers you were shown couldn't be trusted; say there was no reliable record. About 45 seconds."},
+
+{id:"academic",g:"The Hard Ones",q:"You're known for systems and culture. Why trust you with academics?",who:"Paola",
+frame:"I do have a lot of high school-specific experience in operations, culture, and academics, and in my experience they're the same problem.",fy:false,
+script:[
+"{slow} I've always been a systems first kind of person. People brought me in to work on behavior. {pause} You have 30 kids in the hallway and we don't know where to go because their schedule is wrong. Clearly, we don't have it together. The first third of my engagement usually was all around operations.",
+"We got to a place at Excel where things were functional, things were academically focused, things were working. What was teacher doing bell to bell in terms of rigor and instruction, that gave us a sense of purpose and built an academic identity of cool to be smart, cool to work hard.",
+"{slow} We wrote the academic procedures manual. All the 8,000 rows of data. Individualized, actionable reports. {proof} {land}"],
+say:["Land it with the number: that year, 46% of ninth graders across 48 high schools finished the quarter at a 3.0 or better, up six points, the best quarter KIPP had on that number","You were interim high school principal at Brooklyn Lab while superintendent, so instruction was part of your job","Collegiate: high school focused, special education focused, the largest CREDO effect size of any high school in the country (Carver)"],
+bul:["Systems-first; brought in for behavior","30 kids in the hallway, wrong schedule","Excel: functional → academically focused; cool to be smart","KIPP: 3.0 GPA, course failures, procedures manual, a report per person","46% at 3.0+, up six","Interim HS principal at Brooklyn Lab"],
+src:"T:225 (frame is your words, plus a proposed second clause), S2 [09:51] and [13:12] kept verbatim, T:143-146. About 1:30."},
+
+{id:"kipp",g:"The Hard Ones",q:"Why did you leave KIPP? What have you been doing since?",who:"Either",
+frame:"It was a two-year design and hand-back role.",fy:true,
+script:[
+"{slow} We were working to get our 28 wonderful, but very independent regions into a degree of alignment on national high school strategy, and then hand it back to the regional teams, which is where it lives now.",
+"The project doesn't end when we run the first successful full cycle. {pause} As much as I thought consulting and national work would sound cool, it's really not that fun. I'm a people person. I'd rather not do it from a hotel in Indianapolis.",
+"{land} Right now, I am talking to the principals I know, finding where they need help with efficiency and effectiveness, and figuring out how I can build them custom tools, workflows, apps, solutions."],
+bul:["Two-year design and hand-back role","28 regions; lives with the regional teams now","National work isn't that fun; I'm a people person","Since: custom tools for principals I know"],
+src:"T:50-52, S2 [06:18] and [17:02] kept verbatim. \"That's been taking off\" (T:52) left out per your fact file. About 45 seconds."},
+
+{id:"consult",g:"The Hard Ones",q:"Consultant to operator: why come back inside a network?",who:"Either",
+frame:"I know, because I've done it the wrong way, that you can't approach working at a network the way you do working as a consultant.",fy:true,
+script:[
+"{slow} It wasn't intentional, but looking back on it, it's something I do very differently.",
+"{pause} I'm legitimately excited. The happiest I've ever been professionally was when I was in a small, growing network with great people.",
+"{land} I'm a people person."],
+say:["What you do differently (not on tape yet, say it your way): at Collegiate and Brooklyn Lab you started as a consultant and kept a bit of distance. Name the specific thing you'd do from day one."],
+bul:["Did it the wrong way before","Kept distance; do it very differently now","Happiest in a small growing network","\"I'd love your read on this\"","I'm a people person"],
+src:"S2 onsite [06:18] kept verbatim. Also yours from that answer, if you want it: \"my sense from what I've gathered, which is limited, and I'd love to get your read on this.\" About 40 seconds."},
+
+{id:"mistake",g:"The Hard Ones",q:"A mistake, a growth area, or changing someone's mindset",who:"Either",
+frame:"The mindset I had to overcome was my own.",fy:false,
+script:[
+"{slow} I had an Associate Dean of Students who was a wonderful human being, a true friend of mine, but I managed him. He was the guy that everybody loves. The parents just couldn't get upset with him, or if they did, he figured out a way to make it work. That's what he does really well. I'm on the system side of things.",
+"That worked at first, especially when we were stabilizing the school. {pause} What I didn't do is I didn't update my thinking. In years three and four, I wasn't developing him to become a Dean of Students. I was letting him stay and thrive in his sphere.",
+"I learned I had to leave, and all of a sudden I've got six months before he is now the Dean of Students. {slow} And I realized I failed him. There's a little bit of bumpiness along the way, but within a month, he was clearly meeting well-established targets.",
+"If I would have started two or three years earlier, he would have been much further down the road, and the school would have been better off, and he would have been better off. He was the Dean of Students for many years after. {land} In fact, he's now co-Dean of Students with one of my former students."],
+say:["Close with the lesson in a sentence: you don't get to hold a fixed mindset about a person","Don't give the reason you had to leave. \"I learned I had to leave\" is enough."],
+bul:["Associate dean everyone loved; I kept him in one lane","Didn't update my thinking in years 3 and 4","Six months to get him ready; I failed him","Within a month, meeting targets","Should have started 2 to 3 years earlier","Now co-dean with my former student","No fixed mindset about a person"],
+src:"S2 onsite [25:26] kept verbatim. This fits Zeta's \"love your people, move people, invest\" culture. About 1:20."},
+
+{id:"ask1",g:"Your Asks",q:"By minute 10: which role?",who:"Both",
+frame:"What, if anything, should I read into the shape of this conversation?",fy:false,
+script:[],none:"Your proven form, from the Dan call (T:211), was: \"What, if anything, should I read into the fact that you and I are having a conversation on the school excellence side of things as opposed to operations?\" Today's version is a proposal: say it your way.",
+bul:["Which role are you considering me for?","What would success look like at twelve months?","Then listen; let them describe it"],
+src:"T:211 for the form. Proposed wording otherwise."},
+
+{id:"ask2",g:"Your Asks",q:"Questions for them, and the close",who:"Both",
+frame:"I have one for each of you.",fy:false,
+script:["{land} I've appreciated getting to talk with you. One, thank you. Two, I'm excited."],
+none:"Only the closing line above is from your recorded words (T:228-229). The questions are proposals.",
+bul:["Kruti: with Flushing, Tremont Park and the high school all opening this fall, what's been hardest to keep consistent across campuses?","Paola: for the 119 ninth graders in the first class, what does a great first year look like by June?","Close: what's the next step, and who else would I talk to?","Stop after \"I'm excited.\" No \"blah, blah, blah.\""],
+src:"T:228-229 for the close. Questions proposed from the research."},
+
+{id:"year1",g:"Bench",q:"What would you want to own in year one?",who:"Either",
+frame:"Principals, and especially the high school side.",fy:false,script:[],
+none:"No recorded answer. Frame and bullets are proposals; the position is yours.",
+bul:["Managing a set of principals, the way Dan described","Owning ninth-grade academic health for the new high school","Why: that's where your record is strongest (Carver, 46%)"],src:"Proposed."},
+
+{id:"pay",g:"Bench",q:"Compensation expectations",who:"Either · never raise first",
+frame:"I'd want the title and pay to match the scope.",fy:false,script:[],
+none:"No recorded answer. Frame and bullets are proposals.",
+bul:["Your standing rule: the ask is the top of the published band","Debrief: Principal Manager band $125K to $175K; your salary of record is $175K","Your file: target $200K, comfortable $150K","If they're building a bigger role, the number should grow with it","Open on structure"],src:"Rojas debrief 092526; FORM ANSWERS 083126 (comp targets)."},
+
+{id:"inperson",g:"Bench",q:"In person every day in the Bronx. Does that work?",who:"Either · never raise first",
+frame:"Answer only what's true for you.",fy:false,script:[],
+none:"No recorded answer. Decide before the call.",
+bul:["The job is at 425 Westchester Ave, daily (debrief)","Don't volunteer family logistics","If yes, a short yes is enough"],src:"Rojas debrief 092526."},
+
+{id:"ai",g:"Bench",q:"Tell us about the AI tools you're building",who:"Kruti · only if asked",
+frame:"Same thing I've always done, with better tools.",fy:false,
+script:[
+"{slow} I am talking to the principals I know, finding where they need help with efficiency and effectiveness, what their problems are, and figuring out how I can build them custom tools, workflows, apps, solutions using AI to build the specific solutions that they need.",
+"{land} A thousand pushes of a button, but at the end of it, it was a push button."],
+say:["DeansList started as an Excel spreadsheet because you needed a tool","KIPP: a 40-minute manual workflow became one click","Built for somebody else to run: you handed it off on May 1 and it kept running"],
+bul:["Principals point me at the problem","Custom tools, workflows, apps","DeansList from a spreadsheet","40 minutes → one click","Built to hand off"],
+src:"T:52 (\"taking off\" left out), S2 [13:12]. About 30 seconds."}
+];
+function esc(s){return s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;")}
+function fmt(s){var cut=/\{cut\}/.test(s);var t=esc(s).replace(/\{(slow|pause|proof|land|cut)\}/g,function(m,c){return '<span class="cue">'+c+'</span>'});return '<p'+(cut?' class="trim"':'')+'>'+t+'</p>'}
+function card(c,live){
+  var h='<article class="card" data-id="'+c.id+'">';
+  h+='<div class="qhead"><h3>'+esc(c.q)+'</h3><span class="qmeta">'+esc(c.g)+' · '+esc(c.who)+'</span></div>';
+  h+='<div class="row"><span class="lbl">Frame <span class="tag '+(c.fy?'yours">your words':'prop">proposed')+'</span></span><p class="frame">'+esc(c.frame)+'</p></div>';
+  var sc=c.script.length?'<div class="script">'+c.script.map(fmt).join("")+'</div>':'';
+  var none=c.none?'<p class="none">'+esc(c.none)+'</p>':'';
+  var bul='<div class="row bul"><span class="lbl">Quick reference</span><ul>'+c.bul.map(function(b){return"<li>"+esc(b)+"</li>"}).join("")+'</ul></div>';
+  var say=c.say&&c.say.length?'<div class="say"><span class="lbl">Facts to say your way</span><ul>'+c.say.map(function(b){return"<li>"+esc(b)+"</li>"}).join("")+'</ul></div>':'';
+  if(live){h+=bul+say;if(sc)h+='<details class="full"><summary>Your answer, in your words</summary>'+sc+none+'</details>';else h+=none}
+  else{h+='<div class="row"><span class="lbl">Your answer <span class="tag yours">your words only</span></span>'+sc+none+'</div>'+bul+say+'<p class="src"><b>Source</b> '+esc(c.src)+'</p>'}
+  return h+'</article>'}
+var ORDER=["Opener","Principals","High School","Scaling","The Hard Ones","Your Asks","Bench"];
+(function(){var out="",rail='<a href="#read">My read</a><a href="#how">How to read</a><a href="#room">The Room</a>';ORDER.forEach(function(g,i){var cs=CARDS.filter(function(c){return c.g===g});out+='<section id="s'+i+'"><h2>'+g+(g==="Principals"?" · Paola":g==="Scaling"?" · Kruti":g==="Bench"?" · only if asked":"")+'</h2>'+cs.map(function(c){return card(c,false)}).join("")+'</section>';rail+='<a href="#s'+i+'">'+g+'</a>'});rail+='<a href="#numbers">Numbers</a><a href="#traps">Traps</a><a href="#intel">Zeta now</a><a href="#practice">Practice</a>';document.getElementById("prepCards").innerHTML=out;document.getElementById("rail").innerHTML=rail})();
+var store={get:function(k,d){try{var v=localStorage.getItem("zeta0929b:"+k);return v===null?d:JSON.parse(v)}catch(e){return d}},set:function(k,v){try{localStorage.setItem("zeta0929b:"+k,JSON.stringify(v))}catch(e){}}};
+/* live */
+var LIST=[];ORDER.forEach(function(g){CARDS.forEach(function(c,i){if(c.g===g)LIST.push(i)})});
+var pos=store.get("pos",0),qlist=document.getElementById("qlist"),qsel=document.getElementById("qsel"),liveCard=document.getElementById("liveCard");
+qlist.innerHTML=LIST.map(function(i,p){var c=CARDS[i];return'<button type="button" class="qbtn" data-p="'+p+'"><small>'+esc(c.g)+'</small>'+esc(c.q)+'</button>'}).join("");
+qsel.innerHTML=LIST.map(function(i,p){return'<option value="'+p+'">'+esc(CARDS[i].g)+": "+esc(CARDS[i].q)+'</option>'}).join("");
+function show(p){if(p<0)p=LIST.length-1;if(p>=LIST.length)p=0;pos=p;store.set("pos",p);liveCard.innerHTML=card(CARDS[LIST[p]],true);qlist.querySelectorAll(".qbtn").forEach(function(b){b.setAttribute("aria-current",String(+b.getAttribute("data-p")===p))});qsel.value=String(p)}
+qlist.addEventListener("click",function(e){var b=e.target.closest(".qbtn");if(b)show(+b.getAttribute("data-p"))});
+qsel.addEventListener("change",function(){show(+qsel.value)});
+document.getElementById("prevQ").addEventListener("click",function(){show(pos-1)});
+document.getElementById("nextQ").addEventListener("click",function(){show(pos+1)});
+document.getElementById("jumpAsk").addEventListener("click",function(){LIST.forEach(function(i,p){if(CARDS[i].id==="ask1")show(p)})});
+document.addEventListener("keydown",function(e){if(document.getElementById("liveView").classList.contains("hide"))return;if(/INPUT|SELECT/.test(e.target.tagName))return;if(e.key==="ArrowRight")show(pos+1);if(e.key==="ArrowLeft")show(pos-1)});
+show(Math.min(pos,LIST.length-1));
+/* mode */
+var mp=document.getElementById("modePrep"),ml=document.getElementById("modeLive");
+function setMode(live){document.getElementById("prepView").classList.toggle("hide",live);document.getElementById("liveView").classList.toggle("hide",!live);mp.setAttribute("aria-pressed",String(!live));ml.setAttribute("aria-pressed",String(live));store.set("live",live)}
+mp.addEventListener("click",function(){setMode(false)});ml.addEventListener("click",function(){setMode(true)});setMode(store.get("live",false));
+/* timer */
+var timerEl=document.getElementById("timer"),startBtn=document.getElementById("startBtn"),coach=document.getElementById("coachMsg");
+var startAt=store.get("startAt",null),running=!!startAt,iv=null;
+var cues=[[0,"Frame, your words, one number, stop."],[300,"Minute 5. End every answer on a person or a number."],[480,"Ask the role question now."],[600,"Past minute 10. Did you ask which role?"],[1200,"Minute 20. Get your two questions in."],[1560,"Minute 26. Ask the next step, then close."],[1800,"Time. Thank them and stop."]];
+function f2(s){var m=Math.floor(s/60),x=s%60;return(m<10?"0":"")+m+":"+(x<10?"0":"")+x}
+function tick(){var s=running?Math.max(0,Math.floor((Date.now()-startAt)/1000)):0;timerEl.textContent=f2(s);timerEl.className="timer"+(s>=1560?" hot":s>=1200?" warn":"");var msg=cues[0][1];cues.forEach(function(c){if(s>=c[0])msg=c[1]});coach.textContent=msg}
+function start(){if(!running){startAt=Date.now();running=true;store.set("startAt",startAt)}startBtn.textContent="Running";if(!iv)iv=setInterval(tick,500);tick()}
+startBtn.addEventListener("click",function(){start();setMode(true)});
+document.getElementById("resetBtn").addEventListener("click",function(){running=false;startAt=null;store.set("startAt",null);clearInterval(iv);iv=null;startBtn.textContent="Start call";tick()});
+if(running)start();else tick();
+/* stop */
+var stopper=document.getElementById("stopper"),st=null;
+document.getElementById("stopBtn").addEventListener("click",function(){stopper.hidden=false;clearTimeout(st);st=setTimeout(function(){stopper.hidden=true},3000)});
+stopper.addEventListener("click",function(){stopper.hidden=true});
+/* tics */
+document.querySelectorAll("[data-tic]").forEach(function(b){var k=b.getAttribute("data-tic"),sp=b.querySelector("span"),n=store.get("tic-"+k,0);sp.textContent=n;b.addEventListener("click",function(){n++;sp.textContent=n;store.set("tic-"+k,n)})});
+/* musts */
+var mc=document.getElementById("mustCount"),boxes=document.querySelectorAll("#musts input");
+function cnt(){var c=0;boxes.forEach(function(b){if(b.checked)c++});mc.textContent="Must-say "+c+" of "+boxes.length}
+boxes.forEach(function(b){b.checked=store.get(b.id,false);b.addEventListener("change",function(){store.set(b.id,b.checked);cnt()})});cnt();
+/* search */
+var q=document.getElementById("q");
+q.addEventListener("input",function(){var t=q.value.trim().toLowerCase();if(!document.getElementById("liveView").classList.contains("hide")){if(!t)return;for(var p=0;p<LIST.length;p++){if(JSON.stringify(CARDS[LIST[p]]).toLowerCase().indexOf(t)>=0){show(p);break}}return}
+document.querySelectorAll("#prepCards .card").forEach(function(el){el.classList.toggle("hide",!!t&&el.textContent.toLowerCase().indexOf(t)<0)});document.querySelectorAll("#prepCards section").forEach(function(s){s.classList.toggle("hide",!!t&&!s.querySelector(".card:not(.hide)"))})});
+/* drill */
+var dT=null,dLeft=120,dId=null,dq=document.getElementById("drillQ"),dt=document.getElementById("drillT"),dlog=document.getElementById("drillLog"),reps=store.get("reps",[]);
+function log(){if(!reps.length){dlog.textContent="No reps saved yet.";return}var a=reps.reduce(function(x,r){return x+r.s},0)/reps.length;dlog.textContent=reps.length+" reps · average "+a.toFixed(1)+" of 4"}log();
+document.getElementById("drillGo").addEventListener("click",function(){var pool=CARDS.filter(function(c){return c.g!=="Your Asks"&&c.g!=="Bench"});var c=pool[Math.floor(Math.random()*pool.length)];dId=c.id;dq.textContent=c.q;document.querySelectorAll("#drillChecks input").forEach(function(x){x.checked=false});dLeft=120;dt.textContent="2:00";clearInterval(dT);dT=setInterval(function(){dLeft--;var v=Math.max(dLeft,0);dt.textContent=Math.floor(v/60)+":"+("0"+v%60).slice(-2);if(dLeft<=0){clearInterval(dT);dt.textContent="0:00 stop"}},1000)});
+document.getElementById("drillStop").addEventListener("click",function(){clearInterval(dT)});
+document.getElementById("drillSave").addEventListener("click",function(){if(!dId)return;var s=0;document.querySelectorAll("#drillChecks input").forEach(function(x){if(x.checked)s++});reps.push({id:dId,s:s});store.set("reps",reps);log()});
 </script>
