@@ -120,3 +120,19 @@ Not applied: capping "send it my way." You want Matt to call on you for new thin
 - Caution: the "$100,000 per client" figure is not on the record (MATT COMPENSATION 092126 marks it unsupported). The page uses ClassE's known $8,500 a month as a labeled yardstick instead.
 - $10,000 example now reads $1,500, bringing it to $4,500. No ceiling; the $5,000 review point is gone, and check-ins cover it.
 - Trimmed for space: Response Time folded into Operating Mindset (48 hours kept), Whatever It Takes merged, Ideas for Later cut to one line, If the Business Changes folded into How It Grows. Four pages down to three.
+
+## FINAL v6 Changes (Full Wispr Flow Read, 092926)
+
+What the full 092226 transcript says about money (Matt's words):
+
+- Three clients "pay my bills and then some." AAP is the fourth, and it takes him "from being healthy to being, like, wealthy." That's "the extra money. Then I can start doing fun things, like bring someone on and scale." Without it, "I'm cutting into my, like, paying bills money."
+- After AAP: "profiting around $12,000 a month," net of insurance, taxes, software, and retirement. About $30,000 a month within six months with help. "$10,000 a month, in October, like, it's not going to happen."
+- "Getting the right person allows you to take on AAP and maybe even, you know, another person."
+- No per-client revenue anywhere in the transcript. The $100K per client figure is not in it.
+
+What changed:
+
+- The ClassE yardstick ($34K a month) was likely too high. ClassE is probably above his average. The derivation now starts from his own $12K profit: a guessed $20-25K a month in revenue, labeled as a guess. 15% of that is $3,000 to $3,750. Start at the low end. One rate, 15%, now covers both current and new business.
+- Core Responsibilities rebuilt in his terms: research with real ownership, advisory, the referral network (recruit, train on the companies, check in), and delegation (email, QuickBooks, ChatGPT Business workspace and knowledge base).
+- Moved into core: ChatGPT workspace, knowledge base, first meetings. Kept as "worth considering": promotional materials, outreach.
+- The Objective now names AAP. Items for Conversation dropped "which high-value idea first."
