@@ -75,9 +75,9 @@ The answer · about 75 seconds
 
 Trust is everything, and you earn it through three things: clarity, support and accountability.
 
-Clarity first. We're aligned on what we're going for and what your role is in it, and you know what to expect from me. I'm transparent about where we're headed and why, so nobody's guessing.
+Clarity first, and really what I mean is predictability. We're aligned on what we're going for and what your role is in it. I'm consistent, so you know what to expect from me every time, and I'm transparent about where we're headed and why. Nobody's guessing.
 
-Support. My job is to make you better, and to do that I have to show you I can do the job. Sometimes that means modeling it, showing you what excellent looks like, bringing the exemplar. Every coaching meeting should be as well prepared and thought out as the best lessons we teach. It's teaching time, not talking time, because I'm teaching every second whether I like it or not, with every action and every inaction.
+Support. My job is to make you better and the school better, and to do that I have to show you I can do the job. Sometimes that means modeling it, showing you what excellent looks like, bringing the exemplar. Every coaching meeting should be as well prepared and thought out as the best lessons we teach. It's teaching time, not talking time, because I'm teaching every second whether I like it or not, with every action and every inaction.
 
 And accountability. People usually say you need a relationship before you can have accountability. I think it's the other way around: you can't have a relationship without accountability, at least not for very long. People are watching to see whether you care enough to hold them to a high standard, whether you know what you're talking about, and whether you're willing to say what needs to be said. The best teachers and coaches any of us had were the most honest with us. We knew where we stood. Done well, that's what makes the relationship closer.
 
