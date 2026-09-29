@@ -197,3 +197,10 @@ CH remembers Matt giving a ladder: about $3,000 past bills at three clients, $12
 - Agreement in principle: Terms opens with "This is both a contractual proposal and an agreement in principle," with quarterly step-backs to keep the terms in the spirit of it.
 - Signed Christopher. Body type up from 8.8pt to 9.2pt. Round bullets.
 - Profit vs. revenue: kept the profit ladder. It is the only per-client number Matt gave; no per-client revenue is on record except ClassE.
+
+## v13: Matt's Two-Minute Read (092926)
+
+- Closed the loops Matt would ask about: AAP is in the base rate, not the 15%; the 15% runs while a client pays and comes off if they leave; the base rate starts at AAP because at three clients $3,000 would be his whole margin; 20% is higher than 15% because the network would be CH's to run.
+- Said each thing once: page 1 section 03 now gives outcomes, page 2 section 05 gives the tasks. Dropped the repeat of $6-9K in step 1 and "pay should grow only when the business grows" in step 2.
+- Formatting borrowed from the language guide (sent 092926): numbered sections 01-07, filled navy table header, shaded Proposed column. No banner.
+- Voice: close now uses CH's own line from the 092926 language guide email ("I'm here and ready to adjust"). Abstract triad "the strategy, the relationships, and the product work" replaced with concrete nouns (your clients, AAP, the five parked leads). Opener cut by about 20 words.
