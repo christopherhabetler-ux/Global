@@ -25,11 +25,20 @@ Read the first two pages before a call. Check the word list before a deck or ema
 
 ### Three things to remember
 
-- "We help the student up to the question. We don't bring the question down to the student." This is about ClassE's own questions. School teams will always be able to accommodate and modify a student's work.
+- "We help the student up to the question. We don't bring the question down to the student." The line used to say "test." "Question" keeps it from sounding like teaching to the test, and "help" tells a special education or English learner specialist that students get support to get there. It is about ClassE's own questions. School teams will always be able to accommodate and modify a student's work.
 - "The teacher leads. ClassE supports."
 - "We don't have a study on that yet. Here's what we can show you."
 
 ---
+
+## Words we use
+
+These land well with US educators. Several came out of our September workshop.
+
+- **For what ClassE does:** targeted practice, personalized practice and feedback, the second question, data-informed, curriculum-aligned (where ClassE is set up for that curriculum), accessibility supports
+- **For what the teacher does:** targeted instruction, small-group follow-up, reteach and reinforce, next steps
+- **For students:** a student with a disability, English learner or multilingual learner, students who have not shown this skill yet
+- **For results:** a correct response, score band, performance level
 
 ## Seven kinds of words that land wrong
 
@@ -50,6 +59,7 @@ Use the buyer's word first. Never correct how a buyer talks about its own studen
 - Check the state, and whether you are meeting a district, a charter network or one school. Then read "Texas and New York, side by side."
 - If a report on screen says "mastery," say what it shows: "These students got this question right."
 - Do not mention Albert or text to speech until the team confirms they work in the US product.
+- If teachers are in the room, talk to them, not about them: "You see which students missed which skill. You decide what to do next."
 
 ### If a word goes wrong in the call
 
@@ -109,11 +119,19 @@ Look up a word before you use it.
 | "The same difficulty," for the second question | "A second question on the same skill." | No field-test data or item statistics show it yet. |
 | "Saves a lot of time for teachers" | "It takes grading tasks off the teacher's plate." | No number yet, and a principal may hear the teacher will have nothing to do. |
 | "Special needs kids," "SPED student," "special accommodations" | "A student with a disability." For ClassE features: "accessibility supports," once confirmed for the US. | Name the student first. Accessibility is not special education. |
-| "Teacher-proof," "make them better teachers," "faster than teachers" | "The teacher leads. ClassE supports." "ClassE shows the teacher sooner which students missed which skill." | It puts the software above, or in a race with, the teacher. |
+| "Teacher-proof," "make them better teachers," "faster than teachers" | "The teacher leads. ClassE supports." "ClassE shows the teacher sooner which students missed which skill." | In some countries "teacher-proof" is a selling point. In a US school it says the teacher is the problem. |
 | "These kids" | "Let's look at what each student did." | It turns individual students into a group. |
 | Tiers: "a Tier 1 type of remediation," "your Tier 3 kids," "tier to tier" for scores | Tiers only for what the district runs. For scores: "score band," "performance level." | Tiers are the district's system, never a name for ClassE or a student. |
 | "Upload an IEP" | Do not offer it. | An IEP is a confidential student record. |
 | "Weak students," "strong students," "a GAP student," "a pretty good student" | "Each student gets practice on the skill they missed." | It ranks children. Praise is still a judgment. |
+
+## For the product team
+
+Some of these words are on the screen, not just in the pitch, and a rep can't talk around them in a demo.
+
+- The report says "mastery" off one question. Decide what it calls a correct answer, and what it calls a skill shown over time.
+- "Exercise" in the product. It reads as translated to a US teacher.
+- If the product labels students with words like "needs help" or "competent," describe what the student did instead.
 
 ## US terms and sources
 
