@@ -4,6 +4,17 @@ exec(open('src_other.py').read())
 def c(t): return clean(t)
 B={int(k):v for k,v in json.load(open('bank.json')).items()}
 Q=json.load(open('Q.json'))
+B={}   # the condensed 092526 bank is retired (CH 092926); NB = dictated Notion blocks
+NB={}
+for part in open('canon/notion_bank.md').read().split('## ')[1:]:
+    k,*ps=part.strip().split('\n'); NB[int(k)]=[p for p in ps if p.strip()]
+TR=re.sub(r'\s+',' ',open('canon/transcripts.md').read()); BK=re.sub(r'\s+',' ',open('canon/banks.md').read())
+def T(a,b,src=None):
+    x=src or TR; i=x.index(a); return x[i:x.index(b,i)+len(b)]
+_cv=json.load(open('cv.json')); CV=_cv['CV']; JEREL=_cv['JEREL']
+def cv(a,b): i=CV.index(a); return CV[i:CV.index(b,i)+len(b)]
+CC=c(T("The most, the one that's kind of the stickiest was","It has to be a connection.")).replace('Kinect. And correct','Connect and correct')
+
 def cue(kind,label): return f'<span class="dcue {kind}">{label}</span>'
 def sent(text,starts,ends=None):
     """exact substring of text from `starts` through `ends` (inclusive)"""
@@ -19,21 +30,21 @@ t=open(TPL).read()
 S=[]
 def story(sid,name,proves,full,src): S.append({'sid':sid,'name':name,'proves':proves,'full':full+f' <span class="small">[{src}]</span>'})
 story('(1)','270TH TO NUMBER ONE','He led a turnaround as Dean of Students, and he wrote the playbook first.',
-  B[3][0]+' … '+sent(B[3][1],'I spent six days')+' … '+sent(B[3][4],'Its high school'),'bank block 3')
+  NB[3][0]+' … '+sent(NB[3][1],'I spent six days')+' … '+NB[3][6],'bank block 3 as dictated')
 story('(2)','28 REGIONS, 48 HIGH SCHOOLS, NO MANDATE','Adoption without authority. The job a principal manager does every week.',
-  sent(B[2][1],'The Foundation is','want to say yes.')+' … '+sent(B[2][6],'All 28 regions'),'bank block 2')
+  '… '+sent(NB[2][0],'the KIPP Foundation is the national arm','want to say yes.')+' … '+sent(NB[2][1],'All 28 regions'),'bank block 2 as dictated')
 story('(3)','ACADEMIC HEALTH, 46%','Ninth grade is where networks lose kids, and he moved the number.',
-  sent(B[2][5],'We went from super obscure')+' '+sent(B[2][6],'In the third quarter','on that number.'),'bank block 2')
+  '… '+sent(NB[2][4],'we built a push-button')+' '+NB[2][5],'bank block 2 as dictated')
 story('(4)','CARVER','He coached a struggling principal into the CEO seat.',
-  B[4][0]+' … '+sent(B[4][2],'Jerel is one of the best')+' … '+B[4][6],'bank block 4')
+  cv('I first started working with Jerel Bryant','can he be successful?')+' … '+cv('I helped Jerel be the leader','It worked.')+' … '+JEREL,'written Carver answer 060925')
 story('(5)','BROOKLYN LAB, IN CONTEXT','Stewardship through a mess: a team that did not trust each other, COVID, an ownership transfer, two renewals at once. And he ran a high school himself.',
-  B[5][2]+' '+B[5][3],'bank block 5')
+  T('Two simultaneous renewals. A renewal in itself','twice at the same time.',BK)+' '+T('A charter renewal is not a project deadline.','do not exist next year.',BK)+' Both were reauthorized.','ONE STORY 091326; Story Bank 081226')
 story('(6)','DEANSLIST','A school operations product he built. Only if asked.',
   c(dan(40,40,end="grew into Dean'slist."))+' <span class="small">Facts, not your words: zero to 275 while you were there, in over a thousand now, not affiliated in years. All three together or none.</span>','Dan call line 40')
 story('(7)','THE COVERAGE SCHEDULE MAKER','He is building school tools now, with an honest ceiling.',
-  sent(B[8][5],'The coverage schedule maker'),'bank block 8')
+  'Your words 090326: "returning somewhere between two and four hours a week."','ONE STORY 091326')
 story('(8)','THE ASSOCIATE DEAN','The failure is real, and it has a happy ending.',
-  sent(B[6][2],'I realized')+' … '+sent(B[6][3],'And accountability')+' '+B[6][4],'bank block 6')
+  'I learned I had to leave, and all of a sudden I\'ve got six months before he is now the Dean of Students. And I realized I failed him … within a month, he was clearly meeting well-established targets … he\'s now co-Dean of Students with one of my former students','onsite 090826, debrief-quoted')
 story('(9)','THE DREAM VERSION (academics)','Your other recorded answer to "you are a systems and culture person." Reference, not a script.',
   c(R_ACAD1)+' … '+c(R_ACAD_LAB)+'. '+c(R_ACAD_LAB2)+' … '+c(R_ACAD_KIPP),'DREAM screen 081726')
 story('(10)','THE FOUR-DAY COVID PLAYBOOK','He runs a crisis as a plan on paper that actually reaches people. Good for launch or ambiguity questions.',
@@ -43,35 +54,35 @@ story('(10)','THE FOUR-DAY COVID PLAYBOOK','He runs a crisis as a plan on paper 
 cl=dan(60,60,start='your identity as a principal',end="not the skin that you're in.").strip('… ')
 E=[
 {'sid':'ENGINE 1','name':'NO MANDATE, NO SCHOOL TOOK THE ALTERNATE PATH',
- 'one':sent(B[2][1],'Nobody had to say yes','want to say yes.'),
+ 'one':sent(NB[2][0],'Nobody had to say yes','want to say yes.'),
  'proves':'Adoption without authority: how a network office gets principals to use what works. Kruti\'s whole job.',
- 'full':sent(B[2][0],'Mandate authority',"on positional authority.")+' '+cue('slow','slow')+' '+sent(B[2][1],'That was the situation','want to say yes.')+' … '+cue('power','land this')+' '+sent(B[2][6],'All 28 regions'),
+ 'full':sent(NB[2][0],'the KIPP Foundation is the national arm','want to say yes.')+' '+cue('slow','slow')+' '+sent(NB[2][1],'First thing we did','watching them nod.')+' '+cue('power','land this')+' '+sent(NB[2][1],'All 28 regions'),
  'guards':'Strategy adoption is 28 and 48. The push-button tool was PILOTED and handed off, never "used by all 28." You SUPPORTED 48 high schools; never "managed 48 principals." Never grade KIPP.',
  'bends':[
-  ["What's hard about the high school",'Lead with ninth-grade academic health.',sent(B[2][6],'In the third quarter','up six points.')],
-  ['How do you lead change','Lead with the one thing.',B[13][0]],
+  ["What's hard about the high school",'Lead with ninth-grade academic health.',sent(NB[2][5],'That year','Up six points.')],
+  ['How do you lead change','Lead with the one thing.',sent(NB[13][1],'The first part is the most important part','on track.')],
   ["A principal won't use the system",'Lead with merit over obligation.',"Building systems and structures and practices that people buy into on merit, not out of obligation."],
   ['A strong principal pushes back','Lead with your side of the street.',c(dan(65,65,end='above reproach.')).strip('… ')]]},
 {'sid':'ENGINE 2','name':'EARN IT: RUN THE PLAY, THEN INNOVATE',
  'one':"Earn that, right? Get to the place of stable, get to the place of functional, then let's have a conversation about innovation.",
  'proves':'In plain words: a new principal runs the proven playbook until the school is stable and functional, and that earns the room to change it. It is about sequence, not control. Pair it with how you invest in people (Dan\'s "love people" speech came about 15 minutes later).',
- 'full':c(dan(97,100,end='starting from a solid foundation of what we know that works.')).rstrip(' …')+' '+cue('power','then the proof')+' '+sent(B[3][4],'Its high school'),
+ 'full':c(dan(97,100,end='starting from a solid foundation of what we know that works.')).rstrip(' …')+' '+cue('power','then the proof')+' '+c(dan(100,101,end='now has my old job')).strip(' …')+'.',
  'guards':'Never "I don\'t care really if you as a first-year principal..." Never grade KIPP or AF. Jackie is sixth grade. Always pair with investment: Carver, the associate dean.',
  'bends':[
-  ['First ninety days, a new principal','Lead with writing it down.',sent(B[3][1],'I spent six days','crazy use of time.')],
+  ['First ninety days, a new principal','Lead with writing it down.',sent(NB[3][1],'I spent six days','crazy use of time.')],
   ['A principal wants to do their own thing','Lead with the evolution line.',"The play is not perfect. The play is going to evolve. You're going to be part of that evolution."],
   ['Why do networks plateau','Lead with identity, not the KIPP grade.',"So fundamentally, we were clear on who we were."],
-  ['How does that square with loving your people','Lead with Carver.',sent(B[4][4],"Don't let your first")]]},
+  ['How does that square with loving your people','Lead with Carver.',CC]]},
 {'sid':'ENGINE 3','name':'CARVER',
- 'one':B[4][0],
+ 'one':'do we keep this leader, can he be successful?',
  'proves':'He can tell a hard truth about a struggling principal and grow him into the top seat. Paola\'s whole job.',
- 'full':sent(B[4][1],'Ben Marcovitz')+' '+cue('power','land this')+' '+sent(B[4][2],'Jerel is one of the best')+' '+cue('beat','beat')+' '+sent(B[4][4],'We fixed the smallest')+' '+cue('slow','slow')+' '+B[4][6],
+ 'full':cv('I first started working with Jerel Bryant','can he be successful?')+' '+cue('slow','slow')+' '+cv('I did this by primarily working shoulder to shoulder','built his confidence')+' '+cue('beat','beat')+' '+cv('I clearly named','narratives of blame.')+' '+cue('power','land this')+' '+JEREL,
  'guards':'It started as an assessment. Coached, never led. Louisiana Principal of the Year (your wording, kept 092926). The 75% suspension drop is Collegiate network-wide, never Carver alone. CREDO: "One of our schools, Carver, had the largest CREDO effect size in the country."',
  'bends':[
   ['The good principal who needs to get to great','Lead with clothes, not skin. Then Carver.',cl[0].upper()+cl[1:]],
-  ['Hard feedback','Lead with the leadership-team presentation.','Nothing works until Mom and Dad get right.'],
-  ['A principal is underwater','Lead with strengths, not deficits.',sent(B[4][2],'Jerel is one of the best','his strengths.')],
-  ['Culture','Lead with connect and correct.',sent(B[4][4],'I coined a phrase')]]}]
+  ['Hard feedback','Lead with naming the frayed relationship.',cv('I clearly named','narratives of blame.')],
+  ['A principal is underwater','Lead with strengths, not deficits.',cv('Knowing we had a high potential leader','built his confidence')],
+  ['Culture','Lead with connect and correct.',CC]]}]
 
 TICK=[
  'Answer in the FIRST sentence. The claim, not "I wish I had the answer."',
@@ -89,7 +100,7 @@ PANIC={'say':'<span class="dcue flat">your words, Gillian 091126</span> '+"Sorry
  'then':'No recorded line for buying time. Frame: take a breath, restate the question in five words, then go to the strongest thing you own. Carver: Jerel is the CEO. KIPP: 46% of ninth graders at a 3.0 or better, up six points. Excel: 270th in the state to number one.'}
 PANIC['say']='No recorded stall line in your words. Frame: pause, one breath, restate their question in five words, then answer the first sentence only.'
 MUST=[
- 'Carver: "The best example is Carver, and the principal I was brought in to assess is now the CEO."',
+ 'Carver: "'+JEREL+'"',
  '46% of ninth graders at a 3.0 or better, up six points. Best quarter KIPP had ever had.',
  '28 regions, 48 high schools, no mandate. No school chose the alternate path.',
  'Interim high school principal at Brooklyn Lab, half a year, while superintendent.',
@@ -143,7 +154,7 @@ H['hs']='''<div class="card"><div class="lab">Their high school, say-able</div><
 <p><b>Carver:</b> 200 students when you walked in, eight or nine hundred now. Jerel is the CEO.</p>
 <p><b>Excel:</b> its high school is in the top 3% of public high schools nationally.</p></div></div>'''
 H['repairs']='''<div class="card"><div class="lab">Repair 1 &middot; Carver, reduced to "successful"</div><div class="ans">
-<p>Say the whole thing, live. Your line: <em>"The best example is Carver, and the principal I was brought in to assess is now the CEO."</em> Card 4.</p></div></div>
+<p>Say the whole thing, live. Your line (060925): <em>"'''+JEREL+'''"</em> Card 4.</p></div></div>
 <div class="card"><div class="lab">Repair 2 &middot; Principles with no proof</div><div class="ans">
 <p>Card 3 now ends on Carver. Any principal answer that ends on a principle is not over.</p></div></div>
 <div class="card"><div class="lab">Repair 3 &middot; "Earn it" heard alone</div><div class="ans">
@@ -151,7 +162,7 @@ H['repairs']='''<div class="card"><div class="lab">Repair 1 &middot; Carver, red
 <div class="card"><div class="lab">Repair 4 &middot; Grading KIPP and AF</div><div class="ans">
 <p>Describe how KIPP works, never its results. The Excel contrast makes the point alone. Your line: <em>"So fundamentally, we were clear on who we were."</em></p></div></div>
 <div class="card"><div class="lab">Repair 5 &middot; Leaving Excel</div><div class="ans">
-<p>Never the health reason. The approved form: you knew you would be leaving at the end of the year. Your bank line: <em>"Then I learned I had to leave."</em></p></div></div>
+<p>Never the health reason. The approved form: you knew you would be leaving at the end of the year. Your onsite line: <em>"I learned I had to leave."</em></p></div></div>
 <div class="card"><div class="lab">Repair 6 &middot; The questions</div><div class="ans">
 <p>Ask by minute 10. Then ask, and be silent. Do not answer your own question.</p></div></div>'''
 H['numbers']='''<div class="card"><div class="lab">Every number, with its source. Never say one that is not on this card.</div><div class="ans">
@@ -224,7 +235,7 @@ H['rp']='''<div class="card"><div class="lab">How to use these</div><div class="
 <p><span class="rpq">PAOLA</span> How do you develop a principal who's good but not great?</p>
 <p><span class="rpa">YOU</span> Card 3, ending on Carver. <span class="dcue stop">stop</span></p>
 <p><span class="rpq">PAOLA</span> What did you actually do with him week to week?</p>
-<p><span class="rpa">YOU</span> Card 4, the middle: the leadership-team presentation, "Mom and Dad," connect and correct. <span class="dcue stop">stop on "Jerel is the CEO"</span></p></div></div>
+<p><span class="rpa">YOU</span> Card 4, the middle: shoulder to shoulder, real-time feedback, resetting the frayed relationship. <span class="dcue stop">stop on "CEO of Collegiate Academies"</span></p></div></div>
 <div class="card"><div class="lab">ROLE PLAY 2 &middot; Kruti, fidelity vs. autonomy</div><div class="ans">
 <p><span class="rpq">KRUTI</span> How do you decide what's non-negotiable when a principal wants to do it differently?</p>
 <p><span class="rpa">YOU</span> Card 8, earn it. <span class="dcue power">then</span> Engine 2, last bend: connect and correct.</p>
