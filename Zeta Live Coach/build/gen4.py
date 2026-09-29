@@ -52,3 +52,29 @@ x.update(answer=ans,
  stop='Stop on "now CEO of Collegiate Academies."')
 json.dump(Q,open('Q.json','w'))
 print('gen4 ok')
+
+# ---------- 092926 ~1:15pm: CH asked for a REVISION, not a cut: essence + 30-45s answer + short Jerel ----------
+x=byid['g2g']
+long_version=x['answer'].split('<p class="small">')[0]
+ESS=('<div class="coreline"><b>What you\'re saying, in one breath</b>Trust is the foundation, and you earn it three ways. '
+     'Clarity: nobody guesses what\'s expected. Support: you teach on the floor instead of handing out next steps. '
+     'Accountability: you never round up, because telling the truth is what keeps the trust. It\'s not a sequence. Each one feeds the others.</div>')
+A45=P(cue('flat','first sentence, the map')+' For me it\'s four things: <b>trust, clarity, support and accountability.</b> They run roughly in that order, but they\'re not linear. They feed each other.',
+ cue('slow','slow')+' <b>Trust is everything</b>, and you earn it through the other three. <b>Clarity</b>: people know what\'s expected of them and what to expect from me. '
+ '<b>Support</b>: my best development meetings don\'t end with a list of next steps. They happen on the floor, doing the work, because we can\'t talk our way into a better school. <b>We have to teach our way into it.</b> '
+ 'And <b>accountability</b>: no one\'s guessing where they stand. Ninety-five percent of the time I\'m in my support role, but <b>I never round up</b>. That\'s what keeps the trust.',
+ cue('beat','beat, then the proof')+' The best example is Jerel.')
+JER=P(cue('warm','steady')+' I was brought in to Carver as a consultant with one question: <b>do we keep this leader?</b> Jerel was the founding principal, a really compelling leader, and his school was struggling. Teachers were frustrated, and kids were opting out.',
+ 'What I saw was a high-potential leader getting a lot of feedback that things weren\'t good enough, and very little help. So I worked <b>shoulder to shoulder</b> with him, on the floor, with high doses of real-time feedback, mostly affirming. I named the relationship that needed to be reset. And we put what he was great at on stage.',
+ cue('power','land this')+' It worked. <b>Jerel went on to be Louisiana Principal of the Year, and today he\'s CEO of Collegiate Academies.</b> '+cue('stop','STOP'))
+x['answer']=(ESS+'<p class="lab" style="margin-top:12px">The answer &middot; 30 to 45 seconds</p>'+A45+
+ '<p class="lab" style="margin-top:12px">The proof &middot; Jerel, about 45 seconds</p>'+JER+
+ '<p class="small"><b>Revised at your request (092926, 1:15 PM)</b>, not cut: built from your dictation today and your written Carver answer (060925), in your phrasing where it exists. Say it your way.</p>'
+ '<div class="prepOnly"><p class="lab" style="margin-top:14px">Long version &middot; your dictation, cut only</p>'+long_version+'</div>')
+x['core']='Trust is everything, and you earn it through clarity, support and accountability. They feed each other.'
+x['hook']='four things, not linear / trust is everything / teach our way into it / never round up / Jerel'
+x['land']='"Jerel went on to be Louisiana Principal of the Year, and today he\'s CEO of Collegiate Academies."'
+x['target']='45 seconds, then Jerel in 45. Under two minutes total.'
+x['stop']='Stop on "CEO of Collegiate Academies."'
+json.dump(Q,open('Q.json','w'))
+print('card 3 revised')

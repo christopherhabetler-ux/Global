@@ -71,6 +71,24 @@ Paola's core question, most likely as your philosophy on managing people or lead
 
 Here it is, in your words.
 
+What you're saying, in one breathTrust is the foundation, and you earn it three ways. Clarity: nobody guesses what's expected. Support: you teach on the floor instead of handing out next steps. Accountability: you never round up, because telling the truth is what keeps the trust. It's not a sequence. Each one feeds the others.The answer · 30 to 45 seconds
+
+For me it's four things: trust, clarity, support and accountability. They run roughly in that order, but they're not linear. They feed each other.
+
+Trust is everything, and you earn it through the other three. Clarity: people know what's expected of them and what to expect from me. Support: my best development meetings don't end with a list of next steps. They happen on the floor, doing the work, because we can't talk our way into a better school. We have to teach our way into it. And accountability: no one's guessing where they stand. Ninety-five percent of the time I'm in my support role, but I never round up. That's what keeps the trust.
+
+The best example is Jerel.
+
+The proof · Jerel, about 45 seconds
+
+I was brought in to Carver as a consultant with one question: do we keep this leader? Jerel was the founding principal, a really compelling leader, and his school was struggling. Teachers were frustrated, and kids were opting out.
+
+What I saw was a high-potential leader getting a lot of feedback that things weren't good enough, and very little help. So I worked shoulder to shoulder with him, on the floor, with high doses of real-time feedback, mostly affirming. I named the relationship that needed to be reset. And we put what he was great at on stage.
+
+It worked. Jerel went on to be Louisiana Principal of the Year, and today he's CEO of Collegiate Academies.
+
+Long version · your dictation, cut only
+
 I'm going to talk about trust, clarity, support, and accountability. The point I want to make is that we kind of work in that order, but it's also not linear. These concepts also all feed into each other, right?
 
 Trust is everything because you get trust from clarity. You get trust from being valuable and reliable. That's the support. You get trust through this idea of people knowing what's expected of them and what they're going to expect from you. There's this idea of predictability, clarity, transparency, aligning on purpose and mindset, showing people you're there for the right reasons, and having a degree of legitimate human care, concern, understanding, and validation.
@@ -93,9 +111,9 @@ The accountability feeds the trust.... Knowing that I'm your biggest cheerleader
 
 Jerel received Louisiana state's Principal of the Year in our fourth year together and is now CEO of Collegiate Academies.
 
-Land on this. the accountability feeds the trust. Then Carver.
+Land on this. Jerel went on to be Louisiana Principal of the Year, and today he's CEO of Collegiate Academies.
 
-Then stop. Your last words are "now CEO of Collegiate Academies."
+Then stop. Your last words are "CEO of Collegiate Academies."
 
 Card 4. Tell me about a principal who was struggling. What did you do?
 
