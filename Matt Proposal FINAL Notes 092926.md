@@ -204,3 +204,12 @@ CH remembers Matt giving a ladder: about $3,000 past bills at three clients, $12
 - Said each thing once: page 1 section 03 now gives outcomes, page 2 section 05 gives the tasks. Dropped the repeat of $6-9K in step 1 and "pay should grow only when the business grows" in step 2.
 - Formatting borrowed from the language guide (sent 092926): numbered sections 01-07, filled navy table header, shaded Proposed column. No banner.
 - Voice: close now uses CH's own line from the 092926 language guide email ("I'm here and ready to adjust"). Abstract triad "the strategy, the relationships, and the product work" replaced with concrete nouns (your clients, AAP, the five parked leads). Opener cut by about 20 words.
+
+## v14: Final for Sending (092926)
+
+- File to send: "Proposal - Chris and Matt - Habetler 092926.pdf" (no version number in the name). Source: design/Proposal for Matt v14 092926.html.
+- Section 03 is now "Initial Scope: Roles and Responsibilities": the four areas as the primary list, plus a "Could add" list. It opens with about one workday a week, filled with whatever matters most; predictable; Matt is paying for it, so he's never asking a favor.
+- Terms intro carries the partnership spirit: the terms are for clarity, not to box in the partnership; at a moment's notice, whatever it takes; quarterly step-backs.
+- 15% vs 20% justified: new clients come from Matt's relationships and selling, so CH takes a referral partner's share (top of 10-15%); on network deals CH does most of the work behind the deal, so the share is higher, but it's 20% of what EdTech Expertz keeps, not the full deal.
+- Check-ins and changes item removed at CH's direction. That also removed 30 days' notice, the paid notice month, and the 12-month network tail from the page.
+- Page 2 scope section removed (moved to page 1).
