@@ -14,7 +14,7 @@ I wrote this from a cloud session. I couldn't open `~/Documents/CLAUDE/Skills/co
 ### 2. When Matt has a hypothesis, turn it into a test
 
 - **Evidence.** On Canvas, Matt's hypothesis about the Mastery flag and reassessment was the spine the findings were tested against, and he called the result "absolutely nails it" (Session Log 092326). On 95 Percent Group, the hypothesis was "start cold." For Benchmark he has one again.
-- **Change.** A hypothesis becomes three things: a proposition in Prompt 2 Task C that can fail, a named step in Prompt 3 (Step 2C in the Benchmark kit), and, when it's about other companies, a separate comparator run (Prompt 1B). That keeps Prompt 1 clean ("Benchmark only") and still tests the theory. The generator gets a `--hypothesis` flag.
+- **Change.** A hypothesis becomes a part of the research prompt that can fail (Part 3 in the Benchmark kit) and a named step in Prompt 3 (Step 2C). The generator gets a `--hypothesis` flag.
 
 ### 3. Framing line opens with an upload receipt
 
@@ -24,12 +24,12 @@ I wrote this from a cloud session. I couldn't open `~/Documents/CLAUDE/Skills/co
 ### 4. Archive fallback in every research prompt and the quote chase
 
 - **Evidence.** The 95 Percent Group document had to carry a callout saying the VP of Software Engineering posting was blocked and its quoted text "never confirmed."
-- **Change.** Prompts 1, 1B and 2 and the quote chase try the Internet Archive for any blocked page, and record the archived URL and capture date. The quote chase gains a sixth field, LIVE or ARCHIVED.
+- **Change.** The research prompt and the quote chase try the Internet Archive for any blocked page, and record the archived URL and capture date. The quote chase gains a sixth field, LIVE or ARCHIVED.
 
 ### 5. Every "search results only" claim carries its query
 
 - **Evidence.** The 95 Percent Group document says of TouchMath's closing, "we did not record the search behind that, so whether it closed is unknown." It also has three rows marked "from search results only."
-- **Change.** Prompt 1 labels these SEARCH RESULT ONLY and records the query. Prompt 3 flags any that are load-bearing.
+- **Change.** The research prompt labels these SEARCH RESULT ONLY and records the query. Prompt 3 flags any that are load-bearing.
 
 ### 6. Describe the seat for outside models, and match the objections to the kind of meeting
 
@@ -51,7 +51,12 @@ I wrote this from a cloud session. I couldn't open `~/Documents/CLAUDE/Skills/co
 - **Evidence.** The Benchmark schedule had the research sitting on Sat 9/26 and drafting on Mon 9/28. As of Monday evening the parent task still reads "Not started," with delivery Wed 9/30.
 - **Change.** Each kit's run sheet carries a trip-wire: if the Step 3 answer isn't in by T-1 at noon, send the fallback line to Matt (it's written into the Benchmark prompt file) and take one extra day, as long as that still leaves four days before his meeting.
 
-### 10. Hub status stops drifting
+### 10. One research prompt, two engines
+
+- **Evidence.** The Benchmark kit grew to four research prompts: Perplexity, a second Perplexity tab, Gemini, then GPT-5 Pro. Christopher's call on 092826: too many. The Zeta prep already worked with one prompt pasted into two models, then cross-checked.
+- **Change.** Step 1 is a single research prompt pasted unchanged into Perplexity and Gemini. Their disagreements are the cross-check, and Prompt 3 is told to settle them against the source. That's two prompts and three runs per target. The generator emits one research prompt, not three.
+
+### 11. Hub status stops drifting
 
 - **Evidence.** As of 092826 the Crosswalk Mini Hub still said "95 Percent Group, owed today, Wednesday 9/23" and "Benchmark Education, then BrainPOP. Both parked until Matt gives dates." Both dates landed 092526.
 - **Change.** I updated the hub today. Going forward, each step's close-out includes a one-line hub status edit, and the skill's "done" checklist names that edit.
@@ -71,7 +76,7 @@ Paste this into a Claude Code or Cowork session that has `~/Documents` mounted:
 Apply the crosswalk improvements from "Crosswalk System Improvements 092826.md" (GitHub christopherhabetler-ux/global, branch claude/sharp-dijkstra-rnbepa; the same text is on the Notion run-kit page). Read ~/Documents/CLAUDE/Skills/company-crosswalk/SKILL.md, the crosswalk-kit make_kit.py, and ClassE/CROSSWALKS/RETRO — crosswalk process after 95 Percent Group 092426.md first. Then:
 
 1. SKILL.md: add Gate 0 (re-read Matt's latest thread before Step 1 and before Step 4; record "Matt thread last read" in the run sheet), the hypothesis-to-test rule, the seat rule (role plus first/second look, never a name to an outside model), the three-question read moved to the Prompt 3 sitting, the slip trip-wire, and the hub status line in the done checklist. Keep every existing gate and failure mode; add these as new items with their evidence lines.
-2. make_kit.py: add --hypothesis, --seat, --look first|second, and --axis-type intervention|publisher. The publisher preset uses the axis, tests E and K, Step 2C, and objections item 11 from "Benchmark Crosswalk Research Prompts 092826.md". Put the upload-receipt sentence at the start of the shared framing line, the archive fallback in the shared method block, the SEARCH RESULT ONLY rule in Prompt 1, and the LIVE/ARCHIVED field in the quote chase. When --hypothesis names other companies, emit Prompt 1B too.
+2. make_kit.py: add --hypothesis, --seat, --look first|second, and --axis-type intervention|publisher. The publisher preset uses the research prompt, the axis, tests E and K, Step 2C, and objections item 11 from "Benchmark Crosswalk Research Prompts 092826.md". Put the upload-receipt sentence at the start of the shared framing line, the archive fallback in the shared method block, the SEARCH RESULT ONLY rule in the research prompt, and the LIVE/ARCHIVED field in the quote chase. Replace the separate Perplexity and Gemini prompts with the single research prompt (Parts 1 to 3) from the Benchmark file.
 3. Regenerate the sample kit, diff it against the Benchmark prompt file, and report any wording that differs.
 4. Log a Session Log entry and update the Notion run-kit page with the new generator ZIP.
 Don't change any file in a delivered crosswalk folder.

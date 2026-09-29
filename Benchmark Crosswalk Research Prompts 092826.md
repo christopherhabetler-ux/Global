@@ -17,30 +17,27 @@ Also from that thread: "Just keep the same format as the most recent draft. You 
 
 That changes three things in the prompts:
 
-1. **Matt's theory is now something to test, not a premise.** Prompt 1B is new, and it checks both halves: whether the three largest publishers already ship something like ClassE, and where Benchmark actually sits. Prompts 2 and 3 carry the theory as propositions that could fail.
+1. **Matt's theory is now something to test, not a premise.** The research prompt checks both halves: whether the three largest publishers already ship something like ClassE, and where Benchmark actually sits. Prompt 3 tests it again against Benchmark's own plans.
 2. **Benchmark is a publisher, so rights look different.** Ingestion rights are an OPEN QUESTION in the ClassE brief. When the partner owns the content, that question changes shape, but the claim doesn't get promoted. Prompt 3 now tests this directly.
 3. **The seat is a second look, not a first.** The objections list is weighted toward what someone who has already seen a ClassE pitch would press on. The seat is described by role only, and no name goes to an outside model.
 
 Carried forward from the 95 Percent Group build: an upload-receipt check in the framing line (the Grok file came back empty last time), an archive fallback in the quote chase (the job-posting quote was never confirmed), and a search perimeter on every "search results only" claim (the TouchMath closing had none).
 
-## Run order (four runs plus your read, one sitting tonight)
+## Two prompts, three runs, one sitting tonight
 
-| # | Model | Runs alongside | Uploads | Save the answer as |
-|---|---|---|---|---|
-| 0 | You | while 1, 1B, 2 run | none | `00 My read.md` |
-| 1 | Perplexity, deep research | 1B and 2 | none | `01 Perplexity.md` |
-| 1B | Perplexity, deep research, second tab | 1 and 2 | none | `01B Perplexity market.md` |
-| 2 | Gemini Pro, deep research | 1 and 1B | none | `02 Gemini.md` |
-| 3 | GPT-5 Pro, web on | after 1, 1B, 2 land | 01, 01B, 02, and both files in `_upload-these/` (five files) | `03 GPT-5 Pro.md` |
-| 3T | Grok, only if Claude asks | never sees 03 | same five | `04 Grok.md` |
+Revised 092826 at 9pm ET, cut from four prompts to two. The research prompt goes into Perplexity and Gemini unchanged, in separate chats, the same way the Zeta prompt went into ChatGPT and Gemini. Where the two answers disagree, that's the cross-check. Prompt 3 is the red team.
 
-**Timing to hit Wed (revised Mon 092826, 9pm ET: the whole sitting runs tonight).**
-1. Now: paste 1, 1B and 2 in parallel. Gemini shows a research plan first; click Start research without editing it.
-2. While they run (roughly 10 to 30 minutes each): write your read (three questions at the bottom).
-3. When all three land: save each as its file, then run Prompt 3 in GPT-5 Pro. If it's past 11pm, start it and save the answer in the morning.
-4. Tue after the 3:30 Zeta call: Claude does the quote chase, claim register, draft and blind review.
-5. Wed morning: you read the PDF and send it to Matt.
-Your read goes in the drop folder as `00 My read.md`, so Claude picks it up with the rest.
+| Step | Where | Uploads | Save as |
+|---|---|---|---|
+| 1 | Research prompt in Perplexity (deep research) | none | `01 Perplexity.md` |
+| 1 | Same prompt in Gemini (deep research), at the same time | none | `02 Gemini.md` |
+| - | Your read, while those two run (questions at the bottom) | none | `00 My read.md` |
+| 2 | Prompt 3 in GPT-5 Pro, web on, after both land | 01, 02, and both files in `_upload-these/` (four files) | `03 GPT-5 Pro.md` |
+| - | Grok, only if Claude asks; never sees 03 | same four | `04 Grok.md` |
+
+- Gemini shows a research plan first. Click Start research without editing it.
+- If Prompt 3 starts after 11pm, let it run and save the answer in the morning.
+- Tue after the 3:30 Zeta call, Claude does the quote chase, claim register, draft and blind review. Wed morning you read the PDF and send it to Matt.
 
 **If Prompt 3 slips past Tue noon,** send Matt this line and take Thu 10/01. That still gives him four days before his meeting:
 
@@ -58,143 +55,72 @@ Matt, quick heads up: Benchmark will land Thursday 10/1 instead of Wednesday. I 
 6. Don't claim whole-curriculum ingestion, equal-difficulty Twin Questions, settled category language, or broad causal outcomes.
 7. A finding of no material fit is useful. Don't manufacture a gap.
 8. A URL alone is not evidence. A claim needs a working source plus an exact quote or page reference.
-9. **New:** Nothing about the person in the meeting goes to an outside model or into the document. Describe the seat, never the individual.
+9. Nothing about the person in the meeting goes to an outside model or into the document. Describe the seat, never the individual.
 
 ---
 
-## Prompt 1: Perplexity (deep research mode)
-
-Use auto or deepest research mode, not a heavy thinking model. Save as `01 Perplexity.md`.
+## Prompt 1: research (paste into Perplexity and Gemini, separate chats)
 
 ```
-You are the source-discovery lead for a high-stakes competitive-intelligence brief on Benchmark Education Company. Build an auditable source universe about Benchmark only. Do not compare it to any other company and do not recommend a partnership.
+You are the lead researcher for a high-stakes competitive-intelligence brief on Benchmark Education Company, the K-8 literacy curriculum publisher. Build an auditable, sourced picture of the company. Accuracy matters more than volume, and "not found" is an acceptable answer. Do not recommend a partnership, and do not compare Benchmark to other companies except in Part 3.
 
-RESEARCH QUESTIONS
-1. What is the complete current product portfolio? Give exact product names, grade spans, subjects, languages, instructional purposes, print and digital components, and how the products relate. Names to check, not facts to assume: Benchmark Advance, Benchmark Adelante, Benchmark Workshop, Benchmark Universe, and any phonics, intervention, assessment, or English-learner products. Confirm each name is current and add any that are missing.
-2. How does a grades 4 to 6 ELA classroom actually use the core program week to week: lesson sequence, texts, student practice, assessment, feedback after an error, reteaching, reporting, and teacher workflow? Report grades 4 to 6 separately from K to 3 wherever the sources allow.
-3. What assessment does Benchmark provide, and what happens after an assessment flags a student who needs help? Name the product that supplies the follow-up material and say whether it is digital, print, or teacher-delivered.
-4. What evidence supports each product? Identify the exact product and edition, population, study design, comparison group, sample, measures, findings, limitations, claimed ESSA tier, EdReports ratings by edition and grade band, state adoption records, and any funding or commissioning relationship.
-5. What changed in the last 24 months? Search releases, support updates, leadership statements, acquisitions, partnerships, job postings, AI statements, state adoptions, and district procurement records.
-6. Is there public evidence of generative AI, adaptive practice, automatically generated practice or assessment items, or student-facing conversational support in any Benchmark product? Absence from a marketing page is not evidence of absence.
-7. What does the digital platform integrate with (rostering, LTI, QTI, assessment data export, gradebook), and does Benchmark license its content or data to third-party platforms or name technology partners?
-8. Company facts: ownership (private, family, private-equity, or other), headquarters, current CEO and product leadership, and any published figures on size, number of states or districts served, or adoption footprint. Report only what a source states; do not estimate.
+PART 1, BENCHMARK
+1. Portfolio. Every current product and named component: exact name, current edition, grade span, subject and language, buyer, user, print or digital, and how the products relate. Names to check, not facts to assume: Benchmark Advance, Benchmark Adelante, Benchmark Workshop, Benchmark Universe, and any phonics, intervention, assessment, or English-learner products. Confirm each name is current and add any that are missing.
+2. The grades 4 to 6 classroom, week to week: lesson sequence, texts, student practice, feedback after an error, assessment, reteaching, reporting, and teacher workflow. Report grades 4 to 6 separately from K to 3 wherever the sources allow.
+3. After an assessment flags a student: what happens next, which product supplies the follow-up material, and whether that step is digital, print, or teacher-delivered.
+4. The digital platform: what students actually do in it, whether it responds on its own after a wrong answer (hint, feedback, follow-up item) or leaves that to the teacher, and any public evidence of generative AI, adaptive practice, or automatically generated items. Absence from a marketing page is not evidence of absence.
+5. Integrations and partners: rostering, LTI, QTI, data export, gradebook, and whether Benchmark licenses its content or data to third-party platforms or names technology partners.
+6. Evidence: for every efficacy study, the exact product and edition, author and funder, design, comparison group, sample, measures, findings, limitations, and the claimed ESSA tier versus what the design appears to meet. Include EdReports ratings by edition and grade band, and state adoption records.
+7. The last 24 months: releases, leadership, acquisitions, partnerships, job postings, AI statements, and state adoptions.
+8. Company facts: ownership, headquarters, CEO and product leadership, and any published figures on size or adoption footprint. Report only what a source states; do not estimate.
 
-SOURCE PRIORITY
-A. Product manuals, support documentation, implementation guides, release notes
-B. Full efficacy reports and study appendices; EdReports reviews
-C. Government, state adoption, district, and standards-body records
-D. Executive interviews, press releases, job postings
-E. Independent reviews and trade press
-F. Marketing pages only when no better source exists
-
-METHOD
-- Search each research question separately. Do not stop after finding a company page.
-- "Benchmark" is a common word. Keep only sources about Benchmark Education Company, the K-8 literacy curriculum publisher. Exclude generic "benchmark assessment" results and other companies with Benchmark in the name, and flag any source where it is unclear which company is meant.
-- Trace every repeated claim to its earliest identifiable source.
-- Mark company-funded, company-commissioned, and genuinely independent evidence separately.
-- Record paywalls, login walls, removed pages, and inaccessible documents. For a blocked page, try the Internet Archive (web.archive.org) and record the archived URL and capture date if you use it.
-- If a claim rests only on a search-result snippet or an aggregator, label it SEARCH RESULT ONLY and record the query that produced it.
-- For a negative finding, list the exact manuals, support sections, release-note period, and search terms checked.
-- If a citation does not directly support the claim, reject it.
-
-OUTPUT
-A source ledger grouped by Portfolio, Classroom Mechanics (grades 4 to 6), Assessment and Follow-up, Evidence, Strategy, AI and Digital Direction, Integrations and Partners, Company Facts, Independent Validation, and Blocked Sources. Each row: claim, direct URL, publication date, exact quote, page or section, origin family, contradictions. End with:
-A. Ten highest-value primary sources
-B. Ten claims most likely to be overstated
-C. Ten unresolved questions for the next researcher
-
-Do not draft a comparison. Do not cite Perplexity as a source. Do not treat a search-result snippet as evidence.
-```
-
-## Prompt 1B: Perplexity, second tab (market position check)
-
-New in this kit. Run it in a separate Perplexity tab alongside Prompt 1. Save as `01B Perplexity market.md`.
-
-```
-You are a market researcher testing a working hypothesis about the US K-8 English language arts curriculum market. Test it; do not prove it. Either answer is useful.
-
-THE HYPOTHESIS TO TEST
-"The largest K-8 ELA curriculum publishers (McGraw Hill, HMH, Savvas) already offer something similar to AI-generated, curriculum-connected student practice with immediate feedback. Medium and smaller publishers generally do not, and may look for a technology partner to catch up."
-
-WHAT "SOMETHING SIMILAR" MEANS HERE
-A digital capability, live for students or teachers today, that does at least two of the following on the publisher's own ELA content in grades 3 to 8: generates or adapts practice or assessment items; gives the student feedback or a hint after an error and then a follow-up item on the same skill; reports item-level skill gaps to the teacher. A roadmap announcement, pilot, or beta is not "live." Record it separately.
-
-RESEARCH QUESTIONS
-1. For each of McGraw Hill, HMH, and Savvas: which named products or features, if any, meet the definition above for grades 3 to 8 ELA? Give the product name, what it does, whether it is generally available, pilot, or announced, the date, and whether it uses generative AI. If a feature applies to math only, or to writing feedback only, say so and do not count it as ELA practice.
-2. For each of the three, is the capability built in-house, acquired, or delivered through a named technology partner?
-3. Where does Benchmark Education Company sit relative to those three? Report only published indicators: number of state adoptions, districts or students served, revenue or employee figures from a stated source, and how trade press or analysts categorize it. Do not estimate, and do not rank without a source.
-4. Among other K-8 ELA core-curriculum publishers of Benchmark's size or smaller, which have publicly announced AI-generated or adaptive practice, and was it built, bought, or partnered? Enumerate what you find, with dates.
-5. Is there public evidence of publishers partnering with third-party AI practice or tutoring companies in the last 24 months (announcements, conference sessions, trade press)? Name the pairs.
-
-METHOD
-- Use primary sources first: product pages, support and release notes, press releases, investor or annual reports, state adoption lists, EdReports, and trade press (EdWeek Market Brief, EdSurge, The 74, District Administration).
-- For each publisher, enumerate what you checked, so a "not found" has a search perimeter.
-- "Benchmark" is a common word. Keep only sources about Benchmark Education Company, the K-8 literacy curriculum publisher. Exclude generic "benchmark assessment" results and other companies with Benchmark in the name, and flag any source where it is unclear which company is meant.
-- Label each finding SUPPORTS, UNDERCUTS, or MIXED with respect to the hypothesis, and say which half of the hypothesis it bears on (the large-publisher half or the smaller-publisher half).
-- Record blocked sources and try the Internet Archive for them.
-
-OUTPUT
-1. A table: publisher | named capability | meets the definition? (yes / partly / no) | live, pilot, or announced | built, bought, or partnered | source URL | date | exact quote
-2. Benchmark's position, with every figure sourced
-3. Smaller-publisher findings, enumerated
-4. Publisher and AI-partner pairings found
-5. A verdict of 200 words or fewer: which half of the hypothesis the evidence supports, which it undercuts, and what public research cannot settle
-
-Do not recommend a partnership. Do not mention any specific AI vendor as a candidate. Do not cite Perplexity as a source.
-```
-
-## Prompt 2: Gemini Pro (deep research, alongside Prompts 1 and 1B)
-
-Gemini does its own retrieval and doesn't need Perplexity's answer. Save as `02 Gemini.md`.
-
-```
-You are the document-analysis lead for a high-stakes intelligence brief on Benchmark Education Company. Build the definitive product and evidence map from primary documents: product guides, support documentation, implementation guides, efficacy reports, EdReports reviews, and state adoption records. Focus on extraction and reconciliation, not recommendations. Do not compare Benchmark to any other company.
-
-TASK A, PRODUCT ARCHITECTURE
-One row for every current product and named component: exact name, current edition, grade span, subject and language, buyer, user, teacher role, student workflow, lesson sequence, texts used, practice mechanism, feedback after an error, assessment and reteaching, reporting, professional learning, digital or print status, integrations, and source support. Where the sources allow, describe grades 4 to 6 separately.
-
-TASK B, EVIDENCE REGISTER
-For every efficacy or validation study: exact product and edition studied; author and affiliation; funder or commissioning relationship; publication status; dates, setting, grades, population; sample size and attrition; design and comparison condition; baseline equivalence; outcome measures; effect sizes and significance if reported; stated limitations; claimed ESSA tier and whether the design appears to meet it; whether findings transfer to the edition sold today. Include EdReports ratings by edition and grade band.
-
-TASK C, CONTRADICTION TESTS
-Reconcile conflicting grade spans, product names, editions, efficacy claims, and descriptions of digital functionality. Test these propositions, and for each say SUPPORTED, CONTRADICTED, or UNVERIFIED with the quote that decides it:
+PART 2, TEST THESE PROPOSITIONS
+For each, say SUPPORTED, CONTRADICTED, or UNVERIFIED, with the quote that decides it:
 1. Benchmark is primarily a core ELA curriculum publisher.
-2. Its digital platform delivers student practice with automatic feedback, rather than digital versions of print materials.
+2. Its digital platform delivers student practice with automatic feedback, not just digital versions of print materials.
 3. Its assessments drive reteaching inside the program, and the program supplies the reteaching materials.
-4. Its evidence base is independent.
+4. Its evidence base is independent of the company.
 5. A current product uses generative AI, adaptive practice, or automatically generated items.
-6. Benchmark licenses its content to, or integrates with, third-party digital practice or assessment platforms.
-7. After a student misses a grades 4 to 6 practice item in the digital platform, the platform itself responds (hint, feedback, or a follow-up item), rather than leaving the response to the teacher.
+6. Benchmark licenses content to, or integrates with, third-party practice or assessment platforms.
+7. Benchmark has announced, or is visibly building (roadmap, job postings, acquisitions), AI-generated or adaptive student practice of its own.
 
-RULES
-- Use exact quotations and page numbers.
-- "Benchmark" is a common word. Keep only sources about Benchmark Education Company, the K-8 literacy curriculum publisher. Exclude generic "benchmark assessment" results and other companies with Benchmark in the name, and flag any source where it is unclear which company is meant.
-- Do not infer current functionality from a study of an older edition.
-- Distinguish a company claim of an ESSA tier from your own assessment of the study design.
-- Mark every unsupported proposition UNVERIFIED.
-- Identify duplicated sources that share one origin.
-- If a page is blocked, try the Internet Archive and record the archived URL and capture date.
+PART 3, TEST A MARKET HYPOTHESIS
+Hypothesis: "The largest K-8 ELA publishers (McGraw Hill, HMH, Savvas) already offer something similar to AI-generated, curriculum-connected student practice with feedback. Medium and smaller publishers generally do not, and may look for a technology partner to catch up." Test it; don't prove it.
+- "Something similar" means a capability live today (not a pilot or an announcement) that does at least two of these on the publisher's own grades 3 to 8 ELA content: generates or adapts practice items; responds to a wrong answer with feedback and a follow-up item on the same skill; reports item-level skill gaps to the teacher. Math-only or writing-feedback-only features don't count.
+- For each of the three: the named capability, live, pilot, or announced, and whether it was built, bought, or partnered.
+- Where Benchmark sits relative to them, using published indicators only.
+- Any publisher and AI-partner pairings announced in the last 24 months.
+- A verdict in 150 words or fewer: which half of the hypothesis holds, which fails, and what public research can't settle.
+
+METHOD
+- Source priority: product manuals, support documentation and release notes first; then efficacy reports and EdReports; then state and district records; then press releases, interviews and job postings; then trade press; marketing pages only when nothing better exists.
+- "Benchmark" is a common word. Keep only sources about Benchmark Education Company. Exclude generic "benchmark assessment" results and other companies with Benchmark in the name, and flag any source where it's unclear which company is meant.
+- Trace repeated claims to their earliest source, and treat copies of one claim as one origin, not corroboration.
+- Mark company-funded, company-commissioned, and independent evidence separately. Don't infer today's functionality from a study of an older edition.
+- If a page is blocked or gone, try the Internet Archive and record the archived URL and capture date. Otherwise record it as blocked.
+- If a claim rests only on a search snippet or an aggregator, label it SEARCH RESULT ONLY and record the query.
+- Every negative finding lists exactly what was checked: which documents, which release-note period, which search terms.
 
 OUTPUT
-1. Complete portfolio table
-2. Study-by-study evidence register
-3. Contradiction matrix for the seven propositions
-4. Claims safe to use
-5. Claims requiring hedging
-6. Claims to exclude
-7. Missing documents and follow-up questions
+1. Source ledger, one row per claim: claim | URL | publication date | exact quote | page or section | origin family | independent or company
+2. Portfolio table
+3. Evidence register, one row per study
+4. The Part 2 proposition results
+5. The Part 3 market table and verdict
+6. Claims safe to use, claims needing a hedge, claims to exclude
+7. Blocked sources, and the ten questions public research could not settle
 
-Do not draft a comparison.
+Do not draft a comparison with any other product. Do not cite yourself or another AI as a source.
 ```
 
-## Prompt 3: GPT-5 Pro (after 1, 1B and 2 land)
+## Prompt 3: GPT-5 Pro (after both research answers land)
 
-New conversation, web research on. **Upload five files:** `01 Perplexity.md`, `01B Perplexity market.md`, `02 Gemini.md`, and the two files in `_upload-these/`. Paste the framing line, then the prompt. Save as `03 GPT-5 Pro.md`.
+New conversation, web research on. **Upload four files:** `01 Perplexity.md`, `02 Gemini.md`, and the two files in `_upload-these/`. Paste the framing line, then the prompt. Save as `03 GPT-5 Pro.md`.
 
 Framing line, paste first:
 
 ```
-Before anything else, list each uploaded file by name with its first heading and roughly how long it is. If any file is empty, unreadable, or missing, stop and tell me which one; do not continue. Then read all five files before answering. Perplexity and Gemini are finding aids, not evidence. The ClassE research brief controls every ClassE claim. Reopen disputed sources on the web.
+Before anything else, list each uploaded file by name with its first heading and roughly how long it is. If any file is empty, unreadable, or missing, stop and tell me which one; do not continue. Then read all four files before answering. The Perplexity and Gemini files answer the same research prompt; treat their disagreements as findings to settle against the source. Both are finding aids, not evidence. The ClassE research brief controls every ClassE claim. Reopen disputed sources on the web.
 ```
 
 Prompt 3:
@@ -238,7 +164,7 @@ Answer in order before judging any gap:
 9. What is the smallest realistic partnership step that creates evidence for a deeper one?
 
 STEP 2C, THE MARKET HYPOTHESIS
-Using 01B and your own reopened sources, test this working hypothesis: "The largest K-8 ELA publishers (McGraw Hill, HMH, Savvas) already offer something similar; medium and smaller publishers generally do not, and may look for a partner to catch up." Answer separately:
+Using Part 3 of both research files and your own reopened sources, test this working hypothesis: "The largest K-8 ELA publishers (McGraw Hill, HMH, Savvas) already offer something similar; medium and smaller publishers generally do not, and may look for a partner to catch up." Answer separately:
 1. Does the evidence show the three largest publishers have a live capability similar to ClassE's loop in grades 3 to 8 ELA? Name it, or say what was checked.
 2. Does the evidence place Benchmark among the medium or smaller publishers the hypothesis describes? Cite the indicator.
 3. Does Benchmark already have, or publicly plan, its own version? If so, the partner half of the hypothesis fails for Benchmark specifically, whatever holds for the market.
@@ -268,7 +194,7 @@ Do not write sales advice. Do not reward novelty. A conclusion of no material fi
 
 ## Grok tiebreak (only if Claude asks)
 
-Separate conversation. Same five uploads, same framing line, same Prompt 3. It must never see `03 GPT-5 Pro.md`. Save as `04 Grok.md`. Claude asks for this only when the GPT-5 Pro verdict is close or thin.
+Separate conversation. Same four uploads, same framing line, same Prompt 3. It must never see `03 GPT-5 Pro.md`. Save as `04 Grok.md`. Claude asks for this only when the GPT-5 Pro verdict is close or thin.
 
 ## Prompt 3B: quote chase (Claude runs this with web tools; paste only if Claude hands it to you)
 
@@ -291,7 +217,7 @@ CLAIM IDS AND THEIR CITED SOURCES:
 [paste the surviving claim IDs with the source each one points to]
 ```
 
-## Your read (tonight, while Prompts 1, 1B and 2 run)
+## Your read (tonight, while the research runs)
 
 Three to five sentences, or a voice memo. Save it as `00 My read.md` in the drop folder. Last time your Intersection line was the best sentence in the 95 Percent Group document, and it arrived last. This time it comes first. Answer these three:
 
