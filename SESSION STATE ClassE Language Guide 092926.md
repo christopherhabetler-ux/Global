@@ -55,8 +55,8 @@ Landscape, and each section starts on a fresh page.
 
 **Use write-like-us from the start.** He handed over the skill mid-session. Any email in his name starts from his dictated words and his rules, not from a polished draft.
 
-## Open items
+## Open items (closed out 092926)
 
-- Christopher reviews the 8-page build, then sends it with the v4 email.
+- Approved 092926. Christopher sends the PDF with the v5 email in the handoff file.
 - Formatting: he said the 092726 version was prettier. The fonts are fixed now. Anything else he flags is a template or CSS change in `build guide template.py`.
 - He offered better examples for "Phrases we have heard from you." The current four are from Matt's September workshop notes only.

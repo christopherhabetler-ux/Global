@@ -1,18 +1,24 @@
-# HANDOFF: ClassE US Language Guide (092926)
+# HANDOFF: ClassE US Language Guide (092926, closed)
 
 ## Status
 
-Done in the cloud session. The guide merges the 092726 accuracy fixes (SB 12 court ruling, CR-SE 2019, HB 8 and STAAR, the ESSA wording, Ed Law 2-d, the New York ELL terms, "controlled study," TEKS only after confirming, the families example, "Usage is not a result," and the If a buyer asks items) with the working-draft rewrite from 092926. It is 8 landscape pages, built in the 092726 house template (build guide template.py).
+Ready to send. Christopher approved the structure on 092926 ("Much, much better"). The next step is his: attach the PDF and send the email below to Matt.
 
-Files in this repo, branch claude/sweet-albattani-jnh10l:
-- GUIDE ClassE US Language 092926.pdf (send this)
-- GUIDE ClassE US Language 092926.md (source)
-- GUIDE ClassE US Language 092926.html (print copy)
-- build guide pdf.py (rebuilds the PDF from the .md)
+## Files (Global repo, branch claude/sweet-albattani-jnh10l)
 
-No local session is needed. Optional, if you want the receipts from your checkers on your Mac, save the email below to a file and run:
-python3 ~/Documents/CLAUDE/Scripts/ship_check.py "<email file>" --register email
-python3 ~/Documents/CLAUDE/Scripts/aicheck.py --memo "GUIDE ClassE US Language 092926.md"
+- `GUIDE ClassE US Language 092926.pdf`: the file to send, 8 landscape pages.
+- `GUIDE ClassE US Language 092926.html`: the same content, with the search box for reading on screen.
+- `GUIDE ClassE US Language 092926.md`: the source. Edit this, then rebuild.
+- `build guide template.py`: rebuilds in the 092726 house template, with fonts embedded. Run `python3 "build guide template.py" "<path to GUIDE ClassE US Language 092726.html>" "GUIDE ClassE US Language 092926.md" "GUIDE ClassE US Language 092926"`.
+- `SESSION STATE ClassE Language Guide 092926.md`: the decisions, the structure, and the rules learned. Read it first next time.
+- Notion: "SESSION STATE ClassE US Language Guide 092926 (read first)" in Sales Advisory Hub (SSOT).
+
+## Open items
+
+- Two open questions for Matt and Joe are on page 7: "diagnostic" and "intervention" as names for ClassE, and changing "mastery" to "progress toward mastery" in the product.
+- Whether to add a sixth category for teacher language ("faster than teachers," "make them better teachers"). Those rows were cut because they didn't fit the five categories.
+- On the Mac: paste the Matt rule below into `CLAUDE/Reference/HIS CORRECTIONS 091926.md` and `CLAUDE/Skills/matt-campbell/SKILL.md`. Optionally run `ship_check.py --register email` on the email.
+- After Matt replies: fold his answers into the .md, rebuild, and update the session state.
 
 ## Email to Matt (092926, v5)
 
