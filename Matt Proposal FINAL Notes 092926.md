@@ -75,3 +75,12 @@ The reviewer's pick for Matt: option 3 on cash, then a counter near $1,500-2,000
 - Time: "about a day a week to start," named as an expectation, not a limit. No FTE and no hourly rate. That matches the 35 hours a month in the thinking doc.
 - October through December, then a January reset. The base step-down on client loss is gone; January covers it.
 - If $2,500 is too much for October, Matt names the start and the steps stay the same.
+
+## FINAL v3 Changes (092926)
+
+- Thank-you open and close, so it reads as gratitude first.
+- The fee grows by 15% of any new monthly retainer business, not a flat $1,250 per client. A $500K-a-year client can't overpay or underpay you under this rule, and several small clients add up the same as one big one. ClassE-size example is now $3,775 (fee) and $4,725 (Matt's gain).
+- Timing made explicit: the 15% and the 20% both start October 1 or the day AAP signs, whichever is later. The 20% covers network deals after that date.
+- New section "If the Business Changes": one very large client, project work and courses, client loss or AAP slipping past October, new hires.
+- New section "Other Ways I Could Help," marked as not part of the starting deal, with a share agreed before any client-paid work starts.
+- Tradeoff: using a percentage of new business means Matt shares new retainer amounts with you. The flat-step alternative is in the thinking notes if he'd rather not.
