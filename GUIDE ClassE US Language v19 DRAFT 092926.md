@@ -187,7 +187,7 @@ If ClassE has no study for it, we say so. Then we say what we can show instead.
 	Why: No one can check it.
 - Say: "We help the student up to the question. We don't bring the question down to the student."
 	Not: "We bring the students to the test, not bring the questions down to the students."
-	Why: "Test" sounds like teaching to the test. "Help" says the student gets support to reach the question. Without it, a special education or English learner specialist can hear "no supports."
+	Why: "Test" sounds like teaching to the test. "Help" says the student gets support to reach the question. Without it, a special education or English learner specialist can hear "no supports." The line is about ClassE's own questions. IEP teams can still modify a student's work.
 
 ### 7. Words that sound translated
 
