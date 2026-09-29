@@ -16,32 +16,42 @@
 
 ---
 
-## 1. THE VERDICT: B
+## 1. THE VERDICT: B+ (revised after re-reading the room)
 
-**Outcome B, more likely than not to advance, but less clearly than after Dan.**
+**Outcome A-/B+, likely to advance.** This is graded from what Paola and Kruti did, not from the prep checklist. My first pass graded it B and called Paola's exit line a challenge. That was a misread, and it's corrected here.
 
-For:
-- Paola re-launched her question when you asked.
-- She apologized that nobody had told you about the role.
-- She described your resume as the kind that makes them interview without a posted role.
-- She tied your student story to "always putting our kids first."
-- Kruti stayed past her hard stop to give you a long, candid answer.
+What they did:
+- **Paola opened up early.** After your why-Zeta answer she spent 166 words being self-critical about Zeta ("95% of the time, I feel like we're not doing great"), and she told you she taught in New Orleans before Katrina. Interviewers don't get personal with candidates they've written off.
+- **She thanked you for the student story** and tied it to their values: "thank you for naming that."
+- **Your role question got "It's such a good question," two apologies, and a tell.** They sometimes interview a resume that's "very interesting" with "a lot of unique experience" when there's no role to fill. That means they're considering building around you.
+- **Kruti built her question on your words:** "I really resonated with what you said about... upstream."
+- **"You're speaking to her heart."**
+- **Four apologies about the time:**
+  - "we're only interrupting you because I, unfortunately, have a hard stop"
+  - "I'm so sorry. I know we were late to start"
+  - "I'm sorry again we were late"
+  - Paola: "I've monopolized the question time"
+
+  People apologize for the clock when they wish they had more of it.
+- **Paola spent her exit on you.** "I just wanted to name what you are saying is the thing that I think is the most important, which is I put this process into place. I've managed to create the system. But the question I'm always asking is, do you have a measure about whether there's an impact?" You had just given a measure: a GPA gain that held. Read in order, she was naming that you tied a system to a result, which is the thing she values most. She didn't have to say anything on her way out, and she chose that.
+- **Kruti sold you on Zeta.** She shared her own story, "literally moved back from Chicago to come back to this job," and gave you 645 words of candor.
 
 Against:
-- The call was about 30 minutes, and Paola left before your questions.
-- Paola's last words before leaving were a challenge, not a compliment: *"I put this process into place. I've managed to create the system. But the question I'm always asking is, do you have a measure about whether there's an impact?"*
-- "We'll be in touch" is neutral.
+- The call was about 30 minutes.
+- Paola left before your questions.
+- No one named a next step.
 
-**Execution B, up from B- with Dan.** You kept most of the rules the Dan debrief set:
+That's the clock, not a signal about you.
+
+**Execution B+, up from B- with Dan.**
 - The background was cut in half (997 to 452 words).
 - The role question came early.
 - Two of four answers ended on a person or a number.
 - No grading KIPP, no "rest of the mess," no health.
 
-What held it at B:
-- Answers still ran 2.5 to 5.7 minutes.
-- Pace stayed around 170 wpm.
-- The one number came out wrong and was then hedged.
+What keeps it from an A:
+- The answers ran long, and they're why four questions filled the call.
+- The one number wasn't your number (see §4).
 - The close wandered.
 
 ---
@@ -74,11 +84,12 @@ What held it at B:
 
 ## 4. WHAT DIDN'T LAND, RANKED BY WHAT IT COST
 
-**1. Proof, and Paola named it on her way out.**
-- "Do you have a measure about whether there's an impact?" is the line she'll carry into the debrief.
-- The 989-word answer had no numbers.
+**1. The number was wrong, and it came late.**
+- In the room it worked: you gave a measure, and Paola named it on her way out.
 - The one number you gave, "a 3% increase in GPA within that first month," isn't your number. The file says 46% of ninth graders across all 48 high schools finished the quarter at a 3.0 or better, up six points, the best quarter KIPP had ever had on that number.
 - You then hedged it: "I certainly am not trying to say this is the single reason."
+- It arrived about 750 words in. If Dan or Emily hear 46% later, the two won't match.
+- The 989-word answer had no numbers at all.
 - Carver and Jerel never came up, again.
 
 **2. Length and speed together.**
@@ -147,7 +158,7 @@ What held it at B:
 
 **Thank-yous today, one to each.**
 
-Your 092526 ruling was a plain thank-you with no pitch: adding Carver to the Dan note "sounds desperate." I'd make one exception here and hold it to one sentence, because Paola asked a direct question on her way out, and answering a question she asked isn't a pitch. If you'd rather keep the rule clean, cut the middle sentence and Paola's note becomes a plain thank-you.
+Your 092526 ruling was a plain thank-you with no pitch: adding Carver to the Dan note "sounds desperate." Paola's note echoes the thing she chose to name on her way out, which is the one specific thing the rule asks for. The number sentence is optional. It puts your real number in writing after "3%," but it's closer to a pitch. Cut it if it reads that way to you.
 
 Addresses are likely first.last@zetaschools.org. That's unconfirmed, so check the invite.
 
@@ -155,7 +166,7 @@ Addresses are likely first.last@zetaschools.org. That's unconfirmed, so check th
 >
 > Hi Paola,
 >
-> Thanks for the time today, and for re-launching the question when I asked about the role. You asked whether there's a measure behind the system, and I owe you a cleaner answer: at KIPP it was ninth-grade GPA, and that year 46% of ninth graders across all 48 high schools finished the quarter at a 3.0 or better, up six points. I also loved hearing that you taught in New Orleans before Katrina.
+> Thanks for the time today, and for re-launching the question when I asked about the role. Your point that the real question is whether there's a measure of impact behind the system stuck with me. [Optional: At KIPP ours was ninth-grade GPA; that year 46% of ninth graders across all 48 high schools finished the quarter at a 3.0 or better, up six points.] I also loved hearing that you taught in New Orleans before Katrina.
 >
 > Have a great week!
 >
@@ -181,10 +192,12 @@ Addresses are likely first.last@zetaschools.org. That's unconfirmed, so check th
 
 **Predictions (estimates, not sourced facts):**
 
-- **Another conversation is more likely than not.** This is a judgment call with no base rate, the same basis as the Dan read.
-  - I'd lean a bit lower than after Dan. Dan ran long and offered more time; this call ran short and ended on a challenge.
-  - What would raise it: a next step framed around a specific seat.
-  - What would lower it: a debrief where "long answers, thin on measures" is the headline.
+- **Another conversation is likely: roughly 75%.** That's a judgment call with no base rate, at or above the Dan read.
+  - Both interviewers apologized for the clock.
+  - Paola spent her exit affirming you.
+  - Kruti sold you on Zeta.
+  - They're weighing a role that doesn't exist yet.
+  - What would lower it: the role not getting budget. That's the real risk, and it's about them, not you.
 - **The seat is probably something built around you on the scaling-schooling side, with the high school in it.**
   - Paola named both areas. Kruti's team is scaling, and you pitched systems and adoption across schools.
   - The alternative is school management (Dan's side), which is where Dan's first question pointed.
@@ -220,7 +233,7 @@ This was a better-run interview than the Dan call, and the room was warm.
 
 On who you are, you're landing.
 
-On what you've done, you still aren't, and it's the same finding as every debrief since August: the thinking arrives, and the proof doesn't. This time the interviewer said it for you, in her last sentence before she left.
+On what you've done, you're closer than any debrief since August. You gave a measure, and Paola named it. The gap is precision: the number you said wasn't the number in your file, and it came 750 words in instead of 60.
 
 What's fixable before the next round is shorter answers with the number in the second sentence, at a pace you can actually feel. Those are habits, not content. You have the content.
 
@@ -248,7 +261,15 @@ What's fixable before the next round is shorter answers with the number in the s
 - **Everyone's pace.** Everyone together said 5,277 words in about 30 minutes, which is about 175 words a minute across the whole call. That figure includes pauses, so the true speaking pace is at least that.
 - **Your pace.** If the three of you spoke at similar speeds, your 62% share is about 19 minutes of talking. 3,282 words in about 19 minutes is **roughly 170 to 175 wpm. That's the same as the Dan call (175) and well above the 130 to 140 target.**
 - **Why your meter showed about 100.** Your 3,282 words divided by the whole 30 to 33 minutes on the clock comes to about 100 to 110. The meter was averaging your words over time you spent listening. It measured your share of the call, not your speed.
+- **This estimate is conservative.** Paola and Kruti's 1,995 words took real time. Every pause and gap, plus any filler the transcriber dropped, pushes your real pace up, not down. The one thing that would pull it down is a call that ran longer than 3:02 to 3:32.
 - **The transcript agrees.** The restarts are what speed looks like on paper: "we weren't driving we weren't using," "I have done I figured out."
+- **In the room, the speed didn't cost you clarity.**
+  - Nobody asked you to repeat anything.
+  - Kruti quoted your "upstream" point back to you.
+  - Paola named your point accurately.
+  - Notion's AI summary got your content right.
+
+  The cost was minutes: at about 170 wpm, a 5-minute answer is about 850 words, and that's what squeezed the question time. Slowing down is a next-round fix, not a mark against this call.
 
 | Answer | Words | Minutes at about 170 wpm |
 |---|---|---|
@@ -273,6 +294,7 @@ What's fixable before the next round is shorter answers with the number in the s
 
 - **Filler "like" was cut in half.** "Kind of" went up, and it softens your best claims: "kind of an unimpeachable goal," "the kind of connect, analyze, plan, execute."
 - **Um and uh can't be counted,** because the transcriber drops them.
+- **In the room:** "kind of" came about once every 80 of your words. You'd notice that on a replay, but an interviewer doesn't carry it out of the room, and nothing in how they responded suggests they did. This is a polish item. It matters because it softens your strongest claims, not because they heard it.
 
 **Clarity:** the message got through. Notion's AI summary of your strengths reads like your pitch: earns trust fast, co-observes, builds replicable systems upstream, works both sides of the house.
 
