@@ -162,3 +162,11 @@ CH remembers Matt giving a ladder: about $3,000 past bills at three clients, $12
 - What the ladder says: AAP alone is worth about $9,000 a month to him ($3K to $12K). Getting from $12K to $30K takes a few more clients, so each is worth roughly $6-9K a month in profit.
 - Why $3,000 holds: it's less than half of one new client. That replaces the revenue guess in v7 and doesn't require estimating his revenue at all.
 - One wrinkle: if the $3K rung is real, $3,000 equals his entire profit at three clients. That's why the start date stays tied to AAP.
+
+## FINAL v9: Google Doc, Table-Led (092926)
+
+- Live in Google Docs (My Drive, not the shared CH-MC folder): https://docs.google.com/document/d/1vCPc0-TnLwU1qchLbbgI4-ZPhvtKAbmun3poPDClYR8/edit
+- Structure: At a Glance table, then Why, What I'd Do (table by area with a first-month column), How I'd Work (table), The Numbers (profit ladder table plus a pay table), Check-Ins and Changes (two tables), Items for Conversation.
+- Each fact appears once: the weekly check-in lives only in Check-Ins; start date only in the pay table and At a Glance.
+- New transparency: why 15% (top of the 10-15% referral-partner range, leaves 85% of each new client with EdTech Expertz); why 20% (network-only, most likely to change); "Do I have your numbers right?" added to Items for Conversation.
+- Math fix: $3,000 is between a third and a half of a $6-9K client, not "less than half."
