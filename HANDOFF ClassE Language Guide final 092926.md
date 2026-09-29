@@ -2,7 +2,7 @@
 
 ## Status
 
-Done in the cloud session. The guide merges the 092726 accuracy fixes (SB 12 court ruling, CR-SE 2019, HB 8 and STAAR, the ESSA wording, Ed Law 2-d, the New York ELL terms, "controlled study," TEKS only after confirming, the families example, "Usage is not a result," and the If a buyer asks items) with the working-draft rewrite from 092926. It is 11 pages, built in the 092726 house template (build guide template.py).
+Done in the cloud session. The guide merges the 092726 accuracy fixes (SB 12 court ruling, CR-SE 2019, HB 8 and STAAR, the ESSA wording, Ed Law 2-d, the New York ELL terms, "controlled study," TEKS only after confirming, the families example, "Usage is not a result," and the If a buyer asks items) with the working-draft rewrite from 092926. It is 8 pages, built in the 092726 house template (build guide template.py).
 
 Files in this repo, branch claude/sweet-albattani-jnh10l:
 - GUIDE ClassE US Language 092926.pdf (send this)
