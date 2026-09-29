@@ -76,3 +76,10 @@ body.live .ans{font-size:21px}
 
 #t1zone{columns:2!important;column-gap:16px}
 @media(max-width:900px){#t1zone,#benchzone,#qwrap{columns:1!important}}
+.bullets{background:#fffdf5;border:1px solid #efe6c8;border-left:4px solid #9a6700;border-radius:0 10px 10px 0;padding:10px 14px 8px;margin:0 0 14px;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
+.bullets>b{display:block;font-size:10px;letter-spacing:1.3px;text-transform:uppercase;color:#9a6700;margin-bottom:4px;background:none}
+.bullets ul{margin:0;padding-left:18px}
+.bullets li{font-size:16px;line-height:1.45;margin:3px 0;color:#1d1d1b}
+body.live .bullets li{font-size:17.5px}
+.bullets li b{background:none;font-weight:700}
+.ans .coreline b{background:none}

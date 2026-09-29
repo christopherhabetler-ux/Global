@@ -7,7 +7,7 @@ Why this seat, and would you take it. The first line is yours from tonight. The 
 
 In your words.
 
-I want to be part of a great organization, and this is a high impact role that would get me close to schools and close to network decision makers, so it's a great way to get to know the org and the schools and the people.
+At a glanceGreat organization; close to schools and close to decision makersNot a stepping stone: a role you grow intoSmall team, problems within arm's reachReminds me of early Excel: best people, figure out the roles I want to be part of a great organization, and this is a high impact role that would get me close to schools and close to network decision makers, so it's a great way to get to know the org and the schools and the people.
 
 But a national foundation can feel a little like working at Verizon, not like working in an incubator or out of your garage. One of my favorite things to do is be part of a small group of people solving the problems within arm's reach, diving in deep as problem solvers. That's the happiest I've ever been professionally. And I'm eager to figure out the AI play.
 
@@ -19,7 +19,7 @@ Special education is a strength lane. Lead with it, no hedge. Collegiate built i
 
 In your words.
 
-They have a true all means all. mission and I was really impressed to see how they had done special education at such true deep levels. And while they had that ambition, they were still trying to figure out, could they be a super high expectations and a high support organization?
+At a glanceStrength lane. Lead with it.Collegiate: seven-level continuum, all means all; coached principals, held standardsExcel: ~30% SPED; managed itBrooklyn Lab: oversaw itNever “managed SPED teachers” at Collegiate They have a true all means all. mission and I was really impressed to see how they had done special education at such true deep levels. And while they had that ambition, they were still trying to figure out, could they be a super high expectations and a high support organization?
 
 What I came up in was Excel, which was a turnaround, and Collegiate, which was high school focused, special education focused, and a true all means all mission and infrastructure.
 
@@ -31,7 +31,7 @@ If they ask what you'd own in year one. Your ninety-day note, then the onsite li
 
 In your words.
 
-Your note (CH feedback for NCS prep): "For first 90 days, we would start observing and listening this year. Absorb. Listen. Think."
+At a glanceAbsorb. Listen. Think.People's reality heard before asking them to changeFollow the bright spotThen: principals, and ninth-grade academic health for the HSProof: Carver and the 46% Your note (CH feedback for NCS prep): "For first 90 days, we would start observing and listening this year. Absorb. Listen. Think."
 
 School in the Square onsite 090826, as quoted in the debrief: "people need their reality to be heard, valued, and considered before they're asked to do something different" · "let's limit the scope, let's follow the bright spot" · "I stopped thinking I knew everything and really listened"
 
@@ -43,7 +43,7 @@ Holding a leader accountable and keeping the relationship. Zeta says love your p
 
 In your words.
 
-We recognize that it's a false choice between high expectations and high levels of accountability. We recognize that it's a false choice between doing right by kids and doing right by staff. Obviously, like when we started getting into those, Zero-sum games where we're talking about Either or, we're recognizing that it's We're all on the same team and it's a both/and. And so what that looks like to me is Clarity up front such that I can I can assume the best. when I'm holding someone accountable and I lead with a curious question, But I also don't then shy away from because we have the clarity, because we've inquired to find out what the context is. And I have strong interpersonal relationships. I don't have to shy away from the context. But hey, Simon, here's where the impact of what, you know, understand, and that makes a lot of sense. I appreciate you sharing, but... We also need to find a way to get around this for next time because here was the impact. And so It's both a... It both means we say good morning and we care about each other at like a very human level, but it also means that we know that we can use that in driving each other to be the people that we signed up to be and that are our kids want us to be and that we frankly have promised our parents that we will be.
+At a glanceFalse choice: high expectations vs. accountabilityClarity up front, then lead with a curious questionDon't shy away: name the impactWe say good morning and hold each other to what we promisedWe recognize that it's a false choice between high expectations and high levels of accountability. We recognize that it's a false choice between doing right by kids and doing right by staff. Obviously, like when we started getting into those, Zero-sum games where we're talking about Either or, we're recognizing that it's We're all on the same team and it's a both/and. And so what that looks like to me is Clarity up front such that I can I can assume the best. when I'm holding someone accountable and I lead with a curious question, But I also don't then shy away from because we have the clarity, because we've inquired to find out what the context is. And I have strong interpersonal relationships. I don't have to shy away from the context. But hey, Simon, here's where the impact of what, you know, understand, and that makes a lot of sense. I appreciate you sharing, but... We also need to find a way to get around this for next time because here was the impact. And so It's both a... It both means we say good morning and we care about each other at like a very human level, but it also means that we know that we can use that in driving each other to be the people that we signed up to be and that are our kids want us to be and that we frankly have promised our parents that we will be.
 
 Onsite 090826, debrief-quoted: "We build the relationship by having the hard conversation, and that's the way in which people really know where they stand." · "There's nothing nice and friendly about me thinking one thing behind your back and not saying it to you." · "Hey, we talked about the calendar going out last week. I didn't get it. What can you tell me about that?"
 
@@ -53,7 +53,7 @@ A system you inherited that wasn't working. This is the Collegiate story from th
 
 In your words.
 
-I was brought down to, as a consultant, I was brought down to Collegiate Academies. You know, spoiler alert, I went and worked there full time for Five years after this consulting arrangement. So this is a story of like most of my work as a consultant and then later as chief culture officer. But I was brought down as a last ditch effort to assess whether or not the principal could be successful. They'd tried everything and things just weren't working.
+At a glanceBrought in to assess a principal; student behavior was a function of adult behaviorGuided questions so teachers saw it themselvesAgree on the problem, then concrete small actionsConnect and correct: first words are a connectionBuilt momentum: 30-second videos of the better versionI was brought down to, as a consultant, I was brought down to Collegiate Academies. You know, spoiler alert, I went and worked there full time for Five years after this consulting arrangement. So this is a story of like most of my work as a consultant and then later as chief culture officer. But I was brought down as a last ditch effort to assess whether or not the principal could be successful. They'd tried everything and things just weren't working.
 
 And what we saw was was that teachers were not being in any way like human or real or authentic and really being quite rude, frankly, to students. And I think they were very frustrated and the students were returning in kind. And so, We inherited this like ineffective demerit system with a bunch of mindsets from teachers that they were showing this negative controller mindset. The way we went about fixing that was one, I went around with people individually and use guiding questions to get them to analyze the effectiveness of teacher interactions. and really put themselves in the shoes of the student who's being talked to. That way and asking them questions about like how will they respond, how did that come off. And I got them to see that like student behavior was very much a function of adult behavior. So we saw the problem, we agreed on the problem. That's the first step for me, then it changed management process. After we get a working hypothesis, we need to make sure that a dedicated group of people see the problem. Once people saw the problem, we then needed to direct them into a very concrete way to make change, right? Let's say I go to the doctor, I get told I need to get my heart health in order, so I'm woken up. Okay, great, but what do I do? Is it walking 10,000 steps a day? Is it lifting weights? So here's what we needed to do is because we can't just say like, be more human, What we did is we established three different techniques that teachers were going to do. The most, the one that's the stickiest was Connect and correct, which was the first thing you say to a student just simply cannot be a correction. It has to be a connection.
 
@@ -65,7 +65,7 @@ A big goal, total ambiguity, full autonomy. The four-day COVID playbook. Leave o
 
 In your words.
 
-I effectively did a version of My strong start spring readiness planning, I condensed it to about four days. And so it was day one, gather all the information. A lot of this is coming in piecemeal from different sources, but also from the people and really understanding, because so much of this was an emotional issue as much as it was a scientific issue, as much as it was a logistical issue.
+At a glanceSpring readiness planning condensed to four daysDay 1 gather; day 2 on paper; day 3 leadership aligned; then staffRemote school + in-person for anyone who wanted itPaper is worthless if it doesn't reach peopleNever lead with the student or staff countsI effectively did a version of My strong start spring readiness planning, I condensed it to about four days. And so it was day one, gather all the information. A lot of this is coming in piecemeal from different sources, but also from the people and really understanding, because so much of this was an emotional issue as much as it was a scientific issue, as much as it was a logistical issue.
 
 Day two began the work of Getting as many answers as possible on paper so that on day three I could bring this to the leadership team and say this is our new playbook. We're opening a fully remote school. We're staying open brick and mortar for every student who wants to come in ...
 
@@ -77,7 +77,7 @@ Never raise it first. If they ask, this is your DREAM answer, with the cash-in l
 
 In your words.
 
-Yes. I think the top of that range is... Would work. Yeah. And I understand what you're saying and I appreciate you saying it clearly. But yeah, I want to join the team. Yeah.... I'm very happy to be part of the right team. That's where I've been the happiest in my life.
+At a glanceNever raise it firstTop of the band worksMore focused on the right teamSet your number before 3Yes. I think the top of that range is... Would work. Yeah. And I understand what you're saying and I appreciate you saying it clearly. But yeah, I want to join the team. Yeah.... I'm very happy to be part of the right team. That's where I've been the happiest in my life.
 
 Bench 8. In person every day in the Bronx. Does that work? (never raise first)
 
@@ -85,7 +85,7 @@ In person every day in the Bronx. Never raise it first. The part about your kids
 
 In your words.
 
-I've considered it. It's... Short answer is no. I wanna find the right group of people doing the right work more than anything. It's certainly not not a factor.... So, but at the same time, I do know what this work takes and yeah, I'm going in eyes wide open. I certainly, it's not that I've done this commute, you know, Six months straight and it's the middle of winter. I'm sure that will not always be the most joyful experience. But no, I've been up in that area and I've done the commute.
+At a glanceNever raise it firstConsidered it; short answer, noRight people, right work, more than anythingEyes wide open; I've done the commuteI've considered it. It's... Short answer is no. I wanna find the right group of people doing the right work more than anything. It's certainly not not a factor.... So, but at the same time, I do know what this work takes and yeah, I'm going in eyes wide open. I certainly, it's not that I've done this commute, you know, Six months straight and it's the middle of winter. I'm sure that will not always be the most joyful experience. But no, I've been up in that area and I've done the commute.
 
 Bench 9. When could you start?
 
@@ -93,7 +93,7 @@ Start date. Flexible.
 
 In your words.
 
-The work that I'm doing now Now... is flexible enough in scope, especially if there's some consideration for sun setting and passing off some of these projects Thoughtfully, but it's a good time for me and that my flexible life schedule does Allow for that.
+At a glanceFlexible; can hand off current projects thoughtfullyPatient, but eager to move as fast as you areThe work that I'm doing now Now... is flexible enough in scope, especially if there's some consideration for sun setting and passing off some of these projects Thoughtfully, but it's a good time for me and that my flexible life schedule does Allow for that.
 
 I am happy. I'm happy to be patient, but I'm also would be eager to move as quickly as you all are ready to.
 
@@ -103,7 +103,7 @@ What you're doing now. One sentence per tool, then stop. Never pitch the practic
 
 In your words.
 
-Right now what I'm doing, which is something I think is really cool, is I am... Talking to the principals I know, finding where They need help with efficiency and effectiveness, what their problems are and figuring out how I can build them custom tools, workflows, apps, solutions, using AI to build the specific solutions that they need and building a suite of tools. which has been really fun and a new challenge for me. And that's been taking off and it's been super fun. So that's what I'm doing right now. It's flexible.
+At a glancePrincipals point me at a problem; I build the tool that saves them timeA suite of about a dozen tools; customize, install, trainOrgs that embrace the tech serve students betterYes to AI, in service of the roleNever pitch the practice to KrutiRight now what I'm doing, which is something I think is really cool, is I am... Talking to the principals I know, finding where They need help with efficiency and effectiveness, what their problems are and figuring out how I can build them custom tools, workflows, apps, solutions, using AI to build the specific solutions that they need and building a suite of tools. which has been really fun and a new challenge for me. And that's been taking off and it's been super fun. So that's what I'm doing right now. It's flexible.
 
 They point me at a problem, and I build the thing that saves them the time so they can focus on the real work. We've built a suite of around a dozen workflows, tools, automations and agents. We customize them, install them and train folks on them, and we also audit, find a school's specific pain points, and build specific solutions.
 
@@ -117,7 +117,7 @@ How you lead change, if the question is about approach and not a story.
 
 In your words.
 
-The work I've done is developing systems, learning change management, and now applying tech. DeansList, the push-button academic health system at KIPP, and the custom workflows I'm building now.
+At a glanceFind the one thing that tells us we're on trackThen systems, structures, mindsets, toolsHeath brothers' Switch: rider, elephant, pathNarrow focus; don't confuse effort with progressPaper is worthless until people are behind itThe work I've done is developing systems, learning change management, and now applying tech. DeansList, the push-button academic health system at KIPP, and the custom workflows I'm building now.
 
 I've seen it at every level. Directly at Excel as a school leader, as a consultant, at Collegiate and Brooklyn Lab at the network level, and nationally at KIPP. And I've made lots of mistakes at every one of them. The approach is the same every time. The first part is the most important part: figure out the one thing we're going after to know if we're on track. Then the systems, structures, mindsets and tools to go after it. It's the Heath brothers' Switch. Direct the rider, motivate the elephant, shape the path. The one thing is really the double-click on shaping the path. It's a narrow focus, intense but not blind, and willing to pivot. We work on a few things, not a hundred different things. And we don't confuse action and effort with outcomes or real progress.
 
@@ -131,7 +131,7 @@ Your growth area. One, owned, with the fix.
 
 In your words.
 
-If I'm being really honest, it's narrowing focus. I know it takes movement on multiple fronts, operations, culture, academics, talent, teacher training. Because I know it's all one package deal, I can overcomplicate it and spread us too thin, and not have a few narrow, viable targets that we stack.
+At a glanceNarrowing focusCan overcomplicate and spread us thinBuild slow to go fast; phases; some things “not yet”The strategy is first downsIf I'm being really honest, it's narrowing focus. I know it takes movement on multiple fronts, operations, culture, academics, talent, teacher training. Because I know it's all one package deal, I can overcomplicate it and spread us too thin, and not have a few narrow, viable targets that we stack.
 
 What I work on is being willing to build slow so we can go fast. Operating in phases. Being okay with some things being not yet.
 
@@ -143,7 +143,7 @@ Why go back inside a network after consulting. The unspoken question is, will he
 
 In your words.
 
-I went from operator to consultant because so many schools were trying to do things the Excel way and not doing it well. It felt right, from a moral perspective, to help people on the ground actually do the things we were doing, rather than give them a one-day or two-day visit and a set of manuals.
+At a glanceWent to consulting to help schools actually do the Excel workConsulting: transformative, but a certain distanceToo long and you lose credibilityCan't break a promise to principalsI went from operator to consultant because so many schools were trying to do things the Excel way and not doing it well. It felt right, from a moral perspective, to help people on the ground actually do the things we were doing, rather than give them a one-day or two-day visit and a set of manuals.
 
 Consulting is great. When it works well, it's wonderful, it feels transformative, and you feel like a special guest star on an all-star team. But it doesn't feel like you're in it the same way. It doesn't have that startup energy, move fast and break things. There's a certain distance. I've been lucky to be deep enough in a lot of places to feel some of that, but it isn't the same.
 
@@ -157,7 +157,7 @@ A time your approach with a principal didn't work. The principal stays unnamed.
 
 In your words.
 
-Your words, 082626: "focused on building the systems and the structure of the documents and did not insist on the leader's buy-in, or even their time and their sign-off." "that school fell as a result of it." "a real, genuine failure that had real, measurable impact. Yes, I cleaned it up, but it was a failure."
+At a glanceBuilt the systems and documents before the leader's buy-inThat school fellCleaned it up, but it was a failurePrincipal stays unnamedYour words, 082626: "focused on building the systems and the structure of the documents and did not insist on the leader's buy-in, or even their time and their sign-off." "that school fell as a result of it." "a real, genuine failure that had real, measurable impact. Yes, I cleaned it up, but it was a failure."
 
 The traps. These are literal strings. If you hear one starting, the sentence after it doesn't get said.
 
