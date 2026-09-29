@@ -1,0 +1,32 @@
+{
+ "scale": {
+  "first_line": "Start from the play, because the play works, and let principals earn their way to innovation.",
+  "script": "Start from the play, because the play works, and let principals earn their way to innovation. At Excel we had playbooks for everything, and we were unapologetic about our adult culture and the way we did things. The principal who started our second school, and then our third, inherited 95% of the play exactly the same.\n\nBut we kept room to innovate, for two reasons. You don't keep the right talent if you don't allow for some of it. And that's the laboratory where every other school gets better.\n\nSo my message to a new principal is **earn it**. [slow] Get to stable, get to functional, then let's have a conversation about innovation. For right now, **we run the play because the play works**. It's not perfect. It's going to evolve, and **you're going to be part of that evolution**. And earning it goes both ways. My side of the deal is investing in you, the way we did at Carver.\n\nExcel's high school is in the top 3% of all public high schools in the country. [beat] And even better, Jackie, who I had in fifth, sixth and seventh grade, now has my old job. [STOP]",
+  "landing": "And even better, Jackie, who I had in fifth, sixth and seventh grade, now has my old job.",
+  "note": ""
+ },
+ "netsys": {
+  "first_line": "",
+  "script": "",
+  "landing": "",
+  "note": "GIVE ME BULLETS"
+ },
+ "adopt": {
+  "first_line": "Nobody had to say yes, so we had to earn it on the quality of our ideas.",
+  "script": "Nobody had to say yes, so we had to earn it on the quality of our ideas. The KIPP Foundation is the national arm: strategy, support and oversight, but no mandate authority. Twenty-eight independent regions, forty-eight high schools. So we did three things.\n\nFirst, we **made the change theirs**. Every region was part of our listening tours and working groups, so when we announced the strategy, I was looking people in the eye, watching them nod. Second, we shrank the change. Stronger regions went first, got early wins, and those wins sold the rest. It built a positive flywheel. Third, we kept our finger on the pulse, the micro signals that tell you whether people are with you or turning off.\n\nTake academic health. We wrote the manual, kept the training as simple as we could, and built a push-button tool that took the data from **present but obscured to right in front of them**. [slow] We piloted it, and we handed it off. Now the regions are running the play.\n\nAll 28 regions and all 48 high schools adopted the strategy. [beat] There was an alternate path, and no school chose it. [STOP]",
+  "landing": "There was an alternate path, and no school chose it.",
+  "note": ""
+ },
+ "initiative": {
+  "first_line": "I took data that already existed and put it right in front of the people who needed it.",
+  "script": "I took data that already existed and put it right in front of the people who needed it. Every school in the network had grade books and tons of data, sitting in huge CSV and Excel files. It was there, but nobody could really use it.\n\nSo I used Claude Code to build a Python script that, with **the push of a button**, gave every teacher an individualized report: here are your students of concern, your assignments of concern, here's where your grades seem to be skewing. Weekly, high-quality data, compared to a standard. We did the same for students.\n\nI designed it for one school and piloted it there, with a team and a regular meeting cadence. Then we handed it off, and it went across the country. Instead of waiting until the end of the quarter, teachers and students knew where they stood every week. The data went from **present but obscured to right in front of them**, [slow] and that drove a tremendous amount of positive change.\n\nThat year, 46% of ninth graders finished the quarter at a 3.0 or better. [beat] Up six points, the best quarter KIPP had ever had on that number. [STOP]",
+  "landing": "Up six points, the best quarter KIPP had ever had on that number.",
+  "note": ""
+ },
+ "launch": {
+  "first_line": "I launch a school in three phases: stability, then the adults, then student ownership.",
+  "script": "I launch a school in three phases: stability, then the adults, then student ownership. I came into Excel Academy with a mandate for change. Turnaround year, an entire new staff, a hundred students.\n\nStability first. Forty percent of the staff reported to me, so I took the routines, procedures and systems from my classroom and brought them to the whole school. I spent **six days writing the playbook** on how we'd do everything. My boss thought that was a crazy use of time. [beat] It became one of the most important things we did.\n\nThen the adults. We worked on the five dysfunctions of a team and built a **best-idea-wins** culture, where it was **cool to be smart**. Then student ownership: honor council, student committees, orientation leaders. On the first day of school, we had kids telling kids how overwhelmed they were at first, that they'd even told their parents they didn't like the school.\n\nWe took that school from 270th in the state to number one, [slow] and got National Charter School of the Year. [STOP]",
+  "landing": "We took that school from 270th in the state to number one, and got National Charter School of the Year.",
+  "note": ""
+ }
+}
