@@ -100,6 +100,12 @@ td.num{font-family:var(--f-mono);font-size:.88rem;white-space:nowrap}
 #stopper span{font-size:1.3rem;font-weight:600}
 .dt{font-family:var(--f-mono);font-size:2rem;font-variant-numeric:tabular-nums}
 .hide{display:none!important}
+#coachAlert{position:sticky;top:calc(env(safe-area-inset-top,0px) + 96px);z-index:6;margin:10px auto 0;max-width:980px;padding:0 16px}
+#coachAlert .in{border-radius:8px;padding:12px 16px;font-size:1.3rem;font-weight:700;display:flex;gap:12px;align-items:baseline;border:2px solid var(--accent);background:var(--surface);color:var(--ink)}
+#coachAlert .lv{font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;padding:2px 8px;border-radius:4px;background:var(--accent);color:var(--accent-ink);flex:0 0 auto}
+#coachAlert.STOP .in{border-color:var(--hot)} #coachAlert.STOP .lv{background:var(--hot);color:#fff}
+#coachAlert.SAY .in{border-color:var(--warn)} #coachAlert.SAY .lv{background:var(--warn);color:#fff}
+#coachStatus{font-size:.8rem;color:var(--muted);font-weight:500}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 </style>
 
@@ -119,8 +125,9 @@ td.num{font-family:var(--f-mono);font-size:.88rem;white-space:nowrap}
     </div>
     <div class="search"><input id="q" type="search" placeholder="Search: carver, pay, high school" aria-label="Search answers"></div>
   </div>
-  <div class="coach"><span id="coachMsg">Frame, your words, one number, stop.</span><span class="must" id="mustCount">Must-say 0 of 6</span></div>
+  <div class="coach"><span id="coachMsg">Frame, your words, one number, stop.</span><span id="coachStatus">Live coach: off</span><span class="must" id="mustCount">Must-say 0 of 6</span></div>
 </div>
+<div id="coachAlert" hidden><div class="in"><span class="lv" id="caLv">coach</span><span id="caTx"></span></div></div>
 
 <div class="wrap">
 <div id="prepView">
@@ -577,4 +584,12 @@ function log(){if(!reps.length){dlog.textContent="No reps saved yet.";return}var
 document.getElementById("drillGo").addEventListener("click",function(){var pool=CARDS.filter(function(c){return c.g!=="Your Asks"&&c.g!=="Bench"});var c=pool[Math.floor(Math.random()*pool.length)];dId=c.id;dq.textContent=c.q;document.querySelectorAll("#drillChecks input").forEach(function(x){x.checked=false});dLeft=120;dt.textContent="2:00";clearInterval(dT);dT=setInterval(function(){dLeft--;var v=Math.max(dLeft,0);dt.textContent=Math.floor(v/60)+":"+("0"+v%60).slice(-2);if(dLeft<=0){clearInterval(dT);dt.textContent="0:00 stop"}},1000)});
 document.getElementById("drillStop").addEventListener("click",function(){clearInterval(dT)});
 document.getElementById("drillSave").addEventListener("click",function(){if(!dId)return;var s=0;document.querySelectorAll("#drillChecks input").forEach(function(x){if(x.checked)s++});reps.push({id:dId,s:s});store.set("reps",reps);log()});
+
+/* live coach feed: the Claude session writes coach/alert; this view shows it for 20 seconds */
+(function(){var box=document.getElementById("coachAlert"),lv=document.getElementById("caLv"),tx=document.getElementById("caTx"),st=document.getElementById("coachStatus"),hideT=null,lastAt=0;
+function show(d){if(!d||!d.text)return;var at=+d.at||0;if(at&&at<=lastAt)return;lastAt=at;if(at&&Date.now()-at>90000)return;box.className=d.level||"";lv.textContent=d.level||"coach";tx.textContent=d.text;box.hidden=false;clearTimeout(hideT);hideT=setTimeout(function(){box.hidden=true},20000)}
+box.addEventListener("click",function(){box.hidden=true});
+if(!(window.claude&&window.claude.use))return;
+window.claude.use("db").then(function(db){if(!db){st.textContent="Live coach: unavailable here";return}st.textContent="Live coach: connected";
+db.doc("coach/alert").onSnapshot(function(snap){if(snap.exists)show(snap.data())},function(){st.textContent="Live coach: lost connection"})}).catch(function(){st.textContent="Live coach: unavailable here"})})();
 </script>
