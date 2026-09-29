@@ -100,3 +100,14 @@ A fresh reviewer read v3 twice: once as Matt, once as your advocate. Math checke
 - Rewrote six lines the reviewer flagged as AI-sounding. Kept "Clarity is king" (your phrase).
 
 Not applied: capping "send it my way." You want Matt to call on you for new things; the time trigger protects you instead.
+
+## FINAL v4 Changes (CH notes, 092926)
+
+- "Why It Pays for Itself" became "The Objective": grow revenue and impact, Matt's time is the constraint, no time machine, the just-right support lets EdTech Expertz take on more clients. "I'm not asking for all of it" is gone.
+- New honest paragraph: this is a proposal, I'm nervous about numbers, forgive anything presumptuous, it only works for me if it works for you.
+- New "How I'd Work": Operating Mindset, Whatever It Takes, Response Time (same-day email, 48-hour default), Approximate Time Commitment.
+- Scope in three tiers: what I've heard, high value worth considering (ChatGPT workspace at the top, knowledge base, first meetings, promotional materials, outreach), ideas for later. "30 people at Canvas" dropped.
+- Ownership: standard subcontract language, with a ClassE carve-out for work done directly for ClassE under the agreement with Joe.
+- Fee: $10,000 example ($1,500 raise, to $4,000). No ceiling; $5,000 is now a review point. Growth counts business signed after the start date, so the AAP line is gone and AAP doesn't double count.
+- No $1,500 October number: "If it's too big a swing to start, let's find a smaller one."
+- "The First Three Months" became "Checking In": ongoing, not a trial. January sit-down, then quarterly.
