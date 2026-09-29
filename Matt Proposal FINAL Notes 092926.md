@@ -84,3 +84,19 @@ The reviewer's pick for Matt: option 3 on cash, then a counter near $1,500-2,000
 - New section "If the Business Changes": one very large client, project work and courses, client loss or AAP slipping past October, new hires.
 - New section "Other Ways I Could Help," marked as not part of the starting deal, with a share agreed before any client-paid work starts.
 - Tradeoff: using a percentage of new business means Matt shares new retainer amounts with you. The flat-step alternative is in the thinking notes if he'd rather not.
+
+## Two-Sided Review of v3 (092926)
+
+A fresh reviewer read v3 twice: once as Matt, once as your advocate. Math checked clean. Verdict: between "too cheap" and "about right," safe to send after fixes. Applied:
+
+- Time trigger instead of "not a limit": if it runs well past a day a week for a month or two, we look at the fee together. The reviewer's single most important fix.
+- $5,000 is no longer "where I'd want it to end up." It's "and then we look at it together."
+- The work starts when the fee does, so an AAP delay can't mean more unpaid work.
+- The open-ended "tell me what works" became $1,500 for October and $2,500 from November.
+- The 30-day notice month is paid.
+- "Tell me the monthly amount and I'll invoice the new number" makes the 15% rule concrete.
+- ClassE advisory: Joe pays directly, doesn't touch Matt's fee or count toward the 15%.
+- Full-time role: the work moves to before and after the school day.
+- Rewrote six lines the reviewer flagged as AI-sounding. Kept "Clarity is king" (your phrase).
+
+Not applied: capping "send it my way." You want Matt to call on you for new things; the time trigger protects you instead.
