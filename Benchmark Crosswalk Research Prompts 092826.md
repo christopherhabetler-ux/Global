@@ -23,17 +23,24 @@ That changes three things in the prompts:
 
 Carried forward from the 95 Percent Group build: an upload-receipt check in the framing line (the Grok file came back empty last time), an archive fallback in the quote chase (the job-posting quote was never confirmed), and a search perimeter on every "search results only" claim (the TouchMath closing had none).
 
-## Run order (four runs, one sitting, plus your read)
+## Run order (four runs plus your read, one sitting tonight)
 
 | # | Model | Runs alongside | Uploads | Save the answer as |
 |---|---|---|---|---|
+| 0 | You | while 1, 1B, 2 run | none | `00 My read.md` |
 | 1 | Perplexity, deep research | 1B and 2 | none | `01 Perplexity.md` |
 | 1B | Perplexity, deep research, second tab | 1 and 2 | none | `01B Perplexity market.md` |
 | 2 | Gemini Pro, deep research | 1 and 1B | none | `02 Gemini.md` |
 | 3 | GPT-5 Pro, web on | after 1, 1B, 2 land | 01, 01B, 02, and both files in `_upload-these/` (five files) | `03 GPT-5 Pro.md` |
 | 3T | Grok, only if Claude asks | never sees 03 | same five | `04 Grok.md` |
 
-**Timing to hit Wed.** Start 1, 1B and 2 tonight (Mon 092826) before bed; they run unattended. Run 3 Tue morning, before Zeta prep. Your three-to-five-sentence read on Benchmark goes in the same Tue sitting (see "Your read" at the bottom). Claude handles the quote chase, claim register, draft and blind review Tue after the 3:30 Zeta call ends. You read the PDF Wed morning and send it to Matt Wed.
+**Timing to hit Wed (revised Mon 092826, 9pm ET: the whole sitting runs tonight).**
+1. Now: paste 1, 1B and 2 in parallel. Gemini shows a research plan first; click Start research without editing it.
+2. While they run (roughly 10 to 30 minutes each): write your read (three questions at the bottom).
+3. When all three land: save each as its file, then run Prompt 3 in GPT-5 Pro. If it's past 11pm, start it and save the answer in the morning.
+4. Tue after the 3:30 Zeta call: Claude does the quote chase, claim register, draft and blind review.
+5. Wed morning: you read the PDF and send it to Matt.
+Your read goes in the drop folder as `00 My read.md`, so Claude picks it up with the rest.
 
 **If Prompt 3 slips past Tue noon,** send Matt this line and take Thu 10/01. That still gives him four days before his meeting:
 
@@ -82,6 +89,7 @@ F. Marketing pages only when no better source exists
 
 METHOD
 - Search each research question separately. Do not stop after finding a company page.
+- "Benchmark" is a common word. Keep only sources about Benchmark Education Company, the K-8 literacy curriculum publisher. Exclude generic "benchmark assessment" results and other companies with Benchmark in the name, and flag any source where it is unclear which company is meant.
 - Trace every repeated claim to its earliest identifiable source.
 - Mark company-funded, company-commissioned, and genuinely independent evidence separately.
 - Record paywalls, login walls, removed pages, and inaccessible documents. For a blocked page, try the Internet Archive (web.archive.org) and record the archived URL and capture date if you use it.
@@ -121,6 +129,7 @@ RESEARCH QUESTIONS
 METHOD
 - Use primary sources first: product pages, support and release notes, press releases, investor or annual reports, state adoption lists, EdReports, and trade press (EdWeek Market Brief, EdSurge, The 74, District Administration).
 - For each publisher, enumerate what you checked, so a "not found" has a search perimeter.
+- "Benchmark" is a common word. Keep only sources about Benchmark Education Company, the K-8 literacy curriculum publisher. Exclude generic "benchmark assessment" results and other companies with Benchmark in the name, and flag any source where it is unclear which company is meant.
 - Label each finding SUPPORTS, UNDERCUTS, or MIXED with respect to the hypothesis, and say which half of the hypothesis it bears on (the large-publisher half or the smaller-publisher half).
 - Record blocked sources and try the Internet Archive for them.
 
@@ -159,6 +168,7 @@ Reconcile conflicting grade spans, product names, editions, efficacy claims, and
 
 RULES
 - Use exact quotations and page numbers.
+- "Benchmark" is a common word. Keep only sources about Benchmark Education Company, the K-8 literacy curriculum publisher. Exclude generic "benchmark assessment" results and other companies with Benchmark in the name, and flag any source where it is unclear which company is meant.
 - Do not infer current functionality from a study of an older edition.
 - Distinguish a company claim of an ESSA tier from your own assessment of the study design.
 - Mark every unsupported proposition UNVERIFIED.
@@ -281,9 +291,9 @@ CLAIM IDS AND THEIR CITED SOURCES:
 [paste the surviving claim IDs with the source each one points to]
 ```
 
-## Your read (Tue, same sitting as Prompt 3)
+## Your read (tonight, while Prompts 1, 1B and 2 run)
 
-Three to five sentences, or a voice memo. Last time your Intersection line was the best sentence in the 95 Percent Group document, and it arrived last. This time it comes first. Answer these three:
+Three to five sentences, or a voice memo. Save it as `00 My read.md` in the drop folder. Last time your Intersection line was the best sentence in the 95 Percent Group document, and it arrived last. This time it comes first. Answer these three:
 
 1. What's your gut read on Benchmark: what does it do best, and where do you think it stops?
 2. Given Matt's theory about big and smaller publishers, where do you think Benchmark falls, and why?
