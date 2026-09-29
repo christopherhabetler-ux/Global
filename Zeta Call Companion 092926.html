@@ -106,6 +106,7 @@ td.num{font-family:var(--f-mono);font-size:.88rem;white-space:nowrap}
 #coachAlert.STOP .in{border-color:var(--hot)} #coachAlert.STOP .lv{background:var(--hot);color:#fff}
 #coachAlert.SAY .in{border-color:var(--warn)} #coachAlert.SAY .lv{background:var(--warn);color:#fff}
 #coachStatus{font-size:.8rem;color:var(--muted);font-weight:500}
+[hidden]{display:none!important}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 </style>
 
@@ -326,10 +327,11 @@ script:[
 "{slow} I love that you used the word privileged, because it is really privileged to do this work. And I realized that when I sent my own daughter during COVID, handed her over to a complete stranger, and what tremendous responsibility it was.",
 "The happiest I've ever been is in a midsize, growing charter network that has wildly outsized ambition and is full of smart, aspirationally aligned folks. This role just really spoke to me as a perfect blend of what I've done, what I want to do, and where I might want to be.",
 "{pause} What seemed to be the mindsets, excellence first, but an excellence with exploration on what that means, seems really cool to me. I do have a lot of high school-specific experience in operations, culture, and academics. So there's something cool about the high school question.",
+"{slow} If there was one thing to sum up what I've been doing my whole career, it's been this: building things that other people can run. Building systems and structures and practices that people buy into on merit, not out of obligation.",
 "{land} I love being in environments where it's best idea wins, strong opinions, loosely held. Let's debate the heck out of things. Let's attack people's ideas without attacking people."],
 say:["If asked about the ops role: Felipe thought your strongest fit was the schooling side, and after the Dan call you see the logic (your T:220: \"I see the logic. And yeah, it makes sense.\")","Bronx: you've coached principals at PS 333 and JHS 123"],
 bul:["The COVID handoff: it's a privilege","Happiest in a midsize, growing network","Excellence with exploration","HS experience across operations, culture, academics","Best idea wins; attack ideas, not people"],
-src:"T:28 (adapted opener \"I love that you used the word privileged\" is from Dan's call; drop it if she didn't say it), T:54, T:225-227."},
+src:"DREAM screen 081726 (building things other people can run), T:28 (adapted opener \"I love that you used the word privileged\" is from Dan's call; drop it if she didn't say it), T:54, T:225-227."},
 
 {id:"best",g:"Opener",q:"What do you do best? What are you looking for?",who:"Either",
 frame:"I like building. I like strategy. I like being part of a team that's willing to work incredibly hard and have fun while doing it.",fy:true,
@@ -428,7 +430,7 @@ script:[
 "Number two, we always talk about student ownership over culture and over the school. And oftentimes those end up being thin and surfacey. So what I would do, I believe, would be something we did at Excel, which is to develop a lot of genuine student groups that play a key role, not just in the planning of the dance or the student council, but that are actually operating within the school day to help the school operate.",
 "{cut} So we'd have an honor council. And that honor council would be entirely responsible, within limits, of course, for doing a bit of investigation, evaluation around honor code violations, making recommendations. Not only would the ninth-grade events committee be planning the dance, they'd be hyping the dance, they'd also attach a service commitment to it or a canned food drive to it.",
 "In a high school of 150 students per grade, you can get it so that more than a third of those students at any given time is in a meaningful group. That's how we get students to get that feeling of, not only is this high school and it's different, it's also my school.",
-"{cut} Year three, I asked a student to tell a room of scared fifth and sixth graders about his first day. He said, are you sure? {pause} I hated this place. I thought they were too strict. I thought they were too mean. Mr. Adler's not making me say this, but there's something about this place that's worth giving it a try.",
+"{cut} Year three, I asked a student to tell a room of scared fifth and sixth graders about his first day. He said, are you sure? {pause} I hated this place. I thought they were too strict. I thought they were too mean. Mr. Habetler's not making me say this, but there's something about this place that's worth giving it a try.",
 "{land} We would, as adults, be saying a whole lot less and helping our students say a whole lot more."],
 say:["Excel student attrition over those years: 3%","Excel today: 15% of the staff are alumni, and Jackie, your former student, has your old job"],
 bul:["Academic identity: cool to be smart; fun because it's challenging","Ownership usually ends up thin and surfacey","Groups that operate the school day","Honor council; events committee with a service tie (cut if short)","A third of a 150-student grade in a group","\"It's my school\"","Adults say less, students say more"],
@@ -443,8 +445,19 @@ script:[
 "{pause} Earn that, right? Get to the place of stable, get to the place of functional, then let's have a conversation about innovation. We need to run the play because the play works. The play is not perfect. The play is going to evolve. {slow} You're going to be part of that evolution.",
 "The way in which we grow with quality is starting from a solid foundation of what we know works. The two data points I love to share: number one, the high school is in the top 3% of all public high schools across the country. {land} And even better, Jackie now has my old job."],
 say:["Right after \"earn that,\" say how you invest in the person. Dan's \"you have to love people\" came later in that call, when you asked about Success. The \"I don't care really\" that came before \"earn that\" is the part to lose.","The 95%: confirm it's accurate before you say it (your fact file flags it)"],
-bul:["Clear on who we were; playbooks for everything","Replicated, not cloned; 95% of the play (confirm)","Innovation keeps talent and is the lab","Grow from a proven start, at a pace talent allows","Earn it: stable → functional → innovate","Run the play; it evolves; you're part of it","Top 3%; Jackie has my old job"],
+bul:["What it means: a new principal runs the network's proven playbook first; once the school is stable and functional, they've earned the room to change it","Clear on who we were; playbooks for everything","Replicated, not cloned; 95% of the play (confirm)","Innovation keeps talent and is the lab","Grow from a proven start, at a pace talent allows","Earn it: stable → functional → innovate","Run the play; it evolves; you're part of it","Top 3%; Jackie has my old job"],
 src:"T:92-101, starting after your KIPP comparison (never grade KIPP). \"I don't care really if you...\" (T:96) removed. About 1:40."},
+
+{id:"initiative",g:"Scaling",q:"An initiative you led from design through implementation across schools",who:"Kruti",
+frame:"The academic health data transparency work.",fy:true,
+script:[
+"{slow} Every school in our network had grade books, they had tons of data. All of that data was in these large CSV files and Excel files. And while it was there, people couldn't really use it.",
+"I went all in on building a Python script that parsed out these huge data sets and, with the push of a button, created individualized teacher reports. Here are the students of concern, the assignments of concern. Here's where you don't have enough of a certain type of assessment. Here's where your grades seem to be skewing. We did the same thing for students.",
+"I designed this for one particular school, rolled it out at that school, and then we took it across the country. We created a regular meeting cadence. {pause} Instead of people waiting till the end of the quarter to tell students where they stood, they were able to do that weekly. {slow} The data went from present but obscured to right in front of them.",
+"We were able to see the biggest jump in GPA year over year. {pause} Of course there's a million things that go into creating huge GPA jumps, so I'm not trying to take all the credit, {land} but it's been cited as one of the primary drivers that really got the right folks focused on the right conversation and the right actions. {proof}"],
+say:["The number: 46% of ninth graders at a 3.0 or better, up six points, across 48 high schools","A 40-minute manual workflow became one click, and you handed it off and it kept running"],
+bul:["Data existed but nobody could use it","One button: a report per teacher, per student","Students of concern, assignments of concern, assessment gaps, grade skew","Designed for one school, piloted, then national","Weekly instead of end of quarter","Present but obscured → right in front of them","Biggest GPA jump; not all the credit; a primary driver"],
+src:"DREAM phone screen 081726, your words, fillers cut; the forgotten-book line left out. Donna's reaction: \"that sounds absolutely incredible.\" About 1:40."},
 
 {id:"netsys",g:"Scaling",q:"How do network systems actually work at the school level?",who:"Kruti",
 frame:"Well, it's simple. They aren't designed at the network level.",fy:true,
@@ -464,10 +477,11 @@ script:[
 "I'm not a big believer that if you don't work over the weekend you somehow don't care about kids. But this was the weekend for it.",
 "Entrance. Student movement. PPE. Testing and verification. Let's have both the written clarity and prose, but also let's have the usable document. What should happen at 7:45, what should happen at 7:50. We deputized one person from each of these teams. We knew it was going to be messy.",
 "{slow} Then we saw our ops people were spending 90 minutes every single morning, only doing testing. So we rebuilt it without letting go of any of the restrictions. Lunch is now a cheese sandwich and not a hot meal, and we told families.",
-"{land} We'd reinvented how we do school in one weekend."],
+"We'd reinvented how we do school in one weekend.",
+"{slow} You both have to have the answer on paper. But having the answer only on paper is next to worthless if it doesn't actually get to the people. {land} And nothing that gets to the people is going to matter if the fundamental premise is: this is being done to us."],
 say:["This was at Brooklyn Lab, as superintendent, going from mostly remote to most students back in the building in January"],
 bul:["Winter break 2020, COVID back, no plan","Safe students, clear families, safe and productive teachers","Small task force, one weekend","Four things: entrance, movement, PPE, testing","Prose plus the usable document: 7:45, 7:50","One owner per team per campus","Then cut the 90-minute morning testing burden","Reinvented school in one weekend"],
-src:"S2 onsite 090826 [01:23:05], lines kept verbatim; a few short joins (\"Then we saw,\" \"So we rebuilt it,\" \"and we told families\") are mine. About 1:20."},
+src:"S2 onsite 090826 [01:23:05] kept verbatim, plus the closing principle from the DREAM screen 081726; a few short joins (\"Then we saw,\" \"So we rebuilt it,\" \"and we told families\") are mine. About 1:20."},
 
 {id:"build",g:"Scaling",q:"How would you launch something new across schools? A new school, a first-year principal?",who:"Kruti",
 frame:"First I get super clear on exactly what the outcome needs to be.",fy:true,
@@ -484,13 +498,15 @@ src:"S2 onsite 090826 [17:02], lines kept verbatim. About 1:20."},
 {id:"adopt",g:"Scaling",q:"Getting adoption across schools that don't have to say yes",who:"Kruti",
 frame:"No one had to say yes to what we were doing, so we had to get them to want to say yes.",fy:true,
 script:[
-"{slow} 28 autonomous KIPP regions. I was brought on as part of the design team. A shared standard of excellence, a few key plays. Resources, protocols, tools, and on-the-ground support.",
+"{slow} Being someone's boss, I guess technically means you should be able to get them to do something, but we all know that that's not how things work. {pause} Listen, bring people along, let the idea lead based on its merit, make sure that my side of the street is cleaned up, and make sure it's a we, not an us-versus-them dynamic.",
+"I was a consultant for 10 years. You have to basically go into schools, tell people 10 things that are wrong and that we need to fix, and have people still want to do what it is you are suggesting.",
+"28 autonomous KIPP regions. I was brought on as part of the design team. A shared standard of excellence, a few key plays. Resources, protocols, tools, and on-the-ground support.",
 "You can't have accountability unless you have strong training, investment and clarity. We wrote the academic procedures manual. {pause} All the 8,000 rows of data. Individualized, actionable reports. A thousand pushes of a button, but at the end of it, it was a push button.",
 "{slow} Mandate authority is almost worthless in these settings. We need to be able to lead through influence and through modeling.",
-"{land} Naming a few small things, having an incredibly strong resource. {proof}"],
+"We didn't have any mandated authority. We did what it took to get 28 regions to say yes. {slow} And not only did they say yes the first time, they said yes in year two, even though we were raising expectations. {land} Number one, what we were doing worked. Number two, the way we went about it avoided the standard pitfalls, and people felt very much a part of the process."],
 say:["All 28 regions and all 48 high schools adopted the strategy; there was an alternate path and no school chose it","It was a two-year design and hand-back role, and the regions run it now"],
 bul:["No mandate: 28 regions","Shared standard, a few key plays, real support","Accountability needs training, investment, clarity","Procedures manual; 8,000 rows → a report per person","Lead through influence and modeling","All 28 / all 48 adopted; handed back"],
-src:"S2 onsite [13:12] kept verbatim; T:70-72. \"Franchise model\" and \"fiefdoms\" left out (never criticize KIPP). About 1:10."},
+src:"DREAM screen 081726 (opening, consultant line, year-two line) and S2 onsite [13:12] kept verbatim. \"Franchise model,\" \"fiefdom\" and \"opt in or opt out\" left out on purpose. Consulting ran 14 years; you said 10 on the DREAM call. About 1:40."},
 
 {id:"lab",g:"The Hard Ones",q:"Brooklyn Lab: what was that job, and what was hard about it?",who:"Either",
 frame:"Renewal by itself isn't the accomplishment. It was everything that was happening at the same time.",fy:false,
@@ -503,23 +519,25 @@ bul:["Transition superintendent: renewal + new ownership, founder exiting","Two 
 src:"T:47-49 and S2 onsite 090826 [01:06:17] and [00:39:34] kept verbatim (huge need, no strong systems, a team that didn't trust each other, under enrolled and up for reauthorization; hard, early, unapologetically). \"The executive director and founder was trying to exit\" is your line; drop it if it sounds like blame. Context from your message 092926. Don't say the numbers you were shown couldn't be trusted; say there was no reliable record. About 45 seconds."},
 
 {id:"academic",g:"The Hard Ones",q:"You're known for systems and culture. Why trust you with academics?",who:"Paola",
-frame:"I do have a lot of high school-specific experience in operations, culture, and academics, and in my experience they're the same problem.",fy:false,
+frame:"My career in the last five to six years has really leaned into that side of the work.",fy:true,
 script:[
-"{slow} I've always been a systems first kind of person. People brought me in to work on behavior. {pause} You have 30 kids in the hallway and we don't know where to go because their schedule is wrong. Clearly, we don't have it together. The first third of my engagement usually was all around operations.",
-"We got to a place at Excel where things were functional, things were academically focused, things were working. What was teacher doing bell to bell in terms of rigor and instruction, that gave us a sense of purpose and built an academic identity of cool to be smart, cool to work hard.",
-"{slow} We wrote the academic procedures manual. All the 8,000 rows of data. Individualized, actionable reports. {proof} {land}"],
-say:["Land it with the number: that year, 46% of ninth graders across 48 high schools finished the quarter at a 3.0 or better, up six points, the best quarter KIPP had on that number","You were interim high school principal at Brooklyn Lab while superintendent, so instruction was part of your job","Collegiate: high school focused, special education focused, the largest CREDO effect size of any high school in the country (Carver)"],
-bul:["Systems-first; brought in for behavior","30 kids in the hallway, wrong schedule","Excel: functional → academically focused; cool to be smart","KIPP: 3.0 GPA, course failures, procedures manual, a report per person","46% at 3.0+, up six","Interim HS principal at Brooklyn Lab"],
-src:"T:225 (frame is your words, plus a proposed second clause), S2 [09:51] and [13:12] kept verbatim, T:143-146. About 1:30."},
+"{slow} At Brooklyn Lab I was overseeing three schools, and I was responsible for the academic results directly through the principals. I led all the summer onboarding, all of the learning and development at the network level, and then of course through the principals.",
+"Most recently at the KIPP Foundation, the primary focus for my work has been academic health. Our big push was to really make sure that our grades were meaningful, that they were normed. We developed a ton of best practices and guidance and goals around what it takes to have a true, meaningful, powerful curriculum and set of grading practices, {pause} because of our goal of having students over-prepared to succeed in college and beyond.",
+"{slow} Transparently, my reputation, for better or for worse, is very much the systems and culture and less of the academic. I have led whole summers' worth of PD. I've done a ton of teacher coaching. I've led departments. I am not the person who's going to know the 12th grade AP government standards cold.",
+"{proof} {land}"],
+say:["Land on the result so the answer doesn't end on the gap: across 48 high schools, 46% of ninth graders finished the quarter at a 3.0 or better, up six points, the best quarter KIPP had on that number","The ops line if it fits: people brought you in for behavior, and until operations were stable you couldn't do culture (30 kids in the hallway, wrong schedule)","Interim high school principal at Brooklyn Lab while superintendent"],
+bul:["Last 5 to 6 years leaned into academics","Lab: 3 schools, academic results through the principals, all summer onboarding and L&D","KIPP: meaningful, normed grades; curriculum and grading practices; college and beyond","Own the reputation: systems and culture","PD, teacher coaching, led departments","Not the AP Gov standards person","End on 46%, up six"],
+src:"DREAM phone screen 081726, your words, fillers cut. This is the same question DREAM asked twice. Last time the answer ended on the gap; the gold box moves the ending to the result. About 1:40."},
 
 {id:"kipp",g:"The Hard Ones",q:"Why did you leave KIPP? What have you been doing since?",who:"Either",
 frame:"It was a two-year design and hand-back role.",fy:true,
 script:[
+"I was brought on as part of a team that did a project that was effectively getting the One KIPP strategy off the ground: planned, launched, running. And then the vision was to hand it back to the regional leaders. {pause} It's exciting that it's running without me.",
 "{slow} We were working to get our 28 wonderful, but very independent regions into a degree of alignment on national high school strategy, and then hand it back to the regional teams, which is where it lives now.",
 "The project doesn't end when we run the first successful full cycle. {pause} As much as I thought consulting and national work would sound cool, it's really not that fun. I'm a people person. I'd rather not do it from a hotel in Indianapolis.",
 "{land} Right now, I am talking to the principals I know, finding where they need help with efficiency and effectiveness, and figuring out how I can build them custom tools, workflows, apps, solutions."],
 bul:["Two-year design and hand-back role","28 regions; lives with the regional teams now","National work isn't that fun; I'm a people person","Since: custom tools for principals I know"],
-src:"T:50-52, S2 [06:18] and [17:02] kept verbatim. \"That's been taking off\" (T:52) left out per your fact file. About 45 seconds."},
+src:"DREAM screen 081726 (One KIPP, running without me), T:50-52, S2 [06:18] and [17:02] kept verbatim. \"That's been taking off\" (T:52) left out per your fact file. About 45 seconds."},
 
 {id:"consult",g:"The Hard Ones",q:"Consultant to operator: why come back inside a network?",who:"Either",
 frame:"I know, because I've done it the wrong way, that you can't approach working at a network the way you do working as a consultant.",fy:true,
@@ -555,9 +573,10 @@ none:"Only the closing line above is from your recorded words (T:228-229). The q
 bul:["Kruti: with Flushing, Tremont Park and the high school all opening this fall, what's been hardest to keep consistent across campuses?","Paola: for the 119 ninth graders in the first class, what does a great first year look like by June?","Close: what's the next step, and who else would I talk to?","Stop after \"I'm excited.\" No \"blah, blah, blah.\""],
 src:"T:228-229 for the close. Questions proposed from the research."},
 
-{id:"year1",g:"Bench",q:"What would you want to own in year one?",who:"Either",
-frame:"Principals, and especially the high school side.",fy:false,script:[],
-none:"No recorded answer. Frame and bullets are proposals; the position is yours.",
+{id:"year1",g:"Bench",q:"What would you want to own in year one? Where's your learning curve?",who:"Either",
+frame:"Principals, and especially the high school side.",fy:false,
+script:["{slow} There's a degree of politics, there's a degree of history, there's some power mapping that needs to be done. The way in which we make change is going to be very, very important, {pause} because this is a role that could either be incredibly transformative for the organization, {land} or could feel like, here goes another 90 minutes with Chris talking at us. Which of course is not the vision."],
+none:"The script is your learning-curve answer from the DREAM screen. What you'd own in year one has no recorded answer; the frame and bullets are proposals.",
 bul:["Managing a set of principals, the way Dan described","Owning ninth-grade academic health for the new high school","Why: that's where your record is strongest (Carver, 46%)"],src:"Proposed."},
 
 {id:"feedback",g:"Bench",q:"How do you like to receive feedback? How should I manage you?",who:"Paola",
@@ -573,8 +592,9 @@ none:"What you told Gillian on 09/11 when she floated an October 13 start. Confi
 bul:["Gillian floated October 13 on 09/11","Flexible; hand off current projects thoughtfully","Check it against the United Schools commitment first"],src:"Zeta screen 091126, your words, fillers cut."},
 
 {id:"pay",g:"Bench",q:"Compensation expectations",who:"Either · never raise first",
-frame:"I'd want the title and pay to match the scope.",fy:false,script:[],
-none:"No recorded answer. Frame and bullets are proposals.",
+frame:"I'd want the title and pay to match the scope.",fy:false,
+script:["{slow} I want to join the team. I'm not at a place in my life where I need to cash in. {land} I'm very happy to be part of the right team. That's where I've been the happiest in my life."],
+none:"Your words from the DREAM screen, where the band was $145K to $165K and you said the top would work. Use this spirit, but at Zeta the number is still yours to set; the frame and bullets are proposals.",
 bul:["Your standing rule: the ask is the top of the published band","Debrief: Principal Manager band $125K to $175K; your salary of record is $175K","Your file: target $200K, comfortable $150K","If they're building a bigger role, the number should grow with it","Open on structure"],src:"Rojas debrief 092526; FORM ANSWERS 083126 (comp targets)."},
 
 {id:"inperson",g:"Bench",q:"In person every day in the Bronx. Does that work?",who:"Either · never raise first",
