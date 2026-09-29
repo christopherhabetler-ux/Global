@@ -213,3 +213,4 @@ CH remembers Matt giving a ladder: about $3,000 past bills at three clients, $12
 - 15% vs 20% justified: new clients come from Matt's relationships and selling, so CH takes a referral partner's share (top of 10-15%); on network deals CH does most of the work behind the deal, so the share is higher, but it's 20% of what EdTech Expertz keeps, not the full deal.
 - Check-ins and changes item removed at CH's direction. That also removed 30 days' notice, the paid notice month, and the 12-month network tail from the page.
 - Page 2 scope section removed (moved to page 1).
+- Full-time role item removed from Items for Conversation at CH's direction (092926). Raise it in person when ready.
