@@ -4,7 +4,7 @@ exec(open('src_other.py').read())
 def c(t): return clean(t)
 B={int(k):v for k,v in json.load(open('bank.json')).items()}
 Q=json.load(open('Q.json'))
-B={}   # the condensed 092526 bank is retired (CH 092926); NB = dictated Notion blocks
+B={}   # the condensed 092526 bank is retired (CH 092826); NB = dictated Notion blocks
 NB={}
 for part in open('canon/notion_bank.md').read().split('## ')[1:]:
     k,*ps=part.strip().split('\n'); NB[int(k)]=[p for p in ps if p.strip()]
@@ -77,7 +77,7 @@ E=[
  'one':'do we keep this leader, can he be successful?',
  'proves':'He can tell a hard truth about a struggling principal and grow him into the top seat. Paola\'s whole job.',
  'full':cv('I first started working with Jerel Bryant','can he be successful?')+' '+cue('slow','slow')+' '+cv('I did this by primarily working shoulder to shoulder','built his confidence')+' '+cue('beat','beat')+' '+cv('I clearly named','narratives of blame.')+' '+cue('power','land this')+' '+JEREL,
- 'guards':'It started as an assessment. Coached, never led. Louisiana Principal of the Year (your wording, kept 092926). The 75% suspension drop is Collegiate network-wide, never Carver alone. CREDO: "One of our schools, Carver, had the largest CREDO effect size in the country."',
+ 'guards':'It started as an assessment. Coached, never led. Louisiana Principal of the Year (your wording, kept 092826). The 75% suspension drop is Collegiate network-wide, never Carver alone. CREDO: "One of our schools, Carver, had the largest CREDO effect size in the country."',
  'bends':[
   ['The good principal who needs to get to great','Lead with clothes, not skin. Then Carver.',cl[0].upper()+cl[1:]],
   ['Hard feedback','Lead with naming the frayed relationship.',cv('I clearly named','narratives of blame.')],
@@ -168,10 +168,10 @@ H['repairs']='''<div class="card"><div class="lab">Repair 1 &middot; Carver, red
 H['numbers']='''<div class="card"><div class="lab">Every number, with its source. Never say one that is not on this card.</div><div class="ans">
 <p><b>Excel:</b> 270th to #1 in Massachusetts &middot; National Charter School of the Year &middot; Dean of Students &middot; 40% of staff reported to you &middot; six days on the playbook &middot; HS top 3% nationally. <span class="small">Sources: bank blocks 1, 3</span></p>
 <p><b>Consulting:</b> over 100 schools &middot; fourteen years. <span class="small">Source: bank block 1</span></p>
-<p><b>Collegiate:</b> 5 years CCO &middot; Carver: largest CREDO effect size in the country &middot; seven-level special education continuum &middot; suspension drop is <b>network-wide</b> only. <span class="small">Sources: bank block 1; ONE STORY 091326; your ruling 092926</span></p>
+<p><b>Collegiate:</b> 5 years CCO &middot; Carver: largest CREDO effect size in the country &middot; seven-level special education continuum &middot; suspension drop is <b>network-wide</b> only. <span class="small">Sources: bank block 1; ONE STORY 091326; your ruling 092826</span></p>
 <p><b>Carver:</b> 200 to eight or nine hundred students &middot; Jerel is the CEO. <span class="small">Source: bank block 4</span></p>
-<p><b>Brooklyn Lab:</b> superintendent for a transitional period &middot; 3 principals and the C-level team (CEO and CFO co-managed) &middot; interim HS principal, half a year &middot; two simultaneous renewals, three-year terms, both reauthorized, Board of Regents. <span class="small">Sources: bank blocks 1, 5; ONE STORY 091326; fact check 092926</span></p>
-<p><b>KIPP:</b> 28 regions &middot; 48 high schools &middot; all adopted the HS strategy, no school took the alternate path &middot; 46% of 9th graders at 3.0+, up 6, best quarter KIPP had had &middot; 20 schools hit the goal &middot; the tool was piloted and handed off. <span class="small">Source: bank block 2 as dictated; your rulings 092926</span></p>
+<p><b>Brooklyn Lab:</b> superintendent for a transitional period &middot; 3 principals and the C-level team (CEO and CFO co-managed) &middot; interim HS principal, half a year &middot; two simultaneous renewals, three-year terms, both reauthorized, Board of Regents. <span class="small">Sources: bank blocks 1, 5; ONE STORY 091326; fact check 092826</span></p>
+<p><b>KIPP:</b> 28 regions &middot; 48 high schools &middot; all adopted the HS strategy, no school took the alternate path &middot; 46% of 9th graders at 3.0+, up 6, best quarter KIPP had had &middot; 20 schools hit the goal &middot; the tool was piloted and handed off. <span class="small">Source: bank block 2 as dictated; your rulings 092826</span></p>
 <p><b>Coverage schedule maker:</b> two schools' master schedules &middot; installed at one &middot; your estimate two to three hours a week. <span class="small">Source: bank block 8</span></p>
 <p><b>Zeta:</b> high school 119 ninth graders &middot; 91% HS retention (Dan). <span class="small">Sources: research 092826; Rojas debrief</span></p>
 <p><b>Principal Manager band:</b> $125K-$175K &middot; 425 Westchester Ave, daily. Never raise. <span class="small">Source: Rojas debrief &sect;0</span></p></div></div>'''

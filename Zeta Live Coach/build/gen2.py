@@ -1,4 +1,4 @@
-"""Second pass: rebuild cards from the full Notion canon (092926 night).
+"""Second pass: rebuild cards from the full Notion canon (092826 night).
 Every quoted passage is located by exact substring in a source file, so nothing here is composed."""
 import json,re
 exec(open('build_cards.py').read().split('exec(open("src_other.py")')[0])   # dan(), clean()
@@ -114,7 +114,7 @@ upd('instruction',answer=P(
   cr+' '+cue('power','add')+' <em>One of our schools, Carver, had the largest CREDO effect size in the country.</em>',
   bold(a[3],'interim high school principal'),
   cue('power','land the number')+' <b>'+last+'</b> '+STOP)
-  +SRC('THE TWELVE ANSWERS block 10 as dictated (Notion, revised 092526). The CREDO sentence (gold) is fact-file wording, per your 092926 ruling that it belongs to Carver. Cut: "so I\'m not trying to take all the credit."'),
+  +SRC('THE TWELVE ANSWERS block 10 as dictated (Notion, revised 092526). The CREDO sentence (gold) is fact-file wording, per your 092826 ruling that it belongs to Carver. Cut: "so I\'m not trying to take all the credit."'),
   avoid='Ending on the AP line. "I\'m not trying to." Claiming curriculum ownership or a CAO title.')
 
 # ---------- 13 lab: steward, name the mess ----------
@@ -135,7 +135,7 @@ upd('lab',answer=P(
 k9=NB[9]
 upd('leftkipp',answer=P(k9[0],cue('flat','cut if short')+' '+k9[2],k9[3],bold(k9[4],"They're running it now.")+' '+STOP)
   +SRC('THE TWELVE ANSWERS block 9 as dictated (Notion, revised 092526); paragraph 2 cut.')
-  +FACT('if pressed on the exit: "KIPP was a two-year role. The position was eliminated after we delivered and met goals." (ONE STORY 091326; you confirmed 092926 that both are true.)'),
+  +FACT('if pressed on the exit: "KIPP was a two-year role. The position was eliminated after we delivered and met goals." (ONE STORY 091326; you confirmed 092826 that both are true.)'),
   avoid='"Too many cooks." "I chose to leave." Anything critical of KIPP. The Verizon line if it lands wrong.')
 
 # ---------- 15 assocdean: guard the Excel exit ----------
@@ -153,7 +153,7 @@ s1=c(T("They have a true all means all. mission","a high support organization?")
 s2=a[2].split(' Collegiate had the largest')[0]
 s3=T("Lean on the team where they're the experts; lean in where my systems work applies.","applies.",BK)
 upd('sped',answer=P(cue('flat','lead with it, no hedge')+' '+s1, s2, bold(s3,"Lean on the team where they're the experts"),
-  '<b>Facts (you confirmed 092926):</b> Collegiate, a seven-level special education continuum, including sub-separate low-incidence programs, ED programs, and a post-secondary program; you coached principals and held standards there. Excel, about 30% special education, and you managed it. Brooklyn Lab, you oversaw it.'+' '+STOP)
+  '<b>Facts (you confirmed 092826):</b> Collegiate, a seven-level special education continuum, including sub-separate low-incidence programs, ED programs, and a post-secondary program; you coached principals and held standards there. Excel, about 30% special education, and you managed it. Brooklyn Lab, you oversaw it.'+' '+STOP)
   +SRC('Dan call 092526; THE TWELVE ANSWERS block 10; your rubric line (ANSWERED FROM DISK 080626).'),
   land='The strongest inclusive-by-design evidence in your record, said as a strength.',
   avoid='"I learned a ton about special education." "I\'m a systems person, not a clinician." Managing SPED teachers at Collegiate. Raising Zeta\'s own ELL or SPED enrollment.',

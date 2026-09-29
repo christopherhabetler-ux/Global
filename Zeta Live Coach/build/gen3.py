@@ -1,4 +1,4 @@
-"""Third pass (092926 after midnight): the condensed 092526 answer bank is retired (CH ruling).
+"""Third pass (092826 night): the condensed 092526 answer bank is retired (CH ruling).
 Every card that drew on it is rebuilt from the dictated Notion blocks, the transcripts, the
 060925 written Carver account, and the onsite quotes. Also strikes the 'Lean on the team' line."""
 import json,re
@@ -95,13 +95,13 @@ json.dump(Q,open('Q.json','w'))
 json.dump({'JEREL':JEREL,'CV':CV},open('cv.json','w'))
 print('gen3 ok')
 
-# ---------- his typed answer 092926 ~12:30am: would you take this seat ----------
+# ---------- his typed answer 092826 ~11pm: would you take this seat ----------
 GUT="I want to be part of a great organization, and this is a high impact role that would get me close to schools and close to network decision makers, so it's a great way to get to know the org and the schools and the people."
 w=byid['whynow']
 w['label']='Why this seat? Would you take it?'
-w['short']='Why this seat (your 092926 answer)'
+w['short']='Why this seat (your 092826 answer)'
 w['keys']=w['keys']+' why this seat would you take level role title step down stepping stone'
-w['answer']=P(cue('flat','plain, first sentence')+' <b>'+GUT+'</b>',cue('beat','if they probe the level')+' '+NB[9][2],c(G_ROLE)+' '+STOP)+SRC('your typed answer 092926 (typos fixed, nothing added); THE TWELVE ANSWERS block 9 as dictated; Zeta screen 091126.')+'<p class="small prepOnly"><b>Your guard, 092926:</b> this is not a one-year role, so "get to know" never sounds like a stepping stone. The commute is a slog you have accepted; never raise it. You will want to keep doing your AI work; never raise it on this call. If AI comes up, your line is on the AI card: "short answer, yes to AI... in the service of the roles and responsibilities, not for the sake of doing it."</p>'
+w['answer']=P(cue('flat','plain, first sentence')+' <b>'+GUT+'</b>',cue('beat','if they probe the level')+' '+NB[9][2],c(G_ROLE)+' '+STOP)+SRC('your typed answer 092826 (typos fixed, nothing added); THE TWELVE ANSWERS block 9 as dictated; Zeta screen 091126.')+'<p class="small prepOnly"><b>Your guard, 092826:</b> this is not a one-year role, so "get to know" never sounds like a stepping stone. The commute is a slog you have accepted; never raise it. You will want to keep doing your AI work; never raise it on this call. If AI comes up, your line is on the AI card: "short answer, yes to AI... in the service of the roles and responsibilities, not for the sake of doing it."</p>'
 w['core']='"'+GUT+'"'
 w['land']='"close to schools and close to network decision makers"'
 w['avoid']='Anything that sounds like a stepping stone. The commute. Keeping your AI practice going.'
@@ -109,7 +109,7 @@ w['hook']='great organization / close to schools, close to decision makers / not
 json.dump(Q,open('Q.json','w'))
 z=byid['whyzeta']
 parts=z['answer'].split('</p>',2)
-z['answer']=parts[0]+'</p>'+parts[1]+'</p><p>'+cue('power','the seat, in your words 092926')+' <b>'+GUT+'</b></p>'+parts[2]
-z['answer']=z['answer'].replace("Your words: DREAM screen 081726 (first two paragraphs);","Your words: DREAM screen 081726 (first two paragraphs); your typed answer 092926 (third);")
+z['answer']=parts[0]+'</p>'+parts[1]+'</p><p>'+cue('power','the seat, in your words 092826')+' <b>'+GUT+'</b></p>'+parts[2]
+z['answer']=z['answer'].replace("Your words: DREAM screen 081726 (first two paragraphs);","Your words: DREAM screen 081726 (first two paragraphs); your typed answer 092826 (third);")
 assert GUT in z['answer']
 json.dump(Q,open('Q.json','w'))
