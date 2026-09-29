@@ -71,6 +71,24 @@ OVERRIDES = """<style>
 .qbox li { margin: 0 0 6pt; }
 table.sn.said .h-not { width: 34%; } table.sn.said .h-say { width: 36%; } table.sn.said .h-nt { width: 30%; }
 h3.sec-h { margin: 14pt 0 6pt; color: var(--navy); }
+@page { size: 11in 8.5in; }
+@page cover { size: 11in 8.5in; }
+.pagestart { break-before: page; }
+.band { padding-top: 0 !important; }
+.beliefs.four { grid-template-columns: repeat(4, minmax(0, 1fr)) !important; }
+table.sn.cat { margin: 14pt 0 10pt; }
+table.sn.cat .h-cat { width: 17%; } table.sn.cat .h-not { width: 27%; } table.sn.cat .h-say { width: 29%; } table.sn.cat .h-nt { width: 27%; }
+table.sn.cat th.cat-l { vertical-align: top; text-align: left; padding: 6pt 10pt 0 0; border-top: 3px solid var(--navy); background: transparent; }
+.cat-l h3 { margin: 0 0 4pt; font-size: 11.5pt; line-height: 1.2; color: var(--navy); }
+.cat-l p { margin: 0; font-size: 8.4pt; line-height: 1.4; font-weight: 400; color: var(--gray); text-transform: none; letter-spacing: 0; }
+.cover { height: 8.5in !important; }
+table.cmp { font-size: 8.8pt; } table.cmp td, table.cmp th { padding-top: 5pt !important; padding-bottom: 5pt !important; }
+table.terms { width: 100%; border-collapse: collapse; font-size: 8.2pt; line-height: 1.3; }
+table.terms th { width: 2.3in; text-align: left; vertical-align: top; padding: 2.2pt 10pt 2.2pt 0; color: var(--navy); }
+table.terms td { vertical-align: top; padding: 2.2pt 0; border-bottom: 1px solid var(--line); }
+table.terms tr { break-inside: avoid; }
+.sources { margin-top: 8pt; font-size: 8pt; color: var(--gray); }
+.ai-note { margin-top: 6pt; padding: 6pt 10pt; background: var(--wash); font-size: 8.8pt; font-style: italic; }
 </style>"""
 
 
@@ -115,82 +133,78 @@ def lead(t):
 # ---------- content ----------
 byline = re.search(r"^Prepared by.*$", md, re.M).group(0)
 status = re.search(r"^\*\*(Current working draft.*?)\*\*\s*(.*)$", md, re.M)
-about = paras(section("About this guide"))
+why_p = paras(section("Why this matters").split("\n### ")[0])
+purpose = why_p[0].replace("Purpose: ", "", 1)
+goal = why_p[1].replace("Goal: ", "", 1)
+why_body = why_p[2:]
 beliefs_sec = section("Shared beliefs", 3)
-phrases_sec = section("Phrases we have heard from you", 3)
-agree = bullets(section("Language agreements so far", 3))
-short = section("The short list of language to get right")
+lang = section("Language to get right")
+lang_intro = paras(lang)[0]
+cats = re.findall(r"^### (.+?)\n(.*?)(?=^### |\Z)", lang, re.S | re.M)
 check = section("Check locally")
 txny = section("Texas and New York, side by side", 3)
-faq = section("Commonly asked questions")
-wl = section("Word list, A to Z")
 oq = bullets(section("Open questions"))
-terms_p, sources_p = paras(section("US terms and sources"))
+terms_sec = section("US terms and sources")
+terms = rows(terms_sec)
+tail = paras(terms_sec)
+sources_p = next(p for p in tail if p.startswith("Sources"))
+ai_note = next(p for p in tail if p.startswith("In an effort"))
 
-toc = [("about", "01", "About this guide", []),
-       ("frame", "02", "The quick frame", [("beliefs", "Shared beliefs"), ("phrases", "Phrases we have heard from you"),
-                                           ("agreements", "Language agreements so far")]),
-       ("short-list", "03", "The short list of language to get right", []),
-       ("local", "04", "Check locally", [("texas-ny", "Texas and New York, side by side")]),
-       ("faq", "05", "Commonly asked questions", []),
-       ("reference", "06", "Word list, A to Z", []),
-       ("questions", "07", "Open questions", []),
-       ("appendix", "08", "US terms and sources", [])]
+toc = [("why", "01", "Why this matters", [("beliefs", "Shared beliefs")]),
+       ("language", "02", "Language to get right", [(re.sub(r"\W+", "-", c[0].lower()).strip("-"), c[0]) for c in cats]),
+       ("local", "03", "Check locally", [("texas-ny", "Texas and New York, side by side")]),
+       ("questions", "04", "Open questions", []),
+       ("appendix", "05", "US terms and sources", [])]
 
 B = []
 B.append('<header class="cover"><div class="hero"><div class="cover-art" aria-hidden="true"><span class="c1"></span>'
          '<span class="c2"></span><span class="c3"></span></div><div class="hero-inner">'
          '<p class="draft-tag lbl">Working draft</p><h1>ClassE US language guide</h1>'
          f'<p class="byline">{il(byline)}</p></div></div><div class="intro"><section class="purpose" aria-label="Purpose">'
-         f'<div class="pp-row"><p class="pp-k lbl">Purpose</p><p class="pp-v">{il("A check against language that can sound outdated, controversial or unintentionally offensive to US educators.")}</p></div>'
+         f'<div class="pp-row"><p class="pp-k lbl">Purpose</p><p class="pp-v">{il(purpose)}</p></div>'
          f'<div class="pp-row"><p class="pp-k lbl">Status</p><p class="pp-v" style="font-size:11pt;font-weight:500">{il(status.group(1) + " " + status.group(2))}</p></div>'
          '</section><nav class="cover-toc" aria-label="Contents"><p class="toc-head lbl">Contents</p><ol class="toc-main">')
 for aid, n, t, subs in toc:
     B.append(f'<li><a href="#{aid}"><span class="toc-n lbl">{n}</span><span>{il(t)}</span></a>')
     if subs:
-        B.append('<ul class="toc-sub">' + "".join(f'<li><a href="#{s}">{il(st)}</a></li>' for s, st in subs) + "</ul>")
+        B.append('<ul class="toc-sub">' + "".join(f'<li><a href="#{s_}">{il(st)}</a></li>' for s_, st in subs) + "</ul>")
     B.append("</li>")
 B.append("</ol></nav></div></header>")
 B.append('<div class="shell"><nav class="side" aria-label="Contents"><p class="side-head lbl">Contents</p><ul>')
 for aid, n, t, subs in toc:
     B.append(f'<li class="nav-top"><a href="#{aid}">{il(t)}</a></li>')
-    B += [f'<li><a href="#{s}">{il(st)}</a></li>' for s, st in subs]
+    B += [f'<li><a href="#{s_}">{il(st)}</a></li>' for s_, st in subs]
 B.append("</ul></nav><main>")
 
-# 01 About
-B.append('<section id="about" class="band why"><div class="wrap"><p class="eyebrow lbl">01</p><h2>About this guide</h2>')
-B += [f'<p class="w-body">{il(p)}</p>' for p in about]
-B.append("</div></section>")
-
-# 02 Quick frame
-B.append('<section id="frame" class="band believe"><div class="wrap"><p class="eyebrow lbl">02</p><h2 class="display">The quick frame</h2>'
-         f'<div id="beliefs" class="spread"><h3 class="spread-h">Shared beliefs</h3><p class="sec-intro">{il(paras(beliefs_sec)[0])}</p><ol class="beliefs">')
+# 01 Why this matters + shared beliefs
+B.append(f'<section id="why" class="band why"><div class="wrap"><p class="eyebrow lbl">01</p><h2>Why this matters</h2>'
+         f'<p class="w-lead">{il(goal)}</p>')
+B += [f'<p class="w-body">{il(p)}</p>' for p in why_body]
+B.append(f'<div id="beliefs" class="spread"><h3 class="spread-h">Shared beliefs</h3><p class="sec-intro">{il(paras(beliefs_sec)[0])}</p><ol class="beliefs four">')
 for b in bullets(beliefs_sec):
     t, body = lead(b)
     B.append(f'<li><div><p class="bel-t">{il(t)}</p><p class="bel-b">{il(body)}</p></div></li>')
 B.append("</ol></div></div></section>")
-B.append(f'<section id="phrases" class="band"><div class="wrap"><div class="remember"><h3>Phrases we have heard from you</h3>'
-         f'<p class="sec-intro">{il(paras(phrases_sec)[0])}</p><ol>')
-for p in bullets(phrases_sec):
-    m = re.match(r'(".*?")\s*(.*)', p)
-    q, note = (m.group(1), m.group(2)) if m else (p, "")
-    B.append(f"<li><div><p>{il(q)}</p>" + (f'<p class="rem-note">{il(note)}</p>' if note else "") + "</div></li>")
-B.append("</ol></div></div></section>")
-B.append('<section id="agreements" class="band"><div class="wrap"><h3 class="sec-h">Language agreements so far</h3><ul class="plain-list">'
-         + "".join(f"<li>{il(a)}</li>" for a in agree) + "</ul></div></section>")
 
-# 03 Short list
-B.append(f'<section id="short-list" class="band"><div class="wrap"><p class="eyebrow lbl">03</p><h2>The short list of language to get right</h2>'
-         '<div class="sub sub-direct"><table class="sn said"><thead><tr>'
-         f'<th scope="col" class="lbl h-not">{NOT_IC}What was said</th><th scope="col" class="lbl h-say">{SAY_IC}Try instead</th>'
-         '<th scope="col" class="lbl h-nt">What went wrong</th></tr></thead><tbody>')
-for said, try_, why in rows(short):
-    B.append(f'<tr><td class="not"><span class="mlab lbl">{NOT_IC}What was said</span>{il(said)}</td>'
-             f'<td class="say"><span class="mlab lbl">{SAY_IC}Try instead</span>{il(try_)}</td><td class="nt">{il(why)}</td></tr>')
-B.append("</tbody></table></div></div></section>")
+# 02 Language to get right, by category
+B.append(f'<section id="language" class="band pagestart"><div class="wrap"><p class="eyebrow lbl">02</p><h2>Language to get right</h2>'
+         f'<p class="sec-intro">{il(lang_intro)}</p>')
+for name, body in cats:
+    cid = re.sub(r"\W+", "-", name.lower()).strip("-")
+    note = paras(body)[0]
+    rr = rows(body)
+    B.append(f'<table class="sn said cat" id="{cid}"><thead><tr><th scope="col" class="lbl h-cat"></th>'
+             f'<th scope="col" class="lbl h-not">{NOT_IC}Instead of</th><th scope="col" class="lbl h-say">{SAY_IC}Try</th>'
+             '<th scope="col" class="lbl h-nt">What went wrong</th></tr></thead><tbody>')
+    for k, (said, try_, why) in enumerate(rr):
+        catcell = (f'<th scope="rowgroup" rowspan="{len(rr)}" class="cat-l"><h3>{il(name)}</h3><p>{il(note)}</p></th>' if k == 0 else "")
+        B.append(f'<tr>{catcell}<td class="not"><span class="mlab lbl">{NOT_IC}Instead of</span>{il(said)}</td>'
+                 f'<td class="say"><span class="mlab lbl">{SAY_IC}Try</span>{il(try_)}</td><td class="nt">{il(why)}</td></tr>')
+    B.append("</tbody></table>")
+B.append("</div></section>")
 
-# 04 Check locally
-B.append(f'<section id="local" class="band"><div class="wrap"><p class="eyebrow lbl">04</p><h2>Check locally</h2>'
+# 03 Check locally
+B.append(f'<section id="local" class="band pagestart"><div class="wrap"><p class="eyebrow lbl">03</p><h2>Check locally</h2>'
          f'<p class="w-body">{il(paras(check)[0])}</p><ul class="plain-list">' + "".join(f"<li>{il(c)}</li>" for c in bullets(check)) + "</ul>")
 B.append(f'<h3 id="texas-ny" class="sec-h">Texas and New York, side by side</h3><p class="tx-lead">{il(paras(txny)[0])}</p>'
          '<table class="cmp"><thead><tr><th class="lbl corner"></th><th scope="col" class="lbl"><span class="state-chip s1">Texas</span></th>'
@@ -200,43 +214,22 @@ for label, t, n in rows(txny):
              f'<td><span class="mstate lbl"><span class="state-chip s2">New York and the Northeast</span></span>{il(n)}</td></tr>')
 B.append("</tbody></table></div></section>")
 
-# 05 FAQ
-B.append(f'<section id="faq" class="band"><div class="wrap"><p class="eyebrow lbl">05</p><h2>Commonly asked questions</h2>'
-         f'<p class="sec-intro">{il(paras(faq)[0])}</p><dl class="faq">')
-for f in bullets(faq):
-    q, a = lead(f)
-    B.append(f"<div><dt>{il(q)}</dt><dd>{il(a)}</dd></div>")
-B.append("</dl></div></section>")
-
-# 06 Word list
-B.append(f'<section id="reference" class="band reference"><div class="wrap"><p class="eyebrow lbl">06</p><h2 class="display">Word list, A to Z</h2>'
-         f'<p class="ref-key">{il(paras(wl)[0])}</p><div class="rsec"><div class="sub sub-direct"><table class="sn"><thead><tr>'
-         f'<th scope="col" class="lbl h-cpt">{NOT_IC}Word or phrase</th><th scope="col" class="lbl h-say">{SAY_IC}Try instead</th>'
-         '<th scope="col" class="lbl h-nt">Why</th></tr></thead><tbody>')
-for w, t, y in rows(wl):
-    B.append(f'<tr><th scope="row" class="cpt">{il(w)}</th><td class="say"><span class="mlab lbl">{SAY_IC}Try instead</span>{il(t)}</td>'
-             f'<td class="nt">{il(y)}</td></tr>')
-B.append("</tbody></table></div></div></div></section>")
-
-# 07 Open questions
-B.append('<section id="questions" class="band"><div class="wrap"><p class="eyebrow lbl">07</p><h2>Open questions</h2><div class="qbox"><ul>')
+# 04 Open questions
+B.append('<section id="questions" class="band pagestart"><div class="wrap"><p class="eyebrow lbl">04</p><h2>Open questions</h2><div class="qbox"><ul>')
 for q in oq:
     t, rest = lead(q)
     B.append(f"<li><strong>{il(t)}</strong> {il(rest)}</li>")
 B.append("</ul></div></div></section>")
 
-# 08 Terms and sources
-B.append('<section id="appendix" class="band appendix"><div class="wrap"><div class="app-head"><p class="eyebrow lbl">08</p>'
-         '<h2 class="display">US terms and sources</h2></div><div class="app-sec"><dl class="glossary">')
-for item in terms_p.replace("Terms: ", "", 1).split(". "):
-    item = item.rstrip(".")
-    if ", " in item:
-        k, v = item.split(", ", 1)
-        B.append(f'<div class="acr"><dt>{il(k)}</dt><dd>{il(v[0].upper() + v[1:])}.</dd></div>')
-B.append("</dl></div>")
+# 05 US terms and sources, AI note
+B.append('<section id="appendix" class="band pagestart"><div class="wrap"><p class="eyebrow lbl">05</p><h2>US terms and sources</h2>'
+         '<table class="terms"><tbody>')
+for term, what in terms:
+    B.append(f"<tr><th scope=\"row\">{il(term)}</th><td>{il(what)}</td></tr>")
+B.append("</tbody></table>")
 head_s, body_s = sources_p.split(": ", 1)
-B.append(f'<div class="app-sec"><h3 class="rsec-h">Sources</h3><p style="font-size:8.5pt">{il(head_s)}: {il(body_s)}</p>'
-         + "</div></div></section></main></div>")
+B.append(f'<p class="sources"><strong>{il(head_s)}:</strong> {il(body_s)}</p>'
+         f'<p class="ai-note">{il(ai_note)}</p></div></section></main></div>')
 
 doc = HEAD.replace("</head>", FONTS + OVERRIDES + "</head>") + BODY_TAG + SEARCHBAR + "".join(B) + SCRIPT + "</body></html>"
 out_html = here / (out_name + ".html")

@@ -5,9 +5,9 @@ Open this first the next time work on the ClassE language guide, or any writing 
 ## Where things are
 
 - **Guide source:** `GUIDE ClassE US Language 092926.md` in the Global repo, branch `claude/sweet-albattani-jnh10l`.
-- **Built files:** `GUIDE ClassE US Language 092926.pdf` (8 pages) and `.html` (same content, with the search box for on-screen use).
+- **Built files:** `GUIDE ClassE US Language 092926.pdf` (8 landscape pages) and `.html` (same content, with the search box for on-screen use).
 - **Rebuild:** `python3 "build guide template.py" <092726 template .html> "GUIDE ClassE US Language 092926.md" "GUIDE ClassE US Language 092926"`. The template is Christopher's 092726 HTML (on disk as `GUIDE ClassE US Language 092726.html`). The script reuses its CSS and search, and it embeds the Wix Madefor fonts so headless Chrome doesn't fall back to a generic font.
-- **Cover email:** in `HANDOFF ClassE Language Guide final 092926.md`, v4.
+- **Cover email:** in `HANDOFF ClassE Language Guide final 092926.md`, v5.
 - **Older versions:** v19 to v24 drafts are in git history. The 092726 version is the last one Christopher built on his Mac.
 
 ## What the guide is, in his words
@@ -16,18 +16,16 @@ Open this first the next time work on the ClassE language guide, or any writing 
 - It is a working draft. The suggested wording is one option, and the team may choose a different one.
 - It is not a pitch, a product description or a rollout plan. Product facts (TEKS alignment, curriculum setup, which Albert features work) are out of scope.
 
-## Structure he asked for (092926)
+## Structure he asked for (092926, second pass, current)
 
-1. About this guide: short, impersonal, not repetitive. No "we" and "our" framing.
-2. The quick frame: shared beliefs ("based on core beliefs widely shared in US schools", not "our core beliefs"), phrases heard from Matt and Joe, and language agreements so far.
-3. The short list of language to get right: What was said | Try instead | What went wrong.
-4. Check locally: how the district or state refers to things, including its AI policy. Then the Texas and New York table.
-5. Commonly asked questions, which replaces "If a buyer asks."
-6. Word list, A to Z.
-7. Open questions, at the end, and language questions only.
-8. US terms and sources.
+Landscape, and each section starts on a fresh page.
+1. Why this matters: his 092726 framing, with his purpose line ("project our mindsets and shared beliefs about education, and make sure we use updated language that doesn't distract from our ability to deliver"), then the four shared beliefs.
+2. Language to get right: one list, organized by his five categories, with the category and a short note in a left column. The categories are race, language and other lines of difference; disability and special services; academic results; data; and student support. Columns: Instead of | Try | What went wrong.
+3. Check locally, then the Texas and New York table.
+4. Open questions: language only.
+5. US terms and sources, with real explanations (what an IEP, MTSS and RTI are, not just what the letters stand for). The AI disclosure comes last, in his words.
 
-**Cut, at his direction:** "What our words have to describe," the pitch versions, "Three things to remember," "Before the call," "If a word goes wrong in the call," the "Always" note, "For the product team," and the numbered badges.
+**Cut, at his direction:** the phrases heard from Matt and Joe, the language agreements (folded into the list), the FAQ ("not good enough answers"), the separate short list and A-to-Z list (merged into the categories), and rows about practice rather than language (teacher-proof, upload an IEP, drill and kill, any curriculum, FERPA, AI hype, time saved).
 
 ## Decisions made 092926
 
@@ -46,6 +44,10 @@ Open this first the next time work on the ClassE language guide, or any writing 
 - Ground it in his own experience ("when I've rolled out resources like this before"), and make it an offer ("if you want me to").
 
 **Scope creep is the failure.** When a task is a language guide, adding a product description, pitch lines or product questions reads as not understanding the job.
+
+**Practice is not language.** Rows about what to do (upload an IEP, teacher-proofing) belong elsewhere. The guide covers words only.
+
+**Glossaries explain.** Spelling out an acronym is not a definition.
 
 **Stacked numbered lists look machine-made.** Four boxes of 1-2-3-4 in a row is the tell. Use numbers only when order matters.
 

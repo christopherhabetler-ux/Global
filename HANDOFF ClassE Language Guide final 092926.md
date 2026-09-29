@@ -2,7 +2,7 @@
 
 ## Status
 
-Done in the cloud session. The guide merges the 092726 accuracy fixes (SB 12 court ruling, CR-SE 2019, HB 8 and STAAR, the ESSA wording, Ed Law 2-d, the New York ELL terms, "controlled study," TEKS only after confirming, the families example, "Usage is not a result," and the If a buyer asks items) with the working-draft rewrite from 092926. It is 8 pages, built in the 092726 house template (build guide template.py).
+Done in the cloud session. The guide merges the 092726 accuracy fixes (SB 12 court ruling, CR-SE 2019, HB 8 and STAAR, the ESSA wording, Ed Law 2-d, the New York ELL terms, "controlled study," TEKS only after confirming, the families example, "Usage is not a result," and the If a buyer asks items) with the working-draft rewrite from 092926. It is 8 landscape pages, built in the 092726 house template (build guide template.py).
 
 Files in this repo, branch claude/sweet-albattani-jnh10l:
 - GUIDE ClassE US Language 092926.pdf (send this)
@@ -14,17 +14,18 @@ No local session is needed. Optional, if you want the receipts from your checker
 python3 ~/Documents/CLAUDE/Scripts/ship_check.py "<email file>" --register email
 python3 ~/Documents/CLAUDE/Scripts/aicheck.py --memo "GUIDE ClassE US Language 092926.md"
 
-## Email to Matt (092926, v4)
+## Email to Matt (092926, v5)
 
 Matt,
 
 Attached is the current draft of the US language guide. Think of it as a straw man, but a very informed, researched and vetted-by-me one.
 
-The document has four parts:
-- Some framing, including the beliefs the language is built on (page 2)
-- The short list of language to get right (pages 3-5)
-- A longer word list, A to Z (pages 6-7)
-- A couple of open questions at the end (page 8)
+The document has five parts:
+- Some framing, including the shared beliefs behind the language (page 2)
+- The language to get right, organized by topic (pages 3-5)
+- What to check locally, with Texas and New York side by side (page 6)
+- A couple of open questions (page 7)
+- US terms and sources (page 8)
 
 Even though this is a language guide, I did want to anchor it to principles. It makes my thinking, and the perspective of a US ed reformer, more transparent, so the team can understand it and then use it when choosing their own words from an informed position.
 
