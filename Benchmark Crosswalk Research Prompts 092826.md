@@ -23,28 +23,41 @@ That changes three things in the prompts:
 
 Carried forward from the 95 Percent Group build: an upload-receipt check in the framing line (the Grok file came back empty last time), an archive fallback in the quote chase (the job-posting quote was never confirmed), and a search perimeter on every "search results only" claim (the TouchMath closing had none).
 
-## The process: three prompts, five runs, two rounds tonight
+## The plan (final, red-teamed 092826 9:30pm ET)
 
-Revised 092826 at 10pm ET, and this is the version to run. Each piece does one job:
+**Round 1, now, all at once (about 30 minutes):**
+1. Prompt 1 into Perplexity, deep research. Save as `01 Perplexity.md`.
+2. The same Prompt 1 into Gemini, deep research. Gemini shows a plan first; click Start research without editing it. Save as `02 Gemini.md`.
+3. Prompt 2 into a second Perplexity tab, deep research. Save as `03 Market.md`.
+4. Your read, the three questions at the bottom. Save as `00 My read.md`.
 
-- **One Benchmark research prompt, two engines.** Perplexity and Gemini get the same prompt, and where they disagree, that's the cross-check. It worked on Zeta: running the same prompt through two models is how Gemini's wrong claims got caught.
-- **A separate market prompt, one engine.** Matt's theory is about McGraw Hill, HMH and Savvas, a different research target. Folding it into the Benchmark prompt would thin out the part that matters most: where Benchmark's grades 4 to 6 workflow stops. It's narrower, so one run is enough; the red team re-checks it.
-- **Two red-team seats, blind to each other.** GPT-5 Pro and Grok run the same prompt without seeing each other's answer. Where two independently trained models disagree about inference, that disagreement is the finding; the receipt is Canvas, where Gemini graded the Twin Question gap High, Claude graded it Low-medium, and Matt took the Claude read. The empty Grok upload that broke this on 95 Percent Group is now caught by the receipt check in the framing line.
+Claude is running Prompt 2 on its own at the same time, as a second engine on Matt's theory.
 
-| Round | Paste | Into | Uploads | Save as |
-|---|---|---|---|---|
-| 1 | Prompt 1, research | Perplexity, deep research | none | `01 Perplexity.md` |
-| 1 | Prompt 1, research (same text) | Gemini, deep research | none | `02 Gemini.md` |
-| 1 | Prompt 2, market | Perplexity, second tab, deep research | none | `03 Market.md` |
-| 1 | Your read (three questions at the bottom) | a text file | none | `00 My read.md` |
-| 2 | Framing line + Prompt 3 | GPT-5 Pro, web on | 01, 02, 03, and both files in `_upload-these/` (five files) | `04 GPT-5 Pro.md` |
-| 2 | Same framing line + Prompt 3 | Grok, separate conversation | same five | `05 Grok.md` |
+**Round 2, when round 1 lands, both at once:** in GPT-5 Pro and in Grok, separate conversations, upload the same five files (01, 02, 03, and both files in `_upload-these/`), then paste the framing line and Prompt 3. Save as `04 GPT-5 Pro.md` and `05 Grok.md`. If it's late, let them run overnight.
 
-- Round 1: all four go in at once. Gemini shows a research plan first; click Start research without editing it.
-- Round 2 starts when round 1 has landed. Start both seats together. If it's past 11pm, let them run and save both answers in the morning.
-- Tue after the 3:30 Zeta call: Claude reconciles the two seats against the sources, runs the quote chase and claim register, drafts, and runs the blind review. Wed morning you read the PDF and send it to Matt.
+**The handoff:** attach all six files to this Claude conversation the moment you have them. Tonight is fine; the Tuesday morning coffee is fine too. **Do not put them in the ClassE Crosswalks Drive folder.** It's shared with Matt, so anything placed there reaches him.
 
-**If the round 2 answers aren't in by Tue noon,** send Matt this line and take Thu 10/01. That still gives him four days before his meeting:
+**Tuesday:** Claude starts the moment the files arrive, not after your 3:30 Zeta call. That covers seat reconciliation, the quote chase, the claim register, the draft, the blind review, and the PDF, HTML and .md. The PDF is ready for you Tuesday evening.
+
+**Wednesday:** you read the PDF, and it goes to Matt.
+
+## Red team of this plan
+
+I attacked my own plan the way Prompt 3 attacks a gap. Here's what failed and what changed.
+
+| # | Weak point | Severity | Fix |
+|---|---|---|---|
+| 1 | "Claude does everything after that," but this Claude runs in the cloud and can't read `~/Downloads` on your Mac. The handoff didn't exist. | Fatal | You attach the files to this conversation. There's also an explicit warning against the ClassE Crosswalks Drive folder, which reaches Matt. |
+| 2 | The question the whole document turns on (what Benchmark's digital platform does after a wrong answer in grades 4 to 6) mostly sits behind a login. Public marketing won't answer it, and the models would have returned "not found." | High | Prompt 1 now sends the research to places that describe the platform publicly: state review reports, EdReports usability sections, district adoption packets, and Benchmark's own training videos, cited with timestamps. |
+| 3 | Claude sat idle until 3:30 Tuesday, which burned about 14 hours of a 40-hour window. | High | Claude starts the moment the files land. The Tue-noon trip-wire now has real slack. |
+| 4 | Matt's theory ran on one engine, and it's the part he'll carry into the room. | Medium | Claude runs the same Prompt 2 independently tonight, so the theory gets two engines at no extra paste. The two red-team seats also re-open its sources. |
+| 5 | "One row per claim" invites a 300-row ledger that crowds out analysis and gets cut off mid-answer. | Medium | The ledger is capped at the 60 most load-bearing claims. |
+| 6 | I overstated a receipt. The Canvas split was between two drafts (Gemini graded the Twin Question gap High, Claude graded it Low-medium), not between two red-team seats. | Low | Stated accurately here. The case for two seats stands without it: independent judgment on the step that decides what reaches Matt, for one extra paste. |
+| 7 | Both red-team seats read the same research files, so they aren't independent on facts. | Accepted | Intended. They're independent on judgment, and facts are settled by the quote chase against the source, never by the seats. |
+
+What would still make this document weak: if Benchmark's platform behavior isn't described anywhere public, even after fix 2. In that case the document says so plainly, and it becomes the first question Matt can ask in the room. That's useful to him, not a failure.
+
+**Trip-wire: if the round 2 answers aren't in by Tue noon,** send Matt this line and take Thu 10/01. That still gives him four days before his meeting:
 
 ```
 Matt, quick heads up: Benchmark will land Thursday 10/1 instead of Wednesday. I want one more verification pass on the digital-product claims before it reaches you. Still four days ahead of your 10/5 meeting.
@@ -90,7 +103,8 @@ For each, say SUPPORTED, CONTRADICTED, or UNVERIFIED, with the quote that decide
 7. Benchmark has announced, or is visibly building (roadmap, job postings, acquisitions), AI-generated or adaptive student practice of its own.
 
 METHOD
-- Source priority: product manuals, support documentation and release notes first; then efficacy reports and EdReports; then state and district records; then press releases, interviews and job postings; then trade press; marketing pages only when nothing better exists.
+- Source priority: product manuals, support documentation, help-center articles and release notes first; then efficacy reports and EdReports; then state and district records; then press releases, interviews and job postings; then trade press; marketing pages only when nothing better exists.
+- The digital platform is mostly behind a login, so go where its behavior is described in public: state instructional-materials review reports and publisher correlations (for example Texas, Florida, California, Louisiana, Oklahoma, Indiana), the EdReports usability and technology sections, district adoption committee packets and board presentations, and Benchmark's own training and demo videos (YouTube, webinars). Cite the timestamp for a video.
 - "Benchmark" is a common word. Keep only sources about Benchmark Education Company. Exclude generic "benchmark assessment" results and other companies with Benchmark in the name, and flag any source where it's unclear which company is meant.
 - Trace repeated claims to their earliest source, and treat copies of one claim as one origin, not corroboration.
 - Mark company-funded, company-commissioned, and independent evidence separately. Don't infer today's functionality from a study of an older edition.
@@ -99,7 +113,7 @@ METHOD
 - Every negative finding lists exactly what was checked: which documents, which release-note period, which search terms.
 
 OUTPUT
-1. Source ledger, one row per claim: claim | URL | publication date | exact quote | page or section | origin family | independent or company
+1. Source ledger, one row per claim, capped at the 60 most load-bearing claims: claim | URL | publication date | exact quote | page or section | origin family | independent or company
 2. Portfolio table
 3. Evidence register, one row per study
 4. The Part 2 proposition results
