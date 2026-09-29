@@ -1,0 +1,1081 @@
+[
+{
+"id": "intro",
+"grp": "open",
+"tier": "Must",
+"q": "Tell me about yourself / walk me through your background",
+"who": "Either, first 2 minutes",
+"hook": "DC → Excel 270th to #1 · referral practice, 100 schools · Carver → Lab → KIPP → tools",
+"why": "The open sets the frame for the whole call. With Dan it ran almost 6 minutes; target 2.",
+"frame": "I'll give you the quick arc, and I'll slow down on the principals.",
+"fy": false,
+"parts": [
+{
+"src": "Dan Rojas call, 09/25",
+"asked": "Do you want to tell me a little bit about yourself?",
+"text": "To answer your question, I started as a teacher in DC, went to Excel Academy up in Boston, where we were starting a turnaround. I was part of the leadership team there that led culture operations and student services. We had a great team, and we were able to take that school from 270th in the state to number one and actually earned National Charter School of the Year. And in that, we got a lot of visitors. [[slow]]"
+},
+{
+"src": "Zeta screen with Gillian, 09/11",
+"asked": "(Your background answer to Gillian. Used here for the consulting part, because the Dan version has the health reason in it.)",
+"text": "I then was able to launch a consulting practice. We had a lot of visitors at Excel. as you know happens in the charter community. And a lot of folks wanted to figure out what you know, how to bring what we were doing to their schools. And so I consulted With KIPP, Achievement First, Uncommon, all the Northeast charters, and some across the country."
+},
+{
+"src": "Dan Rojas call, 09/25",
+"asked": "(continuing the answer to Dan)",
+"text": "… And I got to walk into 100 different schools, find and fix problems, help people improve systems, help each principal set their goals and figure out how to meet them. Yeah. So I'd meet them where they are, chaotic to stable. Do they need to go stable to functional, functional to rigorous? And this was with the big charters at the time in the Northeast and some around the country."
+},
+{
+"src": "Dan Rojas call, 09/25",
+"asked": "(continuing)",
+"text": "[[trim]] … When I was there at Excel, I needed a tool for some behavior and attendance incentive and communication tracking. So I started an Excel spreadsheet, which I later grew into DeansList. …"
+},
+{
+"src": "Dan Rojas call, 09/25",
+"asked": "(continuing)",
+"text": "After consulting for a while, I found a client I was really keen on called Collegiate down in New Orleans. They have a true all-means-all mission. And I was really impressed to see how they had done special education at such true deep levels. And while they had that ambition, they were still trying to figure out could they be a super high expectations and a high support organization. They had a bunch of success at their first site, but they scaled, didn't work. My job as a consultant was to come down and assess whether or not the principal running their largest high school could do the job, a last-ditch effort. Loved the work. We were able to be successful in that. That led into a chief culture position that I was able to do while maintaining a very small consulting portfolio. So went down to New Orleans, moved my life down there, went all in, really learned a lot, enjoyed working as part of that team. [[slow]]"
+},
+{
+"src": "Dan Rojas call, 09/25",
+"asked": "(continuing)",
+"text": "The plan was always to move back to New York. It wasn't necessarily my plan, but it was my wife's plan since she's from New York, and that's where we had met. So I was able to take a client called Brooklyn Lab that I had. They needed a transition superintendent to help them through renewal as well as being transferred over to a new ownership. The executive director and founder was trying to exit. So long story short, I took that on, did that for about a year and a half, built a remote school, led through COVID, got the schools through both those renewals. And that wasn't super easy, because of some of the knots and tangles that existed there. I'm happy to go more into that."
+},
+{
+"src": "Dan Rojas call, 09/25",
+"asked": "(continuing)",
+"text": "But then after that, we went to the KIPP Foundation where I just came from. That's the national support arm. We were working to get our 28 wonderful, but very independent regions into a degree of alignment on national high school strategy and then hand it back to the regional teams, which is where it lives now. So it's a two-year design and hand-back role."
+},
+{
+"src": "Dan Rojas call, 09/25",
+"asked": "(continuing)",
+"text": "Right now, what I'm doing, which is something I think is really cool, is I am talking to the principals I know, finding where they need help with efficiency and effectiveness, what their problems are, and figuring out how I can build them custom tools, workflows, apps, solutions using AI to build the specific solutions that they need …"
+},
+{
+"src": "Dan Rojas call, 09/25",
+"asked": "(continuing)",
+"text": "[[pause]] But really, at the end of the day, the happiest I've ever been is in a midsize growing charter network that has wildly outsized ambition and is full of smart, aspirationally aligned folks. And my read is that you all might be that place and that this role just really spoke to me as a perfect blend of what I've done, what I want to do, and where I might want to be. So that's why I'm here."
+}
+],
+"say": [
+"Replace \"We were able to be successful in that\" with the result: three years later the school had doubled, and he was Louisiana Principal of the Year. He runs the network now.",
+"DeansList: zero to 275 schools.",
+"The practice ran 14 years, not \"the better part of a decade.\"",
+"Brooklyn Lab: both schools were reauthorized, and you were interim high school principal for half a year."
+],
+"land": "And my read is that you all might be that kind of place. So that's why I'm here.",
+"avoid": "The health reason for leaving Excel. \"That's been taking off\" about the tools. Anything past 2 minutes.",
+"bul": [
+"DC → Excel turnaround, 270th → #1",
+"Consulting: visitors wanted the model; KIPP, AF, Uncommon",
+"100 schools; chaotic → stable → functional → rigorous",
+"Collegiate: assess the principal, last-ditch → say the result",
+"Brooklyn Lab: transition superintendent, renewals, new ownership",
+"KIPP: 28 regions, hand it back",
+"Custom tools for principals",
+"Happiest in a midsize network with outsized ambition"
+]
+},
+{
+"id": "why",
+"grp": "open",
+"tier": "Must",
+"q": "Why Zeta? Why this side of the house?",
+"who": "Paola",
+"hook": "Building things other people can run · midsize, outsized ambition · excellence with exploration",
+"why": "The ops seat is closed. This answer has to be a clear yes to the schooling side.",
+"frame": "If there was one thing to sum up what I've been doing my whole career, it's building things that other people can run.",
+"fy": true,
+"parts": [
+{
+"src": "DREAM screen with Donna Choi Ellis, 08/17",
+"asked": "Why did you decide to apply for this role?",
+"text": "The idea that the job is focusing on initiatives, the ones that transition from launch into practices that the entire organization uses. And this, I think if there was one thing to sum up what I've been doing my whole career as a, in New York, Network offices at CMOs and as a consultant, it's been this like building things that other people can run. [[pause]] I both like doing that work and I also like... Building systems. and structures and practices that people buy into on merit, not out of obligation."
+},
+{
+"src": "Dan Rojas call, 09/25",
+"asked": "(the end of your answer to \"tell me about yourself\")",
+"text": "… the happiest I've ever been is in a midsize growing charter network that has wildly outsized ambition and is full of smart, aspirationally aligned folks. And my read is that you all might be that place and that this role just really spoke to me as a perfect blend of what I've done, what I want to do, and where I might want to be."
+},
+{
+"src": "Dan Rojas call, 09/25",
+"asked": "(your closing argument at the end of the call)",
+"text": "I think maybe I will just try and maybe end with a quick unprompted closing argument that says I've appreciated getting to talk with you and Gillian and what seemed to be the mindsets in excellence first, but like an excellence with exploration on what that means seems really cool to me. I do have a lot of high school-specific experience in operations, culture, and academics. And so there's something cool about like the high school question. I love being in environments where it's like best idea wins, strong opinions, loosely held. Let's debate the heck out of things. Let's attack people's ideas without attacking people."
+}
+],
+"say": [
+"If they ask about the ops role: Felipe thought your strongest fit was the schooling side, and after talking with Dan you see the logic. (Your words to Dan: \"I see the logic. And yeah, it makes sense.\")"
+],
+"land": "Let's debate the heck out of things. Let's attack people's ideas without attacking people.",
+"avoid": "Any sign you'd rather have the ops role.",
+"bul": [
+"Building things other people can run",
+"Buy-in on merit, not obligation",
+"Happiest in a midsize, growing network",
+"Excellence with exploration",
+"High school experience across operations, culture and academics",
+"Best idea wins"
+]
+},
+{
+"id": "best",
+"grp": "open",
+"tier": "Likely",
+"q": "What do you do best? What are you looking for next?",
+"who": "Either",
+"hook": "Find the pain point fast · build with a team · a document is worthless until it's in a classroom",
+"why": "Gillian asked this; her notes went to the COOs and Emily Kim, so this is on record with them.",
+"frame": "I like strategy. I like being part of a team that's willing to work incredibly hard and have fun while doing it.",
+"fy": true,
+"parts": [
+{
+"src": "Zeta screen with Gillian, 09/11",
+"asked": "What do you feel like you're really looking to get out of your next role?",
+"text": "I think what I love to do and What I do pretty well is Okay, deeply, quickly understand pain points by building Initial relationships to get people to be vulnerable, to hear about problems but also see problems with a clear bar for excellence. and then set to work and go into the lab and with a solid team, both of practitioners on the ground as well as Folks at the support levels or the management levels, build a really smart solution Then get to the fun, although sometimes challenging work of change management where we are putting the results, student outcomes as the only measure of success. and Going through the processes of Because I've done it so poorly so many times of really understanding that a document is a document and it is absolutely worthless until it is doing something in a classroom that's driving student results. What I love to do most is just that, find the problem, Work with a great team to find a solution. Make sure that it is entirely both feels like and truly represents what the school leader needs and help them do it incredibly well."
+}
+],
+"say": [],
+"land": "Help them do it incredibly well.",
+"avoid": "Leading with AI.",
+"bul": [
+"Understand pain points fast, through relationships",
+"A clear bar for excellence",
+"Build with practitioners and support teams together",
+"Student outcomes are the only measure",
+"A document is worthless until it's driving results in a classroom"
+]
+},
+{
+"id": "g2g",
+"grp": "prin",
+"tier": "Must",
+"q": "How do you manage principals? The good principal who needs to get to great?",
+"who": "Paola",
+"hook": "Clothes, not skin · support hat 99% · side of the street clean · shoulder to shoulder → Carver",
+"why": "Paola's job. Dan asked exactly this, and the answer had no proof.",
+"frame": "The playbook I've developed over time, by doing it wrong and then eventually doing it better, comes down to four things.",
+"fy": false,
+"parts": [
+{
+"src": "Dan Rojas call, 09/25",
+"asked": "What's the common piece of feedback you give the principal who is pretty good but needs to go to great?",
+"text": "I would say that the playbook that I have developed over time by doing it wrong and then eventually doing it better and then doing it well a few times at least is I think the first thing is we have to separate someone's performance from their identity. And I talk about using your identity not as your skin, but your identity as a principal is the clothes that you wear, not the skin that you're in. And helping them separate this idea that there are things that make you who you are that are irreplaceable and that nothing about those should change. There are, however, also ways in which we can build on those strengths. And by aligning on what the key problems or opportunities are, we can focus on improving those without undercutting either who you are, the strengths you bring, or attacking your personal identity. So that's number one. Number two is getting clear on support versus evaluation. 99% of the time, I'm wearing my support hat. My success is entirely a function of your success. And so that when it comes time to evaluate, number one, nothing is a surprise. And number two, I've helped you along the way so that your review is wildly positive. The third thing is my side of the street needs to be totally clean above reproach. I need to be clear. I need to follow through. I need to be the model for reliability, for clarity and communication. And number four, doing the work alongside them. I think so often it's easy for folks, especially that have been doing it for a while, to say, \"Even if I respect you, even if I think you're great, you don't really get it, or you don't get it at the level that I'm currently experiencing it.\" And that's true. And I think with most conversations with smart people, acknowledging that their perspective is entirely valid is both necessary and important. Also, there are ways in which you can dive in, do the work alongside them, and really go shoulder to shoulder with them. And I'll close with this. Mandate authority is almost worthless in these settings. I mean, sure, you're the person's boss. Sure, you can say we are or aren't doing certain things, and you need to. However, for the people that we want to keep, like you said, the people who are innovative, who are strong, who bring their whole selves, we need to convince them through the quality of our ideas and our actions and through the data on what directions and changes need to be made. And so we need to be able to lead through influence and through modeling and completely let go of any hierarchical sense of mandate authority."
+}
+],
+"say": [
+"End on Carver instead of \"completely let go of any hierarchical sense of mandate authority\": I was brought in to assess whether the principal of their largest high school could do the job. Three years later the school had doubled, and he was Louisiana Principal of the Year. He runs the network now."
+],
+"land": "Say the Carver result, then stop.",
+"avoid": "Ending on the principle. Going past 2 minutes.",
+"bul": [
+"1. Performance is not identity: clothes, not skin",
+"2. Support vs. evaluation: support hat 99%, nothing is a surprise",
+"3. My side of the street clean, above reproach",
+"4. Shoulder to shoulder; their perspective is valid",
+"Mandate authority is almost worthless",
+"End on Carver"
+]
+},
+{
+"id": "carver",
+"grp": "prin",
+"tier": "Must",
+"q": "A principal who was struggling. What did you do?",
+"who": "Paola",
+"hook": "Assess, last-ditch · \"hiding our best person\" · doubled, Louisiana Principal of the Year",
+"why": "Your best proof for a principal-manager seat. With Dan it came out as one sentence.",
+"frame": "The one I'd point to is Carver, in New Orleans.",
+"fy": false,
+"parts": [
+{
+"src": "Dan Rojas call, 09/25",
+"asked": "(from your background answer)",
+"text": "They had a bunch of success at their first site, but they scaled, didn't work. My job as a consultant was to come down and assess whether or not the principal running their largest high school could do the job, a last-ditch effort. Loved the work. We were able to be successful in that."
+}
+],
+"phrases": {
+"src": "Your Carver dictation, 09/20",
+"asked": "(dictated for your answer bank)",
+"list": [
+"we're hiding our best person",
+"running the whole thing"
+]
+},
+"say": [
+"The stakes: close to a last look at whether the school stayed open.",
+"You were brought in to assess, not to coach. The coaching came after, over three years.",
+"Three years later the school had doubled in size, and student satisfaction was up 50%.",
+"He was named Louisiana Principal of the Year, and he runs the organization now."
+],
+"land": "He runs the organization now.",
+"avoid": "The 75% suspension drop (that's Collegiate network-wide, never Carver alone). \"We were able to be successful.\"",
+"bul": [
+"Brought in to assess, last-ditch",
+"\"We're hiding our best person\"",
+"Three years of coaching",
+"Doubled · satisfaction +50%",
+"Louisiana Principal of the Year → now CEO"
+]
+},
+{
+"id": "account",
+"grp": "prin",
+"tier": "Likely",
+"q": "How do you hold principals accountable and still develop them?",
+"who": "Paola",
+"hook": "Clarity → investment → training → accountability · curiosity, not accusation",
+"why": "Zeta: \"the requirement of the manager is a lot higher.\" School in the Square asked the same thing.",
+"frame": "The order matters to me: clarity, investment, training, and only then accountability.",
+"fy": false,
+"parts": [],
+"phrases": {
+"src": "School in the Square onsite, 09/08",
+"asked": "How do you balance holding leaders accountable for results while also coaching and developing them?",
+"list": [
+"my success would be their success",
+"support hat / evaluation hat",
+"nothing's a surprise",
+"clarity, investment, training, accountability",
+"not just in August",
+"I stopped thinking I knew everything and really listened",
+"I realized there was a clarity issue that was my fault",
+"unfair on a human level",
+"we talked about the calendar going out last week. I didn't get it. What can you tell me about that?",
+"curiosity, not accusation",
+"my side of the street needs to be entirely clean",
+"I can't not answer my email for two weeks and then hold you accountable",
+"the first line of defense",
+"the real rock stars, the teachers and students, can go shine",
+"the easy nice guy way",
+"there's nothing nice and friendly about me thinking one thing behind your back and not saying it to you"
+]
+},
+"none": "Only fragments of this answer were kept word for word, so there's no full script. Build it from the phrases below.",
+"say": [
+"Close on Carver, not on the nice-guy failure."
+],
+"land": "Say the Carver result, then stop.",
+"avoid": "Ending on the failure story.",
+"bul": [
+"My success is their success",
+"Clarity → investment → training → accountability",
+"The calendar example: curiosity, not accusation",
+"My side of the street first",
+"End on Carver"
+]
+},
+{
+"id": "lead",
+"grp": "prin",
+"tier": "Likely",
+"q": "What's your philosophy on leading and managing people?",
+"who": "Paola",
+"hook": "Build the relationship by having the hard conversation · support hat 98/2 · my success comes from yours",
+"why": "A likely Paola question; she ran leader development at KIPP New Jersey.",
+"frame": "I've been incredibly lucky to have some really special people take an interest in me, and support me along the way, and so I try and honor them by stealing the best of them.",
+"fy": true,
+"parts": [],
+"phrases": {
+"src": "School in the Square onsite, 09/08",
+"asked": "What is your core philosophy around how you lead and manage people?",
+"list": [
+"everyone from the person I taught across the hall from to my dad",
+"we build the relationship by having the hard conversation",
+"because I don't want people wondering where they stand",
+"feeling critiqued for something that's ultimately a clarity issue on my part",
+"my side of the street has to be entirely clean",
+"98% of the time I'm wearing a support hat. 2% of the time I put on my evaluation hat",
+"I say this in a management memo, and as well as my first meeting of the year",
+"my success can only come from your success",
+"there can be multiple right ways to do things",
+"them coming to me is not an admission of weakness or a fault. It's an admission of something they need",
+"I used to hesitate a lot around accountability because I was feeling like perhaps I hadn't done my part"
+]
+},
+"none": "Only fragments were kept word for word. Build it from the phrases below.",
+"say": [
+"Proof: at Collegiate, eight principals delivered the summer PD themselves.",
+"Pick one support-hat number. Dan heard 99%; here it was 98%."
+],
+"land": "My success can only come from your success.",
+"avoid": "Calling your own framework silly.",
+"bul": [
+"Honor my mentors by stealing the best of them",
+"Build the relationship by having the hard conversation",
+"Nobody wondering where they stand",
+"Support hat / evaluation hat, said out loud and in writing",
+"Coming to me isn't weakness",
+"Proof: eight principals delivering summer PD"
+]
+},
+{
+"id": "hs",
+"grp": "hs",
+"tier": "Must",
+"q": "What should high school be? What would you rethink?",
+"who": "Paola",
+"hook": "Not middle school with the dials turned · same spine, dressed different · 50/25/25",
+"why": "Dan's biggest open problem, and he said \"I love that idea.\" Last time you opened with \"I wish I had the answer.\"",
+"frame": "High school can't be like middle school just with a couple of dials turned.",
+"fy": true,
+"parts": [
+{
+"src": "Dan Rojas call, 09/25",
+"asked": "Where are high schools getting it right, and where does there need to be a complete structural rethinking?",
+"text": "… We get into a lot of and I think that's what a lot of folks have done. Because like you said, some of the things wear off, some of the things that compelled students in middle school either don't hold for different reasons. Number two, we can't overcorrect and we can't undercorrect on our systems and our structures. When we try and go too far and we don't have any systems, students are looking left and looking right and being like, \"Do you even have it together? What is going on? This is not what I signed up for.\" At the same time, if we don't evolve them in strategic ways, you guys are treating me like I'm still in middle school. And so I would think about it the way I think about my classroom, which is I'm starting a new school year. It's a new group of students. I'm teaching something different. What is it that I did in the past that worked that I need to replicate for this group? And I think it would be about defining a wholly different identity, making sure that this was one that was resonant with students and that we had a spine, a skeleton of the same values, but we dressed it entirely different. And I don't mean dress in terms of faking or putting on just bells and whistles. What I simply mean to say is our values are still our values. But how they show up and what they look like and what the experience of a student is going to be does need to be fundamentally different."
+},
+{
+"src": "Dan Rojas call, 09/25",
+"asked": "(continuing)",
+"text": "[[trim]] I would ideally have us start at the end of seventh grade and begin a transition towards independence. In eighth grade, one of the things we did at Excel and we started to do at collegiate was run the second semester of each of those years as intentional transition points where we said, \"We're going to remove the seating chart. Before we do that, we're going to teach you why it existed, what are the choices people are making, what does it look like to choose the seat?\" And then we let kids fail. Sorry, I should say, we let kids choose their own seat. Some of them did well, some of them didn't. And we didn't immediately jump in and say, \"Okay, fine. Here's where you sit.\" We let it run and we let kids sit with and see what the outcome, how the outcome of that two-weeks grading cycle, how it changed. And we reflected with them and gave them another opportunity, again, to choose. And we did three to four cycles of that for multiple discrete skills such that we were taking all of our we were taking, let's say, 40% of our 50% of our systems that were meant as placeholders or substitutes for the real skill, the student choice, the student understanding of why. So this is the org system. This is office hours and tutoring, student materials, late homework, or late work policy. And we systematically took those back, gave, like I said, the front-end instruction, the opportunity to try it out, and multiple cycles of that. And I think that's where I would want to start doing that in eighth grade so that we could do that in high school. And I think it's hard, though, because if you start that exact strategy in high school, are we really willing to say to students that we're going to take the first semester of their year and let things slide or let things slip? Because that's obviously highly problematic. So I think what I would try and do is find a way to apply some of that same logic."
+},
+{
+"src": "Dan Rojas call, 09/25",
+"asked": "(continuing)",
+"text": "[[slow]] I would take a look at my middle school plays. I would say, \"Which 25% of these no longer make sense? Or what are the 50 that are core we're going to keep? What are the 25% that don't make sense anymore or we don't need them? And then what are the 25% that we are going to intentionally do pretty quick gradual release with instruction and reflection as a primary starting point?\" All built around aiming at a different identity and an endpoint rather than we did in middle school because middle school is obviously focused on the high school portion of it. So then we have to focus on the lives of unlimited opportunity and what that means to a scholar in terms of what they need to do to advance and arrive at the right place."
+}
+],
+"say": [
+"Bridge to Dan's worry about the C in ninth grade: at KIPP, across 48 high schools, 46% of ninth graders finished the quarter at a 3.0 or better, up six points, the best quarter KIPP had on that number.",
+"Excel's high school is in the top 3% of public high schools in the country."
+],
+"land": "Say the 46%, then stop.",
+"avoid": "Opening with \"I wish I had the answer.\"",
+"bul": [
+"Claim first: not middle school with the dials turned",
+"Don't over- or under-correct systems",
+"Same spine of values, dressed entirely different",
+"Seating-chart release (can trim)",
+"50 / 25 / 25 audit",
+"Lives of unlimited opportunity → ninth-grade grades → 46%"
+]
+},
+{
+"id": "culture",
+"grp": "hs",
+"tier": "Likely",
+"q": "Beyond systems: culture and student ownership",
+"who": "Paola",
+"hook": "Cool to be smart · ownership that isn't surfacey · \"it's my school\"",
+"why": "Dan's follow-up question. It shows the culture side is academic identity, not pizza parties.",
+"frame": "Two corners made all the difference at Excel.",
+"fy": false,
+"parts": [
+{
+"src": "Dan Rojas call, 09/25",
+"asked": "Beyond seating charts, what other specific things would you change about high school?",
+"text": "It sounds like you're in a place that where I think we got to a place at Excel where things were functional, things were academically focused, things were working. Were they perfect? No, of course not. But were they functional? Yes. And one of the corners that we turned two corners that made all the difference. One was what was teacher doing bell to bell in terms of rigor and instruction that gave us a sense of purpose and built an academic identity of cool to be smart, cool to work hard, and driving that as whereas in middle school, it might have been more focused on incentives and rewards or team. We switched it to a little bit more of an individual and more of an academic rigorous folk. It's not fun because it's fun. It's fun because it's challenging. And so building a true academic scholarly identity is number one. And number two, we always talk about student ownership over culture and over the school. And oftentimes, those end up being thin and surfacey. And so what I would do, I believe, would be something we did at Excel, which is to develop a lot of genuine student groups that play a key role, not just in the planning of the dance or the student council, but that are actually operating within the school day to help the school operate, to build the students who are involved in it to build their place and identity, but also so other students could see that this is the school that both trusts, empowers students, and those students are actually doing the thing incredibly well. So we'd have an honor council, right? And that honor council would be entirely responsible for within limits, of course, but doing a bit of investigation, evaluation around honor code violations, making recommendations. And we would put them front and center in terms of as much as we could from a legal and reasonable parent perspective, putting them in the position of understanding, deciding, and supporting scholars who are struggling. We would have groups that are intentionally owning and planning some of our joy factor or student events. All of these would be undergirded by our values. So not only would the group of the ninth-grade events committee be planning the dance, they'd be hyping the dance, they'd also attach a service commitment to it or a canned food drive to it. And they would be the ones making the announcements. They would be the one speaking and doing all of the things that oftentimes we have adults still do, even though behind the scenes, students are doing it. So it's really moving kids from supporting the school from an aspirational idea to action, but also to a level of doing it actually quite publicly. And that is where in a high school of 150 students, first year, 150 students per grade, you can get it so that more than a third of those students at any given time is in a meaningful group like this. And so they're part of one, and then they're seeing three to four others. And that's how we really get students to get that feeling of not only is this high school and it's different, it's also my school. And so we have this we build this identity of belonging such that when students are joining I mean, one of the big groups we would do, and I'll leave it at this, is our orientation leaders. We would have sophomores and juniors leading our freshman orientation, 50% of it, right? We would help prep them. We would help we'd spend a lot of time getting them to be incredibly good at this. We'd record a lot of video so that we could show what it looks like. But we would, as adults, be saying a whole lot less and helping our students say a whole lot more."
+}
+],
+"phrases": {
+"src": "School in the Square onsite, 09/08",
+"asked": "(the Excel orientation story, from a question about keeping students enrolled)",
+"list": [
+"incentives are great, and challenges are great, and events are great",
+"bribing them or tricking them",
+"manufactured, but genuine",
+"I never want you to tell a student anything that's not entirely true",
+"are you sure?",
+"I hated this place. I thought they were too strict. I thought they were too mean.",
+"Mr. Habetler's not making me say this",
+"there's something about this place that's worth giving it a try"
+]
+},
+"say": [
+"Excel student attrition over those years was 3%.",
+"Jackie, your former sixth grader, has your old job at Excel."
+],
+"land": "We would, as adults, be saying a whole lot less and helping our students say a whole lot more.",
+"avoid": "Running past 2 minutes; this one is long.",
+"bul": [
+"Academic identity: cool to be smart, fun because it's challenging",
+"Ownership is usually thin and surfacey",
+"Groups that run the school day: honor council, events committee",
+"A third of a 150-student grade in a group",
+"\"It's my school\"",
+"Orientation story (optional)"
+]
+},
+{
+"id": "scale",
+"grp": "scale",
+"tier": "Must",
+"q": "When is a practice ready to scale? Playbooks or autonomy?",
+"who": "Kruti",
+"hook": "Clear on who we were · earn it: stable → functional → innovate · Jackie has my old job",
+"why": "Kruti's job. \"Earn it\" means: a new principal runs the proven playbook first; once the school is stable and functional, they've earned the room to change it.",
+"frame": "Fundamentally, we were clear on who we were.",
+"fy": true,
+"parts": [
+{
+"src": "Dan Rojas call, 09/25",
+"asked": "Compare Excel to KIPP. What makes scale so hard for so many charters?",
+"text": "… Now, in contrast that with Excel, where we had playbooks for everything, we were unapologetic about the adult culture values, the way in which we did things, and we replicated not quite as cloning. I don't use huge, but the principal who started our second school and then our third school inherited 95% of the play was exactly the same. We wanted to maintain an opportunity for innovation because we recognized that innovation, one, you don't get to keep the right talent if you don't allow for some of that. And two, that's the laboratory where all the other schools can get better because we're trying something new. So fundamentally, we were clear on who we were. We were unapologetic about growing meant starting from a proven starting point and growing at a pace such that we could maintain the level of talent that we needed to do that incredibly well. And yeah, at the end of the day, our philosophy was we are here to build dynasties, to create radical transformations so students could live lives of unlimited opportunities. …"
+},
+{
+"src": "Dan Rojas call, 09/25",
+"asked": "(continuing)",
+"text": "[[slow]] Earn that, right? Get to the place of stable, get to the place of functional, then let's have a conversation about innovation. But for right now, we need to run the play because the play works. The play is not perfect. The play is going to evolve. You're going to be part of that evolution. But the way in which we grow with quality is starting from a solid foundation of what we know that works. And what's really cool is Excel right now, the two data points I love to share is number one, the high school is in the top 3% of all public high schools across the country. And even better, Jackie, who I had in fifth, sixth, and seventh grade, now has my old job, which I just think is that lion king moment of I'm good. I did what I needed to do."
+}
+],
+"say": [
+"Right after \"earn that,\" say how you help them get there. On the Dan call, \"earn that\" came right after \"I don't care really if you as a first-year principal have all these thoughts,\" and that line is the one to lose.",
+"The 95%: say it only if you're sure of it."
+],
+"land": "Jackie now has my old job.",
+"avoid": "\"I don't care really if you...\" Grading KIPP or AF. The KIPP half of the comparison.",
+"bul": [
+"Playbooks for everything; replicated, not cloned",
+"Innovation keeps talent and is the lab",
+"Grow from a proven start, at a pace talent allows",
+"Earn it: stable → functional → then innovate",
+"Run the play; it evolves; you're part of it",
+"Excel HS top 3%; Jackie has my old job"
+]
+},
+{
+"id": "initiative",
+"grp": "scale",
+"tier": "Must",
+"q": "An initiative you led from design through implementation across schools",
+"who": "Kruti",
+"hook": "Data was there, nobody could use it · one button, a report per teacher · present but obscured → right in front of them",
+"why": "Your strongest scaling story. DREAM's recruiter called it \"absolutely incredible.\"",
+"frame": "The academic health data transparency work.",
+"fy": true,
+"parts": [
+{
+"src": "DREAM screen with Donna Choi Ellis, 08/17",
+"asked": "Can you share one specific initiative or pilot you've led from design through implementation across multiple schools?",
+"text": "The Academic health data transparency work that was a subset of our larger academic health work so I'll I'll set the scene a little bit. Every school on our network had grade books, they had tons of data, All of that data was in these large CSV files and Excel files. and While it was accessible or while it was there, people couldn't really use it. [[pause]] I went all in on Using Claude Code to build A Python script that parsed out these huge data sets and with the push of a button created individualized teacher reports Telling them, you know, here are the students of concern, the assignments of concern. Here's where you don't have enough of a certain type of assessment. Here's where, you know, you're Your grades seem to be skewing. So we got people weekly high quality personalized data that we were able to compare to a standard. We did the same thing for students."
+},
+{
+"src": "DREAM screen with Donna Choi Ellis, 08/17",
+"asked": "(continuing)",
+"text": "I designed this for one particular school, rolled it out at that school, and then we took it across the country. And so, We built these reports through the AI. Then we created a regular meeting cadence We created a team at the school I was looking into these things and was leading the work on the ground. [[slow]] And what we ended up seeing was instead of people waiting till The end of the quarter to finish the grading or to tell students where they stood and what needed to happen, they were able to do that. weekly and just the fact that the data went from present but obscured to right in front of them, drove a tremendous amount of positive change because, again, they could look at it and they could see This is where I'm falling short. This is where this student is struggling."
+},
+{
+"src": "DREAM screen with Donna Choi Ellis, 08/17",
+"asked": "(continuing)",
+"text": "We then took that across the country and we were able to see the biggest jump in GPA year over year in that, in the last year. In our last quarter that I was there, of course there's a million things that go into creating huge GPA jumps, so I don't mean to, I'm not trying to take all the credit, but it's been cited as one of the primary Drivers that really got the right folks Focus on the right conversation and the right actions."
+}
+],
+"say": [
+"The number: 46% of ninth graders at a 3.0 or better, up six points, across 48 high schools.",
+"It replaced a 40-minute manual workflow with one click, and it kept running after you handed it off."
+],
+"land": "It's been cited as one of the primary drivers that really got the right folks focused on the right conversation and the right actions.",
+"avoid": "Forgetting the book mid-story (last time). Leading with the tool instead of the problem.",
+"bul": [
+"Data existed; nobody could use it",
+"One button: a report per teacher and per student",
+"Designed for one school, then national",
+"Weekly, not end of quarter",
+"Present but obscured → right in front of them",
+"Biggest GPA jump; not all the credit"
+]
+},
+{
+"id": "adopt",
+"grp": "scale",
+"tier": "Likely",
+"q": "Getting schools to adopt something when they don't have to say yes",
+"who": "Kruti",
+"hook": "Being the boss isn't how it works · a we, not us-versus-them · 28 said yes, again in year two",
+"why": "Zeta is opening schools fast; Kruti needs someone who gets adoption without forcing it.",
+"frame": "Being someone's boss, I guess technically means you should be able to get them to do something, but we all know that that's not how things work.",
+"fy": true,
+"parts": [
+{
+"src": "DREAM screen with Donna Choi Ellis, 08/17",
+"asked": "What feels most aligned with your strengths, working without mandated authority?",
+"text": "So, one of the places this plays to my strength is The way I've learned to Listen, bring people along, let the idea lead based on its merit making sure that my side of the street is cleaned up, spick and span, making sure that there's a, it's a we, not an us versus them dynamic. [[pause]] Yeah, I was a consultant for 10 years and you have to basically go into schools, tell people 10 things that are wrong and that we need to fix and have people still want to do what it is you are suggesting. And I think that is, has always been one of my strengths is the combination of directness with a degree of likability and humanity."
+},
+{
+"src": "DREAM screen with Donna Choi Ellis, 08/17",
+"asked": "(earlier in that call, about KIPP)",
+"text": "We didn't have any mandated authority. … We were lucky/we did what it took to get 28 regions to say yes. And not only did they say yes the first time, they said yes in year two, even though we were raising expectations. And I think that speaks to a lot of, number one, the fact that what we were doing worked. Number two, that the way we went about it avoided the standard pitfalls and people felt very much a part of the process."
+},
+{
+"src": "Dan Rojas call, 09/25",
+"asked": "(from your principal-management answer)",
+"text": "Mandate authority is almost worthless in these settings. I mean, sure, you're the person's boss. Sure, you can say we are or aren't doing certain things, and you need to. However, for the people that we want to keep, like you said, the people who are innovative, who are strong, who bring their whole selves, we need to convince them through the quality of our ideas and our actions and through the data on what directions and changes need to be made. And so we need to be able to lead through influence and through modeling and completely let go of any hierarchical sense of mandate authority."
+}
+],
+"say": [
+"Your consulting practice ran 14 years (you said 10 on this call)."
+],
+"land": "People felt very much a part of the process.",
+"avoid": "\"Fiefdom,\" \"franchise model,\" \"opt in or opt out\" about KIPP.",
+"bul": [
+"Listen, bring people along, let the idea win on merit",
+"A we, not us-versus-them",
+"Tell people 10 things are wrong and they still want to do it",
+"28 regions said yes, and again in year two with the bar raised",
+"It worked, and people were part of the process"
+]
+},
+{
+"id": "netsys",
+"grp": "scale",
+"tier": "Likely",
+"q": "How do network systems actually work at the school level?",
+"who": "Kruti",
+"hook": "They aren't designed at the network level · follow the bright spot · cut the group out, get resentment",
+"why": "Pairs with \"earn it\": the playbook itself came from what worked at a school.",
+"frame": "Well, it's simple. They aren't designed at the network level.",
+"fy": true,
+"parts": [],
+"phrases": {
+"src": "School in the Square onsite, 09/08",
+"asked": "How do you ensure that operational systems designed at the network level actually work for the people implementing them at the school level?",
+"list": [
+"Well, it's simple. They aren't designed at the network level.",
+"I'm not saying that to be glib",
+"they don't come from this room",
+"what's working at one school",
+"what are the attributes of that that make it work",
+"let's limit the scope, let's follow the bright spot",
+"there's no way that a single system is going to come out of a room of seven smart people that's going to be perfect for everyone",
+"oh my God, I told them that",
+"network mandates that oftentimes are 90% or 95% what the group would make, but we cut the group out, and it leads to a ton of resentment"
+]
+},
+"none": "Only fragments were kept word for word. Build it from the phrases below.",
+"say": [
+"KIPP proof: 28 autonomous regions, no mandate authority, an alternate path that no region took, and in year two they came back with the bar raised."
+],
+"land": "Say the KIPP result, then stop.",
+"avoid": "Quizzing them on a management book (last time).",
+"bul": [
+"Systems come from what's working at one school",
+"Name what makes it work",
+"Limit what has to be identical",
+"The people doing it are in the room where it's written",
+"Mandates that cut the group out breed resentment"
+]
+},
+{
+"id": "covid",
+"grp": "scale",
+"tier": "Likely",
+"q": "A crisis, or a goal with no roadmap. What did you do?",
+"who": "Kruti or Paola",
+"hook": "Over 1,000 students, ~200 staff, COVID · four days: gather, paper, leadership, staff · paper alone is worthless",
+"why": "Zeta just opened several schools at once; this shows you can move fast without steamrolling people.",
+"frame": "Leading an organization of over a thousand students and nearly 200 staff through COVID.",
+"fy": true,
+"parts": [
+{
+"src": "DREAM screen with Donna Choi Ellis, 08/17",
+"asked": "Tell me about a significant piece of work where you were given a goal and a high degree of autonomy.",
+"text": "I would say leading an organization of over a thousand students and nearly 200 staff through COVID was certainly Certainly dealt with ambiguity … I effectively did a version of My strong start spring readiness planning, I condensed it to about four days. And so it was day one, gather all the information. A lot of this is coming in piecemeal from different sources, but also from the people and really understanding, because so much of this was an emotional issue as much as it was a scientific issue, as much as it was a logistical issue."
+},
+{
+"src": "DREAM screen with Donna Choi Ellis, 08/17",
+"asked": "(continuing)",
+"text": "Day two began the work of Getting as many answers as possible on paper so that on day three I could bring this to the leadership team and say this is our new playbook. We're opening a fully remote school. We're staying open brick and mortar for every student who wants to come in … we effectively spent the entire day with staff on Zoom working to roll out all of these new changes."
+},
+{
+"src": "DREAM screen with Donna Choi Ellis, 08/17",
+"asked": "(how you summed it up)",
+"text": "[[slow]] drawing on those experiences to run the plays that you know how to run, And recognizing that You both have to have the answer on paper. But having the answer only on paper is next to worthless if it doesn't actually get to the people. And nothing that gets to the people is going to matter if The fundamental premise is this is being done to us or like they don't get it or they haven't heard me or I haven't had a chance to make my voice heard."
+}
+],
+"phrases": {
+"src": "School in the Square onsite, 09/08",
+"asked": "(the same weekend, told as an inherited-operation story)",
+"list": [
+"the winter break of, I think, 2020, where COVID came back",
+"keep students safe, families clear, and keep our teachers productive and safe",
+"this was the weekend for it",
+"entrance… student movement… PPE… testing and verification",
+"what should happen at 7:45, what should happen at 7:50",
+"90 minutes every single morning, only doing testing",
+"we'd reinvented how we do school in one weekend"
+]
+},
+"say": [],
+"land": "Nothing that gets to the people is going to matter if the fundamental premise is: this is being done to us.",
+"avoid": "\"This is not a question I prepared for\" (last time).",
+"bul": [
+"1,000+ students, ~200 staff",
+"Day 1: gather information, including what people needed emotionally",
+"Day 2: answers on paper",
+"Day 3: leadership team alignment",
+"Day 4: a full day with staff",
+"Paper alone is worthless if it feels done to people"
+]
+},
+{
+"id": "build",
+"grp": "scale",
+"tier": "Bench",
+"q": "How would you build something new when you're not the expert?",
+"who": "Kruti",
+"hook": "Outcome first · where did we almost go wrong? · done when it runs without me",
+"why": "Useful for launching new schools or taking on the high school.",
+"frame": "I get super clear on exactly what the outcome needs to be.",
+"fy": true,
+"parts": [],
+"phrases": {
+"src": "School in the Square onsite, 09/08",
+"asked": "If you aren't the content expert, how would you go about building that out for people?",
+"list": [
+"I get super clear on exactly what the outcome needs to be. Not what the step, the action is, but rather the outcome",
+"I'm not wasting people's time with silly questions",
+"it's not asking for their opinion for the sake of just asking for their opinion",
+"I frankly need that expertise",
+"where did we go wrong last year? Where do we almost go wrong last year?",
+"finding the bright spots",
+"I've got a deep network of folks who have run operations",
+"we map out the arc of what needs to happen, milestones, the exact next steps, the owners, the owners with a date a month before the actual due date",
+"we establish a cadence of communication, there's a tracker",
+"the project doesn't end when we run the first successful full cycle",
+"I'm happy to manage it, and I will be managing it for as long as it takes",
+"building the capacity of others such that we're handing off systems rather than dragging people through processes"
+]
+},
+"none": "Only fragments were kept word for word. Build it from the phrases below.",
+"say": [],
+"land": "Handing off systems rather than dragging people through processes.",
+"avoid": "Reciting it as a numbered seven-step list (last time).",
+"bul": [
+"Outcome, not the action",
+"I need their expertise",
+"Where did we almost go wrong?",
+"Bright spots",
+"Owners, dates a month early, a tracker",
+"Done = runs without me"
+]
+},
+{
+"id": "lab",
+"grp": "hard",
+"tier": "Likely",
+"q": "Brooklyn Lab: what was that job, and what was hard about it?",
+"who": "Either",
+"hook": "Transition superintendent · no trust, no systems, under-enrolled, up for renewal · hard, early, unapologetic",
+"why": "A renewal alone isn't impressive. The context is what makes it one.",
+"frame": "Renewal by itself isn't the accomplishment. It was everything that was happening at the same time.",
+"fy": false,
+"parts": [
+{
+"src": "Dan Rojas call, 09/25",
+"asked": "(from your background answer)",
+"text": "So I was able to take a client called Brooklyn Lab that I had. They needed a transition superintendent to help them through renewal as well as being transferred over to a new ownership. The executive director and founder was trying to exit. So long story short, I took that on, did that for about a year and a half, built a remote school, led through COVID, got the schools through both those renewals. And that wasn't super easy, because of some of the knots and tangles that existed there. I'm happy to go more into that."
+}
+],
+"phrases": {
+"src": "School in the Square onsite, 09/08",
+"asked": "(on enrollment and on compliance under pressure)",
+"list": [
+"we had a huge need",
+"we didn't have strong systems in place",
+"we frankly didn't have a team that really trusted each other",
+"under enrolled and up for reauthorization",
+"we did it hard, we did it early, we did it unapologetically, but we wouldn't do it without strong communication"
+]
+},
+"say": [
+"What made it hard, in one line: two authorizers running separate processes, no reliable institutional records, a turnaround, COVID, and working to get acquired, all at once.",
+"Then the result: both schools were reauthorized, and the transfer to new ownership went through.",
+"You were interim high school principal for half a year while superintendent."
+],
+"land": "Both schools were reauthorized.",
+"avoid": "Saying the numbers you were shown couldn't be trusted. Blaming the founder.",
+"bul": [
+"Transition superintendent: renewal + new ownership",
+"No trust, no systems, under-enrolled, up for renewal",
+"Two authorizers, separate processes",
+"Turnaround + COVID + acquisition at once",
+"Both reauthorized",
+"Interim HS principal, half a year"
+]
+},
+{
+"id": "academic",
+"grp": "hard",
+"tier": "Must",
+"q": "You're known for systems and culture. Why trust you with academics?",
+"who": "Paola",
+"hook": "Last 5–6 years leaned academic · Lab: results through principals · KIPP: meaningful grades → 46%",
+"why": "DREAM asked this twice. It's the likeliest doubt about you for a schooling seat.",
+"frame": "My career in the last five to six years has really leaned into that side of the work.",
+"fy": true,
+"parts": [
+{
+"src": "DREAM screen with Donna Choi Ellis, 08/17",
+"asked": "Highlight your work connected to academics and teaching and learning. What have you owned or led, and at what scale?",
+"text": "Yeah, I think my career in the last... Five to six years has really leaned into that side of the work. [[pause]] At Brooklyn Lab, the superintendent role at Brooklyn Lab and so that was overseeing three schools. But that was where I was responsible for the academic results directly through the principals I led all the summer onboarding, all of the learning and development. that at the network level and then of course through the principals."
+},
+{
+"src": "DREAM screen with Donna Choi Ellis, 08/17",
+"asked": "(continuing)",
+"text": "Most recently at the KIPP Foundation, The... Primary focus for my work has been academic health. And so... You know, we've got so many different schools in so many different places with so many different standards. Our big push was to really make sure that our grades were meaningful, that they were normed, We developed a ton of best practices and guidance and goals around what it takes to have a true, meaningful, powerful both curriculum and set of grading practices and really be attentive to both end of day results, end of IA cycle results, and end of year results because of our goal of obviously having students being ready to be over prepared to succeed in college and beyond."
+},
+{
+"src": "DREAM screen with Donna Choi Ellis, 08/17",
+"asked": "(where you might have a learning curve)",
+"text": "[[slow]] My reputation for better or for worse is very much of one as that the systems and culture and less of the academic... And I think that is where... I don't actually think it will get in the way of doing the job well perhaps, but I think it could be something that I don't want to say is held against me, but is something I'm going to have to work to to overcome the fact that I haven't, I mean, I have led like whole summer's worth of PD. Like I've done a ton of teacher coaching. I've led departments. … I am not the person who's going to know the 12th grade AP government standards like cold."
+}
+],
+"say": [
+"End on the result, not the gap: across 48 high schools, 46% of ninth graders finished the quarter at a 3.0 or better, up six points.",
+"You were interim high school principal at Brooklyn Lab while superintendent."
+],
+"land": "Say the 46%, then stop.",
+"avoid": "Ending on \"not the AP government standards person.\"",
+"bul": [
+"Last 5–6 years leaned into academics",
+"Lab: 3 schools, academic results through principals, all onboarding and L&D",
+"KIPP: meaningful, normed grades; curriculum and grading practices",
+"Own the reputation",
+"Led PD, coached teachers, led departments",
+"End on 46%"
+]
+},
+{
+"id": "kipp",
+"grp": "hard",
+"tier": "Likely",
+"q": "Why did you leave KIPP? What have you been doing since?",
+"who": "Either",
+"hook": "Design and hand-back role · running without me · custom tools for principals",
+"why": "Short and clean. No apology.",
+"frame": "It was a two-year design and hand-back role.",
+"fy": true,
+"parts": [
+{
+"src": "DREAM screen with Donna Choi Ellis, 08/17",
+"asked": "(why you were leaving KIPP)",
+"text": "I was brought on as part of a team that did A project that was effectively getting the one KIPP strategy off the ground, planned launched running And then the vision was to hand it back to the regional leaders … So we designed it, we got it off the ground. It's going quite well. It's exciting that it's running without me and without Many people of the team, which I think speaks to the great work we're doing."
+},
+{
+"src": "Dan Rojas call, 09/25",
+"asked": "(from your background answer)",
+"text": "We were working to get our 28 wonderful, but very independent regions into a degree of alignment on national high school strategy and then hand it back to the regional teams, which is where it lives now. So it's a two-year design and hand-back role."
+}
+],
+"say": [
+"Since: custom tools for school leaders, school leader consulting, and sales advisory."
+],
+"land": "It's running without me.",
+"avoid": "\"Too many cooks in the kitchen\" and any criticism of KIPP.",
+"bul": [
+"Brought on to get One KIPP off the ground",
+"Handed back to the regions",
+"Running without me",
+"Since: tools, consulting, advisory"
+]
+},
+{
+"id": "consult",
+"grp": "hard",
+"tier": "Bench",
+"q": "Consultant to operator: why come back inside a network?",
+"who": "Either",
+"hook": "Did it the wrong way before · happiest in a small growing network · people person",
+"why": "Answers the unspoken \"will he stay?\"",
+"frame": "I know, because I've done it the wrong way, that you can't approach working at a network the way you do working as a consultant.",
+"fy": true,
+"parts": [],
+"phrases": {
+"src": "School in the Square onsite, 09/08",
+"asked": "How do you feel about the transition from consulting back to one network?",
+"list": [
+"I know because I've done it the wrong way that you can't approach working at a network the way you do working as a consultant",
+"it wasn't intentional, but looking back on it, it's something I do very differently",
+"I'm legitimately excited",
+"the happiest I've ever been professionally was when I was in a small growing network with great people",
+"my sense from what I've gathered, which is limited, and I'd love to get your read on this",
+"I'd rather not do it from a hotel in Indianapolis",
+"as much as I thought consulting and national work would sound cool, it's really not that fun",
+"I'm a people person"
+]
+},
+"none": "Only fragments were kept word for word. Build it from the phrases below.",
+"say": [
+"Name the specific thing you do differently now (you never said it last time)."
+],
+"land": "I'm a people person.",
+"avoid": "Saying you do it differently without saying what.",
+"bul": [
+"Did it the wrong way before",
+"Kept a distance at Collegiate and Lab",
+"Name what's different now",
+"Happiest in a small growing network",
+"People person"
+]
+},
+{
+"id": "mistake",
+"grp": "hard",
+"tier": "Bench",
+"q": "A mistake, a growth area, or changing someone's mindset",
+"who": "Either",
+"hook": "The mindset was my own · kept my associate dean in one lane · now co-dean with my former student",
+"why": "Fits Zeta's \"love your people\" culture: you own a management failure and fixed it.",
+"frame": "The mindset I had to overcome was my own.",
+"fy": false,
+"parts": [],
+"phrases": {
+"src": "School in the Square onsite, 09/08",
+"asked": "An example of trying to overcome a mindset with somebody, and the outcome?",
+"list": [
+"an Associate Dean of Students who was a wonderful human being, a true friend of mine, but I managed him",
+"he was the guy that everybody loves, the parents just couldn't get upset with him, or if they did, he figured out a way to make it work",
+"that's what he does really well. I'm kind of on the system side of things",
+"that worked at first, especially when we were stabilizing the school",
+"what I didn't do is I didn't update my thinking",
+"in years three and four, I wasn't developing him to become a Dean of Students",
+"letting him stay and thrive in his sphere",
+"I learned I had to leave, and all of a sudden I've got six months before he is now the Dean of Students. And I realized I failed him",
+"there's a little bit of bumpiness along the way, but within a month, he was clearly meeting well-established targets",
+"if I would have started two or three years earlier, he would have been much further down the road, and the school would have been better off, and he would have been better off",
+"he was the Dean of Students for many years after. In fact, he's now co-Dean of Students with one of my former students"
+]
+},
+"none": "Only fragments were kept word for word. Build it from the phrases below.",
+"say": [
+"Close with the lesson: you don't get to hold a fixed mindset about a person.",
+"Don't give the reason you had to leave."
+],
+"land": "He's now co-Dean of Students with one of my former students.",
+"avoid": "Why you left Excel.",
+"bul": [
+"Associate dean everyone loved; I kept him in one lane",
+"Didn't update my thinking",
+"Six months to get him ready; I failed him",
+"Within a month, meeting targets",
+"Now co-dean with my former student"
+]
+},
+{
+"id": "ask1",
+"grp": "ask",
+"tier": "Must",
+"q": "ASK BY MINUTE 10: which role?",
+"who": "Both",
+"hook": "Which role · success at 12 months · then listen",
+"why": "You left the Dan call not knowing the seat or the next step.",
+"frame": "Which role are you considering me for, and what would success look like at twelve months?",
+"fy": false,
+"parts": [
+{
+"src": "Dan Rojas call, 09/25",
+"asked": "(how you asked Dan about the routing; the form that worked)",
+"text": "But so what, if anything, should I read into the fact that you and I are having a conversation on the school excellence side of things as opposed to operations? And maybe the answer is nothing, or this is just how we do it, or maybe there's something."
+}
+],
+"say": [],
+"land": "Then stop and listen.",
+"avoid": "Waiting until the end of the call.",
+"bul": [
+"Ask by minute 10",
+"Let them describe it",
+"If they turn it back: see \"Year one\""
+]
+},
+{
+"id": "ask2",
+"grp": "ask",
+"tier": "Must",
+"q": "Your questions, and the close",
+"who": "Both",
+"hook": "Kruti: consistency across new campuses · Paola: the 119 ninth graders · next step and who else",
+"why": "One question for each of them, then the next step.",
+"frame": "I have one for each of you.",
+"fy": false,
+"parts": [
+{
+"src": "Dan Rojas call, 09/25",
+"asked": "(how you closed with Dan; stop before \"blah, blah, blah\")",
+"text": "And that's part of the vibe that I'm getting. And so yeah, I just overall want to say, one, thank you. Two, I'm excited. …"
+}
+],
+"say": [
+"Kruti: With Flushing, Tremont Park and the high school all opening this fall, what's been hardest to keep consistent from campus to campus?",
+"Paola: For the 119 ninth graders in that first class, what does a great first year look like by June?",
+"Close: What's the next step, and who else would I talk to?"
+],
+"land": "What's the next step?",
+"avoid": "\"Blah, blah, blah. You know the story.\"",
+"bul": [
+"One question each",
+"Next step, and who else",
+"Thank them; stop"
+]
+},
+{
+"id": "year1",
+"grp": "bench",
+"tier": "Bench",
+"q": "What would you want to own in year one?",
+"who": "Either",
+"hook": "Principals · ninth-grade academic health for the high school",
+"why": "No recorded answer. The position is yours.",
+"frame": "Principals, and especially the high school side.",
+"fy": false,
+"parts": [],
+"none": "No recorded answer. Frame and bullets are proposals.",
+"say": [],
+"land": "",
+"avoid": "",
+"bul": [
+"Managing a set of principals, the way Dan described",
+"Owning ninth-grade academic health for the new high school",
+"Why: Carver and the 46% are your strongest proof"
+]
+},
+{
+"id": "feedback",
+"grp": "bench",
+"tier": "Bench",
+"q": "How do you like to receive feedback? How should I manage you?",
+"who": "Paola",
+"hook": "I want to know where I stand · plainly · \"this has already been decided\"",
+"why": "A likely manager-fit question.",
+"frame": "I want to know where I stand.",
+"fy": true,
+"parts": [],
+"phrases": {
+"src": "School in the Square onsite, 09/08",
+"asked": "How do you prepare to receive feedback, and how do you like to work feedback with your manager?",
+"list": [
+"I want to know where I stand",
+"I know everyone says this, and most people don't mean it",
+"I would love to be able to assume that I'm in whatever standing I was in the last time we had the conversation unless I hear otherwise from you",
+"proactively bring that up",
+"especially if it's coming from someone I trust and respect",
+"saying it as plainly as possible",
+"I've done this for a while, long enough to know it's not really about me",
+"take a problem back to first principles and examine the problem from its root",
+"hey Chris, this has already been decided"
+]
+},
+"none": "Only fragments were kept word for word.",
+"say": [],
+"land": "",
+"avoid": "Running long past the landing (last time).",
+"bul": [
+"Where I stand",
+"Proactively, plainly",
+"It's not about me",
+"First principles; tell me when it's decided"
+]
+},
+{
+"id": "start",
+"grp": "bench",
+"tier": "Bench",
+"q": "When could you start?",
+"who": "Either",
+"hook": "Flexible · hand off current projects thoughtfully",
+"why": "Gillian floated October 13 on 09/11.",
+"frame": "The work I'm doing now is flexible enough in scope.",
+"fy": true,
+"parts": [
+{
+"src": "Zeta screen with Gillian, 09/11",
+"asked": "We're thinking about an October 13th start date. Any concerns?",
+"text": "The work that I'm doing now Now... is flexible enough in scope, especially if there's some consideration for sun setting and passing off some of these projects Thoughtfully, but it's a good time for me and that my flexible life schedule does Allow for that."
+}
+],
+"say": [
+"Check this against your United Schools commitment first."
+],
+"land": "",
+"avoid": "",
+"bul": [
+"Flexible",
+"Hand off projects thoughtfully"
+]
+},
+{
+"id": "pay",
+"grp": "bench",
+"tier": "Bench",
+"q": "Compensation expectations",
+"who": "Either · never raise it first",
+"hook": "Title and pay match the scope · right team over cashing in",
+"why": "Your standing rule: ask for the top of the published band. The debrief put the Principal Manager band at $125K to $175K.",
+"frame": "I'd want the title and pay to match the scope.",
+"fy": false,
+"parts": [
+{
+"src": "DREAM screen with Donna Choi Ellis, 08/17",
+"asked": "The range is $145,000 to $165,000 and we can't go outside the band. Is that aligned?",
+"text": "Yes. I think the top of that range is... Would work. Yeah. And I understand what you're saying and I appreciate you saying it clearly. But yeah, I want to join the team. Yeah. I'm not at a place in my life where I need to cash in, you know what I mean? I'm very happy to be part of the right team. That's where I've been the happiest in my life."
+}
+],
+"say": [
+"At Zeta the number is yours to set. Your file: target $200K, comfortable $150K, salary of record $175K."
+],
+"land": "",
+"avoid": "Naming a number first.",
+"bul": [
+"Don't name a number first",
+"Top of the band",
+"If the scope grows, the number grows"
+]
+},
+{
+"id": "inperson",
+"grp": "bench",
+"tier": "Bench",
+"q": "In person every day in the Bronx. Does that work?",
+"who": "Either · never raise it first",
+"hook": "Considered it · right people, right work · eyes wide open",
+"why": "Gillian asked about the Inwood commute; the Principal Manager seat is at 425 Westchester Ave, daily.",
+"frame": "I've considered it. Short answer is no.",
+"fy": true,
+"parts": [
+{
+"src": "Zeta screen with Gillian, 09/11",
+"asked": "Our network office is at the top of Manhattan in Inwood. Any concern about the commute?",
+"text": "I've considered it. It's... Short answer is no. I wanna find the right group of people doing the right work more than anything. It's certainly not not a factor. … So, but at the same time, I do know what this work takes and yeah, I'm going in eyes wide open. I certainly, it's not that I've done this commute, you know, Six months straight and it's the middle of winter. I'm sure that will not always be the most joyful experience. But no, I've been up in that area and I've done the commute."
+}
+],
+"say": [
+"The \"…\" skips the part about your kids. Leave it out this time."
+],
+"land": "",
+"avoid": "Volunteering family logistics.",
+"bul": [
+"Considered it; no",
+"Right people, right work",
+"Eyes wide open"
+]
+},
+{
+"id": "ai",
+"grp": "bench",
+"tier": "Bench",
+"q": "Tell us about the AI tools you're building",
+"who": "Kruti · only if asked",
+"hook": "Principals point me at a problem · in service of the role · not for its own sake",
+"why": "Only if asked. Don't pitch the practice.",
+"frame": "Principals point me at a problem, and I build the thing that saves them the time.",
+"fy": false,
+"parts": [
+{
+"src": "Dan Rojas call, 09/25",
+"asked": "(from your background answer)",
+"text": "Right now, what I'm doing, which is something I think is really cool, is I am talking to the principals I know, finding where they need help with efficiency and effectiveness, what their problems are, and figuring out how I can build them custom tools, workflows, apps, solutions using AI to build the specific solutions that they need …"
+},
+{
+"src": "Zeta screen with Gillian, 09/11",
+"asked": "Are you looking for a role that still has this AI and technology component?",
+"text": "Sorry, short answer, yes to AI. The longer version of what I'm trying to say is I would imagine in... Any role that I would take in the network I would both bring a AI efficiencies to my work and my natural tendencies are to share those and spread those. So those are things I've done both for this business that I launched as well as I lead a group of... practitioners in a monthly working group that has folks from different charter networks and some of the big tech companies. Therefore, I guess what I'm trying to say is that is very much of interest to me and something that I would imagine I would bring to the role in the service of, of course, the roles and responsibilities, not for the sake of doing it,"
+}
+],
+"say": [],
+"land": "Not for the sake of doing it.",
+"avoid": "\"That's been taking off.\"",
+"bul": [
+"Principals point me at a problem",
+"Custom tools, workflows, apps",
+"In service of the role, not for its own sake"
+]
+}
+]
