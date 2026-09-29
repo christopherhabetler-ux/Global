@@ -136,3 +136,19 @@ What changed:
 - Core Responsibilities rebuilt in his terms: research with real ownership, advisory, the referral network (recruit, train on the companies, check in), and delegation (email, QuickBooks, ChatGPT Business workspace and knowledge base).
 - Moved into core: ChatGPT workspace, knowledge base, first meetings. Kept as "worth considering": promotional materials, outreach.
 - The Objective now names AAP. Items for Conversation dropped "which high-value idea first."
+
+## Matt's Financial Figures, Every Source (Research 092926)
+
+| Date | What Matt said | Source |
+| --- | --- | --- |
+| 6/25 | Retainer-based consulting with multiple edtech clients; 10-12 potential clients; 3-4 ready to pay within a month | 6/25 call brief, meeting summary |
+| 7/13 | ClassE: $102K a year base contract plus per-deal comp | 7/13 meeting notes |
+| 9/17 | "I can't pay a lot right now. A payment I can make now is more like a sign of good faith." | Email |
+| 9/21 | "If I get even one more client, I won't be able to handle all of the work"; five leads delayed | Email |
+| 9/22 | Three clients "pay my bills and then some." AAP: "healthy" to "wealthy." With AAP, about $12,000 a month profit after insurance, taxes, software, retirement. About $30,000 a month in six months with help. "$10,000 a month, in October, it's not going to happen." Six months' salary saved first. | 092226 1:1, Wispr Flow |
+
+"$100K per client" came from our own modeling in CURRENT STATE 081126, not from Matt.
+
+Is 15% of total business too high? Not crazy, at the top of what's defensible now: it's a pre-tax business expense for Matt; a day a week is about a fifth of a work week; it's inside the 10-15% band. The real risk is the revenue guess, which is why v7 leads with the rule and says "let's use the real numbers."
+
+v7 changes: base rate stated as one rule, figures labeled rough and conversational, people maps clarified, publisher outreach cut.
