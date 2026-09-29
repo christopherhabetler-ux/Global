@@ -186,3 +186,14 @@ CH remembers Matt giving a ladder: about $3,000 past bills at three clients, $12
 - Cut to reach two pages without repeating: At a Glance, the Why bullets, the Mindset row, the separate Responsiveness row (merged into Time), the "Already in motion" row (merged into Base rate), the separate "bring on more people" row (merged with very large client), and the full-time-role detail on timing and employer clearance.
 - Source: design/Proposal for Matt v11 092926.html. Rebuild with headless Chromium print-to-PDF.
 - write-like-us SHIP read (by hand, against the tells in Notion; the Mac scripts were not run): cut the signpost "This page walks through how I got to an answer...", cut the moral tag "That's the shared win.", replaced the usher "Read that way," with the plain figure, dropped "Putting it together:" so the callout opens on the number, and made "handing things off" parallel.
+
+## v12: Rebuilt Order and Three-Part Pay (092926)
+
+- Page 1 order per CH: gratitude, nervousness, framing ("my first stab"), the opportunity ("you're the bottleneck... you're amazing at this work"), a rough look at the numbers (labeled a crude analysis from our conversations), what I'd take off your plate, how I got to a number, putting it all together.
+- Pricing now says outright that the pay has three parts: base rate, 15% of each new client's monthly retainer, 20% of what EdTech Expertz keeps on network deals. Each part gives its reasoning before its number.
+- Transparency line added: Claude worked from Matt's explanation last week, and CH went back and forth until it felt fair, appropriate, and clear.
+- "Too big a swing" line removed (goes without saying).
+- Page 2: Scope of Work (four areas, bulleted), Terms table with bulleted details, Items for Conversation. First Month and Check-Ins and Changes removed; check-ins, notice, and the 12-month tail moved into Items. "Projects, agreed up front" moved to Items as "Other projects."
+- Agreement in principle: Terms opens with "This is both a contractual proposal and an agreement in principle," with quarterly step-backs to keep the terms in the spirit of it.
+- Signed Christopher. Body type up from 8.8pt to 9.2pt. Round bullets.
+- Profit vs. revenue: kept the profit ladder. It is the only per-client number Matt gave; no per-client revenue is on record except ClassE.
