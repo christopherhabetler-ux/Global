@@ -2,9 +2,13 @@
 
 Prepared by Christopher Habetler with EdTech Expertz, for Matt Campbell, Joe Gelb and the ClassE team.
 
+**Working draft, September 29, 2026.** We will keep updating this guide as we learn. Review anything here before you use it.
+
 ## Why this matters
 
-Purpose: This guide flags the words a US educator can hear as outdated, controversial or unintentionally offensive, and gives the word to use instead, in every call, demo, deck and email.
+Purpose: This guide helps us make language choices that describe ClassE accurately, reflect what we believe about students and teachers, and show US educators that we want what they want: to support teachers, improve outcomes, and help every student reach their full potential.
+
+It is not a script. Where we suggest wording, it is one option, and we may settle on a different word later. What matters is the reason behind the choice.
 
 Goal: US buyers hear a partner who shares their beliefs about students and teachers, and they trust ClassE with their students.
 
@@ -16,19 +20,15 @@ Most of the lines under "Sounds like" come from our own calls, including some of
 
 Read the first two pages before a call. Check the word list before a deck or email goes out.
 
-### How we describe ClassE
+### What our words have to describe
 
-**In 10 seconds:** "ClassE shows teachers where every student is on every standard, in minutes, and gives every student extra practice on exactly what they missed."
+Our language has to match what ClassE actually does.
 
-**In 30 seconds:** "Students practice on your curriculum. ClassE checks every answer and shows the teacher which students missed which standard, down to the question. That takes minutes, not hours of grading and spreadsheets. Then it helps two ways. The teacher gets recommended groups and next steps for the whole class, small groups and each student. And every student gets extra reps right away. When a student misses a question, they get a second one on the same skill, written a different way, and Albert, our AI tutor, helps them work it out."
+- **It shows where each student is.** Students practice on the curriculum. ClassE checks every answer and shows the teacher where each student is, down to the question and the standard. That used to take hours of grading and spreadsheets. ClassE does it in minutes.
+- **It helps through the teacher.** The teacher gets recommended groups and next steps for the whole class, small groups and each student. The teacher decides what to do.
+- **It helps each student directly.** When a student misses a question, ClassE gives a second question on the same skill, written a different way, and Albert, our AI tutor, helps the student work it out. Every student gets extra reps on exactly what they missed.
 
-**When you have time, add:**
-- "It turns everyday practice into formative assessment data the teacher can use the same day."
-- "A benchmark tells you where students stood a few times a year. ClassE tells you this week."
-- "We help the student up to the question. We don't bring the question down to the student."
-- "The teacher leads. ClassE supports."
-
-Where a district limits student-facing AI, leave Albert out. The second question works without him.
+So when a buyer asks about intervention, the answer has two parts. ClassE helps the teacher intervene, and Albert gives each student targeted support directly. Where a district limits student-facing AI, the second question still works without Albert.
 
 ### Our core beliefs
 
@@ -54,7 +54,7 @@ These land well with US educators. Several came out of our September workshop.
 
 ## Seven kinds of words that land wrong
 
-| Kind | Sounds like | Say instead |
+| Kind | Sounds like | Try instead |
 |---|---|---|
 | **Labels a child.** Ranks kids, or turns them into a group. | "Closing the gaps with the weakest students." | "Seven students missed this skill. The teacher can teach them in a small group." |
 | **Out of date.** Sounds careless in a US school today. | "Your ESL students." | "Your English learners." In Texas, "your emergent bilingual students." |
@@ -98,15 +98,15 @@ The same word can be safe in one state and risky in the other.
 
 ## Word list, A to Z
 
-Look up a word before you use it.
+Look up a word before you use it. Each suggestion is one option, not the only one.
 
-| Word or phrase | Say instead | Why |
+| Word or phrase | Try instead | Why |
 |---|---|---|
 | "Acceleration," for ClassE | "Targeted practice." Use "acceleration" only for the district's own program. | In Texas it is a program set in law, with minimum hours and tutor ratios. |
 | "Accommodate" and "modify," mixed up | "Accommodation" when the student reaches the same work another way. "Modification" when the work itself changes. | In US special education they are different decisions, and the student's IEP or 504 team makes them. Mixing them up signals we don't know the system. |
 | "ADHD students," "cognitive issues," "students with different diagnosed learning disabilities" | "A student with a disability," or what the student needs. | A student's disability category is private. |
 | AI hype: "a revolution in education," "30 personalized tutors that know your students" | Describe what the AI does. "Albert, the AI tutor, asks the student questions, so the student works it out." | No one can check it. |
-| "Any curriculum" | "Curriculum-aligned," only where ClassE is set up for that curriculum. | A buyer will test it on their own curriculum. |
+| "Any curriculum" | "We set it up with your curriculum." | Check with the product team before promising it to a specific district. |
 | "Diagnostic," "assessment platform," "diagnostic and remediation tool," as the first thing we say about ClassE | Lead with the 10-second version. "Diagnostic" is fine later, about skills and standards. | The first label decides what the buyer compares ClassE to. Buyers who heard "diagnostic" first said, "Oh, so you're i-Ready." |
 | "At risk," "low performing," about a student | "Students who have not shown this skill yet." | In Texas, at risk is a legal category. Low performing is a federal term for schools. |
 | "Bring the students to the test," "the exact model of what they're going to see on that test" | "We help the student up to the question." "We align the practice to your standards and your state assessment." | It sounds like teaching to the test. |
@@ -118,7 +118,7 @@ Look up a word before you use it.
 | Equity, DEI, "culturally responsive" | Follow the buyer's lead. Never use them for ClassE. | In Texas, state law limits DEI work. In either state, never describe ClassE as doing equity work itself. |
 | "ESL students," "LEP" | "English learner" or "multilingual learner." In Texas, "emergent bilingual." | ESL is a program, not a name for a child. Federal law replaced LEP. |
 | "Exactly where the student's reasoning is breaking down" | "Here are the questions the student got wrong on this skill." | It claims to see inside the student's head. |
-| "Exercises," "marks" | "Practice," "scores." | They read as translated. |
+| "An exercise platform," "marks" | "Practice," "practice questions," "scores." | "An exercise platform" can sound like a fitness app to a US ear. "Marks" is British usage. |
 | "I don't see color" | Do not raise race. | It is an older American idea of equality. Today it can sound like not seeing the student. |
 | "Intervention," "intervention platform," as the name for ClassE | Give the two-part answer: "The teacher gets what they need to intervene in minutes, not hours. And Albert gives every student targeted support right away." | On its own, "intervention" tells a US buyer we are a formal Tier 2 or Tier 3 program, and they will ask for that evidence. Say what each part does. |
 | "Mastered," "proficient," "masters of this skill," for a ClassE result | "A correct response." Over time: "They got most questions on this standard right, over several weeks." | These are state test labels. One question cannot carry them. "Progress toward mastery" over several weeks is fine. |
@@ -142,7 +142,6 @@ Look up a word before you use it.
 Some of these words are on the screen, not just in the pitch, and a rep can't talk around them in a demo.
 
 - The report says "mastery" off one question. Decide what it calls a correct answer, and what it calls a skill shown over time.
-- "Exercise" in the product. It reads as translated to a US teacher.
 - If the product labels students with words like "needs help" or "competent," describe what the student did instead.
 
 ## US terms and sources
