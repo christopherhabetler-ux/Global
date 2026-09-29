@@ -26,7 +26,7 @@ story('(3)','ACADEMIC HEALTH, 46%','Ninth grade is where networks lose kids, and
   sent(B[2][5],'We went from super obscure')+' '+sent(B[2][6],'In the third quarter','on that number.'),'bank block 2')
 story('(4)','CARVER','He coached a struggling principal into the CEO seat.',
   B[4][0]+' … '+sent(B[4][2],'Jerel is one of the best')+' … '+B[4][6],'bank block 4')
-story('(5)','BROOKLYN LAB, IN CONTEXT','He held a network through COVID and a turnaround, and ran a high school himself. The renewal only counts after the context.',
+story('(5)','BROOKLYN LAB, IN CONTEXT','Stewardship through a mess: a team that did not trust each other, COVID, an ownership transfer, two renewals at once. And he ran a high school himself.',
   B[5][2]+' '+B[5][3],'bank block 5')
 story('(6)','DEANSLIST','A school operations product he built. Only if asked.',
   c(dan(40,40,end="grew into Dean'slist."))+' <span class="small">Facts, not your words: zero to 275 while you were there, in over a thousand now, not affiliated in years. All three together or none.</span>','Dan call line 40')
@@ -66,7 +66,7 @@ E=[
  'one':B[4][0],
  'proves':'He can tell a hard truth about a struggling principal and grow him into the top seat. Paola\'s whole job.',
  'full':sent(B[4][1],'Ben Marcovitz')+' '+cue('power','land this')+' '+sent(B[4][2],'Jerel is one of the best')+' '+cue('beat','beat')+' '+sent(B[4][4],'We fixed the smallest')+' '+cue('slow','slow')+' '+B[4][6],
- 'guards':'It started as an assessment. Louisiana Principal of the Year is a fact, not in your recorded words; say it only if it comes naturally. The 75% suspension drop is network-wide, never Carver alone.',
+ 'guards':'It started as an assessment. Coached, never led. Louisiana Principal of the Year (your wording, kept 092926). The 75% suspension drop is Collegiate network-wide, never Carver alone. CREDO: "One of our schools, Carver, had the largest CREDO effect size in the country."',
  'bends':[
   ['The good principal who needs to get to great','Lead with clothes, not skin. Then Carver.',cl[0].upper()+cl[1:]],
   ['Hard feedback','Lead with the leadership-team presentation.','Nothing works until Mom and Dad get right.'],
@@ -125,10 +125,10 @@ H['now']='''<div class="card"><div class="lab">Tuesday 092926 &middot; 3:00-3:30
 H['open']='''<div class="card"><div class="lab">The running order</div><div class="ans">
 <p><b>0-1</b> &middot; Warm open. Thank them for the time. If Paola is warm, TFA is an easy line at the end, not now.</p>
 <p><b>1-4</b> &middot; Background walk, card 1. 2:35. Skip the kids paragraph.</p>
-<p><b>By minute 10</b> &middot; <b>MUST-ASK 1</b>, card 16: which role, and success at twelve months.</p>
+<p><b>By minute 10</b> &middot; <b>MUST-ASK 1</b>, card 17: has this role existed, and what made that person successful.</p>
 <p><b>Paola's turn</b> &middot; cards 3-5. Every one ends on Carver or Brooklyn Lab.</p>
-<p><b>Kruti's turn</b> &middot; cards 8-11. Earn it, paired with investing in people.</p>
-<p><b>Minute 20</b> &middot; card 17. One question each, then the next step.</p></div></div>'''
+<p><b>Kruti's turn</b> &middot; cards 8-12. Earn it, paired with investing in people. Card 9 if it's about network systems.</p>
+<p><b>Minute 20</b> &middot; card 18. One question each, then the next step.</p></div></div>'''
 H['hs']='''<div class="card"><div class="lab">Their high school, say-able</div><div class="ans">
 <p><b>Opened August 2026</b> in an interim Washington Heights site, <b>119 ninth graders</b> from Zeta's own first class. <span class="small">Sources: Zeta research 092826; CALL PREP Dan Rojas</span></p>
 <p>Design shown to Community Board 12, March 2026: <b>Z pods</b> of about 12 students who stay together, four <b>Z houses</b>, portfolios, AP required to graduate, SAT prep in school, a ZLab. <span class="small">Source: Zeta research 092826 (search excerpts)</span></p>
@@ -137,7 +137,7 @@ H['hs']='''<div class="card"><div class="lab">Their high school, say-able</div><
 <div class="card"><div class="lab">The link nobody else will make (frame, not words)</div><div class="ans">
 <p>Dan's fear is the ninth-grade C that follows a kid forever. Your KIPP work was ninth-grade grades, weekly, across 48 high schools: 46% at a 3.0 or better, up six points. Z pods are the structure; a weekly ninth-grade academic health routine is what protects it. Your words for that are on card 10 ("present but obscured, to right in front of them").</p></div></div>
 <div class="card"><div class="lab">Your high school record, said plainly</div><div class="ans">
-<p><b>Collegiate Academies:</b> high school network, largest CREDO effect size of any high school in the country, five years as Chief Culture Officer.</p>
+<p><b>Collegiate Academies:</b> high school network, five years as Chief Culture Officer. One of our schools, Carver, had the largest CREDO effect size in the country.</p>
 <p><b>Brooklyn Lab:</b> interim high school principal for half a year, while superintendent.</p>
 <p><b>KIPP:</b> national high school strategy, 48 high schools. 46% of ninth graders at 3.0+, up six.</p>
 <p><b>Carver:</b> 200 students when you walked in, eight or nine hundred now. Jerel is the CEO.</p>
@@ -157,10 +157,10 @@ H['repairs']='''<div class="card"><div class="lab">Repair 1 &middot; Carver, red
 H['numbers']='''<div class="card"><div class="lab">Every number, with its source. Never say one that is not on this card.</div><div class="ans">
 <p><b>Excel:</b> 270th to #1 in Massachusetts &middot; National Charter School of the Year &middot; Dean of Students &middot; 40% of staff reported to you &middot; six days on the playbook &middot; HS top 3% nationally. <span class="small">Sources: bank blocks 1, 3</span></p>
 <p><b>Consulting:</b> over 100 schools &middot; fourteen years. <span class="small">Source: bank block 1</span></p>
-<p><b>Collegiate:</b> 5 years CCO &middot; largest CREDO effect size of any HS in the country &middot; suspension drop is <b>network-wide</b> only. <span class="small">Sources: bank blocks 1, 10; verified-facts</span></p>
+<p><b>Collegiate:</b> 5 years CCO &middot; Carver: largest CREDO effect size in the country &middot; seven-level special education continuum &middot; suspension drop is <b>network-wide</b> only. <span class="small">Sources: bank block 1; ONE STORY 091326; your ruling 092926</span></p>
 <p><b>Carver:</b> 200 to eight or nine hundred students &middot; Jerel is the CEO. <span class="small">Source: bank block 4</span></p>
-<p><b>Brooklyn Lab:</b> superintendent just over a year &middot; managed 3 principals and the C-level team &middot; interim HS principal, half a year &middot; both charters reauthorized. <span class="small">Sources: bank blocks 1, 5; PRINCIPAL MANAGER TRACK L1254</span></p>
-<p><b>KIPP:</b> 28 regions &middot; 48 high schools &middot; 46% of 9th graders at 3.0+, up 6, third quarter &middot; no school took the alternate path. <span class="small">Source: bank block 2</span></p>
+<p><b>Brooklyn Lab:</b> superintendent for a transitional period &middot; 3 principals and the C-level team (CEO and CFO co-managed) &middot; interim HS principal, half a year &middot; two simultaneous renewals, three-year terms, both reauthorized, Board of Regents. <span class="small">Sources: bank blocks 1, 5; ONE STORY 091326; fact check 092926</span></p>
+<p><b>KIPP:</b> 28 regions &middot; 48 high schools &middot; all adopted the HS strategy, no school took the alternate path &middot; 46% of 9th graders at 3.0+, up 6, best quarter KIPP had had &middot; 20 schools hit the goal &middot; the tool was piloted and handed off. <span class="small">Source: bank block 2 as dictated; your rulings 092926</span></p>
 <p><b>Coverage schedule maker:</b> two schools' master schedules &middot; installed at one &middot; your estimate two to three hours a week. <span class="small">Source: bank block 8</span></p>
 <p><b>Zeta:</b> high school 119 ninth graders &middot; 91% HS retention (Dan). <span class="small">Sources: research 092826; Rojas debrief</span></p>
 <p><b>Principal Manager band:</b> $125K-$175K &middot; 425 Westchester Ave, daily. Never raise. <span class="small">Source: Rojas debrief &sect;0</span></p></div></div>'''
@@ -174,15 +174,15 @@ H['room']='''<div class="card"><div class="lab">Paola Zalkind &middot; Chief Sch
 <p class="small">She is the host (her Zoom room). Use whatever title she uses.</p></div></div>
 <div class="card prepOnly"><div class="lab">Who's who</div><div class="ans">
 <p>Emily Kim, Founder/CEO &middot; Paola Zalkind, CSO &middot; Jessica Sie, CAO &middot; Felipe Bustamante, COO Schools (passed you to this side) &middot; Dan Rojas, MD Schooling Excellence &middot; Gillian Clouser, talent, your advocate.</p></div></div>'''
-H['asks']='''<div class="card"><div class="lab">MUST-ASK 1 by minute 10 <span class="dcue flat">proposed, not yet your words</span></div><div class="ans">
-<p>Which role they are considering you for, and what success looks like at twelve months.</p>
-<p class="small">Your own form that worked with Dan (line 211): "What, if anything, should I read into the fact that you and I are having a conversation on the school excellence side of things as opposed to operations?"</p></div></div>
-<div class="card"><div class="lab">One for each, around minute 20 <span class="dcue flat">proposed</span></div><div class="ans">
-<p><b>Kruti:</b> with Flushing, Tremont Park and the high school all opening this fall, what has been hardest to keep consistent campus to campus?</p>
-<p><b>Paola:</b> for the 119 ninth graders in that first class, what does a great first year look like by June?</p>
-<p><b>Either:</b> what does the principal pipeline look like? Is Z Combinator feeding your own leaders?</p></div></div>
-<div class="card"><div class="lab">The next-step ask</div><div class="ans">
-<p>The next step, and who else you would talk to. Dan's call ended without it.</p></div></div>'''
+H['asks']='''<div class="card"><div class="lab">MUST-ASK 1 by minute 10 &middot; your words</div><div class="ans">
+<p><b>Zeta screen 091126:</b> "Is this a role that's existed in the past? And if so, what can you tell me about it and what made that person successful or what would you believe is necessary to make this person successful?"</p>
+<p class="small">Don't name the Principal Manager title unless they do. Card 17.</p></div></div>
+<div class="card"><div class="lab">Around minute 20 &middot; your words</div><div class="ans">
+<p><b>FranklinCovey 081826, the one that got the rubric:</b> "What separates a [their seat] who make it in year one from ones that don't, and being as specific as possible as you can."</p>
+<p><b>Onsite 090826 (debrief-quoted):</b> "What's your biggest concern about hiring someone with my profile?"</p>
+<p><span class="dcue flat">proposed</span> Kruti: hardest thing to keep consistent campus to campus this fall. Paola: a great first year by June for the 119.</p></div></div>
+<div class="card"><div class="lab">The next step</div><div class="ans">
+<p><b>FranklinCovey 081426:</b> "How quickly are we looking to move on all this, do you know?" &middot; and who else you'd talk to.</p></div></div>'''
 close_line=c(G_COMMUTE_A).split('. ')[-2]+'.' if False else "I wanna find the right group of people doing the right work more than anything."
 H['close']=f'''<div class="card"><div class="lab">The last two minutes</div><div class="ans">
 <p>{cue('warm','warm, at the camera')} Thank them. {cue('beat','beat')} Echo ONE thing each of them said, in their words. {cue('beat','beat')}</p>
@@ -205,7 +205,19 @@ H['traps']='''<div class="card"><div class="lab">Banned strings. These are liter
 <p><span class="dcue stop">never</span> Suspensions down 75% at Carver. It was network-wide</p>
 <p><span class="dcue stop">never</span> "Better part of a decade" for consulting. It was fourteen years</p>
 <p><span class="dcue stop">never</span> The kids, the commute, or pay, first</p>
-<p><span class="dcue stop">never</span> A Zeta proficiency or attrition number, the NYPD episode, the 181st St fight</p></div></div>'''
+<p><span class="dcue stop">never</span> A Zeta proficiency or attrition number, the NYPD episode, the 181st St fight</p>
+<p><span class="dcue stop">never</span> "Five-year" renewals (they were three-year), "SUNY" (Zeta's authorizer), "new charter operator"</p>
+<p><span class="dcue stop">never</span> "I led the national strategy." Kate Starke led the team. The tool was piloted and handed off</p>
+<p><span class="dcue stop">never</span> "KIPP credited my system" or "cited as the driver." The link is your own read</p>
+<p><span class="dcue stop">never</span> Carver as "led." You coached</p>
+<p><span class="dcue stop">never</span> The coverage tool as "piloting" or "in pilot," and never pitch the practice to Kruti</p>
+<p><span class="dcue stop">never</span> Excel's home-language share as 70% or 75%. "About half," or no number</p>
+<p><span class="dcue stop">never</span> The Principal Manager title, unless they say it first</p></div></div>
+<div class="card"><div class="lab">The self-disqualifying strings (banned as strings, DREAM 081726 and FC 081426)</div><div class="ans">
+<p><span class="dcue stop">never</span> "I'm not trying to" &middot; "I don't mean to" &middot; "there's a lot I'd have to learn" &middot; "I need to catch up" &middot; "that's not where I'm at" &middot; "I'm probably more of a" &middot; "I'm not an expert in" &middot; "I don't want to overstate"</p>
+<p><span class="dcue stop">never</span> "This is not a question I prepared for" &middot; "happy to go deeper" &middot; "long story short" &middot; "I'll get to your exact question, but first" &middot; "I'll just pause right there"</p>
+<p><span class="dcue stop">never</span> "a little bit" or "kind of" on a credential. A vague word about your results means the next word is a digit</p>
+<p class="small">Sources: IP DEBRIEF EXTRACT 090526; HOW I SHOW UP 090326. If you hear yourself building a disclaimer, the sentence after it does not get said.</p></div></div>'''
 H['rp']='''<div class="card"><div class="lab">How to use these</div><div class="ans">
 <p>Three likely sequences. The follow-ups are frames; your answers point to cards with your words. <b>Say each out loud once.</b></p></div></div>
 <div class="card"><div class="lab">ROLE PLAY 1 &middot; Paola, then the push for proof</div><div class="ans">
