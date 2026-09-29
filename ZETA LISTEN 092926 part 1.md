@@ -71,13 +71,13 @@ Paola's core question, most likely as your philosophy on managing people or lead
 
 Here it is, in your words.
 
-What you're saying, in one breathTrust is everything, and it's earned, not assumed. Clarity and transparency so nobody guesses. Support that teaches, because you're modeling every second. Accountability as the thing that builds the relationship, not the thing the relationship permits.The answer · about 75 seconds
+What you're saying, in one breathTrust is everything, and it's earned, not assumed. Clarity and transparency so nobody guesses. Support that makes people better: you show you can do the job, and every coaching meeting is prepared like your best lesson. Accountability as the thing that builds the relationship, not the thing the relationship permits.The answer · about 75 seconds
 
 Trust is everything, and you earn it through three things: clarity, support and accountability.
 
 Clarity first. We're aligned on what we're going for and what your role is in it, and you know what to expect from me. I'm transparent about where we're headed and why, so nobody's guessing.
 
-Support. My job is to be the model. Coaching meetings are teaching time, not talking time, and I have to be incredibly intentional about that, because I'm teaching every second whether I like it or not, with every action and every inaction.
+Support. My job is to make you better, and to do that I have to show you I can do the job. Sometimes that means modeling it, showing you what excellent looks like, bringing the exemplar. Every coaching meeting should be as well prepared and thought out as the best lessons we teach. It's teaching time, not talking time, because I'm teaching every second whether I like it or not, with every action and every inaction.
 
 And accountability. People usually say you need a relationship before you can have accountability. I think it's the other way around: you can't have a relationship without accountability, at least not for very long. People are watching to see whether you care enough to hold them to a high standard, whether you know what you're talking about, and whether you're willing to say what needs to be said. The best teachers and coaches any of us had were the most honest with us. We knew where we stood. Done well, that's what makes the relationship closer.
 
