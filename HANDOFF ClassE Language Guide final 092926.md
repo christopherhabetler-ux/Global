@@ -14,7 +14,7 @@ No local session is needed. Optional, if you want the receipts from your checker
 python3 ~/Documents/CLAUDE/Scripts/ship_check.py "<email file>" --register email
 python3 ~/Documents/CLAUDE/Scripts/aicheck.py --memo "GUIDE ClassE US Language 092926.md"
 
-## Email to Matt (092926, from his dictated points)
+## Email to Matt (092926, v3, from his dictated points)
 
 Matt,
 
@@ -28,11 +28,21 @@ The document has four parts:
 
 Even though this is a language guide, I did want to anchor it to principles. It makes my thinking, and the perspective of a US ed reformer, more transparent, so the team can understand it and then use it when choosing their own words from an informed position.
 
-I think the next step is me working this through with Joe and the team. We could do that one of three ways:
-- You hand it over and say, "This is it."
-- I walk the team through it and we process it together.
-- The team works through it on their own and comes back with questions, concerns or other options, either in writing or in writing plus a follow-up meeting.
+Once you've reviewed it and we get it to a place you feel good about, let me know if you want me to play a role in rolling it out. I'm not sure what your vision is, whether it's just "here's the resource" or some conversations or training.
 
-Let me know which way you'd want to go. Im here and ready to adjust.
+If it's helpful, here's one way we could think about it. When I've rolled out resources like this before, two things needed to go right:
+- People need to really understand it. Having them dive in, review it and leave comments or questions does a lot of that.
+- They need to get comfortable with it. Short practice sessions help here: simple 10- to 15-minute scenarios where you or I play the school person and they practice parts of their pitch, getting more complex as they get comfortable. These could be in a small group, so people see each other, or one-on-one.
+
+That's the teacher in me. I've run sessions like this before and could run them with the team if you want me to.
+
+Have a great rest of your week!
 
 Christopher
+
+## Rule to lock in: Matt, offer, don't instruct (CH 092926)
+
+His words: "he doesn't really like when you give him advice on how to do things that he either already knows how to do or he's actually better at doing."
+- Say: "Not sure what your vision for rolling this out is. If you want, here's an idea I could explore," or "here's a way we could think about it." Then leave it at that.
+- Never: "So what you'll want to do next is," "some ideas for rolling out," "best practices for rolling this out."
+- Ground it in his own experience ("when I've rolled out resources like this before") and make it an offer ("if you want me to"), never a plan for Matt.
