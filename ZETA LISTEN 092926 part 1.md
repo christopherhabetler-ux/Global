@@ -71,11 +71,15 @@ Paola's core question, most likely as your philosophy on managing people or lead
 
 Here it is, in your words.
 
-What you're saying, in one breathTrust is the foundation, and you earn it three ways. Clarity: nobody guesses what's expected. Support: you teach on the floor instead of handing out next steps. Accountability: you never round up, because telling the truth is what keeps the trust. It's not a sequence. Each one feeds the others.The answer · 30 to 45 seconds
+What you're saying, in one breathTrust is everything, and it's earned, not assumed. Clarity and transparency so nobody guesses. Support that teaches, because you're modeling every second. Accountability as the thing that builds the relationship, not the thing the relationship permits.The answer · about 75 seconds
 
-For me it's four things: trust, clarity, support and accountability. They run roughly in that order, but they're not linear. They feed each other.
+Trust is everything, and you earn it through three things: clarity, support and accountability.
 
-Trust is everything, and you earn it through the other three. Clarity: people know what's expected of them and what to expect from me. Support: my best development meetings don't end with a list of next steps. They happen on the floor, doing the work, because we can't talk our way into a better school. We have to teach our way into it. And accountability: no one's guessing where they stand. Ninety-five percent of the time I'm in my support role, but I never round up. That's what keeps the trust.
+Clarity first. We're aligned on what we're going for and what your role is in it, and you know what to expect from me. I'm transparent about where we're headed and why, so nobody's guessing.
+
+Support. My job is to be the model. Coaching meetings are teaching time, not talking time, and I have to be incredibly intentional about that, because I'm teaching every second whether I like it or not, with every action and every inaction.
+
+And accountability. People usually say you need a relationship before you can have accountability. I think it's the other way around: you can't have a relationship without accountability, at least not for very long. People are watching to see whether you care enough to hold them to a high standard, whether you know what you're talking about, and whether you're willing to say what needs to be said. The best teachers and coaches any of us had were the most honest with us. We knew where we stood. Done well, that's what makes the relationship closer.
 
 The best example is Jerel.
 

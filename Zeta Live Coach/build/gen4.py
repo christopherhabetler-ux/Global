@@ -78,3 +78,25 @@ x['target']='45 seconds, then Jerel in 45. Under two minutes total.'
 x['stop']='Stop on "CEO of Collegiate Academies."'
 json.dump(Q,open('Q.json','w'))
 print('card 3 revised')
+
+# ---------- 092926 ~1:25pm: second revision, from his new outline (clarity incl. transparency; support = the model; accountability before relationship) ----------
+ESS2=('<div class="coreline"><b>What you\'re saying, in one breath</b>Trust is everything, and it\'s earned, not assumed. '
+      'Clarity and transparency so nobody guesses. Support that teaches, because you\'re modeling every second. '
+      'Accountability as the thing that builds the relationship, not the thing the relationship permits.</div>')
+A2=P(cue('flat','first sentence, the claim')+' <b>Trust is everything</b>, and you earn it through three things: <b>clarity, support and accountability.</b>',
+ cue('slow','clarity')+' Clarity first. We\'re aligned on what we\'re going for and what your role is in it, and you know what to expect from me. I\'m <b>transparent</b> about where we\'re headed and why, so <b>nobody\'s guessing</b>.',
+ cue('slow','support')+' Support. My job is to be <b>the model</b>. Coaching meetings are <b>teaching time, not talking time</b>, and I have to be incredibly intentional about that, because I\'m teaching every second whether I like it or not, <b>with every action and every inaction</b>.',
+ cue('slow','accountability')+' And accountability. People usually say you need a relationship before you can have accountability. <b>I think it\'s the other way around: you can\'t have a relationship without accountability</b>, at least not for very long. '
+ 'People are watching to see whether you care enough to hold them to a high standard, whether you know what you\'re talking about, and whether you\'re willing to say what needs to be said. '
+ 'The best teachers and coaches any of us had were the most honest with us. <b>We knew where we stood.</b> Done well, that\'s what makes the relationship closer.',
+ cue('beat','beat, then the proof')+' The best example is Jerel.')
+x=byid['g2g']
+x['answer']=(ESS2+'<p class="lab" style="margin-top:12px">The answer &middot; about 75 seconds</p>'+A2+
+ '<p class="lab" style="margin-top:12px">The proof &middot; Jerel, about 45 seconds</p>'+JER+
+ '<p class="small"><b>Revised at your request (092926, about 1:25 PM)</b> from your outline and your dictation today; the Jerel paragraph from your written Carver answer (060925). Say it your way.</p>'
+ '<div class="prepOnly"><p class="lab" style="margin-top:14px">Long version &middot; your dictation, cut only</p>'+long_version+'</div>')
+x['core']="Trust is everything, and you earn it through clarity, support and accountability. You can't have a relationship without accountability."
+x['hook']="trust is everything / clarity + transparency / teaching time, not talking time / no relationship without accountability / Jerel"
+x['target']='About 75 seconds, then Jerel in 45.'
+json.dump(Q,open('Q.json','w'))
+print('card 3 revision 2')
