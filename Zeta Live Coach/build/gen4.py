@@ -100,3 +100,29 @@ x['hook']="trust is everything / clarity + transparency / teaching time, not tal
 x['target']='About 75 seconds, then Jerel in 45.'
 json.dump(Q,open('Q.json','w'))
 print('card 3 revision 2')
+
+# ---------- 092926 ~1:50pm: card 6 revised for discernment (his request), from his dictation + Dan call ----------
+h=byid['hs']
+old_hs=h['answer']
+HESS=('<div class="coreline"><b>What you\'re saying, in one breath</b>High school is the launch. Three things change: '
+      'the path gets concrete, identity gets locked in, and the systems give way to the skills they were standing in for. '
+      'Because our kids are walking into the world that made our schools necessary, they have to be overprepared.</div>')
+HA=P(cue('flat','first sentence, the claim')+' <b>High school has to be the launch.</b> If elementary and middle school are pulling back the bow, <b>high school is letting go of the arrow</b>. So it can\'t be middle school with a couple of dials turned. Three things change.',
+ cue('slow','one')+' First, <b>the path gets concrete</b>. In middle school, college can stay big and shiny and a little far away. In high school we have to be completely transparent: here\'s the path, here are your options, here\'s every step, and here\'s exactly where you are on it, down to your transcript. <b>Every kid knows the path and where they stand on it.</b>',
+ cue('slow','two')+' Second, <b>identity</b>. This is our last real chance to lock it in. Academically, <b>it\'s cool to be smart</b>. We\'re an army of dorks, and we put that front and center. And it has to feel like high school is supposed to feel: a place you\'re proud of, <b>a club not everybody gets to join</b>.',
+ cue('slow','three')+' Third, <b>we teach the skills our systems were standing in for</b>. In college there\'s no seating chart and no published makeup policy. Systems aren\'t bad, bad systems are bad, so we teach, practice and <b>gradually release</b> them on purpose, without creating chaos.',
+ cue('beat','the why')+' Our kids are walking into the same world that made our schools necessary in the first place. They can\'t just be prepared. <b>They have to be overprepared.</b>',
+ cue('power','then the proof')+' That\'s why ninth grade matters so much. The transcript starts on day one. At KIPP we focused right there: <b>46% of ninth graders finished the quarter at a 3.0 or better, up six points</b>, the best quarter KIPP had ever had on that number. '+cue('stop','STOP'))
+h['answer']=(HESS+'<p class="lab" style="margin-top:12px">The answer &middot; about two minutes</p>'+HA+
+ '<p class="small"><b>Revised at your request (092926, about 1:50 PM)</b> from your dictation today, with the gradual-release idea and the 46% from the Dan call and your answer bank. Say it your way.</p>'
+ '<div class="prepOnly"><p class="lab" style="margin-top:14px">If they want the how: the Dan call version (keep 50, cut 25, release 25)</p>'+old_hs.split('<p class="small">')[0]+'</div>')
+h['label']='6 &middot; What should high school be? How is it different from middle school?'
+h['core']='High school is the launch: a concrete path, identity locked in, skills in place of systems. Overprepared.'
+h['hook']='the launch / path concrete / identity: cool to be smart / skills replace systems / overprepared / 46%'
+h['land']='"They have to be overprepared." Then the 46%.'
+h['target']='About two minutes. If short: the claim, the three, the 46%.'
+h['avoid']='Opening with "I wish I had the answer." Rambling through the seating-chart example unless asked how.'
+h['stop']='Stop on "the best quarter KIPP had ever had on that number."'
+h['keys']=h['keys']+' different from middle school launch bow arrow path identity overprepared'
+json.dump(Q,open('Q.json','w'))
+print('card 6 revised')

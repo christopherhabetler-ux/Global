@@ -137,21 +137,29 @@ Land on this. What they needed from me was a decision maker who answered fast, n
 
 Then stop. Stop after the interim line.
 
-Card 6. What should high school be? What needs a structural rethink?
+Card 6. What should high school be? How is it different from middle school?
 
 Dan's biggest problem is the high school, and it rolls up to Paola. Open with the claim, not with what you don't know. The seating chart paragraph is the one to cut if time is short.
 
 Here it is, in your words.
 
-... high school can't be like middle school just with a couple of dials turned. We get into a lot of and I think that's what a lot of folks have done. Because like you said, some of the things wear off, some of the things that compelled students in middle school either don't hold for different reasons. Number two, we can't overcorrect and we can't undercorrect on our systems and our structures. When we try and go too far and we don't have any systems, students are looking left and looking right and being like, "Do you even have it together? What is going on? This is not what I signed up for." At the same time, if we don't evolve them in strategic ways, you guys are treating me like I'm still in middle school. And so I would think about it the way I think about my classroom, which is I'm starting a new school year. It's a new group of students. I'm teaching something different. What is it that I did in the past that worked that I need to replicate for this group? And I think it would be about defining a wholly different identity, making sure that this was one that was resonant with students and that we had a spine, a skeleton of the same values, but we dressed it entirely different. And I don't mean dress in terms of faking or putting on just bells and whistles. What I simply mean to say is our values are still our values. But how they show up and what they look like and what the experience of a student is going to be does need to be fundamentally different.
+The answer · about two minutes
 
-I would ideally have us start at the end of seventh grade and begin a transition towards independence. In eighth grade, one of the things we did at Excel and we started to do at collegiate was run the second semester of each of those years as intentional transition points where we said, "We're going to remove the seating chart. Before we do that, we're going to teach you why it existed, what are the choices people are making, what does it look like to choose the seat?" And then we let kids fail. Sorry, I should say, we let kids choose their own seat. Some of them did well, some of them didn't. And we didn't immediately jump in and say, "Okay, fine. Here's where you sit." We let it run and we let kids sit with and see what the outcome, how the outcome of that two-weeks grading cycle, how it changed. And we reflected with them and gave them another opportunity, again, to choose. And we did three to four cycles of that for multiple discrete skills such that we were taking all of our we were taking, let's say, 40% of our 50% of our systems that were meant as placeholders or substitutes for the real skill, the student choice, the student understanding of why. So this is the org system. This is office hours and tutoring, student materials, late homework, or late work policy. And we systematically took those back, gave, like I said, the front-end instruction, the opportunity to try it out, and multiple cycles of that. And I think that's where I would want to start doing that in eighth grade so that we could do that in high school. And I think it's hard, though, because if you start that exact strategy in high school, are we really willing to say to students that we're going to take the first semester of their year and let things slide or let things slip? Because that's obviously highly problematic. So I think what I would try and do is find a way to apply some of that same logic.
+High school has to be the launch. If elementary and middle school are pulling back the bow, high school is letting go of the arrow. So it can't be middle school with a couple of dials turned. Three things change.
 
-I would take a look at my middle school plays. I would say, "Which 25% of these no longer make sense? Or what are the 50 that are core we're going to keep? What are the 25% that don't make sense anymore or we don't need them? And then what are the 25% that we are going to intentionally do pretty quick gradual release with instruction and reflection as a primary starting point?" All built around aiming at a different identity and an endpoint rather than we did in middle school because middle school is obviously focused on the high school portion of it. So then we have to focus on the lives of unlimited opportunity and what that means to a scholar in terms of what they need to do to advance and arrive at the right place. That year, 46% of ninth graders across all 48 high schools finished the quarter at a 3.0 or better. Up six points. Best quarter KIPP had ever had on that number.
+First, the path gets concrete. In middle school, college can stay big and shiny and a little far away. In high school we have to be completely transparent: here's the path, here are your options, here's every step, and here's exactly where you are on it, down to your transcript. Every kid knows the path and where they stand on it.
 
-Land on this. Lives of unlimited opportunity, and what a ninth grader needs to do to get there. Then the 46%.
+Second, identity. This is our last real chance to lock it in. Academically, it's cool to be smart. We're an army of dorks, and we put that front and center. And it has to feel like high school is supposed to feel: a place you're proud of, a club not everybody gets to join.
 
-Then stop. The 46%, then stop.
+Third, we teach the skills our systems were standing in for. In college there's no seating chart and no published makeup policy. Systems aren't bad, bad systems are bad, so we teach, practice and gradually release them on purpose, without creating chaos.
+
+Our kids are walking into the same world that made our schools necessary in the first place. They can't just be prepared. They have to be overprepared.
+
+That's why ninth grade matters so much. The transcript starts on day one. At KIPP we focused right there: 46% of ninth graders finished the quarter at a 3.0 or better, up six points, the best quarter KIPP had ever had on that number.
+
+Land on this. They have to be overprepared. Then the 46%.
+
+Then stop. Your last words are "the best quarter KIPP had ever had on that number."
 
 Card 7. Beyond systems, what would you change about high school?
 
