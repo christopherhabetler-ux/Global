@@ -1,0 +1,232 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Chris and Matt: A Proposal for Working Together</title>
+<style>
+@font-face{font-family:"Inter";src:url("fonts/Inter.ttf") format("truetype");font-weight:100 900;}
+@font-face{font-family:"Source Serif";src:url("fonts/SourceSerif4.ttf") format("truetype");font-weight:200 900;}
+@page{size:Letter;margin:0.52in 0.66in 0.6in 0.66in;@bottom-left{content:"Chris Habetler  \00B7  Proposal for Matt Campbell  \00B7  Draft for discussion";font-family:"Inter",sans-serif;font-size:7pt;color:#7b818c;}@bottom-right{content:"Page " counter(page) " of " counter(pages);font-family:"Inter",sans-serif;font-size:7pt;color:#7b818c;}}
+:root{--ink:#16181d;--sub:#4a4f5a;--mute:#7b818c;--rule:#d9dce1;--wash:#f3f4f6;--accent:#16365c;--accentwash:#eaf0f6;}
+*{box-sizing:border-box;}
+html,body{margin:0;padding:0;}
+body{font-family:"Inter",sans-serif;font-size:9pt;line-height:1.42;color:var(--ink);font-feature-settings:"tnum" 1,"cv11" 1;}
+p{margin:0 0 7pt;}
+.eyebrow{font-size:7.4pt;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:600;}
+h1{font-family:"Source Serif",serif;font-weight:600;font-size:21pt;line-height:1.1;margin:4pt 0 5pt;letter-spacing:-.01em;}
+.byline{font-size:8.6pt;color:var(--sub);padding-bottom:9pt;border-bottom:2.2pt solid var(--ink);margin-bottom:10pt;}
+.byline b{color:var(--ink);font-weight:600;}
+.letter p{font-size:9.2pt;margin-bottom:5pt;color:#262a31;}
+.sec{margin-top:10pt;}
+.sec-head{break-after:avoid;}
+.keep{break-inside:avoid;}
+.sec-head{display:flex;align-items:baseline;gap:9pt;border-top:.7pt solid var(--rule);padding-top:6pt;margin-bottom:6pt;}
+.num{font-family:"Source Serif",serif;font-size:11pt;color:var(--accent);font-weight:600;}
+h2{font-family:"Source Serif",serif;font-size:14.5pt;font-weight:600;margin:0;letter-spacing:-.005em;}
+.lede{color:var(--sub);font-size:8.5pt;margin:-1pt 0 7pt;}
+/* KPI */
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1pt solid var(--ink);margin-top:4pt;}
+.kpi{padding:7pt 9pt;border-right:.7pt solid var(--rule);}
+.kpi:last-child{border-right:0;}
+.kpi .k{font-size:7pt;letter-spacing:.12em;text-transform:uppercase;color:var(--mute);font-weight:600;}
+.kpi .v{font-family:"Source Serif",serif;font-size:17pt;font-weight:600;line-height:1.1;margin:2pt 0 1pt;color:var(--ink);}
+.kpi .d{font-size:7.9pt;color:var(--sub);line-height:1.35;}
+.strip{display:grid;grid-template-columns:1.2fr 1fr 1fr;background:var(--wash);border:1pt solid var(--ink);border-top:0;}
+.strip div{padding:6pt 10pt;font-size:8.2pt;color:var(--sub);border-right:.7pt solid var(--rule);}
+.strip div:last-child{border-right:0;}
+.strip b{color:var(--ink);font-weight:600;margin-right:4pt;}
+/* why */
+.why{display:grid;grid-template-columns:1fr 1.1fr;gap:16pt;}
+.pull{font-family:"Source Serif",serif;font-size:10.4pt;line-height:1.38;color:var(--ink);}
+.pull em{font-style:normal;color:var(--accent);font-weight:600;}
+ul.aims{list-style:none;margin:0;padding:0;}
+ul.aims li{position:relative;padding:0 0 2.5pt 13pt;font-size:8.2pt;color:#2b2f36;}
+ul.aims li:before{content:"";position:absolute;left:0;top:5.2pt;width:5pt;height:5pt;background:var(--accent);}
+.mini{font-size:7pt;letter-spacing:.12em;text-transform:uppercase;color:var(--mute);font-weight:600;margin-bottom:5pt;}
+/* cards */
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:7pt;}
+.card{border:.8pt solid var(--rule);border-top:2.2pt solid var(--accent);padding:6pt 9pt 7pt;break-inside:avoid;}
+.card h3{font-family:"Source Serif",serif;font-size:10.8pt;margin:0 0 2pt;font-weight:600;}
+.card p{font-size:8.1pt;color:#30343b;margin:0 0 5pt;line-height:1.38;}
+.card .fm{font-size:7.8pt;background:var(--accentwash);padding:4pt 7pt;color:var(--accent);}
+.card .fm b{font-weight:600;letter-spacing:.06em;text-transform:uppercase;font-size:6.8pt;margin-right:5pt;}
+.beyond{display:grid;grid-template-columns:auto 1fr;gap:3pt 12pt;margin-top:7pt;font-size:8pt;color:var(--sub);}
+.beyond b{color:var(--ink);font-weight:600;}
+table.scope{width:100%;border-collapse:collapse;font-size:8.1pt;}
+table.scope th{text-align:left;font-size:7pt;letter-spacing:.12em;text-transform:uppercase;color:#fff;background:var(--ink);padding:4.5pt 8pt;font-weight:600;}
+table.scope td{padding:4.5pt 8pt;border-bottom:.7pt solid var(--rule);vertical-align:top;color:#30343b;line-height:1.38;}
+table.scope td.ar{font-family:"Source Serif",serif;font-weight:600;font-size:10.2pt;color:var(--ink);}
+table.scope td.m1{background:var(--accentwash);color:var(--accent);font-weight:500;}
+table.scope tr{break-inside:avoid;}
+/* how */
+.how{display:grid;grid-template-columns:1fr 1fr;border-top:1pt solid var(--ink);}
+.how div{padding:7pt 10pt 7pt 0;border-bottom:.7pt solid var(--rule);font-size:8.6pt;color:#30343b;}
+.how div:nth-child(odd){padding-right:16pt;}
+.how b{display:block;font-size:7pt;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:2pt;font-weight:600;}
+/* numbers */
+.numbers{display:grid;grid-template-columns:1fr 1.15fr;gap:18pt;align-items:start;}
+.ladder .row{display:grid;grid-template-columns:92pt 1fr;align-items:center;gap:8pt;margin-bottom:6pt;}
+.ladder .lab{font-size:8.2pt;color:var(--sub);line-height:1.25;}
+.ladder .lab b{display:block;color:var(--ink);font-weight:600;}
+.bar{height:16pt;background:var(--accent);display:flex;align-items:center;justify-content:flex-end;padding-right:6pt;color:#fff;font-size:8.2pt;font-weight:600;}
+.bar.l{background:#8aa1bb;}
+.bar.m{background:#3e5f86;}
+.note{font-size:7.9pt;color:var(--mute);margin-top:4pt;line-height:1.4;}
+.callout{background:var(--wash);padding:9pt 11pt;border-left:2.2pt solid var(--accent);}
+.callout p{font-size:8.8pt;margin:0 0 5pt;color:#262a31;}
+.callout p:last-child{margin:0;}
+.callout .big{font-family:"Source Serif",serif;font-size:11.5pt;line-height:1.35;color:var(--ink);}
+table.pay{width:100%;border-collapse:collapse;margin-top:12pt;font-size:8.5pt;}
+table.pay th{text-align:left;font-size:7pt;letter-spacing:.12em;text-transform:uppercase;color:#fff;background:var(--ink);padding:5pt 8pt;font-weight:600;}
+table.pay td{padding:6pt 8pt;border-bottom:.7pt solid var(--rule);vertical-align:top;color:#30343b;}
+table.pay td:first-child{font-weight:600;color:var(--ink);width:19%;}
+table.pay td.amt{font-family:"Source Serif",serif;font-weight:600;font-size:10pt;color:var(--accent);width:25%;white-space:nowrap;}
+table.pay tr{break-inside:avoid;}
+.why2{display:grid;grid-template-columns:1fr 1fr;gap:12pt;margin-top:10pt;}
+.why2 div{font-size:8.4pt;color:#30343b;border-top:.7pt solid var(--rule);padding-top:6pt;}
+.why2 b{font-family:"Source Serif",serif;font-size:12pt;color:var(--accent);margin-right:5pt;}
+.swing{margin-top:10pt;font-size:9pt;color:#262a31;}
+/* checkins */
+.timeline{display:grid;grid-template-columns:repeat(3,1fr);border:1pt solid var(--ink);margin-bottom:10pt;}
+.timeline div{padding:7pt 10pt;border-right:.7pt solid var(--rule);font-size:8.3pt;color:#30343b;}
+.timeline div:last-child{border-right:0;}
+.timeline b{display:block;font-family:"Source Serif",serif;font-size:10.5pt;color:var(--ink);margin-bottom:2pt;}
+table.ifthen{width:100%;border-collapse:collapse;font-size:8.5pt;}
+table.ifthen th{text-align:left;font-size:7pt;letter-spacing:.12em;text-transform:uppercase;color:var(--mute);padding:0 8pt 4pt 0;border-bottom:1pt solid var(--ink);font-weight:600;}
+table.ifthen td{padding:5pt 8pt 5pt 0;border-bottom:.7pt solid var(--rule);vertical-align:top;color:#30343b;}
+table.ifthen td:first-child{width:44%;color:var(--ink);font-weight:500;}
+table.ifthen tr{break-inside:avoid;}
+/* items */
+ol.items{list-style:none;counter-reset:i;margin:0;padding:0;}
+ol.items li{counter-increment:i;position:relative;padding:0 0 7pt 22pt;font-size:8.9pt;color:#2b2f36;break-inside:avoid;}
+ol.items li:before{content:counter(i);position:absolute;left:0;top:-1pt;font-family:"Source Serif",serif;font-weight:600;font-size:11pt;color:var(--accent);}
+ol.items li b{color:var(--ink);font-weight:600;}
+.close{margin-top:12pt;font-size:9.6pt;}
+.sig{font-family:"Source Serif",serif;font-size:13pt;margin-top:4pt;}
+.pb{break-before:page;}
+</style></head>
+<body>
+
+<div class="eyebrow">Proposal &middot; Draft for discussion</div>
+<h1>Chris and Matt: A Proposal for Working Together</h1>
+<div class="byline"><b>For</b> Matt Campbell, EdTech Expertz &nbsp;&middot;&nbsp; <b>From</b> Chris Habetler &nbsp;&middot;&nbsp; September 29, 2026</div>
+
+<div class="letter">
+<p>Matt, first, thank you for asking. I've loved working with you these last few months, and I appreciate the trust behind it. On the 22nd you asked what I could do, what it would look like, and what I would charge. This is my stab at it: a starting point, and I expect we'll change a good bit of it together. I'll admit I'm a little nervous putting numbers on paper. I don't want to get this wrong in either direction, so forgive anything that seems presumptuous. It only works for me if it works for you.</p>
+</div>
+
+<div class="sec" style="margin-top:12pt">
+<div class="sec-head"><h2>At a Glance</h2></div>
+<div class="kpis">
+ <div class="kpi"><div class="k">Base rate</div><div class="v">$3,000</div><div class="d">a month</div></div>
+ <div class="kpi"><div class="k">New clients</div><div class="v">+15%</div><div class="d">of each new client's monthly retainer</div></div>
+ <div class="kpi"><div class="k">Referral network</div><div class="v">20%</div><div class="d">of what EdTech Expertz keeps on network deals</div></div>
+ <div class="kpi"><div class="k">Time</div><div class="v">~1 day</div><div class="d">a week to start</div></div>
+</div>
+<div class="strip">
+ <div><b>Start</b>October 1 or when AAP signs, whichever is later</div>
+ <div><b>Check-ins</b>Weekly, January, then quarterly</div>
+ <div><b>Exit</b>30 days' notice, either of us</div>
+</div>
+</div>
+
+<div class="sec">
+<div class="sec-head"><span class="num">01</span><h2>Why</h2></div>
+<div class="why keep">
+ <div class="pull">The goal is to grow EdTech Expertz, in revenue and in impact. The constraint is <em>your time</em>. You're uniquely qualified, the business is ready to grow, and nobody has a time machine. The right support, from someone you know, lets you take on AAP and more clients.</div>
+ <div>
+  <div class="mini">What I'm aiming for</div>
+  <ul class="aims">
+   <li>A clear working arrangement. We've both said we want to work together, and I want the terms to match.</li>
+   <li>Helping you build EdTech Expertz into the empire you've talked about.</li>
+   <li>The just-right level of support for this moment, adjusted as the business grows.</li>
+   <li>A setup where you're completely comfortable asking for whatever you need, and I earn my place on your team.</li>
+  </ul>
+ </div>
+</div>
+</div>
+
+<div class="sec">
+<div class="sec-head"><span class="num">02</span><h2>What I'd Do</h2><span style="margin-left:auto;font-size:8pt;color:var(--mute)">What I heard from you on the 22nd</span></div>
+
+<table class="scope">
+ <tr><th style="width:17%">Area</th><th>What it includes</th><th style="width:27%">Month one</th></tr>
+ <tr><td class="ar">Research</td><td>You set the goal, and I come back with more than you asked for: crosswalks, diligence readouts, prep briefs on prospective clients, and people maps that line up the right contacts inside a target organization (your "30 people at Canvas")</td><td class="m1">Prep briefs on your five parked leads</td></tr>
+ <tr><td class="ar">Advisory</td><td>The school-side voice in your client work: first meetings with prospective clients, working sessions, messaging and language, feedback on decks and pitches, and introductions in both directions</td><td class="m1">Forward Edge on 10/1, and whatever comes up</td></tr>
+ <tr><td class="ar">Referral network</td><td>Recruiting members, training them on the companies, and checking in on them. Members and clients still go through you.</td><td class="m1">Member list cleaned up, a one-page card on each company</td></tr>
+ <tr><td class="ar">Delegation</td><td>The consulting infrastructure you mentioned: the ChatGPT workspace, a shared knowledge base in Drive and the workspace, the company email, and QuickBooks</td><td class="m1">Workspace and knowledge base set up</td></tr>
+</table>
+</div>
+
+<div class="sec pb" style="margin-top:0">
+<div class="sec-head" style="border-top:0;padding-top:0"><span class="num">03</span><h2>How I'd Work</h2></div>
+<div class="how keep">
+ <div><b>Mindset</b>I'm in this with you. Send anything that helps EdTech Expertz grow, including things neither of us has thought of yet. Bedtimes and family time are harder, but we'll make it work.</div>
+ <div><b>Response time</b>Same-day replies. 48 hours on requests, unless we agree otherwise.</div>
+ <div><b>Time</b>About a day a week, more in heavy weeks and less in light ones. A guide for what's reasonable to ask, not a limit.</div>
+ <div><b>Ownership</b>Anything I create while working with you is yours, prompts included. The exception is work I do directly for ClassE, under my agreement with Joe.</div>
+</div>
+</div>
+
+<div class="sec">
+<div class="sec-head"><span class="num">04</span><h2>The Numbers</h2></div>
+<div class="numbers keep">
+ <div class="ladder">
+  <div class="mini">Your monthly profit, as I understood it</div>
+  <div class="row"><div class="lab"><b>Three clients</b>today</div><div><div style="display:flex;align-items:center;gap:6pt"><div class="bar l" style="width:14%;padding:0"></div><span style="font-size:8.2pt;font-weight:600;color:var(--sub)">$3K</span></div></div></div>
+  <div class="row"><div class="lab"><b>Four clients</b>with AAP</div><div><div class="bar m" style="width:40%">$12K</div></div></div>
+  <div class="row"><div class="lab"><b>A few more</b>within six months</div><div><div class="bar" style="width:100%">$30K</div></div></div>
+  <div class="note">Rough figures from our conversations that I think I have right. Please correct me where I don't.</div>
+ </div>
+ <div class="callout">
+  <p class="big">Read that way, each new client is worth roughly $6,000 to $9,000 a month to you. $3,000 is between a third and a half of one.</p>
+  <p>The job is helping you take on, and carry, the next one.</p>
+ </div>
+</div>
+
+<table class="pay">
+ <tr><th>Piece</th><th>Amount</th><th>How it works</th></tr>
+ <tr><td>Base rate</td><td class="amt">$3,000 / month</td><td>Starts October 1 or the day AAP signs, whichever is later. The work starts when the base rate does.</td></tr>
+ <tr><td>New clients</td><td class="amt">+15% of retainer</td><td>A $10,000-a-month client adds $1,500, bringing the base rate to $4,500. Tell me the amount when a retainer signs, and I'll invoice the new number.</td></tr>
+ <tr><td>Referral network</td><td class="amt">20% of your keep</td><td>Your 9/16 idea: pay that "grows as the sales these individuals bring in grows." I'll never pitch members, and my own intros stay under our August agreement.</td></tr>
+ <tr><td>Projects</td><td class="amt">Agreed up front</td><td>Courses, speaking, or client projects I help build. We set my share before each one starts.</td></tr>
+ <tr><td>In motion now</td><td class="amt">No charge</td><td>Benchmark, and Forward Edge on 10/1</td></tr>
+</table>
+
+<div class="why2 keep">
+ <div><b>15%</b>The top of the 10% to 15% range referral partners typically earn on new business. It leaves 85% of every new client with EdTech Expertz.</div>
+ <div><b>20%</b>Higher because it applies only to network deals, which I'd run day to day. I don't know what you usually keep on a deal, so this is the number most likely to change.</div>
+</div>
+<p class="swing">If this is too big a swing to start, let's find a smaller one. From what I understand, you could use the support, and I sure wouldn't mind a little income.</p>
+</div>
+
+<div class="sec pb" style="margin-top:0">
+<div class="sec-head" style="border-top:0;padding-top:0"><span class="num">05</span><h2>Check-Ins and Changes</h2></div>
+<p class="lede">Meant to be ongoing, not a trial.</p>
+<div class="timeline keep">
+ <div><b>Every week</b>A short check-in where you set the priorities</div>
+ <div><b>January</b>First real review: what I delivered, what it freed up, and whether the rate and time still fit</div>
+ <div><b>After that</b>Quarterly, or anytime either of us wants</div>
+</div>
+<table class="ifthen">
+ <tr><th>If</th><th>Then</th></tr>
+ <tr><td>The work runs well past a day a week for a month or two</td><td>We look at the base rate together</td></tr>
+ <tr><td>You sign a very large client</td><td>We reset the rate and the role together</td></tr>
+ <tr><td>A client leaves, or AAP slips past October</td><td>We talk at the next check-in, rather than letting a formula decide</td></tr>
+ <tr><td>You bring on more people</td><td>We work out my new role together</td></tr>
+ <tr><td>Either of us wants out</td><td>30 days' notice, the notice month is paid, and you get a clean handoff. The network share pays for 12 months on deals already logged.</td></tr>
+</table>
+</div>
+
+<div class="sec">
+<div class="sec-head"><span class="num">06</span><h2>Items for Conversation</h2></div>
+<ol class="items">
+ <li><b>A full-time role.</b> I'm in late rounds for a full-time role at a charter network, and there may be others. If one happens, you'll hear it from me first, and I want to keep doing both, with the work before and after the school day. We'd work out timing, and anything a school employer would want to clear, since the network puts vendors in front of schools.</li>
+ <li><b>Your numbers.</b> Do I have the profit picture above right?</li>
+ <li><b>What you usually keep on a network deal.</b> That tells us whether 20% is right.</li>
+ <li><b>Your hours today.</b> How many hours a week do research and the network take you now?</li>
+ <li><b>The ClassE advisory.</b> You asked on 9/16 what I'd need. Joe would pay it directly, so it doesn't touch your ClassE fee or count toward my 15%. My starting thought is $3,000 a month, and I'd want your read on framing it with Joe and where that work ends and my work for you begins.</li>
+<li><b>Beyond the core.</b> Any of these you'd want to try: promotional materials (one-pagers, decks, leave-behinds), conferences, client-team work on serving schools, school-leader feedback panels, sales training on how schools buy, procurement help, AI enablement, or L&amp;D. If a client pays for one, we agree on my share first.</li>
+</ol>
+<p class="close">Thank you again for asking. I'm looking forward to talking it through and figuring out what works best for you. Clarity is king, so push on any of it.</p>
+<div class="sig">Chris</div>
+</div>
+
+</body></html>

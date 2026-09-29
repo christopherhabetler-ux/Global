@@ -170,3 +170,10 @@ CH remembers Matt giving a ladder: about $3,000 past bills at three clients, $12
 - Each fact appears once: the weekly check-in lives only in Check-Ins; start date only in the pay table and At a Glance.
 - New transparency: why 15% (top of the 10-15% referral-partner range, leaves 85% of each new client with EdTech Expertz); why 20% (network-only, most likely to change); "Do I have your numbers right?" added to Items for Conversation.
 - Math fix: $3,000 is between a third and a half of a $6-9K client, not "less than half."
+
+## v10: Designed PDF (092926)
+
+- The Google Doc import stripped the design, so v10 is a hand-built PDF: Source Serif headlines, Inter body, one navy accent, three pages.
+- Page 1: title, opener, At a Glance tiles, Why, What I'd Do. Page 2: How I'd Work, The Numbers (profit bars, pay table, why 15% and 20%). Page 3: Check-Ins and Changes, Items for Conversation.
+- "Beyond the core" moved into Items for Conversation (item 6) as a question.
+- Source: design/Proposal for Matt v10 092926.html with fonts in design/fonts. Rebuild with headless Chromium print-to-PDF.
