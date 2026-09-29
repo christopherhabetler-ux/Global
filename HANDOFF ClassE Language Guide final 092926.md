@@ -14,17 +14,17 @@ No local session is needed. Optional, if you want the receipts from your checker
 python3 ~/Documents/CLAUDE/Scripts/ship_check.py "<email file>" --register email
 python3 ~/Documents/CLAUDE/Scripts/aicheck.py --memo "GUIDE ClassE US Language 092926.md"
 
-## Email to Matt (092926, v3, from his dictated points)
+## Email to Matt (092926, v4)
 
 Matt,
 
 Attached is the current draft of the US language guide. Think of it as a straw man, but a very informed, researched and vetted-by-me one.
 
 The document has four parts:
-- A few open questions for you and Joe (page 2)
-- Some framing
-- The quick use guide (pages 4-6)
-- The larger glossary
+- Some framing, including the beliefs the language is built on (page 2)
+- The short list of language to get right (pages 3-5)
+- A longer word list, A to Z (pages 6-7)
+- A couple of open questions at the end (page 8)
 
 Even though this is a language guide, I did want to anchor it to principles. It makes my thinking, and the perspective of a US ed reformer, more transparent, so the team can understand it and then use it when choosing their own words from an informed position.
 
