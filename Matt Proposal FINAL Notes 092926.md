@@ -152,3 +152,13 @@ What changed:
 Is 15% of total business too high? Not crazy, at the top of what's defensible now: it's a pre-tax business expense for Matt; a day a week is about a fifth of a work week; it's inside the 10-15% band. The real risk is the revenue guess, which is why v7 leads with the rule and says "let's use the real numbers."
 
 v7 changes: base rate stated as one rule, figures labeled rough and conversational, people maps clarified, publisher outreach cut.
+
+## FINAL v8: The Profit Ladder (092926)
+
+CH remembers Matt giving a ladder: about $3,000 past bills at three clients, $12,000 with AAP, about $30,000 with more.
+
+- On record (092226 transcript): $12,000 with AAP; about $30,000 in six months with help; three clients "pay my bills and then some."
+- Not found in any transcript: the $3,000 rung. It may have been said off-recording or in a call not in Notion. v8 uses it as "as I understood it," labeled rough.
+- What the ladder says: AAP alone is worth about $9,000 a month to him ($3K to $12K). Getting from $12K to $30K takes a few more clients, so each is worth roughly $6-9K a month in profit.
+- Why $3,000 holds: it's less than half of one new client. That replaces the revenue guess in v7 and doesn't require estimating his revenue at all.
+- One wrinkle: if the $3K rung is real, $3,000 equals his entire profit at three clients. That's why the start date stays tied to AAP.
