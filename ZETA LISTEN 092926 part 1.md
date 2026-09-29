@@ -75,7 +75,7 @@ The answer · about 75 seconds
 
 Trust is everything, and you earn it through three things: clarity, support and accountability.
 
-Clarity first, and really what I mean is predictability. We're aligned on what we're going for and what your role is in it. I'm consistent, so you know what to expect from me every time, and I'm transparent about where we're headed and why. Nobody's guessing.
+Clarity first, and really what I mean is predictability. It's not a flashy word, but it's the foundation. We're aligned on what we're going for and what your role is in it. I'm consistent, so you know what to expect from me every time, and I'm transparent about where we're headed and why. Nobody's guessing, and nothing is ever a surprise.
 
 Support. My job is to make you better and the school better, and to do that I have to show you I can do the job. Sometimes that means modeling it, showing you what excellent looks like, bringing the exemplar. Every coaching meeting should be as well prepared and thought out as the best lessons we teach. It's teaching time, not talking time, because I'm teaching every second whether I like it or not, with every action and every inaction.
 
