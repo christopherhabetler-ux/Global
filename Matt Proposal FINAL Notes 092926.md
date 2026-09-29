@@ -177,3 +177,11 @@ CH remembers Matt giving a ladder: about $3,000 past bills at three clients, $12
 - Page 1: title, opener, At a Glance tiles, Why, What I'd Do. Page 2: How I'd Work, The Numbers (profit bars, pay table, why 15% and 20%). Page 3: Check-Ins and Changes, Items for Conversation.
 - "Beyond the core" moved into Items for Conversation (item 6) as a question.
 - Source: design/Proposal for Matt v10 092926.html with fonts in design/fonts. Rebuild with headless Chromium print-to-PDF.
+
+## v11: Two-Page PDF (092926)
+
+- One type family (Inter), four sizes (18, 10, 8.8, 7pt), one navy accent. No chart.
+- Page 1 walks the logic before the figure: gratitude, the opportunity, the financial case (profit ladder), what I'd take off your plate, what it frees and the value, how I got to a number, then the $3,000 callout.
+- Page 2 is the proposal: terms table, first month, check-ins and changes, items for conversation, close.
+- Cut to reach two pages without repeating: At a Glance, the Why bullets, the Mindset row, the separate Responsiveness row (merged into Time), the "Already in motion" row (merged into Base rate), the separate "bring on more people" row (merged with very large client), and the full-time-role detail on timing and employer clearance.
+- Source: design/Proposal for Matt v11 092926.html. Rebuild with headless Chromium print-to-PDF.
