@@ -304,6 +304,9 @@ db.doc('coach/alert').onSnapshot(function(s){if(!s.exists)return;var d=s.data()|
   if(!d.text||(at&&at<=last)||(at&&Date.now()-at>90000))return;last=at;
   CO={text:(d.level?d.level.toUpperCase()+': ':'')+d.text,until:Date.now()+20000};coachPaint()},
  function(){lab.textContent='Right now \\u00b7 coach lost'})}).catch(function(){})})();""")
+LIGHT_CSS=open('light.css').read()
+t=t.replace('</style></head>',LIGHT_CSS+'</style></head>',1)
+assert LIGHT_CSS in t
 out='/home/user/Global/Zeta Call Companion 092926.html'
 open(out,'w').write(t)
 print('wrote',len(t),'bytes;',len(Q),'Q;',len(S),'stories')

@@ -36,7 +36,7 @@ Alright. The cards, in order. Sixteen answers, then your two asks.""")
 intro={
 'aboutyou':"This one opens almost every call. Two and a half to three minutes. Skip the paragraph about the kids for Zeta. Keep Brooklyn Lab moving. It ends on why Zeta.",
 'whyzeta':"The ops seat is closed, so this has to be a clear yes to the schooling side. The third paragraph is your own answer from tonight about the seat.",
-'g2g':"Paola's core question. Dan asked it, and your answer had four good principles and no proof. This time it ends on Carver.",
+'g2g':"Paola's core question, most likely as your philosophy on managing people or leaders. This is your dictation from today: trust, clarity, support, accountability. It ends on Carver.",
 'carver':"Your best proof for a job managing principals, and with Dan it came out as one word, successful. This is your written account of it.",
 'managed':"If she asks whether you've managed principals, or been one. Plain, no hedge. Interim goes out loud only.",
 'hs':"Dan's biggest problem is the high school, and it rolls up to Paola. Open with the claim, not with what you don't know. The seating chart paragraph is the one to cut if time is short.",

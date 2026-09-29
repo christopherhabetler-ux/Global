@@ -65,17 +65,37 @@ Land on this. He wants this work, at this network, now.
 
 Then stop. If they ask about ops: Felipe thought your strongest fit was the schooling side, and after the Dan call you see the logic.
 
-Card 3. The good principal who needs to get to great. What's your common feedback?
+Card 3. What's your philosophy on managing people, or leaders? (Also: the good principal who needs to get to great.)
 
-Paola's core question. Dan asked it, and your answer had four good principles and no proof. This time it ends on Carver.
+Paola's core question, most likely as your philosophy on managing people or leaders. This is your dictation from today: trust, clarity, support, accountability. It ends on Carver.
 
 Here it is, in your words.
 
-I would say that the playbook that I have developed over time by doing it wrong and then eventually doing it better and then doing it well a few times at least is I think the first thing is we have to separate someone's performance from their identity. And I talk about using your identity not as your skin, but your identity as a principal is the clothes that you wear, not the skin that you're in. And helping them separate this idea that there are things that make you who you are that are irreplaceable and that nothing about those should change. There are, however, also ways in which we can build on those strengths. And by aligning on what the key problems or opportunities are, we can focus on improving those without undercutting either who you are, the strengths you bring, or attacking your personal identity. So that's number one. Number two is getting clear on support versus evaluation. 99% of the time, I'm wearing my support hat. My success is entirely a function of your success. And so that when it comes time to evaluate, number one, nothing is a surprise. And number two, I've helped you along the way so that your review is wildly positive. The third thing is my side of the street needs to be totally clean above reproach. I need to be clear. I need to follow through. I need to be the model for reliability, for clarity and communication. And number four, doing the work alongside them. I think so often it's easy for folks, especially that have been doing it for a while, to say, "Even if I respect you, even if I think you're great, you don't really get it, or you don't get it at the level that I'm currently experiencing it." And that's true. And I think with most conversations with smart people, acknowledging that their perspective is entirely valid is both necessary and important. Also, there are ways in which you can dive in, do the work alongside them, and really go shoulder to shoulder with them. And I'll close with this. Mandate authority is almost worthless in these settings. I mean, sure, you're the person's boss. Sure, you can say we are or aren't doing certain things, and you need to. However, for the people that we want to keep, like you said, the people who are innovative, who are strong, who bring their whole selves, we need to convince them through the quality of our ideas and our actions and through the data on what directions and changes need to be made. Jerel received Louisiana state's Principal of the Year in our fourth year together and is now CEO of Collegiate Academies.
+I'm going to talk about trust, clarity, support, and accountability. The point I want to make is that we kind of work in that order, but it's also not linear. These concepts also all feed into each other, right?
 
-Land on this. Ends on a named principal and a result: Carver, Jerel now runs the organization.
+Trust is everything because you get trust from clarity. You get trust from being valuable and reliable. That's the support. You get trust through this idea of people knowing what's expected of them and what they're going to expect from you. There's this idea of predictability, clarity, transparency, aligning on purpose and mindset, showing people you're there for the right reasons, and having a degree of legitimate human care, concern, understanding, and validation.
 
-Then stop. Carver in one line, then stop.
+A great meeting doesn't end with a list of principal next steps. A better meeting ends with things being done, skills being applied, and skills being built and applied. Better than that, meetings aren't regular, standard office meetings, right? They're on the floor doing the work.
+
+The best development meetings I've ever had have either been: Let's go to the problem, real-time coach.... Or: Let me show up to the meeting so prepared that, while we might be using guided discovery as part of it, there is a delivery. There's an exemplar that I'm ready to bring. There's a clear lesson, and it's not an "I do, we do, you do" lesson, but it's as intentional, as objective-driven, and requires as much preparation as your best lessons.
+
+Because if I want a principal to have a tough feedback conversation, they need to see an example of it. I can't just wing that. We can't show up and expect to talk our way into improved understanding, or we can't converse our way into transforming the school. We have to teach our way into it, into that side-by-side work, and that's incredibly intentional development.
+
+Nobody's time is more valuable in the school than the principal's. Therefore, my job is to model for the principal to be the example. It's an incredibly high-stakes role, and it means, effectively, that every minute I'm on stage, every minute I'm modeling, because every minute they're learning.
+
+The accountability, which is that no one's guessing where they stand. Adam Meinig's two questions: Are they doing the right work? Are they doing it incredibly well?
+
+95% of my time, I'm in my support role. We're in this together. My success is your success, but what that also means is I'm never not saying the thing. I'm never lowering the bar. I'm never rounding up. I'm never letting a thing slide. If I'm going to keep someone's trust, they have to know that I'm telling the truth.
+
+90% of the time, when they make a mistake, they know it's a mistake. They're looking to figure out whether or not I'm willing to acknowledge it, help them work through it, and learn from it and get better as a human being.
+
+The accountability feeds the trust.... Knowing that I'm your biggest cheerleader, but I'm also part of being your coach: watching the game tape and pointing out where the mistake was made because I totally believe in you. I, of course, care enough about you to say the thing and to show you the better version.
+
+Jerel received Louisiana state's Principal of the Year in our fourth year together and is now CEO of Collegiate Academies.
+
+Land on this. the accountability feeds the trust. Then Carver.
+
+Then stop. Your last words are "now CEO of Collegiate Academies."
 
 Card 4. Tell me about a principal who was struggling. What did you do?
 
