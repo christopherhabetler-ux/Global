@@ -111,3 +111,12 @@ Not applied: capping "send it my way." You want Matt to call on you for new thin
 - Fee: $10,000 example ($1,500 raise, to $4,000). No ceiling; $5,000 is now a review point. Growth counts business signed after the start date, so the AAP line is gone and AAP doesn't double count.
 - No $1,500 October number: "If it's too big a swing to start, let's find a smaller one."
 - "The First Three Months" became "Checking In": ongoing, not a trial. January sit-down, then quarterly.
+
+## FINAL v5 Changes (092926)
+
+- "Fee" became "base rate."
+- Base rate raised to $3,000, derived on the page: four clients at a ClassE-size $8,500 is about $34,000 a month, 10% is $3,400, rounded down. New clients at 15%. The page invites Matt to correct the numbers or rein it in.
+- Why: at $2,500 with AAP in the starting number, the base could sit flat until a fifth client. $3,000 prices the business you'd actually be supporting on day one.
+- Caution: the "$100,000 per client" figure is not on the record (MATT COMPENSATION 092126 marks it unsupported). The page uses ClassE's known $8,500 a month as a labeled yardstick instead.
+- $10,000 example now reads $1,500, bringing it to $4,500. No ceiling; the $5,000 review point is gone, and check-ins cover it.
+- Trimmed for space: Response Time folded into Operating Mindset (48 hours kept), Whatever It Takes merged, Ideas for Later cut to one line, If the Business Changes folded into How It Grows. Four pages down to three.
