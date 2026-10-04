@@ -116,7 +116,40 @@ Draft note:
 
 ---
 
-## 8. Limits of this analysis
+## 8. The website thread (this chat started here, and the first version of this file left it out)
+
+This chat opened on the chrishabetler.com plan on Sun 092726. I reconciled the Gemini and GPT audits into "Website Plan 092826.md" (in this repo). The Zeta prep took over from Mon 092826, and I never wrote the website's lessons down. Here they are.
+
+What was decided and worked:
+- **You judge, the audits don't.** You told me to evaluate the Gemini and GPT audits and make the final call. I kept GPT's structure and threw out Gemini's, which described a different Christopher Habetler (a Phoenix listing, a different consultancy's metrics, a wrong KIPP title).
+- **Your earlier rulings beat any audit:** no status labels on tools, the button stays "Book a quick call," the headline stays "Do Less. Do More."
+- **Plan, then a red team, then execute:** you approved that format ("Ok. Pls do.").
+- **Real voice, not an AI avatar.** Cut AI buzzwords. About 70% operator insight, 20% systems you built, 10% AI.
+- **The research came from search snippets, not pages,** because the proxy blocked page fetches. Treat any Zeta or interviewer facts from that research as "verify before you say it in a room."
+
+Where it stands (from the plan file; I have no record of later progress):
+- **Open decision, yours:** the guarantee. The site says they keep the tool either way and owe nothing, which conflicts with your own $3,000 Coverage price card. My suggestion was "The first two weeks are free. If it doesn't earn a place in your week, you don't pay." It blocks P0 item 4 and the offer box. I have no answer from you on record.
+- **P0 list:** nine items, due Wed 093026 night, as a handoff block to run in your Mac Claude session in `~/Documents/CLAUDE/Projects/Website/`. I can't tell from this session whether it ran.
+- **Nothing was deployed from here.** The container can't reach the live site or your Mac files.
+- **Coverage film:** needs one raw, unnarrated screen recording from the Maple Grove demo, after TFA. TFA Summit was Oct 2 to 3, and I don't know how it went.
+- **P1 homepage restructure:** week of 100526. **P2:** week of 101226.
+
+---
+
+## 9. Where everything stands (start here next session)
+
+| Thread | Status |
+|---|---|
+| Gillian feedback request | Draft saved in Superhuman Drafts, **not sent**. Plan: send Monday 100526 morning, or discard. |
+| Zeta debrief | Final in this repo as "Zeta Interview Debrief 092926.md", and a copy in Notion. |
+| Notion | Disconnected as of 100326, so this file isn't in Notion. Copy it in when it reconnects. |
+| Notion listen pages | Cards 3 and 6 are outdated there; the repo HTML versions are current. |
+| Website | See §8. The guarantee decision is yours. |
+| Pipeline | I haven't looked at what else is in flight. That's the next question after Zeta. |
+
+---
+
+## 10. Limits of this analysis
 
 - The rejection email gives no reason. Everything about why is inference.
 - The session notes come from a condensed transcript with assistant text truncated and tool output removed.
